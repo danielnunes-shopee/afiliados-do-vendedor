@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiliados do Vendedor – Cyn Shop</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--orange:#EE4D2D;--orange-light:#fff3f0;--dark:#1a1a1a;--mid:#555;--soft:#888;--line:#e8e8e8;--bg:#f7f7f7;--white:#ffffff;--green:#1a7a4a;--green-bg:#edf7f2}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);min-height:100vh}
+  header{background:var(--orange);padding:0 24px;display:flex;align-items:center;height:56px}
+  .logo{font-size:22px;font-weight:700;color:var(--white);letter-spacing:-0.5px}
+  .logo span{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;vertical-align:middle}
+  main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+  .greeting{margin-bottom:28px}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+  h1{font-size:26px;font-weight:700;line-height:1.25;color:var(--dark)}
+  h1 strong{color:var(--orange)}
+  .greeting p{margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6}
+  .summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:6px}
+  .card .value{font-size:28px;font-weight:700;color:var(--dark)}
+  .card.highlight{background:var(--green-bg);border-color:#b2dfc7}
+  .card.highlight .value{color:var(--green)}
+  .section-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .items{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+  .item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:16px}
+  .item-rank{width:28px;height:28px;border-radius:50%;background:var(--orange-light);color:var(--orange);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .item-rank.top{background:var(--orange);color:var(--white)}
+  .item-info{flex:1;min-width:0}
+  .item-id{font-size:11px;color:var(--soft);font-weight:500;margin-bottom:3px}
+  .item-name{font-size:14px;font-weight:500;color:var(--dark);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .item-reward{background:var(--green-bg);color:var(--green);font-size:13px;font-weight:700;padding:5px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+  .how{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:28px}
+  .how h3{font-size:14px;font-weight:600;margin-bottom:14px}
+  .how ol{padding-left:18px}
+  .how ol li{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:8px}
+  .how ol li strong{color:var(--dark)}
+  .cta{display:inline-block;background:var(--orange);color:var(--white);font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none;width:100%;text-align:center}
+  footer{text-align:center;margin-top:40px;font-size:12px;color:var(--soft);line-height:1.6}
+  footer a{color:var(--orange);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="logo">shopee <span>Afiliados do Vendedor</span></div></header>
+<main>
+  <div class="greeting">
+    <div class="eyebrow">Iniciativa exclusiva</div>
+    <h1>Olá, <strong>Cyn Shop</strong> 👋</h1>
+    <p>Selecionamos produtos da sua loja com alto potencial de vendas via afiliados. Adicione-os à sua campanha e ganhe créditos para usar em comissões.</p>
+  </div>
+  <div class="summary">
+    <div class="card"><div class="label">Produtos elegíveis</div><div class="value">5</div></div>
+    <div class="card highlight"><div class="label">Crédito total a receber</div><div class="value">R$ 1.700</div></div>
+  </div>
+  <div class="section-title">Seus produtos elegíveis</div>
+  <div class="items">
+    <div class="item">
+      <div class="item-rank top">1</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23293882133</div>
+        <div class="item-name">Conjunto Capa De Chuva Para Motoqueiros Ciclistas Impermeável Calça Jaqueta C/ Capuz Envio Rápido</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">2</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58200749971</div>
+        <div class="item-name">Aquecedor Submersível de Vidro 25–300W com Termostato Automático para Aquário</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">3</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23696990319</div>
+        <div class="item-name">Descascador De Alho Sem Deixar Cheiro Nas Mãos Cozinha Tubo De Silicone Tira Casca</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">4</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22893481803</div>
+        <div class="item-name">KIT Cartuchos Dermapen 9,12, 36, 42, Nano, Micro Agulhas Envio Rapído 24h</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">5</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23039586077</div>
+        <div class="item-name">Suporte De Copo Com Rotação De 360 Graus Para Carro Caminhão Com Suporte Duplo Para Garrafa</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">6</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22899375065</div>
+        <div class="item-name">Extensões de Cílios Individuais 30D / 40D / 50D – Ondulação C – Macias e Confortáveis</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">7</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58200693460</div>
+        <div class="item-name">Lâmpada Recarregável LED Magnética GTP-1347 Bocal E26/E27 com Controle Remoto – 15 Cores</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">8</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23194357284</div>
+        <div class="item-name">Luminária Cúpula Acrílico A Bela E A Fera GRANDE 22 Cm A Rosa Encantada + Embalagem de Presente</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">9</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21999254940</div>
+        <div class="item-name">Mini Lanterna De Mão Pequena Luz Forte Brilhante Recarregável Com Base Magnetica GT-966</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">10</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18299802678</div>
+        <div class="item-name">Luz de Alearta Estroboscópica Sem Fio com Controle Remoto LED Anti-Colisão para Carro e Moto Drone</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">11</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23094664025</div>
+        <div class="item-name">Relógio Feminino Coração Estelar com Strass + Combo de Pulseiras Elegantes Moda Presente SEM A CAIXA</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">12</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23797892659</div>
+        <div class="item-name">Lâmpada De Cabeceira Recarregável Magnetica 360 Para Parede Do Quarto Corredor E Varanda USB LED</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">13</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22139587520</div>
+        <div class="item-name">Dispenser Recipiente Garrafa de Vidro Luxo De Azeite Vinagre Pimenta Óleo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">14</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23092459335</div>
+        <div class="item-name">1000w Refletor Solar LED Recarregável Iluminação de emergência Acampamento ao ar livre Luz Portátil</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">15</div>
+      <div class="item-info">
+        <div class="item-id">ID: 16083060842</div>
+        <div class="item-name">Kit 10 a 40 Adesivo Power Knee Alivio De Dor Nos Joelhos Braços Pescoço Lombar Salompas Salonpas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">16</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23021474140</div>
+        <div class="item-name">Cesto De Silicone Forma Redonda Air Fryer E Forno Fritadeira Elétrica Com Alça</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">17</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23993256186</div>
+        <div class="item-name">Luvas De Motociclista Impermeáveis Térmicas Com touch Screen E Bolso Antiderrapante</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">18</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22794772422</div>
+        <div class="item-name">36-360 Adesivos Repelente Natural Infantil Anti Mosquito Não Tóxico</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">19</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22997020459</div>
+        <div class="item-name">Batedor De Massa De Estilo Holandês De Aço Inoxidável Massa De Pão Holandês Misturador Utensílios</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">20</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23098781257</div>
+        <div class="item-name">Relógio Alarmes Despertador Espelho Caixa Bluetooth com Som de Alta Qualidade e Design Portátil</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">21</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22610412210</div>
+        <div class="item-name">EMS Massageador De Relaxamento Muscular De Pés Recarregável Massagem Foot Massager</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">22</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23194452052</div>
+        <div class="item-name">Mini Ring Light Clip Recarregável 3 Níveis de Luz p/ Live Stream Video Clip-on Portátil Maquiagem</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">23</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23702192041</div>
+        <div class="item-name">Tornozeleira Ortopedica Compressão Estabilizadora Elastica Esportes Futebol Cross Fit Basket Volei</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">24</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18877587628</div>
+        <div class="item-name">Almofada Com Capa Em Silicone Gel Para Assento Banco de Carro Escritorio Ortopédico</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">25</div>
+      <div class="item-info">
+        <div class="item-id">ID: 16083060842</div>
+        <div class="item-name">Kit 10 a 50 Adesivo Power Knee Alivio De Dor Nos Joelhos Braços Pescoço Lombar Salompas Salonpas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">26</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22892014189</div>
+        <div class="item-name">Kit De Costura 42 a 128 Pçs Conjunto De Ferramentas De 30 Grande Carretéis/Para Viagem/Casa</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">27</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20497926498</div>
+        <div class="item-name">Torneira Gourmet Misturador Monocomando Cozinha Mangueira Extensível 360 Graus Retrátil Slim Luxo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">28</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22594371178</div>
+        <div class="item-name">Chapéu Balaclava Terno Dobrável Macio Proteção Solar Boné De Pesca Respirável Pescadoria Ao Ar Livre</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">29</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19499500851</div>
+        <div class="item-name">Criativo Luz de Tulipa Flor Cubo 3D Lâmpada Noturna Pacote De Material Para Namorada Casal Presente</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">30</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22992445198</div>
+        <div class="item-name">Estabilizador Kit Video Making Suporte De Gaiola De Coelho Com Tripés Móvel Para Celular E Câmera</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">31</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21497606168</div>
+        <div class="item-name">Kit De Fotografia Luz De Vídeo + Microfone + Tripé Dobrável + Suporte Celular Com Controle Bluetooth</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">32</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21499077624</div>
+        <div class="item-name">Escova Massageador AntiCaspa Limpesa de Couro Cabeludo Spa Banho Relaxante</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">33</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58207993152</div>
+        <div class="item-name">Luminária Girassol LED com Cúpula – Luz Noturna Decorativa para Quarto e Presente Romântico</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">34</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22798582171</div>
+        <div class="item-name">Lâmpada Subaquática Luminária Para Aquário Lâmpada LED Colorida Para Aquário/Paisagismo 110/220v</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">35</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21297621668</div>
+        <div class="item-name">Luminária Solar 1-8 Unidades Para Escada Parede Muro Enfeite Jardim/Varanda/Ambientes Externos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">36</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23193680789</div>
+        <div class="item-name">Luminaria LED Recarregável Com Controle Remoto Para Armario Cor Brilho Ajustável Montagem Magnética</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">37</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22094476848</div>
+        <div class="item-name">RGB Anel de Luz LED Recarregável 240 LEDs 3 Cores 12 Níveis com Controle Bluetooth</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">38</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20699596655</div>
+        <div class="item-name">Limpador De Ouvido Visual Inteligente Sem Fio Otoscópio Ferramenta De Remoção De Cera Com Câmera</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">39</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21499610350</div>
+        <div class="item-name">Luz Solar para Exterior de 12 Led Luminaria de Chão Lâmpada Solar de Piso Luz de Caminho Jardim</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">40</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19897606651</div>
+        <div class="item-name">Torneira De Banheiro SUS 304 De Bancada Alta E Baixa Preto e Inox Escovado</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">41</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23592847471</div>
+        <div class="item-name">Short Cinta Com Enchimento Modela Levanta e Empina Bumbum</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">42</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58200762110</div>
+        <div class="item-name">Lâmpada De Parede Solar E USB 2 EM 1 Com Garra de Clip Movida A Energia Solar C/ Sensor De Movimento</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">43</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23694690334</div>
+        <div class="item-name">Limpa Vidro Automotivo 3 em 1 – Remove Óleo + Anti-Chuva Hidrofóbico p/ Carro & Casa</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">44</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22594024182</div>
+        <div class="item-name">Difusor De Aromas 500ml Madeira Claro Umidificador De Ar Ultra-Sônico</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">45</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18299207587</div>
+        <div class="item-name">Repelente Solar Ultra-Sônico para Espantar Rato Gato Pombo Cobra Morcego com Sensor Inteligente</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">46</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19871868146</div>
+        <div class="item-name">Bengala Dobrável Retrátil Com Regulagem Envio Rápido Pronta entrega</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">47</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21798817638</div>
+        <div class="item-name">Suporte Para Secador Cabelo na Parede Com Adesivo Banheiro Organizador Porta Ajustavel Giratorio 360</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">48</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21098028797</div>
+        <div class="item-name">Cartucho Universal para Tatuagem Pen/Dermógrafo Aurora Tattoo 2° Geração</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">49</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18498672534</div>
+        <div class="item-name">Repelente Eletronico 1-4 Unidades Solar Ultrassônico Susto Pragas Rato Cobra Animais</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">50</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22993743202</div>
+        <div class="item-name">Fita Led Com Sensor Sem Fio Led Luz Do Armário 3 M 5V Bateria Fita Sob Cama Decoração Do Lâmpada</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">51</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23697992667</div>
+        <div class="item-name">Luminaria Arandela de Parede a Bateria Recarregável Com Sensor de Movimento Lâmpada Luz Dimerizável</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">52</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22198332379</div>
+        <div class="item-name">Papagaio Arara Luz Solar Carregamento Automático à Prova d'água para Pátio Jardim</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">53</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22393585688</div>
+        <div class="item-name">Super Lâmpada Recarregável De Emergência LED Inteligente De 20W Acendendo Durante Queda De Energia</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">54</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23139589337</div>
+        <div class="item-name">6 / 12 Unidades de Luva de Dedo Anti-Suor Para Celular Jogos Gamer FPS Free Fire Pubg Mobile</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">55</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23591685943</div>
+        <div class="item-name">Pisca Alerta Traseira Luz De Sinalizador Para Bicicleta Motocicleta Drone LED 7 Cores Recarrevel USB</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">56</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18596961921</div>
+        <div class="item-name">Lâmpadas Solares Para Exterior Decore Seu Jardim Com Energia Renovável Lâmpadas De Parede Escada</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">57</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23796138074</div>
+        <div class="item-name">Lanterna Laser Tatica Titanium 2000 Metros de Zoom Luz Forte Lanterna Super Brilhante De 7 Modo Led</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div></div>
+  <div class="section-title">Como funciona</div>
+  <div class="how">
+    <ol>
+      <li>Acesse <strong>Afiliados do Vendedor</strong> no Seller Centre e adicione os produtos acima em uma campanha com qualquer percentual de comissão.</li>
+      <li>Mantenha cada produto <strong>ativo por pelo menos 30 dias</strong>.</li>
+      <li>Receba <strong>R$ 340 de crédito por produto</strong> — os créditos são acumulativos.</li>
+      <li>Use o crédito para pagar qualquer comissão de afiliados da sua loja.</li>
+      <li>Pagamentos processados semanalmente, em até 10 dias após completar os 30 dias.</li>
+    </ol>
+  </div>
+  <a class="cta" href="https://seller.shopee.com.br/portal/web-seller-affiliate" target="_blank">Ir para Afiliados do Vendedor →</a>
+  <footer>
+    <p>Dúvidas? Fale com seu gerente ou chame <strong>daniel.nunes</strong> no SeaTalk.</p>
+    <p style="margin-top:6px;">Shopee Brasil · Afiliados do Vendedor · Iniciativa SKU Expansion</p>
+  </footer>
+</main>
+</body>
+</html>

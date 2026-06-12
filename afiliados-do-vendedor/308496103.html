@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiliados do Vendedor – JackCosmeticos</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--orange:#EE4D2D;--orange-light:#fff3f0;--dark:#1a1a1a;--mid:#555;--soft:#888;--line:#e8e8e8;--bg:#f7f7f7;--white:#ffffff;--green:#1a7a4a;--green-bg:#edf7f2}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);min-height:100vh}
+  header{background:var(--orange);padding:0 24px;display:flex;align-items:center;height:56px}
+  .logo{font-size:22px;font-weight:700;color:var(--white);letter-spacing:-0.5px}
+  .logo span{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;vertical-align:middle}
+  main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+  .greeting{margin-bottom:28px}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+  h1{font-size:26px;font-weight:700;line-height:1.25;color:var(--dark)}
+  h1 strong{color:var(--orange)}
+  .greeting p{margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6}
+  .summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:6px}
+  .card .value{font-size:28px;font-weight:700;color:var(--dark)}
+  .card.highlight{background:var(--green-bg);border-color:#b2dfc7}
+  .card.highlight .value{color:var(--green)}
+  .section-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .items{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+  .item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:16px}
+  .item-rank{width:28px;height:28px;border-radius:50%;background:var(--orange-light);color:var(--orange);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .item-rank.top{background:var(--orange);color:var(--white)}
+  .item-info{flex:1;min-width:0}
+  .item-id{font-size:11px;color:var(--soft);font-weight:500;margin-bottom:3px}
+  .item-name{font-size:14px;font-weight:500;color:var(--dark);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .item-reward{background:var(--green-bg);color:var(--green);font-size:13px;font-weight:700;padding:5px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+  .how{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:28px}
+  .how h3{font-size:14px;font-weight:600;margin-bottom:14px}
+  .how ol{padding-left:18px}
+  .how ol li{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:8px}
+  .how ol li strong{color:var(--dark)}
+  .cta{display:inline-block;background:var(--orange);color:var(--white);font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none;width:100%;text-align:center}
+  footer{text-align:center;margin-top:40px;font-size:12px;color:var(--soft);line-height:1.6}
+  footer a{color:var(--orange);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="logo">shopee <span>Afiliados do Vendedor</span></div></header>
+<main>
+  <div class="greeting">
+    <div class="eyebrow">Iniciativa exclusiva</div>
+    <h1>Olá, <strong>JackCosmeticos</strong> 👋</h1>
+    <p>Selecionamos produtos da sua loja com alto potencial de vendas via afiliados. Adicione-os à sua campanha e ganhe créditos para usar em comissões.</p>
+  </div>
+  <div class="summary">
+    <div class="card"><div class="label">Produtos elegíveis</div><div class="value">5</div></div>
+    <div class="card highlight"><div class="label">Crédito total a receber</div><div class="value">R$ 1.500</div></div>
+  </div>
+  <div class="section-title">Seus produtos elegíveis</div>
+  <div class="items">
+    <div class="item">
+      <div class="item-rank top">1</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19399190201</div>
+        <div class="item-name">Kit 03 Canetas Óleo Revitalizador De Cutículas Aroma Hidratante Oleoso</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">2</div>
+      <div class="item-info">
+        <div class="item-id">ID: 3552097184</div>
+        <div class="item-name">Top Coat D&Z Alongamento unhas Fibra Acrigel Porcelana DEZ Selante Manicure DZ</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">3</div>
+      <div class="item-info">
+        <div class="item-id">ID: 15953088960</div>
+        <div class="item-name">Prep Antisséptico Para Higienização Das Unhas + Algodão Prensado Para Unha</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">4</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22597387274</div>
+        <div class="item-name">Brocas Diamantada 718 720 Cutícula Unha Motor Kit Brocas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">5</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22497344244</div>
+        <div class="item-name">Kit 04 Brocas De Cerâmica Unhas Manicure Porcelana Unha</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">6</div>
+      <div class="item-info">
+        <div class="item-id">ID: 7954796750</div>
+        <div class="item-name">Kit 24 Glitter Flocado e Finos Para Unhas Maquiagem Resina</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">7</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23597389361</div>
+        <div class="item-name">Pincel Lingua de Gato Unha Gel Uv Led Acrigel Fibra Profissional</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">8</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19663541141</div>
+        <div class="item-name">Base Em Gel Anylovy Gel Unhas Selo  Preparador Manicure Profissional</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">9</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23998429080</div>
+        <div class="item-name">Esmalte em Gel XD Original 7,5ml Decoração Unhas Uv/Led Nail Art</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">10</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8041062713</div>
+        <div class="item-name">Kit 10 Esmaltes Em Gel 7.5ml D&z / Bella Rosa / Lirio Sioux Unhas Uv Led Esmalte</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">11</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23898346141</div>
+        <div class="item-name">2x Cabine de LED UV Sun 5 Digital 48w Unha Gel Acrigel Secagem Rápida Branca Rosa</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">12</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22793844521</div>
+        <div class="item-name">Spider Gel - 10g - Teia De Aranha Unha Desenhos Estilo Elástico - Nail Designer</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">13</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23794426076</div>
+        <div class="item-name">Kit  Lixas de Unha Bumerangue Lavável 100/180 Boomerang Banana Alongamento Gel Fibra</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">14</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23097745737</div>
+        <div class="item-name">Preparadores Any Lovy - Gel Capa Base Primer Sem Ácido Regulador De Ph</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">15</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18698287472</div>
+        <div class="item-name">Kit 10 Esmaltes em Gel K&S QUADRADO – Soak Off | 10ml Cada | Secagem UV/LED</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">16</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18699788892</div>
+        <div class="item-name">Kit Limpeza Básico Lixa Bloco+ Lixa Boomerang 100/180+ Lixa Buffer + Escova limpeza ou Kabuki -Unhas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">17</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23794249501</div>
+        <div class="item-name">Kit Unhas Profissional – Motor Mercedes Cabine Sun 5 para Alongamento e Cuidados - Manicure Nail</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">18</div>
+      <div class="item-info">
+        <div class="item-id">ID: 5958836390</div>
+        <div class="item-name">Kit com 10 Fitas Metalizadas Unhas Manicure Nail Art Decoração</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">19</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20897785084</div>
+        <div class="item-name">Kit 24 Esmalte em Gel Esmaltes D&Z K&S Lirio Real Love Bella Rosa Decoração Atacado</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">20</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18199208848</div>
+        <div class="item-name">Kit 24 Esmaltes Em Gel D&z / Bella Rosa / K&S / Lirio / Sioux / Real Love Unhas Uv Led Esmalte</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">21</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22698224247</div>
+        <div class="item-name">Kit unha para iniciantes gel completo cabine Sun 5 Led Uv 48w lixadeira elétrica unha unhas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">22</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21763885180</div>
+        <div class="item-name">Cabine Unha 268W Led Uv 2 Em 1 Bivolt Temporizador Sun S8 Pro Profissional Bichinho</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">23</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22898316687</div>
+        <div class="item-name">Kit 5 Lixa Buff Unhas Polidora Para Unha Alongamento Nails</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">24</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23594013973</div>
+        <div class="item-name">Kit 40 Esmaltes em Gel D&Z Sioux K&S Pop You Lirio - Nail Art Unhas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">25</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18320418036</div>
+        <div class="item-name">Kit Preparadores Regulador de Ph + Primer sem ácido - AnyLovy</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">26</div>
+      <div class="item-info">
+        <div class="item-id">ID: 12576804108</div>
+        <div class="item-name">Kit 5 Esmaltes em Gel 10ml Zem Bella Rosa K&S D&Z Lirio Girl Fatale Led Uv Esmalte</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">27</div>
+      <div class="item-info">
+        <div class="item-id">ID: 6052403193</div>
+        <div class="item-name">Cabine Sun 5 - 48w Uv / Led Acrigel Gel ALongamento Unhas Estufa Forninho Porcelana Fibra</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">28</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20297640340</div>
+        <div class="item-name">Kit 2 Esmalte em Gel Preto e Branco Unhas Alongamento DZ KS Lirio Real Love</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">29</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21499573496</div>
+        <div class="item-name">Kit c/24 Decoração De Unhas Glitter potinhos Nail Art</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">30</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22593975926</div>
+        <div class="item-name">Kit 36 Esmalte em Gel D&Z Bella Rosa Lirio Sioux Real Love Zem K&S Girl Fatale Unha Unhas Nail Art</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">31</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20263395702</div>
+        <div class="item-name">Gel Para Unhas Anylovy 24g/20g Acrigel Fibra Alongamento de Unhas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">32</div>
+      <div class="item-info">
+        <div class="item-id">ID: 9109269183</div>
+        <div class="item-name">Motor / Lixadeira Elétrica - Profissional - Bivolt - Porquinho Unhas Lixa Manicure Pedicure</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">33</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58211131055</div>
+        <div class="item-name">Kit Esmalte Em Gel Tons Brasil Copa do Mundo 2026 - Hexa -unhas em gel fibra- decoração</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">34</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23706383878</div>
+        <div class="item-name">Top Coat Anylovy 10ml Selante Preparador de Unha Autonivelante Led Uv</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">35</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23092992437</div>
+        <div class="item-name">Kit com 10 Esmalte em Gel X&D Alongamento Unha Esmaltes Atacado</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">36</div>
+      <div class="item-info">
+        <div class="item-id">ID: 9804222895</div>
+        <div class="item-name">Coletor De Pó Aspirador Sugador Unha Cooler Coletor Bivolt Unhas Manicure</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">37</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22398235645</div>
+        <div class="item-name">Kit Flim Anylovy Regulador de PH + Primer Sem Ácido + Base Gel Fiber + Top Coat Nail Designer</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">38</div>
+      <div class="item-info">
+        <div class="item-id">ID: 15395114422</div>
+        <div class="item-name">Base Em Gel Fiber Anylovy Gel Unhas Selo Preparador Manicure Profissional</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">39</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20899843220</div>
+        <div class="item-name">Kit Alongamento de Unha em Gel Completo Cabine Sun Lixadeira Elétrica  - Envio Imediato</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">40</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20099651384</div>
+        <div class="item-name">Kit 4 Esmaltes em Gel K&S Fundo Realista 10ml Profissional Nails manicure</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">41</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23798655264</div>
+        <div class="item-name">Aspirador Sugador Pó Churrasqueira - Nail Vacum - Unhas Alongamento Acrigel Fibra</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">42</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20899843220</div>
+        <div class="item-name">Kit Alongamento de Unha em Gel Completo Cabine Sun Lixadeira Elétrica Luminária - Envio Imediato</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">43</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21499651269</div>
+        <div class="item-name">Kit Francesinha Esmalte Gel UV LED 20g K&S Nail Designer</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">44</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20797744987</div>
+        <div class="item-name">Kit Blindagem Anylovy - Base Gel Prep Top Coat PH Primer Alongamento Unhas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">45</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20541115571</div>
+        <div class="item-name">Kit 6 Esmalte em gel Reflexivo Lirio 12ml Refletivo Nail Art Esmaltes</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">46</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23005047728</div>
+        <div class="item-name">Kit 15 Pinceis Para Decoração Nail Art Unhas Manicure Unha Pincel</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">47</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23598952929</div>
+        <div class="item-name">Luminaria De Mesa Com Garra Presilha Bivolt Para Leitura Estante Quarto Maquiagem Manicure</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">48</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18419493266</div>
+        <div class="item-name">Gel Construtor - 24g - AnyLovy Alongamento Unha Postiça Acrigel Porcelana</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">49</div>
+      <div class="item-info">
+        <div class="item-id">ID: 15553084082</div>
+        <div class="item-name">Kit Cabine Sun 5 48w + Lixadeira / Motor Porquinho + Aspirador Sugador Coletor De Po Unhas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">50</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23992983551</div>
+        <div class="item-name">Broca de Tungstênio 5 em 1 unhas Cortador fresagem Multifuncional brocas corte Metal</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">51</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19263542775</div>
+        <div class="item-name">Prep Antisséptico Higienizador AnyLovy com 120ml Unhas de Gel Acrigel e Porcelana</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">52</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23598350960</div>
+        <div class="item-name">Kit Com 4/3/2 Esmaltes em Gel Tons Vermelhos K&S - 10ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">53</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23197893032</div>
+        <div class="item-name">Gel Base AnyLovy Nail Designers de Alongamento de Unhas 20g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div></div>
+  <div class="section-title">Como funciona</div>
+  <div class="how">
+    <ol>
+      <li>Acesse <strong>Afiliados do Vendedor</strong> no Seller Centre e adicione os produtos acima em uma campanha com qualquer percentual de comissão.</li>
+      <li>Mantenha cada produto <strong>ativo por pelo menos 30 dias</strong>.</li>
+      <li>Receba <strong>R$ 300 de crédito por produto</strong> — os créditos são acumulativos.</li>
+      <li>Use o crédito para pagar qualquer comissão de afiliados da sua loja.</li>
+      <li>Pagamentos processados semanalmente, em até 10 dias após completar os 30 dias.</li>
+    </ol>
+  </div>
+  <a class="cta" href="https://seller.shopee.com.br/portal/web-seller-affiliate" target="_blank">Ir para Afiliados do Vendedor →</a>
+  <footer>
+    <p>Dúvidas? Fale com seu gerente ou chame <strong>daniel.nunes</strong> no SeaTalk.</p>
+    <p style="margin-top:6px;">Shopee Brasil · Afiliados do Vendedor · Iniciativa SKU Expansion</p>
+  </footer>
+</main>
+</body>
+</html>

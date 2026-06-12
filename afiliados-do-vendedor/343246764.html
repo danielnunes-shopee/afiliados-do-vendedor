@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiliados do Vendedor – Zyoou Market</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--orange:#EE4D2D;--orange-light:#fff3f0;--dark:#1a1a1a;--mid:#555;--soft:#888;--line:#e8e8e8;--bg:#f7f7f7;--white:#ffffff;--green:#1a7a4a;--green-bg:#edf7f2}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);min-height:100vh}
+  header{background:var(--orange);padding:0 24px;display:flex;align-items:center;height:56px}
+  .logo{font-size:22px;font-weight:700;color:var(--white);letter-spacing:-0.5px}
+  .logo span{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;vertical-align:middle}
+  main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+  .greeting{margin-bottom:28px}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+  h1{font-size:26px;font-weight:700;line-height:1.25;color:var(--dark)}
+  h1 strong{color:var(--orange)}
+  .greeting p{margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6}
+  .summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:6px}
+  .card .value{font-size:28px;font-weight:700;color:var(--dark)}
+  .card.highlight{background:var(--green-bg);border-color:#b2dfc7}
+  .card.highlight .value{color:var(--green)}
+  .section-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .items{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+  .item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:16px}
+  .item-rank{width:28px;height:28px;border-radius:50%;background:var(--orange-light);color:var(--orange);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .item-rank.top{background:var(--orange);color:var(--white)}
+  .item-info{flex:1;min-width:0}
+  .item-id{font-size:11px;color:var(--soft);font-weight:500;margin-bottom:3px}
+  .item-name{font-size:14px;font-weight:500;color:var(--dark);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .item-reward{background:var(--green-bg);color:var(--green);font-size:13px;font-weight:700;padding:5px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+  .how{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:28px}
+  .how h3{font-size:14px;font-weight:600;margin-bottom:14px}
+  .how ol{padding-left:18px}
+  .how ol li{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:8px}
+  .how ol li strong{color:var(--dark)}
+  .cta{display:inline-block;background:var(--orange);color:var(--white);font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none;width:100%;text-align:center}
+  footer{text-align:center;margin-top:40px;font-size:12px;color:var(--soft);line-height:1.6}
+  footer a{color:var(--orange);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="logo">shopee <span>Afiliados do Vendedor</span></div></header>
+<main>
+  <div class="greeting">
+    <div class="eyebrow">Iniciativa exclusiva</div>
+    <h1>Olá, <strong>Zyoou Market</strong> 👋</h1>
+    <p>Selecionamos produtos da sua loja com alto potencial de vendas via afiliados. Adicione-os à sua campanha e ganhe créditos para usar em comissões.</p>
+  </div>
+  <div class="summary">
+    <div class="card"><div class="label">Produtos elegíveis</div><div class="value">5</div></div>
+    <div class="card highlight"><div class="label">Crédito total a receber</div><div class="value">R$ 1.500</div></div>
+  </div>
+  <div class="section-title">Seus produtos elegíveis</div>
+  <div class="items">
+    <div class="item">
+      <div class="item-rank top">1</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23592875532</div>
+        <div class="item-name">1/2/3 Formas de Silicone Quadrada 16x16cm Assadeira Air Fryer e Forno Forma para Fritadeira Elétrica com Alça</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">2</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22193965722</div>
+        <div class="item-name">Kit 10/13 Higiene Cuidado Bebê Recém Nascido Essencial Peças Cuidados Com O Bebê Recém Cortador Escova Cabelo Unha Pente</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">3</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23592857556</div>
+        <div class="item-name">2 Pcs Meias De Silicone Para O Cuidado Dos Pés Gel Hidratante AntiRachaduras Removedor De Pele Morta</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">4</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22693628274</div>
+        <div class="item-name">1/2 Ralo Inteligente 10x10/15x15Cm Click Inox Banheiro Lavabo Veda Cheiro</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">5</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58209053860</div>
+        <div class="item-name">Cinta Modeladora 3/5 Metros Faixa Abdominal Pos Parto Alta Compressao Redutora de Medidas Cintura</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">6</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22092872132</div>
+        <div class="item-name">Par De Luva Para Academia Neoprene Treino Musculação Feminina Masculina PRONTO ENTREGA</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">7</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22498183461</div>
+        <div class="item-name">Conjunto Capa De Chuva Roupa Para Motoqueiros Ciclistas Impermeável Calça Jaqueta C/ Capuz</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">8</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22694457994</div>
+        <div class="item-name">10/20/30/50 Pçs Pasta De Nariz De Limpeza Profunda Carvão De Bambu Cravo Ponto Nasal Tira Ferramentas Zyoou</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">9</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20899207250</div>
+        <div class="item-name">Kit10/20/30/50 Ganchos Adesivos Parede Multi Funcional Autocolante Casa Cozinha Quarto Banheiro Organizado Transparente</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">10</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22993227834</div>
+        <div class="item-name">Meia-Calça Térmica Feminina Super Stretch De Inverna Com a Forra Translúcida De Pelucida Termica</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">11</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19499231176</div>
+        <div class="item-name">1/2/3 Pares Manguito Proteção Solar UV Fina Braço Seda Masculina Feminina Respirável 40cm</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">12</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23197345044</div>
+        <div class="item-name">Kit 100 Sacos De Confeitar Medio Confeitaria Bolo Doce Cupcake PRONTO ENTREGA RJ</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">13</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58201921452</div>
+        <div class="item-name">Cinta de Correção Postural Unissex Alinha Coluna Ajusta Postura homem e mulher</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">14</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21199722213</div>
+        <div class="item-name">Caneta Rejunte Reparadora Permanente Pinta Rejunte Anti-Mofo Branca A Prova Agua/Preenchedores Impermeáveis Banheiro</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">15</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58254285160</div>
+        <div class="item-name">Kit 4 Peças Amortecedor de Fechadura Borracha Protetor Porta Do Carro Batente Anti Impacto Colisão Veicular Universal Zy</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">16</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23792938914</div>
+        <div class="item-name">1/2/3 Pares Meia Palmilha Silicone Gel Ortopédica Calcanhar Esporão Cor Da Pele</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">17</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22897722069</div>
+        <div class="item-name">Conjunto De Facas Inox 6 Peças Antiaderente Com Cabo Reforçado Descascador E Tesoura Cozinha</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">18</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58201837511</div>
+        <div class="item-name">Rolo de Pano de Microfibra Miltiuso Alta Super Absorção 20 Unidades de Toalhas 25x25cm Limpeza Geral</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">19</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22492963633</div>
+        <div class="item-name">1/2/3 Fita Selante De Pvc À Prova D 'Água Para Cozinha / Banheiro / Banheira</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">20</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18598018061</div>
+        <div class="item-name">12/24/36/48/60/80/120/168 Cores Caneta Marcadora Com Ponta Dupla/Pintura De Arte/Aquarela/Material Escolar/Escritório</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">21</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23494273843</div>
+        <div class="item-name">1/2/3 Frasco 15ML/30ML De Creme Gel Acrílico Pump Vazio Pressao Válvula Pote Unha Airless Zyoou</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">22</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23998739597</div>
+        <div class="item-name">Kit 10 Mini Presilhas de Cabelo Garra Menina Franja Clipe Grampo Acessório Cores Neutras e Elegantes Lembrancina Zyoou</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">23</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58258313230</div>
+        <div class="item-name">1/2 Tapete de Banheiro Absorvente Antiderrapante Secagem Rápida</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">24</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21697921168</div>
+        <div class="item-name">1/2/3/4 Fita Knesio Tape Bandagem 3/5M adesiva funcional alivia a dor lesão atleta Tape Fisioterapia Rolo Adesivo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">25</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58200279355</div>
+        <div class="item-name">Espanador 280 Centímetros Ajustável Telescópica Dobra Duster Escova De Limpeza De Poeira</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">26</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58250490496</div>
+        <div class="item-name">3D Com ímã Cortina de Box para Banheiro c/ ilhós Anti Mofo Resistente Alta Qualidade 100%PVC 2mx1,8m</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">27</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21797926187</div>
+        <div class="item-name">1/2/3 Porta Papel Toalha e Suporte de Filme de Alumínio para Parede de Cozinha</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">28</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22499176590</div>
+        <div class="item-name">Caneta Paint Original Reparadora Pintura Automotiva Permanente Não Sai Na Água Tira Riscos Carro Moto Retoque de Placa</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">29</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23794073574</div>
+        <div class="item-name">Meias De Compressão Alta Pressão Varizes De Dedo Do Pé Abertas Homens Mulheres Grandes 2 Tamanhos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">30</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23994806399</div>
+        <div class="item-name">Barbeador Elétrico 4 Em 1 Para Mulheres Remoção De Pelos Corporais feminino/aparador de pelos do nariz e sobrancelhas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">31</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19699321019</div>
+        <div class="item-name">1/2/3 Pares Joelheira Bebe Engatinhar Infantil Proteção Para Joelhos Crianças Meias Zyoou</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">32</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23694489935</div>
+        <div class="item-name">Estrelas Neon que Brilham no Escuro Fluorescentes 100 unidades Decoração de Quarto para Teto de Criança Zyoou</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">33</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58205529365</div>
+        <div class="item-name">Lápis De Sobrancelha 1/2/3 Líquido À Prova D'água, De Longa Duração , Definição Natural , Maquiagem Acessível Zyoou</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">34</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22198670876</div>
+        <div class="item-name">Leggings Casuais De Cor Sólida Para Meninas De 1 Peça Meia-Calça De Malha Quente Outono E Inverno Estilo Combinado ZYOOU</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">35</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58203848344</div>
+        <div class="item-name">Depilador Removedor De Pelos  Facial e Corporal Sem fio Recarregável</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">36</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23398700645</div>
+        <div class="item-name">1/2/3 Piranha Garra Cabelo Presilha Grande Prendedor Plástico Formato Quadrado Minimalista Feminino Zyoou</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">37</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20099775616</div>
+        <div class="item-name">1/2/3 Fita De Proteção De Pele De Salto Alto Anti-Colisão Protetor De Calcanhar Flexível À Prova D'água Para Conforto</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">38</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22893954894</div>
+        <div class="item-name">Livro de Colorir 100 Folhas 50 Folhas Ou 25 Folhas Caderno de Desenho Pintura Coloring Book</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">39</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23398764774</div>
+        <div class="item-name">Película Insulfilm 2/5 Metros Prata Espelhada Refletiva Poliéster Profissional G5 Com Espátula Grátis Zyoou</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">40</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18799858533</div>
+        <div class="item-name">Laços De Cabelo Elásticos Estilo Coreano Para Crianças , Faixas Não Danificadas Meninas , Acessórios Zyoou</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">41</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23293335924</div>
+        <div class="item-name">1/2/3/4 Peças Saco Bolsa Multifuncional de Absorvente Higiênico Viagem Guardanapo Cosméticos à Prova D'Água Zyoou</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">42</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58205401171</div>
+        <div class="item-name">Almofada De Silicone Anti-Colisão Porta De Carro Junta Isolamento Acústico Auto-Impacto À Prova  Choque Adesivo Borracha</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">43</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23194460502</div>
+        <div class="item-name">Cinta Corretor Postural Magnético Unissex Dor Ajusta Postura Zyoou</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">44</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19897625787</div>
+        <div class="item-name">1/2 Fita Dupla Face 1/3/5/10 Metro Extra Forte Transparente NanoGel Silicone Adesiva Cola na Parede Móvel Porta</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">45</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22497729423</div>
+        <div class="item-name">Colmeia Organizadora De Gavetas e Divisórias Organizador de Guarda Roupas Peças Intimas Meias</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">46</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22798414117</div>
+        <div class="item-name">Saco de 60/40/20 peças para armazenamento de joias-Transparente,para colares e pulseiras</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">47</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58258109740</div>
+        <div class="item-name">Pulverizador Snow Foam Lavadora Espuma Manual 2 Litros Com 2 Bicos profissional</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">48</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58251957450</div>
+        <div class="item-name">Multifuncional Rotativo Seis Garra Gancho De Madeira Maciça Cabide Traceless Doméstico Chapéu Cachecol Saco Armazenament</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">49</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23298688029</div>
+        <div class="item-name">1/2/3 Limpador de Lingua Removedor Aço Inox mal hálito Zyoou</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">50</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19999556631</div>
+        <div class="item-name">Palmilha Corretor Ortopédica Para Fascite Plantar Massageadora Pé De Pato Alívia Sídrome Apart</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">51</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18599261590</div>
+        <div class="item-name">Joelheira Compressão Ortopedica Articulada Apoio Reforçado</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">52</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58205530570</div>
+        <div class="item-name">Organizador de Maquiagem Giratório Suporte Multiuso 2/3 Andares p/ Cosméticos e Perfumes Zyoou</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">53</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58252171546</div>
+        <div class="item-name">Molde De Sabão De Silicone Retangular De Seis Cavidades Artesanal DIY Reutilizável E Flexível Sabonete Vela e Chocolate</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">54</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23393264091</div>
+        <div class="item-name">Kit De Limpeza 20 Em 1 De Tela Limpador De Teclado Com Escova Laptop Airpod Para Câmera Monitor De Computador De Mesa</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">55</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22394869802</div>
+        <div class="item-name">Aspirador de Pó Doméstico 3 em 1 Sem Fio Limpeza Sucção USB</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">56</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23897690060</div>
+        <div class="item-name">Par Joelheira Unidade M Futsal Vôlei Dança Handebol Original Adulto e Infantil</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">57</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22597460449</div>
+        <div class="item-name">Cortina 300 Leds 3x3 Metros Festa Casamento Eventos Natal Branco Amarelo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">58</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58257078646</div>
+        <div class="item-name">10/20/30 Peças Botão Para Substituição De Jeans 17mm Kit De Reparo Sem Costura A Parafuso Conjunto De Botões Removíveis</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">59</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58255675965</div>
+        <div class="item-name">Kit 530 ou 328 Tubo Termo Retrátil 2:1 Poliolefina Manga Encolhível Envoltório Fio Conjunto Multi</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">60</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22693579156</div>
+        <div class="item-name">Toddler Arreios De Mochila Com Trela Alça De Segurança e Leashes De Proteção Elo De Pulso Anti-Perda Para Crianças</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">61</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22994654473</div>
+        <div class="item-name">Kit 20 Sacos Herméticos Para Armazenar Alimentos Reutilizável Congelador Zyoou</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">62</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22597584134</div>
+        <div class="item-name">Espelho De Mesa Maquiagem Com 16 Leds Rotação Quadrado Touch Screen</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">63</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21599202410</div>
+        <div class="item-name">Luminária Articulável de Mesa Led Touch Abajur Cama Recarregável</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">64</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22693354003</div>
+        <div class="item-name">Kit 3 Saco Para Lavadora De Roupas Vários Tamanhos Cesto Especial Para Roupas Multiuso Universal</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">65</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58250458727</div>
+        <div class="item-name">Espelho De Maquiagem Dobrável De Alta Qualidade Portátil Bolso Único Lado Criativo Feminino Cor Sólida Lidar</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">66</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58257434561</div>
+        <div class="item-name">Kit 4/12/24 Protetor de Silicone para Pés de Cadeira e Mesa Pés Pezinho Redondo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">67</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58250445414</div>
+        <div class="item-name">Kit 10/20/30 Saco de Bolinhas Gel Planta Cresce Água Orbeez Festa Decoração</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">68</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58252169080</div>
+        <div class="item-name">Kit Crochê Completo 53 Peças  Para Fazer Amigurumi Agulhas Cabo Soft Tesoura Acessórios Lar das Fitas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">69</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22899122198</div>
+        <div class="item-name">10/20/30 Toploader Capa De Cartão Grosso Protetor Fotográfico , Mangas Internas Suporte De Jogo Transparente</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">70</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22594252787</div>
+        <div class="item-name">Mini Estojo Porta Lente De Contato Kit Pinça Ventosa Espelho Ideal para Viagens e Transporte Zyoou</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">71</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58257419034</div>
+        <div class="item-name">Escova Térmica de Cabelo com Cerdas de Javali Secagem Rápida e Modelagem Profissional</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">72</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22098863461</div>
+        <div class="item-name">Fita Esportiva Atletica 5M Proteção Adesiva Branca Para Fixação Dedo Pulso Tornozelo Musculo Pano Fino Para Lesão Zyoou</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">73</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23898388188</div>
+        <div class="item-name">Tapete Lambedor Inibidor de Ansiedade Silicone com Ventosa Comedouro Lento Pet ,Cães E Gatos Grande</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">74</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58201958222</div>
+        <div class="item-name">Kit 2/4/8/12 Removedor de Pelos Mágico Reutilizável de Máquina de Lavar Bolas Lavanderia Ferramentas Limpeza</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">75</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18697827379</div>
+        <div class="item-name">Garrafa 1000ml Inox Térmica Com Infusor Prata e Dourada De Água Café Dupla Com Alça</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">76</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22998229519</div>
+        <div class="item-name">Aspirador De Pó Sem Fio Portátil Limpeza Manual Uso Domestico USB</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">77</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18897816098</div>
+        <div class="item-name">Cadeado Com Alarme Sirene Anti Furto 110dba Trava Moto Portão Multifuncional</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div></div>
+  <div class="section-title">Como funciona</div>
+  <div class="how">
+    <ol>
+      <li>Acesse <strong>Afiliados do Vendedor</strong> no Seller Centre e adicione os produtos acima em uma campanha com qualquer percentual de comissão.</li>
+      <li>Mantenha cada produto <strong>ativo por pelo menos 30 dias</strong>.</li>
+      <li>Receba <strong>R$ 300 de crédito por produto</strong> — os créditos são acumulativos.</li>
+      <li>Use o crédito para pagar qualquer comissão de afiliados da sua loja.</li>
+      <li>Pagamentos processados semanalmente, em até 10 dias após completar os 30 dias.</li>
+    </ol>
+  </div>
+  <a class="cta" href="https://seller.shopee.com.br/portal/web-seller-affiliate" target="_blank">Ir para Afiliados do Vendedor →</a>
+  <footer>
+    <p>Dúvidas? Fale com seu gerente ou chame <strong>daniel.nunes</strong> no SeaTalk.</p>
+    <p style="margin-top:6px;">Shopee Brasil · Afiliados do Vendedor · Iniciativa SKU Expansion</p>
+  </footer>
+</main>
+</body>
+</html>

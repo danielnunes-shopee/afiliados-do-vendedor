@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiliados do Vendedor – ABCSHOP_br</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--orange:#EE4D2D;--orange-light:#fff3f0;--dark:#1a1a1a;--mid:#555;--soft:#888;--line:#e8e8e8;--bg:#f7f7f7;--white:#ffffff;--green:#1a7a4a;--green-bg:#edf7f2}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);min-height:100vh}
+  header{background:var(--orange);padding:0 24px;display:flex;align-items:center;height:56px}
+  .logo{font-size:22px;font-weight:700;color:var(--white);letter-spacing:-0.5px}
+  .logo span{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;vertical-align:middle}
+  main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+  .greeting{margin-bottom:28px}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+  h1{font-size:26px;font-weight:700;line-height:1.25;color:var(--dark)}
+  h1 strong{color:var(--orange)}
+  .greeting p{margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6}
+  .summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:6px}
+  .card .value{font-size:28px;font-weight:700;color:var(--dark)}
+  .card.highlight{background:var(--green-bg);border-color:#b2dfc7}
+  .card.highlight .value{color:var(--green)}
+  .section-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .items{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+  .item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:16px}
+  .item-rank{width:28px;height:28px;border-radius:50%;background:var(--orange-light);color:var(--orange);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .item-rank.top{background:var(--orange);color:var(--white)}
+  .item-info{flex:1;min-width:0}
+  .item-id{font-size:11px;color:var(--soft);font-weight:500;margin-bottom:3px}
+  .item-name{font-size:14px;font-weight:500;color:var(--dark);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .item-reward{background:var(--green-bg);color:var(--green);font-size:13px;font-weight:700;padding:5px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+  .how{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:28px}
+  .how h3{font-size:14px;font-weight:600;margin-bottom:14px}
+  .how ol{padding-left:18px}
+  .how ol li{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:8px}
+  .how ol li strong{color:var(--dark)}
+  .cta{display:inline-block;background:var(--orange);color:var(--white);font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none;width:100%;text-align:center}
+  footer{text-align:center;margin-top:40px;font-size:12px;color:var(--soft);line-height:1.6}
+  footer a{color:var(--orange);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="logo">shopee <span>Afiliados do Vendedor</span></div></header>
+<main>
+  <div class="greeting">
+    <div class="eyebrow">Iniciativa exclusiva</div>
+    <h1>Olá, <strong>ABCSHOP_br</strong> 👋</h1>
+    <p>Selecionamos produtos da sua loja com alto potencial de vendas via afiliados. Adicione-os à sua campanha e ganhe créditos para usar em comissões.</p>
+  </div>
+  <div class="summary">
+    <div class="card"><div class="label">Produtos elegíveis</div><div class="value">5</div></div>
+    <div class="card highlight"><div class="label">Crédito total a receber</div><div class="value">R$ 1.500</div></div>
+  </div>
+  <div class="section-title">Seus produtos elegíveis</div>
+  <div class="items">
+    <div class="item">
+      <div class="item-rank top">1</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8140532221</div>
+        <div class="item-name">Bandagem Elástica 5Cm X 5M - Fita Kinesio Tape Fisioterapia</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">2</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23693567950</div>
+        <div class="item-name">24 até 168 Cores Touch Marker Caneta Marcadora Com Ponta Dupla/Pintura De Arte/Aquarela/Material Escolar/Escritório</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">3</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22894336320</div>
+        <div class="item-name">1 Escova De Ondulação Cerdas De Javali Pontas P/ Reduzir Puxar E Separar Cachos Perfeitos Onduladas Liso Cacheada Cabelo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">4</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23593565697</div>
+        <div class="item-name">Conjunto de pincéis de maquiagem profissional de 8 unidades de alta qualidade Pacote de 8 unidades contém pincel de pó</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">5</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22799288486</div>
+        <div class="item-name">Kit Crochê Completo 53 Peças Para Fazer Amigurumi Agulhas Cabo Soft Tesoura Acessórios Lar das Fitas Marcadores Estojo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">6</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23998907443</div>
+        <div class="item-name">10/20/30/50 Pçs Pasta De Nariz De Limpeza Profunda Carvão De Bambu Cravo Ponto Nasal Tira Ferramentas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">7</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18263576386</div>
+        <div class="item-name">Fita 3M/5M/10M Selante De Pvc À Prova D 'Água Para Cozinha / Banheiro / Banheira</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">8</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20797278523</div>
+        <div class="item-name">Balança Digital Medidora Corporal Bioimpedância até 180kg</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">9</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22594143518</div>
+        <div class="item-name">1 Peça Prancheta Com Armazenamento, Pasta De Prancheta De Abertura</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">10</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20898106678</div>
+        <div class="item-name">Saco de 100/50/20 peças para armazenamento de joias-Transparente para colares e pulseiras</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">11</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20999443022</div>
+        <div class="item-name">Escova descartável Ou Refil Para Vaso sanitário e Parede Banheiro</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">12</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22497372182</div>
+        <div class="item-name">Organizador De Cosmético Maquiagem Acrílico Giratório 360º</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">13</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23093217249</div>
+        <div class="item-name">1/5/10/20 Par Gancho Adesivo Dupla Face Super Forte Ate 8kg Sem Furos Pregos Para Banheiro E Cozinha</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">14</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22594196096</div>
+        <div class="item-name">Toalha Banho Bebê Capuz Roupão Infantil Recém Nascido Criança Bichinho Bordado ABCSHOP</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">15</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22193956036</div>
+        <div class="item-name">Livro de Colorir  Capivara 100 Folhas 50 Folhas Caderno de Desenho Pintura Coloring Book</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">16</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23898729472</div>
+        <div class="item-name">1/2/3 Piranha Garra Cabelo Presilha Grande Prendedor Plástico Formato Quadrado Minimalista Feminino</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">17</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23898647375</div>
+        <div class="item-name">Caixa em acrílico organizador grande com 3 divisórias + tampa ABCSHOP</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">18</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18999892730</div>
+        <div class="item-name">Kit 2 ou 4 Ganchos adesivos para varão de cortina que não precisa furar suporte de parede ABCSHOP</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">19</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58205423225</div>
+        <div class="item-name">Organizador de Maquiagem Giratório – Suporte Multiuso 2/3 Andares p/ Cosméticos e Perfumes</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">20</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19797880510</div>
+        <div class="item-name">ultrassônico Nebulizador inalador portátil a pilha e bivolt</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">21</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23098844547</div>
+        <div class="item-name">30/20/10 Conjunto de Pintura de Areia Infantil Conjunto de Pintura de Areia Artesanal Areia Criativa Colorida ABCSHOP</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">22</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23794308802</div>
+        <div class="item-name">50 Pcs Saco De Jóias Transparente Anti Oxidação Brincos Colar Manual Saco De Armazenamento Portátil</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">23</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58204557816</div>
+        <div class="item-name">1/2/3 Sacos De Lavagem para Sapatos Máquina de Lavar</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">24</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23397832360</div>
+        <div class="item-name">Máquina de Tosa para Pata Olhos Orelha Pet Cão Gato Profissional Aparador De Pelos Cortador</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">25</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23698557481</div>
+        <div class="item-name">Álbum Comemorativo 3 Polegadas Polaroid para Armazenamento de Fotos, Cartões Postais e Bilhetes de Cinema</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">26</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23899162658</div>
+        <div class="item-name">Escova De Cabelo De Bambu Natureza Antiestática De Madeira Couro Cabeludo Massagem Pente Almofada De Ar Ferramentas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">27</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22198592126</div>
+        <div class="item-name">Kit 12/24/36/48 /60/80 Cores Caneta 2 em 1 Brush Lettering e Ponta Fina Dual Pen Canetinha Colorir Desenho</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">28</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20898106640</div>
+        <div class="item-name">50/100 Pcs Saco De Jóias Transparente Anti Oxidação Brincos Colar Manual Saco De Armazenamento Portátil</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">29</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23398095032</div>
+        <div class="item-name">Brinquedo Mordedor Para Cachorro Saúde Dental Modelo de Osso Cor Aleatória</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">30</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23998224937</div>
+        <div class="item-name">Par Joelheira Futsal Vôlei Dança Handebol Original Para Adulto</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">31</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23592989392</div>
+        <div class="item-name">Dispenser 4 em 1 Cortador Papel Filme Aluminio Porta Papel Toalha Tempero Organizador de Cozinha</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">32</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23794230257</div>
+        <div class="item-name">Laços De Cabelo Elásticos Estilo Coreano Para Crianças , Faixas Não Danificadas Meninas , Acessórios ABCSHOP</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">33</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19825925551</div>
+        <div class="item-name">Joelheira Compressão Ortopedica Articulada Apoio Reforçado - Abcshop</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">34</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23793581426</div>
+        <div class="item-name">Pote De Vidro Hermético Tampa De Bambu 650ml Com Colher De Bambu</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">35</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20099202888</div>
+        <div class="item-name">Luminária De Mesa Recarregáveis Led Com Proteção Os Olhos Usb Iluminaria Abajur Lâmpada De Mesa Para Quarto Dormitório</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">36</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21098201988</div>
+        <div class="item-name">Conjunto 7 Organizadores Multiuso para Gavetas, Armários, Geladeiras Potes em Acrílico</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">37</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58256578086</div>
+        <div class="item-name">Kit 4 Pincéis de Maquiagem Multifuncionais Duo Ponta – Pincéis Faciais para Base, Corretivo e Blush</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">38</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58203609814</div>
+        <div class="item-name">Conjunto De Gravata De Cabelo Colorida De 875 Peças Para Meninas | Acessórios De Arco De Unicórnio E Estrela , Ideais Pr</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">39</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58257227436</div>
+        <div class="item-name">Escova Térmica de Cabelo com Cerdas de Javali – Secagem Rápida e Modelagem Profissional</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">40</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22898004031</div>
+        <div class="item-name">Maleta Estojo Porta Relógio Para 6 Unidades Preto</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">41</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23694665125</div>
+        <div class="item-name">Caneta Paint Original Reparadora Pintura Automotiva Permanente Não Sai Na Água Tira Riscos Carro Moto Retoque de Placa</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">42</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23299348273</div>
+        <div class="item-name">Pente De Cabelo De Bambu De 4 Peças Almofada De Ar Dente Largo Cauda De Rato Presente De Feriado</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">43</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23299393172</div>
+        <div class="item-name">Escova De Cabelo Térmica Amarela ou Rosa Madeira Mista Com Cerdas De Javali</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">44</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22697735980</div>
+        <div class="item-name">Kits De 24/36/48/60/80 Cores Caneta Marcadora Com Ponta Dupla/Pintura De Arte/Aquarela/Material Escolar</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">45</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22494643218</div>
+        <div class="item-name">Luzes De Fadas LED De Fio De Cobre De 2M-Mini Cordas De Luz Para Quarto , Casamento , Festa E Decoração De Natal</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">46</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58258109726</div>
+        <div class="item-name">Pulverizador Snow Foam Lavadora Espuma Manual 2 Litros Com 2 Bicos profissional Cor Preta</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">47</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58256484287</div>
+        <div class="item-name">Farol 7 Ou 5.7 Polegadas Redondo Angel Eyes Defender LED</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">48</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58256432212</div>
+        <div class="item-name">Pá Higiênica De Areia para Gatos Peneira Coletora Aço Inox Cod:78393</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">49</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58250881513</div>
+        <div class="item-name">6 Pçs Laços De Cabelo Elásticos Altos Crianças Flor Arco Headbands Faixas De Toalha Macia Para Rabos De Cavalo Suaves</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">50</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22697084701</div>
+        <div class="item-name">Conjunto Capa De Chuva Roupa Para Motoqueiros Ciclistas Impermeável Calça Jaqueta C/ Capuz - Abcshop</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">51</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22893880422</div>
+        <div class="item-name">24/36/48/60/80 Peças Caneta Marcadora De Ponta Dupla Conjunto De Canetas De Aquarela Especial</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div></div>
+  <div class="section-title">Como funciona</div>
+  <div class="how">
+    <ol>
+      <li>Acesse <strong>Afiliados do Vendedor</strong> no Seller Centre e adicione os produtos acima em uma campanha com qualquer percentual de comissão.</li>
+      <li>Mantenha cada produto <strong>ativo por pelo menos 30 dias</strong>.</li>
+      <li>Receba <strong>R$ 300 de crédito por produto</strong> — os créditos são acumulativos.</li>
+      <li>Use o crédito para pagar qualquer comissão de afiliados da sua loja.</li>
+      <li>Pagamentos processados semanalmente, em até 10 dias após completar os 30 dias.</li>
+    </ol>
+  </div>
+  <a class="cta" href="https://seller.shopee.com.br/portal/web-seller-affiliate" target="_blank">Ir para Afiliados do Vendedor →</a>
+  <footer>
+    <p>Dúvidas? Fale com seu gerente ou chame <strong>daniel.nunes</strong> no SeaTalk.</p>
+    <p style="margin-top:6px;">Shopee Brasil · Afiliados do Vendedor · Iniciativa SKU Expansion</p>
+  </footer>
+</main>
+</body>
+</html>

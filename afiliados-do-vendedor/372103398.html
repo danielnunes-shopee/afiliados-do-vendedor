@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiliados do Vendedor – ADS-store</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--orange:#EE4D2D;--orange-light:#fff3f0;--dark:#1a1a1a;--mid:#555;--soft:#888;--line:#e8e8e8;--bg:#f7f7f7;--white:#ffffff;--green:#1a7a4a;--green-bg:#edf7f2}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);min-height:100vh}
+  header{background:var(--orange);padding:0 24px;display:flex;align-items:center;height:56px}
+  .logo{font-size:22px;font-weight:700;color:var(--white);letter-spacing:-0.5px}
+  .logo span{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;vertical-align:middle}
+  main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+  .greeting{margin-bottom:28px}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+  h1{font-size:26px;font-weight:700;line-height:1.25;color:var(--dark)}
+  h1 strong{color:var(--orange)}
+  .greeting p{margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6}
+  .summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:6px}
+  .card .value{font-size:28px;font-weight:700;color:var(--dark)}
+  .card.highlight{background:var(--green-bg);border-color:#b2dfc7}
+  .card.highlight .value{color:var(--green)}
+  .section-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .items{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+  .item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:16px}
+  .item-rank{width:28px;height:28px;border-radius:50%;background:var(--orange-light);color:var(--orange);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .item-rank.top{background:var(--orange);color:var(--white)}
+  .item-info{flex:1;min-width:0}
+  .item-id{font-size:11px;color:var(--soft);font-weight:500;margin-bottom:3px}
+  .item-name{font-size:14px;font-weight:500;color:var(--dark);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .item-reward{background:var(--green-bg);color:var(--green);font-size:13px;font-weight:700;padding:5px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+  .how{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:28px}
+  .how h3{font-size:14px;font-weight:600;margin-bottom:14px}
+  .how ol{padding-left:18px}
+  .how ol li{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:8px}
+  .how ol li strong{color:var(--dark)}
+  .cta{display:inline-block;background:var(--orange);color:var(--white);font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none;width:100%;text-align:center}
+  footer{text-align:center;margin-top:40px;font-size:12px;color:var(--soft);line-height:1.6}
+  footer a{color:var(--orange);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="logo">shopee <span>Afiliados do Vendedor</span></div></header>
+<main>
+  <div class="greeting">
+    <div class="eyebrow">Iniciativa exclusiva</div>
+    <h1>Olá, <strong>ADS-store</strong> 👋</h1>
+    <p>Selecionamos produtos da sua loja com alto potencial de vendas via afiliados. Adicione-os à sua campanha e ganhe créditos para usar em comissões.</p>
+  </div>
+  <div class="summary">
+    <div class="card"><div class="label">Produtos elegíveis</div><div class="value">5</div></div>
+    <div class="card highlight"><div class="label">Crédito total a receber</div><div class="value">R$ 1.700</div></div>
+  </div>
+  <div class="section-title">Seus produtos elegíveis</div>
+  <div class="items">
+    <div class="item">
+      <div class="item-rank top">1</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22893419815</div>
+        <div class="item-name">Escova De Alisamento Capilar Alisador De Cabelo Aquecido Recarregável Mini Pente Portátil</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">2</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22597307453</div>
+        <div class="item-name">Mouse sem fio dual band receptor nano 2,4ghz / Bluetooth RGB recarregável MS-S350L</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">3</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22135275342</div>
+        <div class="item-name">Antena Digital Amplificada Interna e Externa 1.5-5 Metros Base Imã Prova d'água 4DBI HDTV/UHF/VHF</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">4</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20597664676</div>
+        <div class="item-name">Kit De Ferramentas 46 Peças Jogo De Soquetes Chave Catraca Reversível Com Maleta Jogo De Ferramentas Completo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">5</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22397507411</div>
+        <div class="item-name">Kit 13 Higiene Cuidado Bebê Recém Nascido Essencial 13 Peças Cuidados Com O Bebê Recém Cortador Escova Cabelo Unha Pente</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">6</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21098006467</div>
+        <div class="item-name">Kit Alicate Crimpar Descascador 1200 Terminais Ilhós Tubular</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">7</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18299260537</div>
+        <div class="item-name">Escova Rotativa Elétrica Secador de cabelo Professinal 2 em 1  110v e 220v</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">8</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23298826559</div>
+        <div class="item-name">Cabeçote Rebitador para Furadeira Parafusadeira Ferramentas Reparo Metal 4 bicos + Chaves</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">9</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23197089131</div>
+        <div class="item-name">Multímetro Digital DT-830 com bateria e ponta de teste (SEM BIPE)</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">10</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23028611454</div>
+        <div class="item-name">Multímetro digital MD-180L fundo iluminado com BIPE e bateria e pontas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">11</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18099410917</div>
+        <div class="item-name">Torneira Elétrica Para Cozinha Banheiro Com Visor de Temperatura Regulagem e Giratória 360° Aço Inoxidável 110V</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">12</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58250367326</div>
+        <div class="item-name">Oferta especial Bola De Brinquedo Elétrico, Interativa Para Gatos Com Sensor de Movimento Treinamento de gatos auto-move</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">13</div>
+      <div class="item-info">
+        <div class="item-id">ID: 6276111419</div>
+        <div class="item-name">Mini Teclado Controle Sem Fio Para Smart Tv  Pc</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">14</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19999249755</div>
+        <div class="item-name">Kit Jogo de Alicates p/ Corte Eletrônico Artesanato & Bijuterias</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">15</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19399846284</div>
+        <div class="item-name">Lixa 5 em 1 Elétrica de Unhas Portátil – Sem Fio/ Recarregável/ Manicure e Pedicure Profissional</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">16</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22598956055</div>
+        <div class="item-name">Depilador De Cristal Indolor Reutilizável Ferramenta De Beleza Fácil De Limpar Seguro</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">17</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21997617187</div>
+        <div class="item-name">Carregador Carro Transmissor Fm Bluetooth Veicular X8 Mp3 Rádio</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">18</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23397686056</div>
+        <div class="item-name">Aplicador Metal De Fita Adesiva Larga 50mm - De 50m À 300m</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">19</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22794354872</div>
+        <div class="item-name">Luzes De Fadas LED De Fio De Cobre De 2M-Mini Cordas De Luz Para Quarto , Casamento , Festa E Decoração De Natal</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">20</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21699246279</div>
+        <div class="item-name">Mini Lanterna Tática Militar Longo Alcance T6 LED Recarregável USB Luz Branco DT-62</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">21</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22594184374</div>
+        <div class="item-name">Garrafas Dobráveis De Água Silicone Portáteis Reutilizáveis Ginásio De Viagem De Grande Capacidade Para Crianças</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">22</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23694045684</div>
+        <div class="item-name">Kit 3 Formas de Silicone Quadrada 16x16cm Assadeira Air Fryer e Forno Forma para Fritadeira Elétrica com Alça</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">23</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23994681466</div>
+        <div class="item-name">Mini Máquina de Lavar 1L Portátil Dobrável com Centrífuga para Roupas Pequenas Intímas Moderna</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">24</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58253285844</div>
+        <div class="item-name">Ondulador Profissional 2 Barris 32mm 110V/220V – Cerâmico com Temperatura Ajustável</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">25</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20797615738</div>
+        <div class="item-name">Fone F9-5 Sem fio - Bluetooth V5.3 - Carregador de celular - O melhor F9 do mercado - Original!</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">26</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23592813825</div>
+        <div class="item-name">Suporte Magnético Forte Para Telefone De Carro Giratório Smartphone De Celular Dobrável Alta Qualidade KA-C088</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">27</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21099299698</div>
+        <div class="item-name">Estojo Caixa Organizadora Porta Comprimidos Cápsulas Compacto De Bolsa Viagem Semanal Divisórias Manhã Noite</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">28</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21899241394</div>
+        <div class="item-name">Kit de 6 Facas Churrasco inox cozinha Profissional Antiaderente-envio imediato</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">29</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23994390407</div>
+        <div class="item-name">Luminária Capivara Luz Noturna/ luz fofa LED Luz Noturna Para Dormir</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">30</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21199189319</div>
+        <div class="item-name">Sirene de Alarme Alto Falante Multifuncional 7 tons Microfone Escola Empresas 120dB 12V</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">31</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18799662053</div>
+        <div class="item-name">Limpador a vapor Higienizador portátil 1000W Vapor Wasch 110V-220V</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">32</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23493847885</div>
+        <div class="item-name">Aparador Removedor de Pelos De Nariz Orelha Rosto Depilador Portátil Elétrico À Pilha Recarregável</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">33</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58205678993</div>
+        <div class="item-name">Macaco Hidráulico Tipo Garrafa 2,0 3,0 5,0 Toneladas Carro</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">34</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21597808267</div>
+        <div class="item-name">Multímetro Com Capacímetro Bip Original Digital Profissional BOM-6007</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">35</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21899190563</div>
+        <div class="item-name">Qc3.0 Carregador Do Telefone Móvel Do Carro De Carregamento Rápido Adaptador 3 Portas Soquete</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">36</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22398073660</div>
+        <div class="item-name">KIT Mouse sem fio + Mouse Pad Pequeno</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">37</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18598222360</div>
+        <div class="item-name">Kit Talheres Infantil Garfo Colher Com Estojo Aço Inox 304</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">38</div>
+      <div class="item-info">
+        <div class="item-id">ID: 9310112081</div>
+        <div class="item-name">Nível Laser Profissional Trena Level Pro3 Estágios Nivelador 3/4 bolhas de nivel</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">39</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23192810971</div>
+        <div class="item-name">Timer Temporizador Digital Programável Tomada 127v/220v 10A Utilizado Para Automação de Piscina e Outros TMD-TB91A</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">40</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22593398069</div>
+        <div class="item-name">Porta Joia Acrílico Luxo Com 3 Camadas Brinco Anel Compartimento caixa de armazenamento de jóias</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">41</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58202630884</div>
+        <div class="item-name">Mini Ventilador Portátil Recarregável Usb com suporte Flor e Personagens fofos Kawaii</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">42</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18399561119</div>
+        <div class="item-name">Porta Tempero Giratório Especiarias Inox Com 7 Peças Para Cozinha Pote de Vidro Para Temperos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">43</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22798779316</div>
+        <div class="item-name">Gancho Multiuso Suporte Com Adesivo De Porta Papel Toalha Alumínio Sem Furos Para Cozinha</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">44</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22398412053</div>
+        <div class="item-name">KIT 5 Panelas Aço inox com tampa de vidro temperado cozinha</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">45</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22199461416</div>
+        <div class="item-name">Luminária Meia Lua Estetica Mesa Spa Arco 3 Tons Ajustavel Salao Beleza  Limpeza De Pele</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">46</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22498544010</div>
+        <div class="item-name">Luminárias Lâmpada Led Sem fio com Sensor Presença recarregável LUZ FRIO/LUZ QUENTE</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">47</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23997135175</div>
+        <div class="item-name">Escova Barba Chapinha Modelador Pente Portatil Para Cabelo Masculino Pente Eletrico Alisadora</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">48</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19398278050</div>
+        <div class="item-name">Fatiador E Descascador 2 Em 1 Para Frutas, Legumes E Verduras INOX</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">49</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22193017160</div>
+        <div class="item-name">Guarda Roupa Dobrável Organizador De Roupas Portátil Multiuso Armário Organizador de Roupas Sapatos Multiuso</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">50</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22296338872</div>
+        <div class="item-name">Torneira Gourmet Com Filtro Sem Refil Cozinha Luxo Parede 1/4 De Volta WG03</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">51</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22299065691</div>
+        <div class="item-name">Alicate Rebitador com 40 Rebites Profissional Rebitadeira Manual 9,5 pol 24cm</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">52</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23994609276</div>
+        <div class="item-name">Garrafa Infantil BOLA Dobrável Eco silicone 500ML Retrátil Bolas De Futebol garrafa de esportes Ar Livre</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">53</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58254412152</div>
+        <div class="item-name">Calibrador de Pneus Pneumático Com Manômetro Bico Forte</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">54</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18399233731</div>
+        <div class="item-name">Corda De Pular Crossfit Mb Fit Jump Rope Pula Corda Exercícios Academia</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">55</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18099830410</div>
+        <div class="item-name">Trena De 50 Metros Fita De Fibra De Vidro Aberta 30m 50m 100m X 14mm</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">56</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23799114173</div>
+        <div class="item-name">Kit 10 Pastilhas para Limpeza de Máquinas de Lavar Roupas Efervescentes Multifuncional</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">57</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23594698464</div>
+        <div class="item-name">Alicate Vazador Furador 6 Furos Cinto Couro Chinelo Ajustável Cabo Emborrachado 9 Polegadas Profissional</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">58</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18097474912</div>
+        <div class="item-name">Munhequeira D/Pulso Tendinite Ortopedica Compressão Ajuste</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">59</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19999263092</div>
+        <div class="item-name">Máquina De Algodão Doce Portátil - 110v</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">60</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58254137946</div>
+        <div class="item-name">Jogo 4 Alicate para Anéis 7 Pol Profissional Aço Cromo Vanádio Trava Anel Extrator Interno Externo Bico Reto e Curvo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">61</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22594046506</div>
+        <div class="item-name">Kit Tábua Premuim Com Kit 6 Pecas de Facas de Corte Antibacteriana À Prova De Mofo 30cm Com Suporte Em Pé Para Cozinha</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">62</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58255070364</div>
+        <div class="item-name">Torneira Registro Maquina Lavar Roupa Louca Jardim 1/2x3/4 Metal SLT-02</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">63</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58259144091</div>
+        <div class="item-name">Kit 560 Peças Tubo Termo Retrátil Preto Ou Colorido Emendar Isolar Fios Cabos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">64</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58257314569</div>
+        <div class="item-name">Torneira Esfera Tanque Máquina 2 Saídas Bico 1/2  Parede Tanque Maquina</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">65</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23494299929</div>
+        <div class="item-name">Lenços De Papel Macio Descartável-Tong Papel  interfolha 5 dobras branco 400 folhas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">66</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18599202767</div>
+        <div class="item-name">Suporte magnético com poderoso imã neodimio celular universal potente automotivo para carro</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">67</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58253755150</div>
+        <div class="item-name">Kits Bits Ponteira Dupla Magnetica Imantada Com Limitador Parafusadeira ph2</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">68</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22597093744</div>
+        <div class="item-name">Detector Parede Tubo Cano Pvc Água Madeira Fio Scanner</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">69</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18899305822</div>
+        <div class="item-name">Suporte De Base Com Rodinha Para Geladeira Fogão Máquina Lavar Lousa Base Carrinho até 200kg</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">70</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22597690542</div>
+        <div class="item-name">Jogo de Cozinha Kit Com 12 Peças de Silicone, Utensílios e Copo Suporte para Cozinha Cabo de Madeira</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">71</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23293254145</div>
+        <div class="item-name">Tabua Magica Descongelar Rápido Alimentos Super Pratico e Resistente</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">72</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18299214844</div>
+        <div class="item-name">Capa Chuva com Gabardina grossa e comprida transparente reforçada reutilizável</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">73</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22897486961</div>
+        <div class="item-name">Câmera Externa Ip a Prova D'água com Infravermelho Alarme Wifi Hd Sensor De Movimento Bivolt 110/220</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">74</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23398350781</div>
+        <div class="item-name">Mini Retifica Profissional 130W 210 Peças Com Maleta Extensor Lixadeira 110V-220V</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">75</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22392967787</div>
+        <div class="item-name">Esguicho Bico Alta Pressão Para Mangueiras Com Três Tipos De Jato Diferentes</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">76</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23998686699</div>
+        <div class="item-name">Multímetro digital com Iluminação bipe bateria ponta de teste MD-200L</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">77</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58209240749</div>
+        <div class="item-name">Motor Lixadeira Strong 40.000RPM Unha Gel e Podologia Profissional 280gf 65W 110v-220v</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">78</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23997378600</div>
+        <div class="item-name">Ducha Higiênica Para Banheiro Completa 1,20m Chuveirinho Privada</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">79</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21097615563</div>
+        <div class="item-name">Carregador veicular automotivo 4x portas USB carregamento rápido extensão 1.8M 36W 8A</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">80</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22497771681</div>
+        <div class="item-name">Tomada Acendedor Cigarro Carro Auto Veicular Universal 12v</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div></div>
+  <div class="section-title">Como funciona</div>
+  <div class="how">
+    <ol>
+      <li>Acesse <strong>Afiliados do Vendedor</strong> no Seller Centre e adicione os produtos acima em uma campanha com qualquer percentual de comissão.</li>
+      <li>Mantenha cada produto <strong>ativo por pelo menos 30 dias</strong>.</li>
+      <li>Receba <strong>R$ 340 de crédito por produto</strong> — os créditos são acumulativos.</li>
+      <li>Use o crédito para pagar qualquer comissão de afiliados da sua loja.</li>
+      <li>Pagamentos processados semanalmente, em até 10 dias após completar os 30 dias.</li>
+    </ol>
+  </div>
+  <a class="cta" href="https://seller.shopee.com.br/portal/web-seller-affiliate" target="_blank">Ir para Afiliados do Vendedor →</a>
+  <footer>
+    <p>Dúvidas? Fale com seu gerente ou chame <strong>daniel.nunes</strong> no SeaTalk.</p>
+    <p style="margin-top:6px;">Shopee Brasil · Afiliados do Vendedor · Iniciativa SKU Expansion</p>
+  </footer>
+</main>
+</body>
+</html>

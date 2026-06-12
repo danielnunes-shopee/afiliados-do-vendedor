@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiliados do Vendedor – 3RD Fashion</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--orange:#EE4D2D;--orange-light:#fff3f0;--dark:#1a1a1a;--mid:#555;--soft:#888;--line:#e8e8e8;--bg:#f7f7f7;--white:#ffffff;--green:#1a7a4a;--green-bg:#edf7f2}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);min-height:100vh}
+  header{background:var(--orange);padding:0 24px;display:flex;align-items:center;height:56px}
+  .logo{font-size:22px;font-weight:700;color:var(--white);letter-spacing:-0.5px}
+  .logo span{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;vertical-align:middle}
+  main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+  .greeting{margin-bottom:28px}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+  h1{font-size:26px;font-weight:700;line-height:1.25;color:var(--dark)}
+  h1 strong{color:var(--orange)}
+  .greeting p{margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6}
+  .summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:6px}
+  .card .value{font-size:28px;font-weight:700;color:var(--dark)}
+  .card.highlight{background:var(--green-bg);border-color:#b2dfc7}
+  .card.highlight .value{color:var(--green)}
+  .section-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .items{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+  .item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:16px}
+  .item-rank{width:28px;height:28px;border-radius:50%;background:var(--orange-light);color:var(--orange);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .item-rank.top{background:var(--orange);color:var(--white)}
+  .item-info{flex:1;min-width:0}
+  .item-id{font-size:11px;color:var(--soft);font-weight:500;margin-bottom:3px}
+  .item-name{font-size:14px;font-weight:500;color:var(--dark);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .item-reward{background:var(--green-bg);color:var(--green);font-size:13px;font-weight:700;padding:5px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+  .how{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:28px}
+  .how h3{font-size:14px;font-weight:600;margin-bottom:14px}
+  .how ol{padding-left:18px}
+  .how ol li{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:8px}
+  .how ol li strong{color:var(--dark)}
+  .cta{display:inline-block;background:var(--orange);color:var(--white);font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none;width:100%;text-align:center}
+  footer{text-align:center;margin-top:40px;font-size:12px;color:var(--soft);line-height:1.6}
+  footer a{color:var(--orange);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="logo">shopee <span>Afiliados do Vendedor</span></div></header>
+<main>
+  <div class="greeting">
+    <div class="eyebrow">Iniciativa exclusiva</div>
+    <h1>Olá, <strong>3RD Fashion</strong> 👋</h1>
+    <p>Selecionamos produtos da sua loja com alto potencial de vendas via afiliados. Adicione-os à sua campanha e ganhe créditos para usar em comissões.</p>
+  </div>
+  <div class="summary">
+    <div class="card"><div class="label">Produtos elegíveis</div><div class="value">5</div></div>
+    <div class="card highlight"><div class="label">Crédito total a receber</div><div class="value">R$ 1.700</div></div>
+  </div>
+  <div class="section-title">Seus produtos elegíveis</div>
+  <div class="items">
+    <div class="item">
+      <div class="item-rank top">1</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8837750985</div>
+        <div class="item-name">Blusa Feminina Casaco Moletom Pelúcia Com Capuz Zíper Inverno Quentinha 3RD SD1472</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">2</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8858321815</div>
+        <div class="item-name">Jaqueta Bomber Feminina Forrada Corta Vento Capuz e Zíper Manga Longa 3RD SD901</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">3</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58204842845</div>
+        <div class="item-name">Blusa Feminina Tricot Canelado Suéter Manga Longa Modal Ajustada Inverno 3RD SD2010</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">4</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23494812860</div>
+        <div class="item-name">Casaco Feminino com Capuz e Zíper Manga Longa Mousse Inverno 3RD SD3023</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">5</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23998348031</div>
+        <div class="item-name">Blusa Feminina de Tricot Manga Longa com Zíper Cardigan Leve Inverno 3RD SD2016</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">6</div>
+      <div class="item-info">
+        <div class="item-id">ID: 12776412603</div>
+        <div class="item-name">Blusa Feminina de Tricot Canelado Manga Longa com Botões Suéter Inverno 3RD SD2012</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">7</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23934486658</div>
+        <div class="item-name">Calça Feminina Tricot Canelada Cintura Alta Reta Confortável Inverno 3RD SD2009</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">8</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21899835768</div>
+        <div class="item-name">Macacão Feminino Fitness Esportivo Canelado Poliamida Academia Elástico 3RD SD1486</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">9</div>
+      <div class="item-info">
+        <div class="item-id">ID: 17415605534</div>
+        <div class="item-name">Blusa Feminina Suéter Pelinho Grosso Gola Redonda Inverno 3RD SD2013</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">10</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23493911399</div>
+        <div class="item-name">Conjunto Feminino Tricot Blusa Manga Longa e Calça Pantalona Elegante Confortável Inverno 3RD SD2008</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">11</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8419642623</div>
+        <div class="item-name">Blusa Feminina Suéter Básica Manga Longa Tricot Lisa Inverno 3RD SD3004</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">12</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58254299557</div>
+        <div class="item-name">Blusa Feminina Mousse Suéter Zíper Gola Alta Manga Longa Inverno 3RD SD3008</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">13</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58254367169</div>
+        <div class="item-name">Suéter Feminino Blusa Inverno Manga Morcego Canelado Modal Casual 3RD SD2023</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">14</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58205249122</div>
+        <div class="item-name">Calça Feminina Resinada Cintura Alta Skinny Modeladora Couro Sintético Casual Inverno 3RD SD1426</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">15</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23797722957</div>
+        <div class="item-name">Vestido Curto Feminino Listrado Malha Fria Casual Verão 3RD SD1306</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">16</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22998736716</div>
+        <div class="item-name">Macacão Feminino Esportivo Canelado Poliamida Academia Elástico Fitness 3RD SD1485</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">17</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58251013978</div>
+        <div class="item-name">Calça Feminina Bolsa Legging Esportiva Canelada Poliamida Academia Elástica Fitness 3RD SD1689</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">18</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23798063156</div>
+        <div class="item-name">Calça Feminina Legging Esportiva Canelada Poliamida Academia Elástica Fitness 3RD SD1140/1438</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">19</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58204147311</div>
+        <div class="item-name">Suéter Feminino em Tricot Manga Longa Mousse Confortável Casual Inverno 3RD SD3027</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">20</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58256746099</div>
+        <div class="item-name">Saia Longa Feminina Paetê Cintura Alta Forrada Brilho Festa Elegante 3RD SD1882</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">21</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22798799706</div>
+        <div class="item-name">Macacão Feminino Fitness Esportivo Canelado Poliamida Academia Elástico 3RD SD1437</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">22</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58203764677</div>
+        <div class="item-name">Cardigan Feminino Tricot Alongado Aberto com Bolsos Manga Longa Inverno 3RD SD3009</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">23</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22834695164</div>
+        <div class="item-name">Blusa Feminina Suéter Morcego Tricot Canelado Modal Casual Elegante Inverno 3RD SD2014</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">24</div>
+      <div class="item-info">
+        <div class="item-id">ID: 3984840617</div>
+        <div class="item-name">Blusa Feminina Mousse Moletom Suéter com Capuz Manga Longa Inverno 3RD SD3024</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">25</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23893757490</div>
+        <div class="item-name">Macacão Feminino Fitness Esportivo Canelado Poliamida Academia Elástico 3RD SD1488</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">26</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23998456679</div>
+        <div class="item-name">Suéter Feminino em Tricot Manga Longa Gola Redonda Casual Inverno 3RD SD2049</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">27</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58203829089</div>
+        <div class="item-name">Conjunto Feminino Tricot  Suéter Mousse Blusa e Calça Confortável Inverno 3RD SD3015</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">28</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58254918335</div>
+        <div class="item-name">Blusa Suéter Feminino em Tricot Texturizado Manga Longa Casual Inverno 3RD SD2021</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">29</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58253357400</div>
+        <div class="item-name">Short Saia Feminino Cintura Alta com Cinto Casual Verão 3RD SD1794</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">30</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58205081703</div>
+        <div class="item-name">Suéter Blusa Feminina Mousse Tricot Gola Alta Manga Longa Inverno 3RD SD3030</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">31</div>
+      <div class="item-info">
+        <div class="item-id">ID: 10211949232</div>
+        <div class="item-name">Blusa Feminina Suéter Tricot Trançado Manga Longa Inverno 3RD SD2011</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">32</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21597408264</div>
+        <div class="item-name">Vestido Curto Feminino Liso Malha Fria Bolso Elegante Casaul Moda Verão 3RD SD1288</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">33</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23594813463</div>
+        <div class="item-name">Cardigan Feminino em Tricot Manga Longa Aberto Mousse Inverno 3RD SD3031</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">34</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22702605417</div>
+        <div class="item-name">Blusa Feminina de Tricot Manga Longa com Botões Cardigan Leve Inverno 3RD SD2071</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">35</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22394345627</div>
+        <div class="item-name">Macacão Feminino Fitness Esportivo Canelado Academia Poliamida Grossa 3RD SD1421</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">36</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58251762076</div>
+        <div class="item-name">Short Feminino Sarja Com Elastano Cinto Bolso Confortável Casual Moda 3RD SD1839</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">37</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19099895679</div>
+        <div class="item-name">Macacão Fitness Feminino Yoga Esportivo Canelada Poliamida Academia Elástica 3RD SD1518</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">38</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23193132928</div>
+        <div class="item-name">Conjunto Feminino Academia Canelado Poliamida Grossa Esportivo Fitness 3RD SD1415</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">39</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22899194192</div>
+        <div class="item-name">Saia de Paetê Longa Feminina Forrada Evangélica Elegante Moda 3RD SD1826</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">40</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58207144272</div>
+        <div class="item-name">Camisa Branco Blusa Feminina Social Manga Longa Gola Elegante Botão Casual 3RD SD1911</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">41</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22292925013</div>
+        <div class="item-name">Conjunto Feminino de Tricot Canelado Blusa Manga Longa Calça Pantalona Elegante Modal Inverno Elegante 3RD SD2018</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">42</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23097651920</div>
+        <div class="item-name">Calça Feminina Sarja Com Elastano Cinto Bolso Confortável Casual Moda 3RD SD999</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">43</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19015783014</div>
+        <div class="item-name">Blusa Suéter Feminina Alongada de Tricot Gola Alta Oversized Modal Inverno 3RD SD3035</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">44</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58254990404</div>
+        <div class="item-name">Conjunto Feminino Blusa com Saia Tricot Canelado Inverno Elegante 3RD SD2056</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">45</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22694396248</div>
+        <div class="item-name">Macacão Fitness Feminino Yoga Esportivo Canelada Poliamida Academia Elástica 3RD SD1517</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">46</div>
+      <div class="item-info">
+        <div class="item-id">ID: 4980317990</div>
+        <div class="item-name">Blusa Suéter Feminina de Tricot Gola V Manga Longa Básica Inverno 3RD SD3005/1002</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">47</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22692820279</div>
+        <div class="item-name">Camisa Branco Feminina Social Manga Longa Lisa Moda 3RD SD1446</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">48</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58203685447</div>
+        <div class="item-name">Cardigan Feminino Tricot com Botões Manga Longa Suéter Modal Inverno 3RD SD2081</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">49</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58260358883</div>
+        <div class="item-name">Conjunto Feminino Tricot Blusa Manga Longa e Calça Pantalona Elegante Modal Confortável Inverno 3RD SD2039</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">50</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22397449514</div>
+        <div class="item-name">Vestido Feminino Midi Canelado Suéter Modal Blusa Frio Inverno 3RD SD2007</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">51</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23598932755</div>
+        <div class="item-name">Shorts Duplo Feminino Fitness Academia Esportivo Yoga Elástico Poliamida Com Bolso 3RD SD1780</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">52</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22698413085</div>
+        <div class="item-name">Jaqueta Feminino Casaco Veludo Canelado Blusa Frio Inverno 3RD SD1433</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">53</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58205897307</div>
+        <div class="item-name">Camisa Social Feminina Manga Longa Lisa com Botões Elegante Casual 3RD SD1929</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">54</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58202555160</div>
+        <div class="item-name">Saia Feminina de Tule Festa Longa Brilho Forrada Evangélica Elegante Moda 3RD SD1883</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">55</div>
+      <div class="item-info">
+        <div class="item-id">ID: 16637746647</div>
+        <div class="item-name">Casaco Moletom de Pelinho Blusa Frio Feminino   3RD SD7091</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">56</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23298846283</div>
+        <div class="item-name">Macacão Feminino Fitness Academia Poliamida Esportivo Canelado Elástico Bojo 3RD SD1731</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">57</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22998828448</div>
+        <div class="item-name">Macacão Feminino Academia Canelado Esportivo Poliamida Fitness Bojo Removível 3RD SD1419</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">58</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23129034041</div>
+        <div class="item-name">Casaco Forrada Grosso Pelinho Teddy Inverno Feminino 3RD SD149</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">59</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22294716344</div>
+        <div class="item-name">Vestido Curto Feminino Festa Elegante Crepe Fecho Zíper Casamento Verão 3RD SD1597</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">60</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23294486379</div>
+        <div class="item-name">Blusa Feminina T-Shirt Camiseta Malha Canelado Estampado Casual Moda Verão 3RD SD1571</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">61</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23434998611</div>
+        <div class="item-name">Blusa Frio Masculino Suéter Listra Modal Inverno 3RD SD364</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">62</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23630337140</div>
+        <div class="item-name">Blusa Frio Casaco Feminino  Grosso Pelinho Teddy Inverno 3RD SD150</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">63</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22494562031</div>
+        <div class="item-name">Saia Midi de Renda Feminina Flor Forrada Evangélica Elegante Casaul Festa  3RD SD1749</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">64</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22998892858</div>
+        <div class="item-name">Calça Feminina Sarja Com Elastano Com Cinto Bolso Confortável Moda 3RD SD1532</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">65</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22394968700</div>
+        <div class="item-name">Blusa Feminina Tricot Listrado com Capuz Manga Longa Confortável Moda Inverno 3RD SD3014</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">66</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58260339686</div>
+        <div class="item-name">Casaco Feminino Tricot com Capuz e Zíper Modal Confortável Elegante Inverno SD3002</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">67</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58202035004</div>
+        <div class="item-name">Macacão Fitness Feminino Yoga Esportivo Canelada Poliamida Academia Bojo Elástica 3RD SD1815</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">68</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8719621419</div>
+        <div class="item-name">Blusa Básicas Feminina Canelado Poliamida Gola Redonda Liso Inverno 3RD SD1130</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">69</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22194444230</div>
+        <div class="item-name">Saia de Tule Longa Feminina Brilho Forrada Evangélica Elegante Moda 3RD SD1503</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">70</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23599303217</div>
+        <div class="item-name">Calça Feminina Cintura Alta Linho Pantalona com Cinto Elegante 3RD SD1185</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">71</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23394620163</div>
+        <div class="item-name">Blusa Feminina T-Shirt Camiseta Algodão Canelada Estampada Casual Moda Verão 3RD SD1844</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">72</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22499036413</div>
+        <div class="item-name">Saia de Renda Longa Feminina Flor Forrada Evangélica Elegante Moda 3RD SD1831</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">73</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8019627210</div>
+        <div class="item-name">Blusa Frio Feminina Suéter Tricot Moletom Canelada Modal inverna 3RD SD1045</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">74</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23698009939</div>
+        <div class="item-name">Vestido Curto Feminino De Festa Elegante Casamento Manga Bufante Com Bojo Verão 3RD SD1363/SD1593</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">75</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58201368047</div>
+        <div class="item-name">Blusa Jaqueta Feminina Esportiva Canelado Academia Fitness Zíper Gola Alta SD1865</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">76</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19499862756</div>
+        <div class="item-name">Vestido Longo Feminino Elegante Chiffon Com Bojo de Alcinha Festa Verão 3RD SD1552</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">77</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58201153726</div>
+        <div class="item-name">Short Feminino Sarja Com Elastano Listrado Elegante Cinto e Bolso Social Moda 3RD SD1854</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div></div>
+  <div class="section-title">Como funciona</div>
+  <div class="how">
+    <ol>
+      <li>Acesse <strong>Afiliados do Vendedor</strong> no Seller Centre e adicione os produtos acima em uma campanha com qualquer percentual de comissão.</li>
+      <li>Mantenha cada produto <strong>ativo por pelo menos 30 dias</strong>.</li>
+      <li>Receba <strong>R$ 340 de crédito por produto</strong> — os créditos são acumulativos.</li>
+      <li>Use o crédito para pagar qualquer comissão de afiliados da sua loja.</li>
+      <li>Pagamentos processados semanalmente, em até 10 dias após completar os 30 dias.</li>
+    </ol>
+  </div>
+  <a class="cta" href="https://seller.shopee.com.br/portal/web-seller-affiliate" target="_blank">Ir para Afiliados do Vendedor →</a>
+  <footer>
+    <p>Dúvidas? Fale com seu gerente ou chame <strong>daniel.nunes</strong> no SeaTalk.</p>
+    <p style="margin-top:6px;">Shopee Brasil · Afiliados do Vendedor · Iniciativa SKU Expansion</p>
+  </footer>
+</main>
+</body>
+</html>

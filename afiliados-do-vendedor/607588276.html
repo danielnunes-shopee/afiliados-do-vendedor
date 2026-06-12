@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiliados do Vendedor – Central Bebê</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--orange:#EE4D2D;--orange-light:#fff3f0;--dark:#1a1a1a;--mid:#555;--soft:#888;--line:#e8e8e8;--bg:#f7f7f7;--white:#ffffff;--green:#1a7a4a;--green-bg:#edf7f2}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);min-height:100vh}
+  header{background:var(--orange);padding:0 24px;display:flex;align-items:center;height:56px}
+  .logo{font-size:22px;font-weight:700;color:var(--white);letter-spacing:-0.5px}
+  .logo span{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;vertical-align:middle}
+  main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+  .greeting{margin-bottom:28px}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+  h1{font-size:26px;font-weight:700;line-height:1.25;color:var(--dark)}
+  h1 strong{color:var(--orange)}
+  .greeting p{margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6}
+  .summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:6px}
+  .card .value{font-size:28px;font-weight:700;color:var(--dark)}
+  .card.highlight{background:var(--green-bg);border-color:#b2dfc7}
+  .card.highlight .value{color:var(--green)}
+  .section-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .items{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+  .item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:16px}
+  .item-rank{width:28px;height:28px;border-radius:50%;background:var(--orange-light);color:var(--orange);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .item-rank.top{background:var(--orange);color:var(--white)}
+  .item-info{flex:1;min-width:0}
+  .item-id{font-size:11px;color:var(--soft);font-weight:500;margin-bottom:3px}
+  .item-name{font-size:14px;font-weight:500;color:var(--dark);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .item-reward{background:var(--green-bg);color:var(--green);font-size:13px;font-weight:700;padding:5px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+  .how{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:28px}
+  .how h3{font-size:14px;font-weight:600;margin-bottom:14px}
+  .how ol{padding-left:18px}
+  .how ol li{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:8px}
+  .how ol li strong{color:var(--dark)}
+  .cta{display:inline-block;background:var(--orange);color:var(--white);font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none;width:100%;text-align:center}
+  footer{text-align:center;margin-top:40px;font-size:12px;color:var(--soft);line-height:1.6}
+  footer a{color:var(--orange);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="logo">shopee <span>Afiliados do Vendedor</span></div></header>
+<main>
+  <div class="greeting">
+    <div class="eyebrow">Iniciativa exclusiva</div>
+    <h1>Olá, <strong>Central Bebê</strong> 👋</h1>
+    <p>Selecionamos produtos da sua loja com alto potencial de vendas via afiliados. Adicione-os à sua campanha e ganhe créditos para usar em comissões.</p>
+  </div>
+  <div class="summary">
+    <div class="card"><div class="label">Produtos elegíveis</div><div class="value">5</div></div>
+    <div class="card highlight"><div class="label">Crédito total a receber</div><div class="value">R$ 1.500</div></div>
+  </div>
+  <div class="section-title">Seus produtos elegíveis</div>
+  <div class="items">
+    <div class="item">
+      <div class="item-rank top">1</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22997903623</div>
+        <div class="item-name">Kit Mamadeiras Anticólica Easy Flow Buba Récem Nascido 120/270/330mL Nuvem Bico Confortável e Sedoso</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">2</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23593975878</div>
+        <div class="item-name">Kit de Mamadeiras com Chuquinha Menina Antivazamento Bico Redondo Primeiros Passos 50/150/240ml Rosa</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">3</div>
+      <div class="item-info">
+        <div class="item-id">ID: 47256892361</div>
+        <div class="item-name">Kit 2 Mamadeiras Buba Anticólica Bico Pétala Silicone Macio Easy Flow Antivazamento 120/270 mL</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">4</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22498019796</div>
+        <div class="item-name">Copo Caneca de Treinamento Infantil com Tampa e Alça Removível  330 mL Plasutil Bebê</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">5</div>
+      <div class="item-info">
+        <div class="item-id">ID: 11487936078</div>
+        <div class="item-name">Caneca Antivazamento Aprendizado Magia Com Alças +6 Meses Lillo 207ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">6</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22197316462</div>
+        <div class="item-name">Mamadeira Evolution Lillo com Alças Bico Redondo Tampa Antivazamento 240 mL +6 meses</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">7</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23798770557</div>
+        <div class="item-name">Chupeta Lillo 100% Silicone Ortodôntica para Bebê 0-6 Meses + Porta-Chupeta com Alça Plasútil</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">8</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18399096770</div>
+        <div class="item-name">Chupeta Lillo 100% Silicone Ortodôntica para Bebê 0-6 meses Soft Divertida com Alça Bico Anatômico Macio e Flexível</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">9</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23216841638</div>
+        <div class="item-name">Bico para Mamadeira Lillo Super Silicone Refil Fácil limpeza BPA free Transparente Tamanho universal</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">10</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23597082899</div>
+        <div class="item-name">Kit Chupetas Ortodônticas Lillo Funny Bico Silicone +6 Meses Dia e Noite Brilha no Escuro 2 Unidades</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">11</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22193989051</div>
+        <div class="item-name">Mamadeira Nuk Anticolica Controle de Temperatura Fluxo Variável Bico Silicone Extra Macio +6 m</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">12</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18999198745</div>
+        <div class="item-name">Caneca Aprendizagem Disney Válvula Antivazamento com Alças +6 Meses 207 mL</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">13</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20297807174</div>
+        <div class="item-name">Kit 3 Mamadeiras Lillo com Chuquinha 50/150/240 ml Bico Redondo + Escova de Lavar Mamadeira</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">14</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58251292694</div>
+        <div class="item-name">Mamadeira Nuk Anticolica Perfect Match 360mL Controle Temperatura Bico Macio +6m Fluxo Variável</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">15</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18139980474</div>
+        <div class="item-name">Copo de Treinamento com Alças Lillo Evolution  Antivazamento 240mL Mickey/Minnie</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">16</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22898475600</div>
+        <div class="item-name">Kit Bicos Mamadeira Nuk Perfect Match Bico Reto Válvula Anticolica Silicone Macio Fluxo Variável +0m</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">17</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23293407025</div>
+        <div class="item-name">Kit 3 Mamadeiras Easy Flow Buba Récem Nascido 120/270/330 mL Nuvem Bico Confortável e Sedoso</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">18</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20997199573</div>
+        <div class="item-name">Bico Ortodôntico Mamadeira Nuk First Choice Advanced Silicone Válvula Air System  Tamanho 2 6+ Meses</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">19</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22519046319</div>
+        <div class="item-name">Mamadeira Chuquinha Primeiros Passos 50ml Lillo com Bico Redondo Silicone Macio e Flexível com Tampa sem Bisfenol</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">20</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23093249018</div>
+        <div class="item-name">Kit 3 Mamadeiras Lillo Bico Reto com Chuquinha e Chupeta Ortodôntica 0-6 meses 100% Silicone</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">21</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19698774949</div>
+        <div class="item-name">Chupeta Nuk Star 0-6 meses Ortodôntica Bico Silicone Oral Fit  Estojo Esterilizável Rosa/Azul</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">22</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23998442874</div>
+        <div class="item-name">Esterilizador de Mamadeira e Chupeta Para Microondas Redondo 3 Peças Compacto e Portátil Plasútil</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">23</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23793970935</div>
+        <div class="item-name">Kit de Mamadeiras com Chuquinha Menino Antivazamento Bico Redondo Primeiros Passos 50/150/240ml Azul</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">24</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22593060234</div>
+        <div class="item-name">Pote Dosador Porta Leite em Pó com 3 Divisórias - Plasútil</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">25</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23096305782</div>
+        <div class="item-name">MAMADEIRA NUK CONTROLE DE TEMPERATURA BICO SILICONE ORTODÔNTICO FIRST CHOICE 300ML F2</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">26</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23097566464</div>
+        <div class="item-name">Copo Infantil de Treinamento Active Cup Nuk Antivazamento 300mL +12 meses First Choice 1 Unidade</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">27</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21298758265</div>
+        <div class="item-name">Bico Super Evolution Latex Macio e Flexível Redondo Valvula Air System 0+ Lillo Eco</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">28</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23693975856</div>
+        <div class="item-name">Kit de Mamadeiras com Chuquinha Neutro Antivazamento Bico Redondo Primeiros Passos 50/150/240ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">29</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19597614962</div>
+        <div class="item-name">Bico de Silicone Antivazamento Reposição para Copo de Treinamento Caneca Linha Super Evolution Lillo +6 meses</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">30</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19899491829</div>
+        <div class="item-name">Kit Completo Banho Cuidados com o Bebê Buba Care Hipoalergênico 100% Vegano Infantil</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">31</div>
+      <div class="item-info">
+        <div class="item-id">ID: 15866883840</div>
+        <div class="item-name">Bicos De Silicone Para Copo Treinamento Infantil De Transição Antivazamento First Choice Nuk</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">32</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20798983673</div>
+        <div class="item-name">Chupeta Nuk Star +18 meses Fase 3 Bico Oral Fit 2.0 Soft Flex</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">33</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22898078553</div>
+        <div class="item-name">Copo de Treinamento com Alças Lillo Evolution Antivazamento 150mL Bebedor em Silicone Macio +6 Meses</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">34</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20798957389</div>
+        <div class="item-name">Chupeta 100% Silicone Kuka Bico Reto 0-6 meses com Alça Design Ergonômico Higiênica e Fácil de Limpar</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">35</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19797613382</div>
+        <div class="item-name">Chupeta Lillo Soft Divertida Glow Ortodôntica 100% Silicone Brilha no Escuro com Alça +6 meses</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">36</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20497724221</div>
+        <div class="item-name">Kit 2 Bicos Silicone Reposição Para Copo Treinamento Nuk First Choice Antivazamento Air System</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">37</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22192103839</div>
+        <div class="item-name">Chupeta Kuka 100% Silicone Ortodôntica para bebê 0-6 meses com Alça</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">38</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23893601059</div>
+        <div class="item-name">Bico para Mamadeira Lillo Super e Lolly Válvula Anticólica Macio 100% Silicone 2 Unidades</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">39</div>
+      <div class="item-info">
+        <div class="item-id">ID: 16093152973</div>
+        <div class="item-name">Chupeta Soft Calming Bico Simétrico 100% Silicone Tamanho 2 +6 meses com Estojo Reutilizável</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">40</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20397679343</div>
+        <div class="item-name">Kit 3 Mamadeiras Lillo Evolution Bico Reto com Chuquinha e Chupeta Kuka 0-6 meses 100% Silicone</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">41</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22993715672</div>
+        <div class="item-name">Mamadeira Lillo Magia Bico de Silicone Anatômico 240 mL Tampa Antivazamento +6 Meses</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">42</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23792437619</div>
+        <div class="item-name">Chupeta Little Friends Simétrica Lillo 6+m  Bico de Silicone Tam 2  Rosa Neutra Glow  Sapinho Panda</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">43</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20576077422</div>
+        <div class="item-name">Mamadeira Nuk First Choice Controle de Temperatura Bico Silicone Válvula Nuk Air System 150 ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">44</div>
+      <div class="item-info">
+        <div class="item-id">ID: 16093719708</div>
+        <div class="item-name">Kit Chupetas Nuk Star Silicone Ortodôntico Brilha Escuro Estojo Esterilizável Dia/Noite +6 meses</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">45</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22191837681</div>
+        <div class="item-name">Chupeta  Nuk Sensitive Bico Ortodôntico 100% Silicone com Estojo Macia 0-6 meses Fase 1</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">46</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23796412457</div>
+        <div class="item-name">Chupeta Nuk Star +6 m S2 Bico Oral Fit 2.0 Soft Flex</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">47</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21671139994</div>
+        <div class="item-name">Mamadeira Nuk My First Ortodôntica Valvula Air System +6 Meses 300 mL Rosa e Azul</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">48</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23228944393</div>
+        <div class="item-name">Chupeta Soft Calming 100% Silicone 0-6m Arredondado Bico Simétrico com Estojo Reutilizável  Escudo Macio e Flexivel</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">49</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18297387482</div>
+        <div class="item-name">Kit Higiene Dental Bebê Escova de dentes I Primeiros Dentinhos Kuka +3meses Rosa/Azul Cerdas Macias</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div></div>
+  <div class="section-title">Como funciona</div>
+  <div class="how">
+    <ol>
+      <li>Acesse <strong>Afiliados do Vendedor</strong> no Seller Centre e adicione os produtos acima em uma campanha com qualquer percentual de comissão.</li>
+      <li>Mantenha cada produto <strong>ativo por pelo menos 30 dias</strong>.</li>
+      <li>Receba <strong>R$ 300 de crédito por produto</strong> — os créditos são acumulativos.</li>
+      <li>Use o crédito para pagar qualquer comissão de afiliados da sua loja.</li>
+      <li>Pagamentos processados semanalmente, em até 10 dias após completar os 30 dias.</li>
+    </ol>
+  </div>
+  <a class="cta" href="https://seller.shopee.com.br/portal/web-seller-affiliate" target="_blank">Ir para Afiliados do Vendedor →</a>
+  <footer>
+    <p>Dúvidas? Fale com seu gerente ou chame <strong>daniel.nunes</strong> no SeaTalk.</p>
+    <p style="margin-top:6px;">Shopee Brasil · Afiliados do Vendedor · Iniciativa SKU Expansion</p>
+  </footer>
+</main>
+</body>
+</html>

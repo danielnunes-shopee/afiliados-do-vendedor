@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiliados do Vendedor – Efácil Oficial</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--orange:#EE4D2D;--orange-light:#fff3f0;--dark:#1a1a1a;--mid:#555;--soft:#888;--line:#e8e8e8;--bg:#f7f7f7;--white:#ffffff;--green:#1a7a4a;--green-bg:#edf7f2}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);min-height:100vh}
+  header{background:var(--orange);padding:0 24px;display:flex;align-items:center;height:56px}
+  .logo{font-size:22px;font-weight:700;color:var(--white);letter-spacing:-0.5px}
+  .logo span{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;vertical-align:middle}
+  main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+  .greeting{margin-bottom:28px}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+  h1{font-size:26px;font-weight:700;line-height:1.25;color:var(--dark)}
+  h1 strong{color:var(--orange)}
+  .greeting p{margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6}
+  .summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:6px}
+  .card .value{font-size:28px;font-weight:700;color:var(--dark)}
+  .card.highlight{background:var(--green-bg);border-color:#b2dfc7}
+  .card.highlight .value{color:var(--green)}
+  .section-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .items{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+  .item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:16px}
+  .item-rank{width:28px;height:28px;border-radius:50%;background:var(--orange-light);color:var(--orange);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .item-rank.top{background:var(--orange);color:var(--white)}
+  .item-info{flex:1;min-width:0}
+  .item-id{font-size:11px;color:var(--soft);font-weight:500;margin-bottom:3px}
+  .item-name{font-size:14px;font-weight:500;color:var(--dark);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .item-reward{background:var(--green-bg);color:var(--green);font-size:13px;font-weight:700;padding:5px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+  .how{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:28px}
+  .how h3{font-size:14px;font-weight:600;margin-bottom:14px}
+  .how ol{padding-left:18px}
+  .how ol li{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:8px}
+  .how ol li strong{color:var(--dark)}
+  .cta{display:inline-block;background:var(--orange);color:var(--white);font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none;width:100%;text-align:center}
+  footer{text-align:center;margin-top:40px;font-size:12px;color:var(--soft);line-height:1.6}
+  footer a{color:var(--orange);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="logo">shopee <span>Afiliados do Vendedor</span></div></header>
+<main>
+  <div class="greeting">
+    <div class="eyebrow">Iniciativa exclusiva</div>
+    <h1>Olá, <strong>Efácil Oficial</strong> 👋</h1>
+    <p>Selecionamos produtos da sua loja com alto potencial de vendas via afiliados. Adicione-os à sua campanha e ganhe créditos para usar em comissões.</p>
+  </div>
+  <div class="summary">
+    <div class="card"><div class="label">Produtos elegíveis</div><div class="value">5</div></div>
+    <div class="card highlight"><div class="label">Crédito total a receber</div><div class="value">R$ 2.600</div></div>
+  </div>
+  <div class="section-title">Seus produtos elegíveis</div>
+  <div class="items">
+    <div class="item">
+      <div class="item-rank top">1</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21597976029</div>
+        <div class="item-name">Chuveiro Lorenzetti Loren Shower Eletrônica 7500W</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">2</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22494958483</div>
+        <div class="item-name">20 unidades Ração Whiskas Sachê Frango ao Molho 85g  - Leve 20 Pague 16</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">3</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58210339830</div>
+        <div class="item-name">20 unidades Ração Whiskas Sachê Carne ao Molho  85g - Leve 20 Pague 16</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">4</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23294930518</div>
+        <div class="item-name">Figurinhas Panini da Copa do Mundo 2026 - 100 Envelopes com 7 Figurinhas Display</div>
+      </div>
+      <div class="item-reward">+ R$ 1.000</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">5</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58257641404</div>
+        <div class="item-name">Kit Chocolate Ouro Branco 1Kg + Sonho de Valsa 1Kg</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">6</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58208309116</div>
+        <div class="item-name">Kit 3 Chocolates Lacta Oreo 540g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">7</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23294403143</div>
+        <div class="item-name">Chuveiro Ducha Fame Intense Eletrônica Preto</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">8</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18399603765</div>
+        <div class="item-name">Chocolate Bombom Lacta Oreo 540g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">9</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22692136767</div>
+        <div class="item-name">Purificador de Água de Mesa Colormaq Eletrônica, Branco, Bivolt</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">10</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22094451403</div>
+        <div class="item-name">Achocolatado Nescau Profissional Sache 2,01kg</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">11</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23498092247</div>
+        <div class="item-name">Biscoito Oreo Original Sabor Baunilha 18g - Display com 16 Unidades</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">12</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22393263180</div>
+        <div class="item-name">Chuveiro Ducha Lorenzetti Futura Multi 110V</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">13</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21399593726</div>
+        <div class="item-name">Chuveiro Ducha Eletrônica  Zagonel Moment Branco</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">14</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23293675190</div>
+        <div class="item-name">Chuveiro Ducha Zagonel Moment 4 Temperaturas Branco</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">15</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23098528230</div>
+        <div class="item-name">Chuveiro Lorenzetti Bella Ducha Ultra 4 Temperaturas Branca 5500W, 110V</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">16</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19698203418</div>
+        <div class="item-name">Chuveiro Lorenzetti Loren Shower Multi Temperaturas Branco</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">17</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23192310399</div>
+        <div class="item-name">Fralda Descartável Turma da Mônica Tamanho M - 4 Pacotes com 50 Fraldas - Total 200 Tiras</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">18</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58209436623</div>
+        <div class="item-name">Ar Condicionado Elgin 12000 BTUs 45HJFE12C2CF - Inverter Eco III, Wi-Fi, Interno + Externo Frio 220V</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">19</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19298100222</div>
+        <div class="item-name">Aparelho de Jantar/Chá Oxford Ryo Maresia 30 Peças</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">20</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23294930518</div>
+        <div class="item-name">PRÉ VENDA Figurinhas Panini da Copa do Mundo 2026 - 100 Envelopes com 7 Figurinhas Display</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">21</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22098173815</div>
+        <div class="item-name">Aparelho de Jantar/Chá Oxford Brisa - Cerâmica, 20 Peças, Bege</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">22</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22697907613</div>
+        <div class="item-name">Pia de Aço Inox Tramontina Cuba Central 120X52,5cm</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">23</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23298540897</div>
+        <div class="item-name">Chuveiro Lorenzetti Acqua Storm Ultra Branco 7800W 220v</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">24</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20397922057</div>
+        <div class="item-name">Porta Sanfonada PVC Plastilit 0,70x2,10m Cinza</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">25</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19099257146</div>
+        <div class="item-name">Conjunto de Assadeiras de Vidro Marinex com Tampa Vermelha 6 Peças</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">26</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23393010982</div>
+        <div class="item-name">Conjunto de Assadeiras de Vidro Marinex | Com Tampa Rosa 6 Peças</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">27</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18899716897</div>
+        <div class="item-name">Chocolate Lacta Ouro Branco Pacote 1kg</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">28</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23897581272</div>
+        <div class="item-name">Fogão de Piso Itatiaia 4 Bocas Star Clean New | Acendimento Manual, Preto</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">29</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18497729675</div>
+        <div class="item-name">Escada Mor Alumínio 6 Degraus Uso Doméstico</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">30</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21098031449</div>
+        <div class="item-name">Torneira Zagonel Luna 4 Temperaturas Branco 5500W</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">31</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19797683901</div>
+        <div class="item-name">Conjunto Assadeira Marinex 1576 com Tampa Cinza 6 Peças</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">32</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22992310273</div>
+        <div class="item-name">Fralda Descartável Turma da Mônica Tamanho XG - 4 Pacotes com 42 Fraldas - Total 168 Tiras</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">33</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18699551043</div>
+        <div class="item-name">Cozinha Completa Itatiaia Amanda 2023 | 1 Gaveta, 10 Portas, Branco/Preto</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">34</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22999295830</div>
+        <div class="item-name">Kit com 20 telhas PVC Plan Precon 2,42x0,88m</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">35</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58253826160</div>
+        <div class="item-name">Kit com 15 Telhas PVC Plan Precon 2,42x0,88m</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">36</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18597832300</div>
+        <div class="item-name">Tanquinho/Máquina de Lavar Roupas Semi-automática 10Kg Colormaq, LCS, Branco</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">37</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23293422141</div>
+        <div class="item-name">Conjunto de 24  Pratos Rasos Nadir Opaline - Vidro Branco Pétala 24 peças</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">38</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20297922127</div>
+        <div class="item-name">Porta Sanfonada PVC Plastilit 0,80x2,10m Mogno</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">39</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20399321558</div>
+        <div class="item-name">Escada Mor Alumínio 4 Degraus uso Doméstico</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">40</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21397926867</div>
+        <div class="item-name">Tanquinho/Máquina de Lavar Roupas Semi-automática 10kg Newmaq, Preto</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">41</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18498295042</div>
+        <div class="item-name">Chocolate Lacta Sonho de Valsa Pacote 1Kg</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">42</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21998002406</div>
+        <div class="item-name">Purificador de Ar Glade Automatic Spray Lavanda e Vanilla Refil 269ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">43</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20397922066</div>
+        <div class="item-name">Porta Sanfonada PVC Plastilit 0,70x2,10m Mogno</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">44</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58210345840</div>
+        <div class="item-name">Ração para Gatos 10,1kg Castrados Whiskas Carne</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">45</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20497748550</div>
+        <div class="item-name">Fralda Descartável Turma da Mônica Tamanho G - 4 Pacotes com 44 Fraldas - Total 176 Tiras</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">46</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18699301364</div>
+        <div class="item-name">Escada Alumínio Pratik 5 Degraus Uso Doméstico</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">47</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22593713336</div>
+        <div class="item-name">Aquecedor de Água Elétrico Lorenzetti Versátil Branco 220V 6400W</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">48</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22293436777</div>
+        <div class="item-name">Porta Sanfonada PVC Plastilit 0,70x2,10m Branco Neve</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">49</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58258373052</div>
+        <div class="item-name">Máquina de Lavar Roupas 14 Kg Brastemp BWJ14 - Automática, Tira Manchas Advanced, Branca</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">50</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22393242852</div>
+        <div class="item-name">Telha PVC Plan Precon Cerâmica 2,42x0,88m</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">51</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23493060526</div>
+        <div class="item-name">Torneira Elétrica Pratik 4 Temperaturas Branca/Cromada 4800W</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">52</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18599301412</div>
+        <div class="item-name">Escada Mor de Alumínio 5 Degraus, Uso Doméstico</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">53</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22697907587</div>
+        <div class="item-name">Pia Inox Ghel Plus 1200X530X95mm Cuba Central N4 Escorredor Concretada sem Válvula</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">54</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58209439275</div>
+        <div class="item-name">Forno Elétrico de Bancada Mondial 60 Litros FRN-60-BI Family Grill, 1800W, Preto/Inox</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">55</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58208846957</div>
+        <div class="item-name">Smart TV LCD LED 43" Philco P43CRA - Full HD com Wi-Fi, 2 USB, 3 HDMI, HDR10, Roku TV, 60Hz</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">56</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18699501870</div>
+        <div class="item-name">Tanquinho/Máquina de Lavar Roupas Semi-Automática 20,5Kg Newmaq Branca</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">57</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18399859135</div>
+        <div class="item-name">Porta Sanfonada PVC Multilit 60,0cm x 2,10m Cerejeira</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">58</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23193645307</div>
+        <div class="item-name">Purificador de Ar Glade Automatic Spray Frutas e Flores Refil 269ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">59</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19699586800</div>
+        <div class="item-name">Purificador de Ar Glade Refil Automatic Frescor Aguas Florais 269ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">60</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18399619187</div>
+        <div class="item-name">Ração Kitekat Carne Adulto 70g - Embalagem com 24 Unidades</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">61</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19499500819</div>
+        <div class="item-name">Tanquinho/Máquina de Lavar Roupas Semi-automática 10kg Newmaq, Branca</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">62</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19499452688</div>
+        <div class="item-name">Máquina de Lavar Roupas 12 Kg Colormaq LCA - Sistema Antimanchas, Filtro Duplo de Fiapos, Branca</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">63</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23293736795</div>
+        <div class="item-name">Torneira Zagonel Luna 4 Temperaturas Preto 5500W</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">64</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18497729689</div>
+        <div class="item-name">Escada Alumínio Pratik 4 Degraus Uso Doméstico</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">65</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21299500204</div>
+        <div class="item-name">Tanquinho/Máquina de Lavar Roupas Semi-Automática 20,5Kg Newmaq Preta</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">66</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18797999271</div>
+        <div class="item-name">Leite Condensado Semidesnatado Piracanjuba 395g Embalagem com 27 Unidades - 6% de gordura</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">67</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23597581789</div>
+        <div class="item-name">Torneira Elétrica Lorenzetti Easy 4 Temperaturas Branca Bica Alta 4800W, 110V</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">68</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20397748236</div>
+        <div class="item-name">Escada Mor Alumínio 8 Degraus uso Doméstico</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">69</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58259318628</div>
+        <div class="item-name">Purificador e Desodorizador Ar Glade Aparelho Auto Spray+Refil Lavanda e Vanilla 269ml + 2 Pilhas AA</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">70</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19297684718</div>
+        <div class="item-name">Conjunto de Assadeiras e Formas Marinex 10 Peças</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">71</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18597729660</div>
+        <div class="item-name">Escada Mor de Alumínio, 7 Degraus, Uso Doméstico</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">72</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22192940998</div>
+        <div class="item-name">Forno Elétrico de Bancada Best 60 Litros Plus</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">73</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22593713350</div>
+        <div class="item-name">Aquecedor de Água Elétrico Lorenzetti Versátil Branco 110v 5500w</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">74</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58258307031</div>
+        <div class="item-name">Kit Ouro Branco 1kg + Chocolate Lacta Oreo 540g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">75</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20397748281</div>
+        <div class="item-name">Escada Alumínio Pratik 7 Degraus Uso Doméstico</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">76</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23298540914</div>
+        <div class="item-name">Chuveiro Ducha Lorenzetti Advanced Multi Temperatura 7500W 220V</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">77</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20299495414</div>
+        <div class="item-name">Porta Sanfonada PVC Plastilit 0,80x2,10m Branco Neve</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">78</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18597729649</div>
+        <div class="item-name">Escada Mor Alumínio 3 Degraus uso Doméstico</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">79</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21098031441</div>
+        <div class="item-name">Torneira Eletrônica Zagonel Prima Touch Branco 5500W</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">80</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23798174494</div>
+        <div class="item-name">Ração Pedigree Raças Pequenas Carne/Vegetais 15kg</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">81</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21099604832</div>
+        <div class="item-name">Torneira Eletrônica Zagonel Prima Black Touch 5500W</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">82</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58260226074</div>
+        <div class="item-name">Forno Elétrico de Bancada Philco 66 Litros PFE66BM - 1800W, Preto</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">83</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58201954070</div>
+        <div class="item-name">Kit com 10 Telhas PVC Plan Precon 2,42x0,88m</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">84</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58209538039</div>
+        <div class="item-name">Ração Whiskas Gatos Castrados Peixe 10,1 Kg</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">85</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58260052090</div>
+        <div class="item-name">Biscoito Oreo Original Recheado Baunilha 18g - Kit com 4 Displays (64 Unidades)</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">86</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22293928154</div>
+        <div class="item-name">Fralda Descartável Turma da Mônica Tamanho P - 4 Pacotes com 62 Fraldas - Total 248 Tiras</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">87</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58251865680</div>
+        <div class="item-name">Freezer Horizontal Metalfrio 543 Litros DA550IF - Dupla Ação, Tecnologia Inverter, Branco, Bivolt</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">88</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18299606863</div>
+        <div class="item-name">Aparelho de Jantar/Chá Biona Lola 16 Peças</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">89</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23798093959</div>
+        <div class="item-name">Creme De Leite Piracanjuba Tetra Pack 200g - Embalagem c/ 27 unidades</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">90</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20397748283</div>
+        <div class="item-name">Escada Extensiva Mor Alumínio 6x2 Degraus</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">91</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23493060497</div>
+        <div class="item-name">Torneira Elétrica Lorenzetti Easy 4 Temperaturas Branca Bica Alta 5500W, 220V</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">92</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21897997265</div>
+        <div class="item-name">Adoçante Zero-Cal Sucralose Líquido 100ml - Embalagem com 2 Unidades</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">93</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23397507058</div>
+        <div class="item-name">Arame Ovalado Nelore PG 16 x 14 700Kgf 1000m</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">94</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23094398883</div>
+        <div class="item-name">Havaianas Slim Pets Rosa Chiffon</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">95</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23198691404</div>
+        <div class="item-name">Chocolate Nestlé Blend Barra 1kg</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">96</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19797990001</div>
+        <div class="item-name">Forno Elétrico de Bancada Best 60 Litros | 4 Resistências, Branco/Preto</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">97</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23997997653</div>
+        <div class="item-name">Conjunto de Taças 186ml SM Buffet Champanhe 24 Peças</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">98</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20497748236</div>
+        <div class="item-name">Escada Alumínio Pratik 8 Degraus Uso Doméstico</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">99</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21597979448</div>
+        <div class="item-name">Cozinha Completa Itatiaia Amanda 2023 | 1 Gaveta, 10 Portas, Branco Neve</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">100</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19598092741</div>
+        <div class="item-name">Aparelho de Jantar Nadir Opaline Menu 16 Peças</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">101</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18098122787</div>
+        <div class="item-name">Kit Vaso Sanitário Celite Convencional City + Acessórios de Fixação Assento PP</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">102</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22293436803</div>
+        <div class="item-name">Porta Sanfonada PVC Plastilit 0,60X2,10m Branco Neve</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">103</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18097716277</div>
+        <div class="item-name">Conjunto Assadeira Marinex Opaline Oval 0,6/1,0/1,4L 3 Peças</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">104</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22293436865</div>
+        <div class="item-name">Porta Sanfonada PVC Plastilit 0,80x2,10m Cinza</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">105</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23298540918</div>
+        <div class="item-name">Chuveiro Lorenzetti Acqua Duo Multi Temperatura Preto/Cromado 7800W</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">106</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22593555567</div>
+        <div class="item-name">Tela Piau Morlan Mangueirão 3x16x1,50m 50m</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">107</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22798010819</div>
+        <div class="item-name">Cortador de Pisos e Azulejos Famastil 90cm</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">108</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18098122795</div>
+        <div class="item-name">Kit Vaso Sanitário Celite Convencional Like Branco + Acessórios de Fixação Assento PP</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div></div>
+  <div class="section-title">Como funciona</div>
+  <div class="how">
+    <ol>
+      <li>Acesse <strong>Afiliados do Vendedor</strong> no Seller Centre e adicione os produtos acima em uma campanha com qualquer percentual de comissão.</li>
+      <li>Mantenha cada produto <strong>ativo por pelo menos 30 dias</strong>.</li>
+      <li>Receba <strong>R$ 520 de crédito por produto</strong> — os créditos são acumulativos.</li>
+      <li>Use o crédito para pagar qualquer comissão de afiliados da sua loja.</li>
+      <li>Pagamentos processados semanalmente, em até 10 dias após completar os 30 dias.</li>
+    </ol>
+  </div>
+  <a class="cta" href="https://seller.shopee.com.br/portal/web-seller-affiliate" target="_blank">Ir para Afiliados do Vendedor →</a>
+  <footer>
+    <p>Dúvidas? Fale com seu gerente ou chame <strong>daniel.nunes</strong> no SeaTalk.</p>
+    <p style="margin-top:6px;">Shopee Brasil · Afiliados do Vendedor · Iniciativa SKU Expansion</p>
+  </footer>
+</main>
+</body>
+</html>

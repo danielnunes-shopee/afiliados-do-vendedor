@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiliados do Vendedor – NUVEM BOX</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--orange:#EE4D2D;--orange-light:#fff3f0;--dark:#1a1a1a;--mid:#555;--soft:#888;--line:#e8e8e8;--bg:#f7f7f7;--white:#ffffff;--green:#1a7a4a;--green-bg:#edf7f2}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);min-height:100vh}
+  header{background:var(--orange);padding:0 24px;display:flex;align-items:center;height:56px}
+  .logo{font-size:22px;font-weight:700;color:var(--white);letter-spacing:-0.5px}
+  .logo span{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;vertical-align:middle}
+  main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+  .greeting{margin-bottom:28px}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+  h1{font-size:26px;font-weight:700;line-height:1.25;color:var(--dark)}
+  h1 strong{color:var(--orange)}
+  .greeting p{margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6}
+  .summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:6px}
+  .card .value{font-size:28px;font-weight:700;color:var(--dark)}
+  .card.highlight{background:var(--green-bg);border-color:#b2dfc7}
+  .card.highlight .value{color:var(--green)}
+  .section-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .items{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+  .item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:16px}
+  .item-rank{width:28px;height:28px;border-radius:50%;background:var(--orange-light);color:var(--orange);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .item-rank.top{background:var(--orange);color:var(--white)}
+  .item-info{flex:1;min-width:0}
+  .item-id{font-size:11px;color:var(--soft);font-weight:500;margin-bottom:3px}
+  .item-name{font-size:14px;font-weight:500;color:var(--dark);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .item-reward{background:var(--green-bg);color:var(--green);font-size:13px;font-weight:700;padding:5px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+  .how{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:28px}
+  .how h3{font-size:14px;font-weight:600;margin-bottom:14px}
+  .how ol{padding-left:18px}
+  .how ol li{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:8px}
+  .how ol li strong{color:var(--dark)}
+  .cta{display:inline-block;background:var(--orange);color:var(--white);font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none;width:100%;text-align:center}
+  footer{text-align:center;margin-top:40px;font-size:12px;color:var(--soft);line-height:1.6}
+  footer a{color:var(--orange);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="logo">shopee <span>Afiliados do Vendedor</span></div></header>
+<main>
+  <div class="greeting">
+    <div class="eyebrow">Iniciativa exclusiva</div>
+    <h1>Olá, <strong>NUVEM BOX</strong> 👋</h1>
+    <p>Selecionamos produtos da sua loja com alto potencial de vendas via afiliados. Adicione-os à sua campanha e ganhe créditos para usar em comissões.</p>
+  </div>
+  <div class="summary">
+    <div class="card"><div class="label">Produtos elegíveis</div><div class="value">5</div></div>
+    <div class="card highlight"><div class="label">Crédito total a receber</div><div class="value">R$ 1.500</div></div>
+  </div>
+  <div class="section-title">Seus produtos elegíveis</div>
+  <div class="items">
+    <div class="item">
+      <div class="item-rank top">1</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21597989744</div>
+        <div class="item-name">Fone de ouvido com fio com caixa  QKZ ak6 original Jack 3.5mm original esportivos envio imediato</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">2</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22598115461</div>
+        <div class="item-name">KIT 54/108/216 pares 1CM  Adesivo Pontos De Velcro círculo redondo bolinha dupla face papelaria pedagógico</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">3</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22598408356</div>
+        <div class="item-name">Cadeado TSA Portátil com Segredo Senha Cabo Aço Para Mala Viagens Bagagem Armario Academia</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">4</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22898783617</div>
+        <div class="item-name">5M com 5 Furos Borracha Vedação Porta Carro Universal, Extra Grossa, Anti-Ruído, Uno Gol Palio HB20</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">5</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21998258741</div>
+        <div class="item-name">Cadeado com Senha-Redondo Colorido Trava Cabo de Aço-Academia/Mala  Mochila Viagem/Bagagem/Armario</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">6</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22998089623</div>
+        <div class="item-name">Caneta Detectora De Energia Elétrica Voltímetro Teste Tensão Sonora com Pilhas AAA</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">7</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22293576535</div>
+        <div class="item-name">Kit 10 UN /30 UN/50 UN  - Organizador de Cabos e Fios Abraçadeira multiuso Prendedor reutilizável</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">8</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22998161210</div>
+        <div class="item-name">Brinquedos Squishy  De Aperto De Pata De Gato Pintinho Kawaii Soft Squeeze Com Bola  para Alívio De Estresse Presentes</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">9</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22898052834</div>
+        <div class="item-name">Kit Removedor de Cravos 8 Peças com Estojo Aço Inox Ferramentas de Limpeza Facial Portátil</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">10</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58257632433</div>
+        <div class="item-name">Controle sem fio Vibração Dupla - Compatível com PS 3, Celular e Windows</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">11</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23393561824</div>
+        <div class="item-name">108/216pares Pontos De Velcro Fecho de contato redondo dupla face artesanato pedagógico 1cm/2cm</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">12</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21798139776</div>
+        <div class="item-name">Pintinhos Squishy Kawaii Fofo– Brinquedo TRP Antiestresse, Tamanho Grande e Mini, Chaveiro Decorativo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">13</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23298668871</div>
+        <div class="item-name">Brinquedo Antiestresse de Patinha Para Crianças e Adultos, Alívio do Estresse e Ansiedade 2 Tamanhos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">14</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58207169235</div>
+        <div class="item-name">Controle Bluetooth Sem Fio , Compatível com PC, Android e Console P4,  Vibração + Touchpad</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">15</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22594048495</div>
+        <div class="item-name">Mini Fotografia Luz RGB /Branco De Preenchimento Panel led / Móvel Câmera /Vídeo /Tiro Ao Ar Livre /Suave Luz /Portátil</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">16</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18298029859</div>
+        <div class="item-name">Luminária De Teto  LED Dobrável Lâmpada De Pétalas 6000K 28w Para Quarto / Sala  / E27 Mini Luz</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">17</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19597989995</div>
+        <div class="item-name">Papel antibrilho 100 Folhas / matificante /Absorvente para Rosto pele oleosa removedor de oleosidade</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">18</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23893592122</div>
+        <div class="item-name">Adaptador USB Tipo C 3 em 1-HDMI+ USB3.0+ PD Para Macbook,Ipad Pro,Notebook e Celulares Compatíveis Hub</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">19</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23794139027</div>
+        <div class="item-name">Carregador Duplo de Controle PS/5,Com Base de Carregamento P5 ,R ápido e LED,eficiente,ideal para jogadores</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">20</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20798264086</div>
+        <div class="item-name">Mini Luz LED Bolinha Sem Fio p/ Decoração Balão e Garrafa Kit Com 50/100/150 Un Festa DIY</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">21</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18898321091</div>
+        <div class="item-name">Mini Ventilador USB com Suporte Flexível/Portátil Recarregável,para Carrinho de Bebê-Silencioso</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">22</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58256721421</div>
+        <div class="item-name">Paleta de Mistura Maquiagem em Aço Inoxidável Profissional p/ Base, Corretivo e Cosméticos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">23</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22694690358</div>
+        <div class="item-name">6M Fita Veda Frestas-Porta Janelas Adesivo Vedação Batente Protetora Ruído Poeira Portão Sem Poeira</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">24</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18199601570</div>
+        <div class="item-name">Carregador Controle  Base Duplo Charge Para Playst.4 /P4 /PLAY 4</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">25</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23093655205</div>
+        <div class="item-name">Clipe Nasal Expansor Respiratório C/15 Pares de Adesivos Nasais Magnéticos p/ Melhorar a Respiração</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">26</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19599603922</div>
+        <div class="item-name">Rolo de velcro 5 metros x 15mm Abraçadeira fita Organizador Cabos Fios Dupla Face Enrolar</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">27</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23394552434</div>
+        <div class="item-name">Cinta Térmica Massageadora Aquecimento e Vibração Para Joelhos, Punhos e Tornozelos Alívio da Dor USB Recarregáv</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">28</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23393583344</div>
+        <div class="item-name">Kit 20 UN / Kit 40 UN  - Organizador de Cabos e Fios Abraçadeira multiuso Prendedor - Organizador reutilizável</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">29</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19397997713</div>
+        <div class="item-name">Gatilho De Disparo Apontando O Controlador De Jogo L1 R1 Botão De joystick Móvel gamepad P/ Celular IOS/ Android</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">30</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23893142348</div>
+        <div class="item-name">5 Metros Fecho De Contato Auto Adesivo Macho e Fêmea 16/20/25mm Fita Fixadora P/Grudar Tela Mosquiteiro Roupas Quadros</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">31</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23394065553</div>
+        <div class="item-name">Máquina Infantil de Fazer Bottons DIY – Crie Bottons Personalizados com Facilidade e Criatividade para Presentes</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">32</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23698768548</div>
+        <div class="item-name">Trava Tranca Com Senha para Geladeira Freezer Porta Janela Gaveta Não Precisa Furar PRETO</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">33</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23099436914</div>
+        <div class="item-name">Plataforma Giratória Elétrica 360°，3 Velocidades Ajustáveis para Fotos Vídeos e Exposição</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">34</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21697983185</div>
+        <div class="item-name">Antena HD de TV Digital 5 METROS de Cabo 3003</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">35</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22093953193</div>
+        <div class="item-name">Kit Microfone de Cabeça Sem Fio Headset 2.4GHz -Transmissor + Receptor-Para Aula, Apresentações, Academia,duplo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">36</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23798055133</div>
+        <div class="item-name">Controle De Xbox 360 Com Fio Para Video Game cabo 1,9 metros</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">37</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23098645487</div>
+        <div class="item-name">Lanterna tipo Caneta  LED com Pilhas para Exame Médico e Cuidados Pessoais de bolso LED</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">38</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23794138195</div>
+        <div class="item-name">Kit 3 Necessaires de Tela com Zíper, Organizadoras/Bolsas de Maquiagem, Higiene  e Essenciais para Viagem</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">39</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58205443492</div>
+        <div class="item-name">Cadeado Cartoon em Silicone Núcleo de Metal Fofo Cores Sortidas p/ Mochila, Estojo, Gaveta e Viagem</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div></div>
+  <div class="section-title">Como funciona</div>
+  <div class="how">
+    <ol>
+      <li>Acesse <strong>Afiliados do Vendedor</strong> no Seller Centre e adicione os produtos acima em uma campanha com qualquer percentual de comissão.</li>
+      <li>Mantenha cada produto <strong>ativo por pelo menos 30 dias</strong>.</li>
+      <li>Receba <strong>R$ 300 de crédito por produto</strong> — os créditos são acumulativos.</li>
+      <li>Use o crédito para pagar qualquer comissão de afiliados da sua loja.</li>
+      <li>Pagamentos processados semanalmente, em até 10 dias após completar os 30 dias.</li>
+    </ol>
+  </div>
+  <a class="cta" href="https://seller.shopee.com.br/portal/web-seller-affiliate" target="_blank">Ir para Afiliados do Vendedor →</a>
+  <footer>
+    <p>Dúvidas? Fale com seu gerente ou chame <strong>daniel.nunes</strong> no SeaTalk.</p>
+    <p style="margin-top:6px;">Shopee Brasil · Afiliados do Vendedor · Iniciativa SKU Expansion</p>
+  </footer>
+</main>
+</body>
+</html>

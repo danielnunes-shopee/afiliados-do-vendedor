@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiliados do Vendedor – MUNDO DA LELE</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--orange:#EE4D2D;--orange-light:#fff3f0;--dark:#1a1a1a;--mid:#555;--soft:#888;--line:#e8e8e8;--bg:#f7f7f7;--white:#ffffff;--green:#1a7a4a;--green-bg:#edf7f2}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);min-height:100vh}
+  header{background:var(--orange);padding:0 24px;display:flex;align-items:center;height:56px}
+  .logo{font-size:22px;font-weight:700;color:var(--white);letter-spacing:-0.5px}
+  .logo span{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;vertical-align:middle}
+  main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+  .greeting{margin-bottom:28px}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+  h1{font-size:26px;font-weight:700;line-height:1.25;color:var(--dark)}
+  h1 strong{color:var(--orange)}
+  .greeting p{margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6}
+  .summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:6px}
+  .card .value{font-size:28px;font-weight:700;color:var(--dark)}
+  .card.highlight{background:var(--green-bg);border-color:#b2dfc7}
+  .card.highlight .value{color:var(--green)}
+  .section-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .items{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+  .item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:16px}
+  .item-rank{width:28px;height:28px;border-radius:50%;background:var(--orange-light);color:var(--orange);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .item-rank.top{background:var(--orange);color:var(--white)}
+  .item-info{flex:1;min-width:0}
+  .item-id{font-size:11px;color:var(--soft);font-weight:500;margin-bottom:3px}
+  .item-name{font-size:14px;font-weight:500;color:var(--dark);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .item-reward{background:var(--green-bg);color:var(--green);font-size:13px;font-weight:700;padding:5px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+  .how{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:28px}
+  .how h3{font-size:14px;font-weight:600;margin-bottom:14px}
+  .how ol{padding-left:18px}
+  .how ol li{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:8px}
+  .how ol li strong{color:var(--dark)}
+  .cta{display:inline-block;background:var(--orange);color:var(--white);font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none;width:100%;text-align:center}
+  footer{text-align:center;margin-top:40px;font-size:12px;color:var(--soft);line-height:1.6}
+  footer a{color:var(--orange);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="logo">shopee <span>Afiliados do Vendedor</span></div></header>
+<main>
+  <div class="greeting">
+    <div class="eyebrow">Iniciativa exclusiva</div>
+    <h1>Olá, <strong>MUNDO DA LELE</strong> 👋</h1>
+    <p>Selecionamos produtos da sua loja com alto potencial de vendas via afiliados. Adicione-os à sua campanha e ganhe créditos para usar em comissões.</p>
+  </div>
+  <div class="summary">
+    <div class="card"><div class="label">Produtos elegíveis</div><div class="value">5</div></div>
+    <div class="card highlight"><div class="label">Crédito total a receber</div><div class="value">R$ 1.500</div></div>
+  </div>
+  <div class="section-title">Seus produtos elegíveis</div>
+  <div class="items">
+    <div class="item">
+      <div class="item-rank top">1</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19499664683</div>
+        <div class="item-name">Óleo Nutritivo 3 Em 1 Ox Nutre 120ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">2</div>
+      <div class="item-info">
+        <div class="item-id">ID: 14743161697</div>
+        <div class="item-name">Pano Reutilizável Scott Duramax Kit 3 Unidade Branco</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">3</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8816628671</div>
+        <div class="item-name">Sun In para Cabelos Phytoervas  - 120ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">4</div>
+      <div class="item-info">
+        <div class="item-id">ID: 42921707600</div>
+        <div class="item-name">SUN IN CLAREADOR PARA CABELOS PHYTOERVAS 120ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">5</div>
+      <div class="item-info">
+        <div class="item-id">ID: 47654558584</div>
+        <div class="item-name">MÁSCARA ELSEVE COLÁGENO LIFTER EFEITO TEIA RESGATE DE MASSA 300G - LANÇAMENTO</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">6</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18099707895</div>
+        <div class="item-name">Hidratante Facial Antimanchas Garnier Vitamina C Toque Seco</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">7</div>
+      <div class="item-info">
+        <div class="item-id">ID: 42671704182</div>
+        <div class="item-name">ÓLEO CAPILAR NUTRITIVO 3 EM 1 OX NUTRE 120ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">8</div>
+      <div class="item-info">
+        <div class="item-id">ID: 50454626337</div>
+        <div class="item-name">KIT ELSEVE COLÁGENO LIFTER SHAMPOO + COND + MÁSCARA - LANÇAMENTO</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">9</div>
+      <div class="item-info">
+        <div class="item-id">ID: 45703030043</div>
+        <div class="item-name">PANO REUTILIZÁVEL SCOTT DURAMAX BRANCO - KIT 3 ROLOS</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">10</div>
+      <div class="item-info">
+        <div class="item-id">ID: 43564225281</div>
+        <div class="item-name">COALA DIFUSOR DE AROMAS E AMBIENTES COM VARETAS 100ML - 1 UNIDADE</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">11</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20799376718</div>
+        <div class="item-name">ÓLEO MILAGROSO PANTENE CAPILAR FINALIZADOR LEAVE-IN 95ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">12</div>
+      <div class="item-info">
+        <div class="item-id">ID: 50604546735</div>
+        <div class="item-name">SÉRUM LEAVE-IN ELSEVE LOREAL COLÁGENO LIFTER  DE MASSA 100ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">13</div>
+      <div class="item-info">
+        <div class="item-id">ID: 29441967732</div>
+        <div class="item-name">PROTETOR SOLAR EXPERTISE EFEITO MAKE-UP FPS70 LORÉAL PARIS 30G</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">14</div>
+      <div class="item-info">
+        <div class="item-id">ID: 57205735271</div>
+        <div class="item-name">KIT ELSEVE COLÁGENO LIFTER SHAMPOO + COND + MÁSC + SÉRUM - 4 ITENS</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">15</div>
+      <div class="item-info">
+        <div class="item-id">ID: 14449890345</div>
+        <div class="item-name">Novex Recarga De Queratina Brasileira 80g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">16</div>
+      <div class="item-info">
+        <div class="item-id">ID: 4453021569</div>
+        <div class="item-name">Creme Facial Cicatricure Antissinais Bioregenext 30g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">17</div>
+      <div class="item-info">
+        <div class="item-id">ID: 41026425214</div>
+        <div class="item-name">KIT EFEITO ANTIGRISALHO TIO NACHO SHAMPOO 415ML + CONDICIONADOR 200ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">18</div>
+      <div class="item-info">
+        <div class="item-id">ID: 45959948739</div>
+        <div class="item-name">HIDRATANTE FACIAL GARNIER SKIN HIALURÔNICO TOQUE SECO 85G</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">19</div>
+      <div class="item-info">
+        <div class="item-id">ID: 4054061687</div>
+        <div class="item-name">Tônico Engrossador Antiqueda Tio Nacho 120ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">20</div>
+      <div class="item-info">
+        <div class="item-id">ID: 29288941384</div>
+        <div class="item-name">LIMPADOR PERFUMADO COALA CHÁ BRANCO CONCENTRADO 120ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">21</div>
+      <div class="item-info">
+        <div class="item-id">ID: 16168525614</div>
+        <div class="item-name">Prancha Chapinha Taiff Profissional Clássica Cerâmica 180°c Bivolt</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">22</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18507097832</div>
+        <div class="item-name">Protetor Térmico Fixador Brilho Gloss Cless Charming Spray 150ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">23</div>
+      <div class="item-info">
+        <div class="item-id">ID: 55604621641</div>
+        <div class="item-name">KIT ELSEVE SHAMPOO + CONDICIONADOR COLÁGENO LIFTER</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">24</div>
+      <div class="item-info">
+        <div class="item-id">ID: 7248294663</div>
+        <div class="item-name">Creme Hidratante Lata Original 29g Nivea - 1 Unidade</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">25</div>
+      <div class="item-info">
+        <div class="item-id">ID: 7446555553</div>
+        <div class="item-name">Alicate Mundial 522 Classic</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">26</div>
+      <div class="item-info">
+        <div class="item-id">ID: 49250072951</div>
+        <div class="item-name">SABONETE LÍQUIDO COALA HOME CHÁ BRANCO 500ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">27</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21772193997</div>
+        <div class="item-name">Creme Corporal Cicatricure Maternity 250ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">28</div>
+      <div class="item-info">
+        <div class="item-id">ID: 25144932611</div>
+        <div class="item-name">KIT ELSEVE EFEITO LISO DOS SONHOS SH + COND + MÁSC - 3 ITENS</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">29</div>
+      <div class="item-info">
+        <div class="item-id">ID: 40830920916</div>
+        <div class="item-name">SÉRUM LEAVE-IN PANTENE FORÇA E NUTRIÇÃO BAMBU 95ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">30</div>
+      <div class="item-info">
+        <div class="item-id">ID: 4946532843</div>
+        <div class="item-name">Creme Facial Antissinais Sensação Não Oleosa Nivea</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">31</div>
+      <div class="item-info">
+        <div class="item-id">ID: 7348295049</div>
+        <div class="item-name">Creme Hidratante Lata Original 56g Nivea - 1 Unidade</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">32</div>
+      <div class="item-info">
+        <div class="item-id">ID: 4151864064</div>
+        <div class="item-name">Máscara Bambu Nutre & Cresce Com Óleo De Rícino 600ml Pantene</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">33</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22195692512</div>
+        <div class="item-name">Kit Sabonete Liquido Dermacyd Femina Floral  200ml + 100ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">34</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23093049445</div>
+        <div class="item-name">ÓLEO DE RÍCINO PURO FARMAX ÓLEO CAPILAR UNISEX 100ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">35</div>
+      <div class="item-info">
+        <div class="item-id">ID: 48309047108</div>
+        <div class="item-name">CREME PARA PENTEAR DEFINIÇÃO ALONGADA CACHOS DE SEREIA SALON LINE 1KG</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">36</div>
+      <div class="item-info">
+        <div class="item-id">ID: 3246711721</div>
+        <div class="item-name">Creme Corporal Antiestrias Cicatricure 250g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">37</div>
+      <div class="item-info">
+        <div class="item-id">ID: 42008891293</div>
+        <div class="item-name">CONTORNO DE OLHOS CICATRICURE BIOREGENEXT 15G</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">38</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23995913697</div>
+        <div class="item-name">Protetor Solar Nivea Facial Antissinais FPS70 Toque Seco 40ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">39</div>
+      <div class="item-info">
+        <div class="item-id">ID: 15735289426</div>
+        <div class="item-name">Sabonete Líquido Íntimo Dermacyd Neutralize</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">40</div>
+      <div class="item-info">
+        <div class="item-id">ID: 6653019393</div>
+        <div class="item-name">Gel Para Cicatrizes E Estrias 30g Cicatricure - 1 Unidade</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">41</div>
+      <div class="item-info">
+        <div class="item-id">ID: 46401928096</div>
+        <div class="item-name">CREME PARA PENTEAR DEFINIÇÃO CACHOS OSTENTAÇÃO SALON LINE 1KG</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">42</div>
+      <div class="item-info">
+        <div class="item-id">ID: 7552037812</div>
+        <div class="item-name">Creme Gold Lift Facial Cicatricure Diurno Fps30 50g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">43</div>
+      <div class="item-info">
+        <div class="item-id">ID: 55402225337</div>
+        <div class="item-name">KIT C/2 DIFUSOR DE AROMAS COALA CHÁ BRANCO 100ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">44</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23792246234</div>
+        <div class="item-name">CREME PARA CABELO TRIM LAVANDA SUAVE MEN 65G</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">45</div>
+      <div class="item-info">
+        <div class="item-id">ID: 48854577867</div>
+        <div class="item-name">SHAMPOO ELSEVE COLÁGENO LIFTER ENCORPADOR 200ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">46</div>
+      <div class="item-info">
+        <div class="item-id">ID: 7252037898</div>
+        <div class="item-name">Creme Facial Cicatricure Gold Lift Noturno Reduz Rugas 50g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">47</div>
+      <div class="item-info">
+        <div class="item-id">ID: 42157223915</div>
+        <div class="item-name">KIT SHAMPOO + CONDICIONADOR ELSEVE BOND REPAIR PROMO</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">48</div>
+      <div class="item-info">
+        <div class="item-id">ID: 29837120002</div>
+        <div class="item-name">ALISANTE HENÊ RENÁ PRETO AZULADO POUCH EMBELLEZE 180G</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">49</div>
+      <div class="item-info">
+        <div class="item-id">ID: 42274922464</div>
+        <div class="item-name">MÁSCARA HIDRATANTE PANTENE COLÁGENO HIDRATA E RESGATA 550ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">50</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20599249536</div>
+        <div class="item-name">KIT SH + COND NUTRIÇÃO ÓLEO EXTRAORDINÁRIO ELSEVE 200ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">51</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21199567305</div>
+        <div class="item-name">DESODORANTE DOVE CREME SÉRUM NIACINAMIDA PREVINE ESCURECIMENTO 50G</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">52</div>
+      <div class="item-info">
+        <div class="item-id">ID: 5348842406</div>
+        <div class="item-name">Creme Facial Antissinais Antirrugas BioRegenext Cicatricure 50g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">53</div>
+      <div class="item-info">
+        <div class="item-id">ID: 13168938418</div>
+        <div class="item-name">Pano Reutilizável Scott Duramax - 1 Pacote</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">54</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23493091148</div>
+        <div class="item-name">KIT SHAMPOO + CONDICIONADOR EFEITO ANTIGRISALHO TIO NACHO 415ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">55</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21798073579</div>
+        <div class="item-name">SÉRUM LEAVE IN CAPILAR LISO DOS SONHOS ELSEVE 100ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">56</div>
+      <div class="item-info">
+        <div class="item-id">ID: 53702601540</div>
+        <div class="item-name">LEAVE IN REGENERAÇÃO MOLECULAR PANTENE BOND REPAIR 150ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">57</div>
+      <div class="item-info">
+        <div class="item-id">ID: 41704726129</div>
+        <div class="item-name">KIT C/2 ÓLEO NUTRITIVO 3 EM 1 OX NUTRE 120ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">58</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23897694083</div>
+        <div class="item-name">KIT C/2 SUN IN PARA CABELOS PHYTOERVAS 120ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">59</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18297660261</div>
+        <div class="item-name">LEAVE-IN CICATRI RENOV ELSEVE REPARAÇÃO TOTAL LORÉAL PARIS 100ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">60</div>
+      <div class="item-info">
+        <div class="item-id">ID: 43958206989</div>
+        <div class="item-name">Cicaplast Baume B5 La Roche-posay Hidratante Reparador 20ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">61</div>
+      <div class="item-info">
+        <div class="item-id">ID: 16980662352</div>
+        <div class="item-name">Shampoo Redutor de Grisalhos Control Gx Grecin 118ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">62</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20999298958</div>
+        <div class="item-name">KIT PHYTOERVAS ANTIQUEDA BÉTULA NATURAL SHAMPOO + CONDICIONADOR 250ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">63</div>
+      <div class="item-info">
+        <div class="item-id">ID: 42907223242</div>
+        <div class="item-name">REFIL SHAMPOO ABSOLUT REPAIR LORÉAL PROFESSIONNEL SERIE EXPERT 240ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">64</div>
+      <div class="item-info">
+        <div class="item-id">ID: 40077990751</div>
+        <div class="item-name">CREME PARA PENTEAR ELSEVE COLÁGENO LIFTER VOLUME SEM FRIZZ 250ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">65</div>
+      <div class="item-info">
+        <div class="item-id">ID: 3948399834</div>
+        <div class="item-name">Retoque de Raiz Spray Instantâneo Magic Retouch Cor Castanho Claro Loréal Paris 75ml - 1 Unidade</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">66</div>
+      <div class="item-info">
+        <div class="item-id">ID: 42012644390</div>
+        <div class="item-name">REPARADOR DE PONTAS GOLD BLACK NUTRITIVE AMEND 30ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">67</div>
+      <div class="item-info">
+        <div class="item-id">ID: 3849153962</div>
+        <div class="item-name">Shampoo Bambu Nutre & Cresce Com Óleo de Rícino Pantene</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">68</div>
+      <div class="item-info">
+        <div class="item-id">ID: 56552658541</div>
+        <div class="item-name">MÁSCARA RECONSTRUÇÃO MOLECULAR BOND REPAIR PANTENE 270ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">69</div>
+      <div class="item-info">
+        <div class="item-id">ID: 25644932553</div>
+        <div class="item-name">KIT ELSEVE SH + COND + SÉRUM + MÁSC LISO DOS SONHOS 4 ITENS</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">70</div>
+      <div class="item-info">
+        <div class="item-id">ID: 15561690023</div>
+        <div class="item-name">Máscara De Tratamento Reparação Total 5 Elseve L'oréal Paris</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">71</div>
+      <div class="item-info">
+        <div class="item-id">ID: 43820636124</div>
+        <div class="item-name">PROTETOR SOLAR EXPERTISE EFEITO MAKE-UP FPS70 COR 2.0 LORÉAL PARIS 30G</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">72</div>
+      <div class="item-info">
+        <div class="item-id">ID: 44071099421</div>
+        <div class="item-name">CREME DE TRATAMENTO NOVEX REPOSIÇÃO DE MASSA 1KG</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">73</div>
+      <div class="item-info">
+        <div class="item-id">ID: 41620624883</div>
+        <div class="item-name">PROTETOR SOLAR EXPERTISE EFEITO MAKE-UP FPS70 COR 3.0 LORÉAL PARIS 30G</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">74</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23892731714</div>
+        <div class="item-name">SHAMPOO ANTIQUEDA GINSENG TIO NACHO 415ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">75</div>
+      <div class="item-info">
+        <div class="item-id">ID: 42259462234</div>
+        <div class="item-name">CREME PARA PENTEAR DEFINIÇÃO NATURAL SALON LINE 1KG</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">76</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22493136810</div>
+        <div class="item-name">ÓLEO SÉRUM BIFÁSICO DOVE NUTRITIVO BOND INTENSE REPAIR 110ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">77</div>
+      <div class="item-info">
+        <div class="item-id">ID: 48000082416</div>
+        <div class="item-name">DIFUSOR DE AROMAS COALA ORQUÍDEA NEGRA 100ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">78</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23293081953</div>
+        <div class="item-name">CREME PARA PENTEAR ELSEVE ÓLEO EXTRAORDINÁRIO NUTRITIVO 250ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">79</div>
+      <div class="item-info">
+        <div class="item-id">ID: 2944682181</div>
+        <div class="item-name">Shampoo Elseve Hidra Hialurônico Preenchedor Loréal Paris 200ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">80</div>
+      <div class="item-info">
+        <div class="item-id">ID: 3010910059</div>
+        <div class="item-name">Elseve Reparação Total 5 Leave-in Cicatri Renov 50ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">81</div>
+      <div class="item-info">
+        <div class="item-id">ID: 41824552901</div>
+        <div class="item-name">SABONETE ÍNTIMO EM GEL VAGISIL PROTEÇÃO ODOR BLACK 300G</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">82</div>
+      <div class="item-info">
+        <div class="item-id">ID: 6048303340</div>
+        <div class="item-name">Retoque de Raiz Spray Instantâneo Magic Retouch Cor Castanho Escuro Loréal Paris 75ml - 1 Unidade</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">83</div>
+      <div class="item-info">
+        <div class="item-id">ID: 50805408906</div>
+        <div class="item-name">CREME PARA PENTEAR DEFINIÇÃO XÔ POROSIDADE SALON LINE 1KG</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">84</div>
+      <div class="item-info">
+        <div class="item-id">ID: 43054935574</div>
+        <div class="item-name">SHAMPOO ANTICASPA CLEAR MEN LIMPEZA DIÁRIA 2EM1 400ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">85</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22998312998</div>
+        <div class="item-name">SHAMPOO ANTIQUEDA PANTENE BIOTINAMINA B3 NUTRIÇÃO 510ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">86</div>
+      <div class="item-info">
+        <div class="item-id">ID: 26535908311</div>
+        <div class="item-name">MÁSCARA ELSEVE LISO DOS SONHOS INTENSIVO ALINHADOR 300G</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">87</div>
+      <div class="item-info">
+        <div class="item-id">ID: 41855858519</div>
+        <div class="item-name">KIT ELSEVE SH + COND + MÁSC BOND REPAIR CABELOS DANIFICADOS</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">88</div>
+      <div class="item-info">
+        <div class="item-id">ID: 4348202802</div>
+        <div class="item-name">Óleo Extraordinário Tratamento  Elseve Loréal Paris 100ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">89</div>
+      <div class="item-info">
+        <div class="item-id">ID: 15736168985</div>
+        <div class="item-name">Kit Sabonete Liquido Dermacyd Delicata de Jasmin 200ml + 100ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">90</div>
+      <div class="item-info">
+        <div class="item-id">ID: 27480314946</div>
+        <div class="item-name">Hidratante Corporal Hidrata E Repara D-Panthenol Neutrogena 200ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">91</div>
+      <div class="item-info">
+        <div class="item-id">ID: 7675845372</div>
+        <div class="item-name">Tio Nacho Leave-in De Tratamento Reconstrutor Total 100ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">92</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23292649109</div>
+        <div class="item-name">Shampoo Estimulante Vichy Antiqueda Dercos Technique 400G</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">93</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22493826301</div>
+        <div class="item-name">KIT PANTENE SHAMPOO + CONDICIONADOR ANTIQUEDA BIOTINAMINA B3 NUTRIÇÃO 510ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">94</div>
+      <div class="item-info">
+        <div class="item-id">ID: 15736168985</div>
+        <div class="item-name">Kit Sabonete Liquido Dermacyd Delicata de Jasmim 200ml + 100ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">95</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22492672543</div>
+        <div class="item-name">GELATINA SUPER DEFINIÇÃO TO DE CACHO SALON LINE 1KG</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">96</div>
+      <div class="item-info">
+        <div class="item-id">ID: 43668729289</div>
+        <div class="item-name">GEL DE LIMPEZA FACIAL ACTINE VITAMINA C DARROW 140G</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">97</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22891785944</div>
+        <div class="item-name">Hidratante Corporal Neutrogena Hidrata e Repara 400ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">98</div>
+      <div class="item-info">
+        <div class="item-id">ID: 55706275845</div>
+        <div class="item-name">SHAMPOO JOHNSONS BABY DE GLICERINA  E VITAMINA B5 400ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">99</div>
+      <div class="item-info">
+        <div class="item-id">ID: 45804650143</div>
+        <div class="item-name">KIT ELSEVE COLÁGENO LIFTER SHAMPOO ENCORPADOR + MÁSCARA EFEITO TEIA</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">100</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18799252963</div>
+        <div class="item-name">KIT PHYTOERVAS ILUMINADOR CAMOMILA SH + COND 250ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">101</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20498722160</div>
+        <div class="item-name">Creme Alisante Lisahair Liso Queratina Embelleze 450g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">102</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22493826273</div>
+        <div class="item-name">KIT PANTENE SH + COND + TÔNICO ANTIQUEDA BIOTINAMINA B3 NUTRIÇÃO</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">103</div>
+      <div class="item-info">
+        <div class="item-id">ID: 41722690336</div>
+        <div class="item-name">RECARGA DE QUERATINA NIELY GOLD RECONSTRUÇÃO PROFUNDA 80ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">104</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22092839637</div>
+        <div class="item-name">KIT ELSEVE GLYCOLIC GLOSS SHAMPOO + COND + MÁSCARA LORÉAL</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div></div>
+  <div class="section-title">Como funciona</div>
+  <div class="how">
+    <ol>
+      <li>Acesse <strong>Afiliados do Vendedor</strong> no Seller Centre e adicione os produtos acima em uma campanha com qualquer percentual de comissão.</li>
+      <li>Mantenha cada produto <strong>ativo por pelo menos 30 dias</strong>.</li>
+      <li>Receba <strong>R$ 300 de crédito por produto</strong> — os créditos são acumulativos.</li>
+      <li>Use o crédito para pagar qualquer comissão de afiliados da sua loja.</li>
+      <li>Pagamentos processados semanalmente, em até 10 dias após completar os 30 dias.</li>
+    </ol>
+  </div>
+  <a class="cta" href="https://seller.shopee.com.br/portal/web-seller-affiliate" target="_blank">Ir para Afiliados do Vendedor →</a>
+  <footer>
+    <p>Dúvidas? Fale com seu gerente ou chame <strong>daniel.nunes</strong> no SeaTalk.</p>
+    <p style="margin-top:6px;">Shopee Brasil · Afiliados do Vendedor · Iniciativa SKU Expansion</p>
+  </footer>
+</main>
+</body>
+</html>
