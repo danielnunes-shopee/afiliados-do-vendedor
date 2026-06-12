@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiliados do Vendedor – MadeiraMadeira</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--orange:#EE4D2D;--orange-light:#fff3f0;--dark:#1a1a1a;--mid:#555;--soft:#888;--line:#e8e8e8;--bg:#f7f7f7;--white:#ffffff;--green:#1a7a4a;--green-bg:#edf7f2}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);min-height:100vh}
+  header{background:var(--orange);padding:0 24px;display:flex;align-items:center;height:56px}
+  .logo{font-size:22px;font-weight:700;color:var(--white);letter-spacing:-0.5px}
+  .logo span{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;vertical-align:middle}
+  main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+  .greeting{margin-bottom:28px}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+  h1{font-size:26px;font-weight:700;line-height:1.25;color:var(--dark)}
+  h1 strong{color:var(--orange)}
+  .greeting p{margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6}
+  .summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:6px}
+  .card .value{font-size:28px;font-weight:700;color:var(--dark)}
+  .card.highlight{background:var(--green-bg);border-color:#b2dfc7}
+  .card.highlight .value{color:var(--green)}
+  .section-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .items{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+  .item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:16px}
+  .item-rank{width:28px;height:28px;border-radius:50%;background:var(--orange-light);color:var(--orange);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .item-rank.top{background:var(--orange);color:var(--white)}
+  .item-info{flex:1;min-width:0}
+  .item-id{font-size:11px;color:var(--soft);font-weight:500;margin-bottom:3px}
+  .item-name{font-size:14px;font-weight:500;color:var(--dark);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .item-reward{background:var(--green-bg);color:var(--green);font-size:13px;font-weight:700;padding:5px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+  .how{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:28px}
+  .how h3{font-size:14px;font-weight:600;margin-bottom:14px}
+  .how ol{padding-left:18px}
+  .how ol li{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:8px}
+  .how ol li strong{color:var(--dark)}
+  .cta{display:inline-block;background:var(--orange);color:var(--white);font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none;width:100%;text-align:center}
+  footer{text-align:center;margin-top:40px;font-size:12px;color:var(--soft);line-height:1.6}
+  footer a{color:var(--orange);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="logo">shopee <span>Afiliados do Vendedor</span></div></header>
+<main>
+  <div class="greeting">
+    <div class="eyebrow">Iniciativa exclusiva</div>
+    <h1>Olá, <strong>MadeiraMadeira</strong> 👋</h1>
+    <p>Selecionamos produtos da sua loja com alto potencial de vendas via afiliados. Adicione-os à sua campanha e ganhe créditos para usar em comissões.</p>
+  </div>
+  <div class="summary">
+    <div class="card"><div class="label">Produtos elegíveis</div><div class="value">5</div></div>
+    <div class="card highlight"><div class="label">Crédito total a receber</div><div class="value">R$ 2.300</div></div>
+  </div>
+  <div class="section-title">Seus produtos elegíveis</div>
+  <div class="items">
+    <div class="item">
+      <div class="item-rank top">1</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21697673677</div>
+        <div class="item-name">Guarda-roupa Casal 6 Portas 2 Gavetas França Cinamomo/Off White</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">2</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22798312477</div>
+        <div class="item-name">Cômoda para Quarto 10 Gavetas Caribe Branco</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">3</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22492986414</div>
+        <div class="item-name">Escrivaninha 100% Berlim 5 Gavetas 136cm Yescasa Branca Branco</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">4</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22592981390</div>
+        <div class="item-name">Escrivaninha Mesa Escritório Penteadeira de Canto com Espelho Star 1 Porta 136cm Branca Branco</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">5</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19299248068</div>
+        <div class="item-name">Quarto de Bebê Completo 100% MDF Cômoda Berço e Guarda Roupa Nina Branco/Amadeirado</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">6</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22592981390</div>
+        <div class="item-name">Escrivaninha Mesa Escritório Penteadeira de Canto 136x136cm com Espelho 1 Porta Star Branco</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">7</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19397680361</div>
+        <div class="item-name">Penteadeira Camarim com Espelho e LED 3 Gavetas 2 Portas Carisma  Branco</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">8</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18797926306</div>
+        <div class="item-name">Escrivaninha em L ou Reta Oring 6 Gavetas 230cm CabeCasa MadeiraOriginals Branco Branco</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">9</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23598338864</div>
+        <div class="item-name">Guarda Roupa Casal 8 Portas 4 Gavetas Paris Espresso Móveis Cinamomo/Off White</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">10</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23597478599</div>
+        <div class="item-name">Porta Sanfonada de PVC 210x84cm Bariri Marrom</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">11</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19597675417</div>
+        <div class="item-name">Buffet Aparador 4 Portas 150cm em MDP com Portas em MDF Nature Off White</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">12</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22592981496</div>
+        <div class="item-name">Escrivaninha Mesa Escritório em L Office Nt 2005 2 Gavetas 3 Portas 157cm Branco New Branco</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">13</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22692986612</div>
+        <div class="item-name">Guarda Roupa Casal 8 Portas 4 Gavetas Paris Espresso Móveis Branco</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">14</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19597680328</div>
+        <div class="item-name">Guarda Roupa Casal 3 Portas 9 Gavetas Luana  Cinamomo/Off White</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">15</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22393348158</div>
+        <div class="item-name">Guarda-roupa Casal Ripado com Espelhos 2 Portas e 4 Gavetas Suburban Gold Espresso Móveis</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">16</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23793106198</div>
+        <div class="item-name">Guarda-roupa Casal 3 Portas 1 Porta Espelhada Milão 100% MDF Yescasa Branco</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">17</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22098361574</div>
+        <div class="item-name">Cristaleira 1 Porta Reflecta com Fita Led com Espelho Luminare 100% Mdf Naturale</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">18</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23292981760</div>
+        <div class="item-name">Guarda-roupa Casal 4 Portas 2 Gavetas França Cinamomo/Off White</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">19</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22393737670</div>
+        <div class="item-name">Escrivaninha 100% Berlim 5 Gavetas 136cm Yescasa Off White Off White</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">20</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23198526837</div>
+        <div class="item-name">Penteadeira Camarim com Espelho França Yescasa</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">21</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21699252196</div>
+        <div class="item-name">Painel Ripado para TV até 55 Polegadas 150cmx183cm Moon Freijó/Off White</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">22</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22197488631</div>
+        <div class="item-name">Cômoda para Quarto 3 Gavetas 2 Portas Dunas Nature e Off White Yescasa Nature Off/White</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">23</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23693100231</div>
+        <div class="item-name">Espelheira para Banheiro 2 Portas 2 Prateleiras Malbec  Branco</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">24</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19197675357</div>
+        <div class="item-name">Penteadeira Camarim com Espelho 7 Gavetas França</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">25</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22092986726</div>
+        <div class="item-name">Guarda Roupa Solteiro 4 Portas 2 Gavetas Alonzo 100% MDF Amêndoa Clean/Branco</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">26</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22693975563</div>
+        <div class="item-name">Mesa para Sala de Jantar com Tampo Orgânico 75x200x100cm 200</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">27</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22592991611</div>
+        <div class="item-name">Bicama Solteiro com Baú, 2 Gavetas e Cama Auxiliar Iris Branco</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">28</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23292981973</div>
+        <div class="item-name">Cama Solteiro com Baú 2 Gavetas e Cama Auxiliar Jade Yescasa Branco</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">29</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20899252198</div>
+        <div class="item-name">Conjunto para Jardim de Madeira Eucalipto 4 Peças sem Almofada Nature Yescasa Nature</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">30</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22294432638</div>
+        <div class="item-name">Armário de Cozinha 12 Portas 1 Gaveta com NIchos Clarice Yescasa Freijó/Grafite Acetinado Freijó/Grafite</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">31</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23992976452</div>
+        <div class="item-name">Guarda-Roupa Casal com Espelho 3 Portas de Correr e 4 Gavetas Plata Branco Branco</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">32</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23597473274</div>
+        <div class="item-name">Armário Multiuso 4 Portas Dueto Espresso Móveis Branco</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">33</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23597478692</div>
+        <div class="item-name">Porta Sanfonada de PVC 210x84cm Bariri Gelo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">34</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23597479255</div>
+        <div class="item-name">Armário para Cozinha 13 Portas 2 Gavetas Agata Cinamomo/Grafite</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">35</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22398670266</div>
+        <div class="item-name">Rack Suspenso para TV até 75 Polegadas 200cm 3 Portas MDF Off White Dior Off White</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">36</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23992981806</div>
+        <div class="item-name">Painel para TV até 90 Polegadas com LED 100% MDF 224cmx250cm Impressão Ripada com Gaveta Requinte Off White</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">37</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21099252105</div>
+        <div class="item-name">Cômoda 2 Portas 5 Gavetas com Cabideiro e Pés Chicago Mel</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">38</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23393815502</div>
+        <div class="item-name">Cômoda para Quarto 10 Gavetas Caribe</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">39</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21397745562</div>
+        <div class="item-name">Conjunto Quarto de Bebê Completo Berço 2 em 1, Guarda-roupa e Cômoda Yuri Espresso Móveis</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">40</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22197488631</div>
+        <div class="item-name">Cômoda 2 Portas 3 Gavetas Dunas Nature Off/White</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">41</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21399318914</div>
+        <div class="item-name">Conjunto Quarto de Bebê Berço 2 em 1, Guarda-roupa e Cômoda Sophia Espresso Móveis</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">42</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23094309054</div>
+        <div class="item-name">Bancada Ripada Lisa 120cm para 2 ou 4 Pessoas Mesa Alta Cozinha Sala Realeza</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">43</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22692991652</div>
+        <div class="item-name">Box Para Banheiro de PVC 185x130cm Sanfonado Frontal BCF Preto</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">44</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22292992083</div>
+        <div class="item-name">Cabeceira Box Casal com 2 Mesas de Cabeceira com Led Innova 100% MDF Off White</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">45</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22898228426</div>
+        <div class="item-name">Porta de Aço Postigo com Grade Quadrada Branca Minas Sul MGM 215x85cm Abertura Esquerda Esquerda</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">46</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21599247046</div>
+        <div class="item-name">Guarda-Roupa Casal com Cabeceira Baú 5 Portas 3 Gavetas e Prateleiras Cancun Espresso Móveis Branco</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">47</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18899546921</div>
+        <div class="item-name">Guarda-roupa Casal 3 Portas 1 Porta Espelhada Milão  100% MDF Yescasa Naturale/Off White</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">48</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19198029362</div>
+        <div class="item-name">Rack para TV até 75 Polegadas MDF 180cm 2 Portas Nature Off White Denver Nature/Off White</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">49</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22298557960</div>
+        <div class="item-name">Guarda-Roupa Modulado Dormitório Casal Canto com 4 Portas Versatille Yescasa Branco</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">50</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19197680598</div>
+        <div class="item-name">Guarda-Roupa Solteiro com Cabeceira e Baú 4 Portas 3 Gavetas Cancun Yescasa Branco</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">51</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22993096050</div>
+        <div class="item-name">Armário Conjunto de Banheiro com Gabinete, Cuba e Espelheira 3 Portas Viena 80 cm</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">52</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18799248427</div>
+        <div class="item-name">Rack Ripado para TV até 85 Polegadas 100% MDF 220cm 2 Portas Valência 220</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">53</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18797984716</div>
+        <div class="item-name">Kit 2 Cômodas 5 Gavetas Espresso Móveis Branco</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">54</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22093014323</div>
+        <div class="item-name">Armário de Cozinha 6 Portas 2 Gavetas Adelle Yescasa Cinamomo/Off White</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">55</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22193187841</div>
+        <div class="item-name">Painel Ripado modular 2,50x1,41cm (3,53m²) Nature Fosco 3.53</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">56</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58206268881</div>
+        <div class="item-name">Porta Sanfonada de Pvc 210cm X 60cm Belplast Preto</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">57</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18597682180</div>
+        <div class="item-name">Guarda-roupa Solteiro 4 Portas 2 Gavetas Alonzo 100% MDF Branco</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">58</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22092992123</div>
+        <div class="item-name">Penteadeira 5 Gavetas 3 Nichos Blum</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">59</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23393896221</div>
+        <div class="item-name">Quarto de Bebê Completo Berço 3 em 1, Guarda-roupa 4 Portas e Cômoda 100% MDF Aurora Espresso Móveis Branco</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">60</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22598937131</div>
+        <div class="item-name">Cristaleira 1 Porta Reflecta com Fita Led e Espelho 100% Mdf Luminare Off White</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">61</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22192991860</div>
+        <div class="item-name">Guarda Roupa Casal Titanium 2 Portas de Correr 4 Gavetas Cinamomo/Areia</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">62</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23997483399</div>
+        <div class="item-name">Conjunto para Jardim com 1 Sofá 2 Poltronas 1 Mesa de Centro Madeira Maciça Cairo sem Almofadinha Yescasa Não</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">63</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19597675484</div>
+        <div class="item-name">Cristaleira Retrô Portas de Vidro Fecho Magnético Pés Madeira Madri Off White/Cinamomo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">64</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23492975928</div>
+        <div class="item-name">Kit Porta de Madeira Decorada 215x75cm com Batente de Aço 6cm Cantareira MGM Abertura Esquerda Mogno</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">65</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18199263968</div>
+        <div class="item-name">Cômoda 10 Gavetas 151cm X 109cm Duetto Off-White/Cinamomo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">66</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23097473356</div>
+        <div class="item-name">Rack Ripado para TV até 75 Polegadas 100% MDF 180cm 2 Portas Logan 180</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">67</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22597478111</div>
+        <div class="item-name">Conjunto Sala de Jantar Mesa Tampo Mdf 6 Cadeiras Espanha Yescasa Ypê/Off White/Tecido Pena</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">68</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23992981557</div>
+        <div class="item-name">Guarda-roupa Casal 6 Portas 2 Gavetas França Branco</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">69</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20497673909</div>
+        <div class="item-name">Armário Multiuso 4 Portas e 8 Prateleiras Rivera Freijó/Oliva</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">70</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22894872381</div>
+        <div class="item-name">Porta Sanfonada de Pvc 210cm X 80cm Belplast Preto</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div></div>
+  <div class="section-title">Como funciona</div>
+  <div class="how">
+    <ol>
+      <li>Acesse <strong>Afiliados do Vendedor</strong> no Seller Centre e adicione os produtos acima em uma campanha com qualquer percentual de comissão.</li>
+      <li>Mantenha cada produto <strong>ativo por pelo menos 30 dias</strong>.</li>
+      <li>Receba <strong>R$ 460 de crédito por produto</strong> — os créditos são acumulativos.</li>
+      <li>Use o crédito para pagar qualquer comissão de afiliados da sua loja.</li>
+      <li>Pagamentos processados semanalmente, em até 10 dias após completar os 30 dias.</li>
+    </ol>
+  </div>
+  <a class="cta" href="https://seller.shopee.com.br/portal/web-seller-affiliate" target="_blank">Ir para Afiliados do Vendedor →</a>
+  <footer>
+    <p>Dúvidas? Fale com seu gerente ou chame <strong>daniel.nunes</strong> no SeaTalk.</p>
+    <p style="margin-top:6px;">Shopee Brasil · Afiliados do Vendedor · Iniciativa SKU Expansion</p>
+  </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiliados do Vendedor – Abelume tech</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--orange:#EE4D2D;--orange-light:#fff3f0;--dark:#1a1a1a;--mid:#555;--soft:#888;--line:#e8e8e8;--bg:#f7f7f7;--white:#ffffff;--green:#1a7a4a;--green-bg:#edf7f2}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);min-height:100vh}
+  header{background:var(--orange);padding:0 24px;display:flex;align-items:center;height:56px}
+  .logo{font-size:22px;font-weight:700;color:var(--white);letter-spacing:-0.5px}
+  .logo span{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;vertical-align:middle}
+  main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+  .greeting{margin-bottom:28px}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+  h1{font-size:26px;font-weight:700;line-height:1.25;color:var(--dark)}
+  h1 strong{color:var(--orange)}
+  .greeting p{margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6}
+  .summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:6px}
+  .card .value{font-size:28px;font-weight:700;color:var(--dark)}
+  .card.highlight{background:var(--green-bg);border-color:#b2dfc7}
+  .card.highlight .value{color:var(--green)}
+  .section-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .items{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+  .item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:16px}
+  .item-rank{width:28px;height:28px;border-radius:50%;background:var(--orange-light);color:var(--orange);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .item-rank.top{background:var(--orange);color:var(--white)}
+  .item-info{flex:1;min-width:0}
+  .item-id{font-size:11px;color:var(--soft);font-weight:500;margin-bottom:3px}
+  .item-name{font-size:14px;font-weight:500;color:var(--dark);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .item-reward{background:var(--green-bg);color:var(--green);font-size:13px;font-weight:700;padding:5px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+  .how{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:28px}
+  .how h3{font-size:14px;font-weight:600;margin-bottom:14px}
+  .how ol{padding-left:18px}
+  .how ol li{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:8px}
+  .how ol li strong{color:var(--dark)}
+  .cta{display:inline-block;background:var(--orange);color:var(--white);font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none;width:100%;text-align:center}
+  footer{text-align:center;margin-top:40px;font-size:12px;color:var(--soft);line-height:1.6}
+  footer a{color:var(--orange);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="logo">shopee <span>Afiliados do Vendedor</span></div></header>
+<main>
+  <div class="greeting">
+    <div class="eyebrow">Iniciativa exclusiva</div>
+    <h1>Olá, <strong>Abelume tech</strong> 👋</h1>
+    <p>Selecionamos produtos da sua loja com alto potencial de vendas via afiliados. Adicione-os à sua campanha e ganhe créditos para usar em comissões.</p>
+  </div>
+  <div class="summary">
+    <div class="card"><div class="label">Produtos elegíveis</div><div class="value">5</div></div>
+    <div class="card highlight"><div class="label">Crédito total a receber</div><div class="value">R$ 1.500</div></div>
+  </div>
+  <div class="section-title">Seus produtos elegíveis</div>
+  <div class="items">
+    <div class="item">
+      <div class="item-rank top">1</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22293302218</div>
+        <div class="item-name">Sensor de Movimento para lâmpada Soquete E27 c/ sensor de presença Bivolt 110V~220V Max 60W</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">2</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23993087152</div>
+        <div class="item-name">Fita de LED Mangueira Neon 5 Metros IP65 Flexível Com ou Sem Fonte | 8 Cores</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">3</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23698001758</div>
+        <div class="item-name">Smart Luminária Inteligente Ultra LED com sensor de movimento sem fio e Recarregável USB fino barra 10/20/30/50cm</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">4</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23997583808</div>
+        <div class="item-name">Lâmpada Filamento LED G80 4W E27 LUZ QUENTE (AMARELO) Âmbar Retrô Vintage 110V~220V | Bivolt</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">5</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23998728329</div>
+        <div class="item-name">Luminária Emergência Lâmpada Portátil 30 Leds Recarregável Bivolt Luz Branca Fria</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">6</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22193691404</div>
+        <div class="item-name">Abajur LED Recarregável Retrátil de Aço Luz Neutra Ajustável 3 Tons USB Sala/Escritório/Quarto</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">7</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18297735031</div>
+        <div class="item-name">Luminária Emergência Lâmpada 30 ou 60 Leds Recarregável Bivolt Luz Branca Fria</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">8</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23297970968</div>
+        <div class="item-name">2-8 Luminária Arandela Solar 6 8 e 10 LED Luz Branco Quente para Parede a Prova dágua Spot parede</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">9</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58254518031</div>
+        <div class="item-name">Isqueiro Elétrico Recarregável com Lanterna Led e Resistente à Água Carregamento Prático</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">10</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23892740671</div>
+        <div class="item-name">Lâmpada Filamento LED G125 4W E27 LUZ QUENTE (AMARELO) Âmbar Retrô Vintage 110V~220V | Bivolt</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">11</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22797611979</div>
+        <div class="item-name">Lâmpada Filamento LED G45 2W E27 LUZ QUENTE 2,300K Âmbar Retrô Vintage 110V~220V Bivolt</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">12</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58204528351</div>
+        <div class="item-name">Kit Luminária Spot Led Redondo Com Controle Luz Fria ou Quente Auto Colante Bivolt</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">13</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23293551520</div>
+        <div class="item-name">Kit 10 Lâmpada Led 12W 10W 7W 5W G9 Halopin | Luz Quente 2200K | Luz Fria 7000K Bipino | Arandelas e Decoração Bivolt</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">14</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22894246482</div>
+        <div class="item-name">Luminária Emergência Lâmpada Portátil 90 Leds PRO Recarregável Bivolt Luz Branca Fria</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">15</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23993062410</div>
+        <div class="item-name">Luminária Pública Luz Solar Externo 108 LEDS Com Controle Remoto Refletor LED Transparente Sensor De Movimento Ajustável</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">16</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58204528323</div>
+        <div class="item-name">Ventilador de Teto LED 60W 80W 100W Lâmpada E27 Controle Remoto Bivolt Luminária ECO Bivolt</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">17</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22498158680</div>
+        <div class="item-name">2M Trilho + 6 Spot LED 20W 15W 10W 7W Eletrificado + Trilho + Conector Preto e Branco Luz Fria, Neutra e Quente Bivolt</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">18</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58204900389</div>
+        <div class="item-name">Lanterna Recarregável Led com painel status de bateria carregador USB Bivolt</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">19</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58204900392</div>
+        <div class="item-name">Lanterna de Cabeça Led Alta Potência com vidro óptico carregador USB Bivolt</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">20</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22298070585</div>
+        <div class="item-name">Lâmpada Led 12W G9 Bipino Halopin | Branco Quente 3000K Branco Frio 7000K Bivolt Arandelas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">21</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20197688251</div>
+        <div class="item-name">Fita LED 3528 SUPER LED ULTRA RGB 5M até 15M 12V 300 LEDS | 16 CORES IP20 Pronta Entrega Com e Sem Fonte</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">22</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22894246462</div>
+        <div class="item-name">Luminária Emergência Lâmpada Portátil 60 Leds Recarregável Bivolt Luz Branca Fria</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">23</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18099375138</div>
+        <div class="item-name">Kit 6 Lâmpada Vela LED para Lustre de fogo 5W Bico Torto E14 Pendente Moderno Branco Frio ou Branco Quente | Bivolt</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">24</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23997559101</div>
+        <div class="item-name">Refletor LED 200W 100W 50W Holofote Bivolt ECO A Prova d'água Luz Branca, Quente e Verde | Áreas Externas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div></div>
+  <div class="section-title">Como funciona</div>
+  <div class="how">
+    <ol>
+      <li>Acesse <strong>Afiliados do Vendedor</strong> no Seller Centre e adicione os produtos acima em uma campanha com qualquer percentual de comissão.</li>
+      <li>Mantenha cada produto <strong>ativo por pelo menos 30 dias</strong>.</li>
+      <li>Receba <strong>R$ 300 de crédito por produto</strong> — os créditos são acumulativos.</li>
+      <li>Use o crédito para pagar qualquer comissão de afiliados da sua loja.</li>
+      <li>Pagamentos processados semanalmente, em até 10 dias após completar os 30 dias.</li>
+    </ol>
+  </div>
+  <a class="cta" href="https://seller.shopee.com.br/portal/web-seller-affiliate" target="_blank">Ir para Afiliados do Vendedor →</a>
+  <footer>
+    <p>Dúvidas? Fale com seu gerente ou chame <strong>daniel.nunes</strong> no SeaTalk.</p>
+    <p style="margin-top:6px;">Shopee Brasil · Afiliados do Vendedor · Iniciativa SKU Expansion</p>
+  </footer>
+</main>
+</body>
+</html>

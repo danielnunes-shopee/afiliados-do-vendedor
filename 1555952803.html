@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiliados do Vendedor – ROWELY</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--orange:#EE4D2D;--orange-light:#fff3f0;--dark:#1a1a1a;--mid:#555;--soft:#888;--line:#e8e8e8;--bg:#f7f7f7;--white:#ffffff;--green:#1a7a4a;--green-bg:#edf7f2}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);min-height:100vh}
+  header{background:var(--orange);padding:0 24px;display:flex;align-items:center;height:56px}
+  .logo{font-size:22px;font-weight:700;color:var(--white);letter-spacing:-0.5px}
+  .logo span{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;vertical-align:middle}
+  main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+  .greeting{margin-bottom:28px}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+  h1{font-size:26px;font-weight:700;line-height:1.25;color:var(--dark)}
+  h1 strong{color:var(--orange)}
+  .greeting p{margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6}
+  .summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:6px}
+  .card .value{font-size:28px;font-weight:700;color:var(--dark)}
+  .card.highlight{background:var(--green-bg);border-color:#b2dfc7}
+  .card.highlight .value{color:var(--green)}
+  .section-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .items{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+  .item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:16px}
+  .item-rank{width:28px;height:28px;border-radius:50%;background:var(--orange-light);color:var(--orange);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .item-rank.top{background:var(--orange);color:var(--white)}
+  .item-info{flex:1;min-width:0}
+  .item-id{font-size:11px;color:var(--soft);font-weight:500;margin-bottom:3px}
+  .item-name{font-size:14px;font-weight:500;color:var(--dark);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .item-reward{background:var(--green-bg);color:var(--green);font-size:13px;font-weight:700;padding:5px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+  .how{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:28px}
+  .how h3{font-size:14px;font-weight:600;margin-bottom:14px}
+  .how ol{padding-left:18px}
+  .how ol li{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:8px}
+  .how ol li strong{color:var(--dark)}
+  .cta{display:inline-block;background:var(--orange);color:var(--white);font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none;width:100%;text-align:center}
+  footer{text-align:center;margin-top:40px;font-size:12px;color:var(--soft);line-height:1.6}
+  footer a{color:var(--orange);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="logo">shopee <span>Afiliados do Vendedor</span></div></header>
+<main>
+  <div class="greeting">
+    <div class="eyebrow">Iniciativa exclusiva</div>
+    <h1>Olá, <strong>ROWELY</strong> 👋</h1>
+    <p>Selecionamos produtos da sua loja com alto potencial de vendas via afiliados. Adicione-os à sua campanha e ganhe créditos para usar em comissões.</p>
+  </div>
+  <div class="summary">
+    <div class="card"><div class="label">Produtos elegíveis</div><div class="value">5</div></div>
+    <div class="card highlight"><div class="label">Crédito total a receber</div><div class="value">R$ 1.500</div></div>
+  </div>
+  <div class="section-title">Seus produtos elegíveis</div>
+  <div class="items">
+    <div class="item">
+      <div class="item-rank top">1</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22898792169</div>
+        <div class="item-name">Rodinho De Pia Cozinha Rodo Mini Mop Magico Limpa E Seca -Retrátil E Pendurável</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">2</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58251476801</div>
+        <div class="item-name">Kit Chaveiro Boneco Happy: Cores Vibrantes e Alegria no seu Dia Presente</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">3</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23194897858</div>
+        <div class="item-name">Forma Gelo Silicone Grande C/ Tampa: Desmoldagem Fácil e Sem Cheiro Drinks e Armazenar no Freezer</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">4</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23094628450</div>
+        <div class="item-name">Escova de limpeza multifuncional Removedor de pelos de animais de estimação Raspador vidros</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">5</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58257232851</div>
+        <div class="item-name">Varal Elástico Antiderrapante 3/5M com Ganchos - Praticidade para Viagem e Casa com Furos para Cabides</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">6</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23499134049</div>
+        <div class="item-name">Descanso de Utensílios Dobrável 2 em 1 Organizador de Tampa de Panela e Espátula para Cozinha</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">7</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58257056313</div>
+        <div class="item-name">Esponja Multiuso Escova de Limpeza com Cabo: Ideal para Cozinha, Banheiro e Louças</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">8</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58257148363</div>
+        <div class="item-name">Mordedor Luva Interativa para Bebês - Alívio da Dentição com Som Divertido e Ajustável com Velcro</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">9</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22194358246</div>
+        <div class="item-name">Kit3 Conjunto de Tapetes para Banheiro Tapete Sanitário Antiderrapante Absorvente e em Formato de U</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">10</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58200114392</div>
+        <div class="item-name">Kit Utensílios de Cozinha Inox 4 Peças: Concha, Concha de Sopa,Espátula, Escumadeira</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">11</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58207165040</div>
+        <div class="item-name">Kit 100 Capas Descartáveis para Filtro de Aspirador - Proteção Higiênica contra Pelos e Poeira</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">12</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22499431583</div>
+        <div class="item-name">Barreira de Água de Silicone Auto-Adesiva Flexível para Banheiro Vários Tamanhos Disponíveis</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">13</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58203847263</div>
+        <div class="item-name">Molde Bandeja de Gelo Recheados 3 em 1 Silicone Forma Cilindrica para Copos Garrafas de Inoxidável</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">14</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58257155081</div>
+        <div class="item-name">Paliteiro de Bambu Moderno e Elegante - Dispenser para Mesa de Jantar e Cozinha</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">15</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58207152391</div>
+        <div class="item-name">Kit 8 Capas de Silicone Antiderrapantes para Rodas de Mala Proteção Silêncio para Sua Viagem</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">16</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23398823391</div>
+        <div class="item-name">Avental Simples com Babador em Cor Contrastante - Avental de Cozinha Impermeável e Resistente a Óleo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">17</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58201303715</div>
+        <div class="item-name">Mosquiteiro Bebê Dobrável - Proteção Total e Portátil Longe de Mosquitos e Insetos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">18</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58255101345</div>
+        <div class="item-name">Torneiras Monocomando Pretas Alto e baixo com Acabamento Fosco Banheiros Água de Resfriamento Única</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">19</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23098798612</div>
+        <div class="item-name">Bolsa Impermeável Saco Estanque 2/5/10/15/20/30L Camping Bag Mochila Pesca  Caiaque Natação</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">20</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58206978173</div>
+        <div class="item-name">Mini Soprador de Ar Portátil Potente e Versátil para Limpeza, Churrasco e Mais! Com Lanterna Integrada</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">21</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58207069102</div>
+        <div class="item-name">Saboneteira Moderna p/ Banheiro e Cozinha - Drenagem Rápida, Design Elegante, Durável</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">22</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58257133439</div>
+        <div class="item-name">Focinheira de Pato para Cães Anti-Mordida Latido e Lamber Vários Tamanhos e Cores Silicone Ajustável</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">23</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58203850063</div>
+        <div class="item-name">50/100/150 Folhas De Papel Antiaderente de Airfryer para Frituras Assados Multiuso Sanduíche Fritas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">24</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20698271815</div>
+        <div class="item-name">Kit 6 Sacos Lava Roupa Facil Para Máquina de Lavar Delicadas  Íntimas Organizador de Roupas Ziper</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">25</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58207229144</div>
+        <div class="item-name">Buzina Elétrica para Bicicleta 120dB com Alarme Antifurto Recarga USB Mini Alto-Falante para Guidão</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">26</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58200111411</div>
+        <div class="item-name">Cabideiro de Chão Moderno 170cm com 6/9 Ganchos para Roupas, Bolsas e Chapéus</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">27</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58207287406</div>
+        <div class="item-name">Luzes Diurnas DRL LED Brancas Ultrabrilhantes para Carros e Fácil Instalação Automotiva Carro Moto</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">28</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58207002244</div>
+        <div class="item-name">Kit 6/12 Mini Colheres de Madeira (6.8cm): Perfeitas para Condimentos, Açúcar e Café</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">29</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58207069792</div>
+        <div class="item-name">Kit 10 Carimbo Decorativo para Unhas Crie Nail Arts Fabulosas em Casa Rápido Decorações de Unha</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">30</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22294306028</div>
+        <div class="item-name">Fatiador Profissional 16 em 1 Multiuso Cozinha Slicer Aço Inox Cortador Ralador De Legumes Verduras Frutas Alime</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">31</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58201302965</div>
+        <div class="item-name">Tábua de Corte Inox Premium Cozinha de Aço Inoxidável Antiodor Ambos os Lados Podem Ser Usados</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">32</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58200010798</div>
+        <div class="item-name">Rodo de Limpeza de Silicone com Cabo de Madeira 360° para Banheiro, Vidros e Carro</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">33</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22798804773</div>
+        <div class="item-name">Boné de Beisebol Unissex de Tecido Respirável Macio com Aba Curva - Ultraleve, Cores Disponíveis</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">34</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22098897692</div>
+        <div class="item-name">Conjunto de Jogo Americano Colorido em Espiral, Isolado, Impermeável e Resistente a Óleo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">35</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23199133105</div>
+        <div class="item-name">Kit 4/8/12 Mini Garfinhos Multifuncionais com Cabo de Madeira para Frutas Bolos e Churrasco</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">36</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58207230923</div>
+        <div class="item-name">Lanterna Traseira LED para Bike com Setas e Controle Remoto Recarregável USB Piscar Vários Modos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">37</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58205115107</div>
+        <div class="item-name">Toalheiro de Parede Duplo e Simples Preto Fosco C/ Ganchos Organização e Elegância para Banheiro</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div></div>
+  <div class="section-title">Como funciona</div>
+  <div class="how">
+    <ol>
+      <li>Acesse <strong>Afiliados do Vendedor</strong> no Seller Centre e adicione os produtos acima em uma campanha com qualquer percentual de comissão.</li>
+      <li>Mantenha cada produto <strong>ativo por pelo menos 30 dias</strong>.</li>
+      <li>Receba <strong>R$ 300 de crédito por produto</strong> — os créditos são acumulativos.</li>
+      <li>Use o crédito para pagar qualquer comissão de afiliados da sua loja.</li>
+      <li>Pagamentos processados semanalmente, em até 10 dias após completar os 30 dias.</li>
+    </ol>
+  </div>
+  <a class="cta" href="https://seller.shopee.com.br/portal/web-seller-affiliate" target="_blank">Ir para Afiliados do Vendedor →</a>
+  <footer>
+    <p>Dúvidas? Fale com seu gerente ou chame <strong>daniel.nunes</strong> no SeaTalk.</p>
+    <p style="margin-top:6px;">Shopee Brasil · Afiliados do Vendedor · Iniciativa SKU Expansion</p>
+  </footer>
+</main>
+</body>
+</html>

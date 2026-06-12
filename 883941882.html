@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiliados do Vendedor – yiyiyi</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--orange:#EE4D2D;--orange-light:#fff3f0;--dark:#1a1a1a;--mid:#555;--soft:#888;--line:#e8e8e8;--bg:#f7f7f7;--white:#ffffff;--green:#1a7a4a;--green-bg:#edf7f2}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);min-height:100vh}
+  header{background:var(--orange);padding:0 24px;display:flex;align-items:center;height:56px}
+  .logo{font-size:22px;font-weight:700;color:var(--white);letter-spacing:-0.5px}
+  .logo span{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;vertical-align:middle}
+  main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+  .greeting{margin-bottom:28px}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+  h1{font-size:26px;font-weight:700;line-height:1.25;color:var(--dark)}
+  h1 strong{color:var(--orange)}
+  .greeting p{margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6}
+  .summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:6px}
+  .card .value{font-size:28px;font-weight:700;color:var(--dark)}
+  .card.highlight{background:var(--green-bg);border-color:#b2dfc7}
+  .card.highlight .value{color:var(--green)}
+  .section-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .items{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+  .item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:16px}
+  .item-rank{width:28px;height:28px;border-radius:50%;background:var(--orange-light);color:var(--orange);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .item-rank.top{background:var(--orange);color:var(--white)}
+  .item-info{flex:1;min-width:0}
+  .item-id{font-size:11px;color:var(--soft);font-weight:500;margin-bottom:3px}
+  .item-name{font-size:14px;font-weight:500;color:var(--dark);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .item-reward{background:var(--green-bg);color:var(--green);font-size:13px;font-weight:700;padding:5px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+  .how{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:28px}
+  .how h3{font-size:14px;font-weight:600;margin-bottom:14px}
+  .how ol{padding-left:18px}
+  .how ol li{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:8px}
+  .how ol li strong{color:var(--dark)}
+  .cta{display:inline-block;background:var(--orange);color:var(--white);font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none;width:100%;text-align:center}
+  footer{text-align:center;margin-top:40px;font-size:12px;color:var(--soft);line-height:1.6}
+  footer a{color:var(--orange);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="logo">shopee <span>Afiliados do Vendedor</span></div></header>
+<main>
+  <div class="greeting">
+    <div class="eyebrow">Iniciativa exclusiva</div>
+    <h1>Olá, <strong>yiyiyi</strong> 👋</h1>
+    <p>Selecionamos produtos da sua loja com alto potencial de vendas via afiliados. Adicione-os à sua campanha e ganhe créditos para usar em comissões.</p>
+  </div>
+  <div class="summary">
+    <div class="card"><div class="label">Produtos elegíveis</div><div class="value">5</div></div>
+    <div class="card highlight"><div class="label">Crédito total a receber</div><div class="value">R$ 1.500</div></div>
+  </div>
+  <div class="section-title">Seus produtos elegíveis</div>
+  <div class="items">
+    <div class="item">
+      <div class="item-rank top">1</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23692831530</div>
+        <div class="item-name">Fone De Ouvido Sem Fio Bluetooth Headphone Bluetooth para Celular</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">2</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20497723525</div>
+        <div class="item-name">Fone De Ouvido Earcuffs Condução De Ossos Sem Fio Bluetooth Auriculares TWS Earbuds</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">3</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21799205940</div>
+        <div class="item-name">Radio Retro  bluetooth ,entrada usb,microsd lanterna e sainda auxiliar AD-3199</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">4</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23897644397</div>
+        <div class="item-name">Caixa De Som Speaker Bluetooth RGB Portátil 10W usb/aux</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">5</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19956592942</div>
+        <div class="item-name">Rádio Retrô Vintage Portátil com bluetooth carregavel na Tomada / pilha Am Fm Sw Pendrive Com Sd Usb</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">6</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22497608263</div>
+        <div class="item-name">Fone de ouvido Bluetooth Sem Fio Headphone Bluetooth Recarregável P9 Air Top Casual Esportivo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">7</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19598026381</div>
+        <div class="item-name">Fone de ouvido Sem fio Bluetooth Suporte Orelha Pendurada Anti-queda TWS Ergonômico</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">8</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22798799970</div>
+        <div class="item-name">Caixa de som Bluetooth Portátil Led Rgb TWS Estéreo Multimídia com USB TF FM</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">9</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21999322451</div>
+        <div class="item-name">Caixa De Som Portátil Bluetooth Rádio Fm Usb Sd Controle Remoto Microfone Torre</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">10</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22493147082</div>
+        <div class="item-name">Mini Câmera Infantil Mini Recarregável Com Capa Video Jogos Fotos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">11</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22498781114</div>
+        <div class="item-name">Teclado Gamer Semi-mecânico Rgb Anti-ghosting</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">12</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22192395880</div>
+        <div class="item-name">Fone De Ouvido Bluetooth In-ear Sem Fio TWS</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">13</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23898535097</div>
+        <div class="item-name">Caixa De Som Bluetooth Portátil usb/aux</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">14</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19498265311</div>
+        <div class="item-name">Caixa De Som LED Bluetooth magnético portátil atmosfera colorida RBG mini Speaker à prova d'água</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">15</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23093509247</div>
+        <div class="item-name">Fone de ouvido com fio com microfone cobre driver fone de ouvido esportivo baixo estéreo QKZ</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">16</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22298580659</div>
+        <div class="item-name">Máquina De Cortar Cabelo Metal Profissional Smart Lcd Barbeador Elétrico dedicada Sem Fio Para Homens salão de beleza</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">17</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22093073048</div>
+        <div class="item-name">Fone de Ouvido Headphone com fio p2 com Microfone</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">18</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22493498986</div>
+        <div class="item-name">Campainha Com Câmera Vídeo Porteiro Sem Fio Wi-Fi HD Inteligente Smart Home Vê Pelo Celular Recarregável</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">19</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23594860634</div>
+        <div class="item-name">Tapa Olho Máscara Dormir Fone De Ouvido Bluetooth Confortável LEO</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">20</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23101530006</div>
+        <div class="item-name">Mouse gamer para jogo computador 3200dpi com LED laser X7 USB Botões Profissional</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">21</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23036203658</div>
+        <div class="item-name">Controle para  PS2 Com Fio Cor Preto</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">22</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22993408532</div>
+        <div class="item-name">Luva Ciclismo Gel Ciclista Meio Dedo Bike Bicicleta</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">23</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23296083933</div>
+        <div class="item-name">Controle Joystick Bluetooth Universal + cabo usb + suporte para Celular Tablet Android Ipad</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">24</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23993101572</div>
+        <div class="item-name">Carregador Turbo Inteligente + V8/tipo c Turbo com Cabo Micro USB Novos Telefones Recomendados</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">25</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23597117651</div>
+        <div class="item-name">Fones De Ouvido f50Tws Bluetooth Sem Fio Recarregável</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">26</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22194037939</div>
+        <div class="item-name">Caixa de Som Bluetooth Potente Com 4 Alto Falantes 30W Soundbar PC Notebook TV</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">27</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22393101264</div>
+        <div class="item-name">Caneta Impressora 3d Com Garantia Produto Lacrado + Refil</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">28</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23193132110</div>
+        <div class="item-name">Caixa de som Bluetooth Com Led RGB Portátil FM USB TWS 30W</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">29</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22398136910</div>
+        <div class="item-name">Caixa de Som Bluetooth com Alto-Falante Duplo e Subwoofer TWS Sem Fio D-G228</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">30</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19799321074</div>
+        <div class="item-name">Radio Retro  bluetooth ,entrada usb,microsd lanterna e sainda auxiliar ULT-3188</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">31</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22797611359</div>
+        <div class="item-name">Carregador de Celular de emergência portátil chaveiro 1500 mah para iphone ou android</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">32</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23498894255</div>
+        <div class="item-name">X55 Fones De Ouvido TWS Sleep Sem Fio Bluetooth Display Led HIFI Som Estéreo Fone</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">33</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23198337204</div>
+        <div class="item-name">Câmera De Impressão Instantânea Para Crianças Vídeo Fotografia Digital Fotográfica Toy Mini Impressora Térmica Boy Girls</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">34</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22503762204</div>
+        <div class="item-name">Headset Fone Gamer de ouvido com microfone Para PC Ps4 XBOX Computador Celular, P3 Headphone</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">35</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21999494786</div>
+        <div class="item-name">Mini-câmera digital de 2 polegadas com tela HD recarregável para crianças Brinquedos fotográficos fofos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">36</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23593082816</div>
+        <div class="item-name">Caixa de Som Bluetooth Portátil  Sem Fio Pen Drive SD Alto Falante</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">37</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18399302282</div>
+        <div class="item-name">Teclado Gamer Com Fio Semi-mecânico RGB LED retroiluminado Computador Pc</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">38</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22006015470</div>
+        <div class="item-name">Adaptador Wireless Wifi Usb Mini Nano 802.11n</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">39</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22393682176</div>
+        <div class="item-name">Caixa de Som LED RGB Bluetooth Portátil 30W AL-8686</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">40</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18297523866</div>
+        <div class="item-name">Fone De Ouvido Para Jogo TWS Fones Sem Fio Bluetooth 5.2 Modo Duplo Comutável 8D Stereo Music Game Earbuds Com Microfone</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">41</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22092650739</div>
+        <div class="item-name">TWS M25 Fone De Ouvido bluetooth 5.3 Sem Fio Resistente a água Stereo Sports Earbuds LED Microphone</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">42</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22493572424</div>
+        <div class="item-name">fone de ouvido tws bluetooth Transformers sem fio semi-in-ear redução de ruído jogo de música esportes fon</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">43</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22193096437</div>
+        <div class="item-name">Headset e fone de ouvido lado único sem fio Bluetooth EL-1607</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">44</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58256591152</div>
+        <div class="item-name">Máquina de cortar cabelo elétrica com visor digital, essencial para homens estilosos para trás profissional</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">45</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23598220274</div>
+        <div class="item-name">Teclado Gamer/ Escritório Com Fio RGB LED Iluminado  Com 68 Teclados Mecânicos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">46</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22797599385</div>
+        <div class="item-name">A6S TWS Fone De Ouvido Sem Fio Bluetooth 5.0 Estéreo Macaron Mini Fones Para Android Ios</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">47</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22397614526</div>
+        <div class="item-name">i13 TWS Fone De Ouvido Sem Fio Bluetooth 5.0 Air Pro 3 Esportivo Com Microfone</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">48</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18999303922</div>
+        <div class="item-name">Controle  Com Fio para  PS2 Fio 1.8M Cor Preto</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">49</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23193256157</div>
+        <div class="item-name">Máquina De Cortar Cabelo Profissional Smart Lcd Barbeador Elétrico Transparente Sem Fio Para Homens</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">50</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23993111514</div>
+        <div class="item-name">Caixa de som Pc Gamer Com Luz RGB Estéreo 2.0 Para Computador Notebook</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">51</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58256598307</div>
+        <div class="item-name">Kit Teclado e Mouse Sem Fio Gamer UltraMax ULT-908W Bluetooth + 2.4GHz RGB Recarregável ABNT2.</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">52</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23794688808</div>
+        <div class="item-name">Caixinha Caixa de som computador PC gamer alto falante RGB luz de respiração fria</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">53</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22198024235</div>
+        <div class="item-name">kit 2 fonte de energia alimentaçao bivolt 5v 2a Original</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">54</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22894088520</div>
+        <div class="item-name">Rádio Retrô bluetooth Caixa de Som Portátil Carregamento USB KMS-6681</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">55</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22100944335</div>
+        <div class="item-name">Caixa de Som  Alto-Falante Bluetooth Portátil Sem Fio À Prova D'água Emborrachada AL-652</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">56</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22997900141</div>
+        <div class="item-name">KIT 16 Pçs/Set Professional Aço Inoxidável Cutícula Nippers Cortador De Unhas Ferramentas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">57</div>
+      <div class="item-info">
+        <div class="item-id">ID: 11998935337</div>
+        <div class="item-name">Hub Régua Usb 2.0 4 Portas Led Indicador Extensor Usb Rápido</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">58</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20999367037</div>
+        <div class="item-name">Fone De Ouvido Bluetooth Extra Baixo Sem Fio Com Microfone E Controle De Volume</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">59</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20899299218</div>
+        <div class="item-name">Fone Intra-Auricular Sem Fio Bluetooth i12 Tws</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">60</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23394029011</div>
+        <div class="item-name">Caixa de Som Portátil Bluetooth RBG TWS -ULT-667</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">61</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22293590272</div>
+        <div class="item-name">TWS M41 Fones de Ouvido Sem Fio Bluetooth 5.3 À Prova d'Água para Jogos e Controle de Toque</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">62</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20455723313</div>
+        <div class="item-name">Fone De Ouvido Sem Fio bluetooth fm mp3 Micro Sd Usb B-05  Headphone Universal Sd P2 B05</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div></div>
+  <div class="section-title">Como funciona</div>
+  <div class="how">
+    <ol>
+      <li>Acesse <strong>Afiliados do Vendedor</strong> no Seller Centre e adicione os produtos acima em uma campanha com qualquer percentual de comissão.</li>
+      <li>Mantenha cada produto <strong>ativo por pelo menos 30 dias</strong>.</li>
+      <li>Receba <strong>R$ 300 de crédito por produto</strong> — os créditos são acumulativos.</li>
+      <li>Use o crédito para pagar qualquer comissão de afiliados da sua loja.</li>
+      <li>Pagamentos processados semanalmente, em até 10 dias após completar os 30 dias.</li>
+    </ol>
+  </div>
+  <a class="cta" href="https://seller.shopee.com.br/portal/web-seller-affiliate" target="_blank">Ir para Afiliados do Vendedor →</a>
+  <footer>
+    <p>Dúvidas? Fale com seu gerente ou chame <strong>daniel.nunes</strong> no SeaTalk.</p>
+    <p style="margin-top:6px;">Shopee Brasil · Afiliados do Vendedor · Iniciativa SKU Expansion</p>
+  </footer>
+</main>
+</body>
+</html>

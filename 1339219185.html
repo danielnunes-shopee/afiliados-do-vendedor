@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiliados do Vendedor – Trop Tech</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--orange:#EE4D2D;--orange-light:#fff3f0;--dark:#1a1a1a;--mid:#555;--soft:#888;--line:#e8e8e8;--bg:#f7f7f7;--white:#ffffff;--green:#1a7a4a;--green-bg:#edf7f2}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);min-height:100vh}
+  header{background:var(--orange);padding:0 24px;display:flex;align-items:center;height:56px}
+  .logo{font-size:22px;font-weight:700;color:var(--white);letter-spacing:-0.5px}
+  .logo span{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;vertical-align:middle}
+  main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+  .greeting{margin-bottom:28px}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+  h1{font-size:26px;font-weight:700;line-height:1.25;color:var(--dark)}
+  h1 strong{color:var(--orange)}
+  .greeting p{margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6}
+  .summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:6px}
+  .card .value{font-size:28px;font-weight:700;color:var(--dark)}
+  .card.highlight{background:var(--green-bg);border-color:#b2dfc7}
+  .card.highlight .value{color:var(--green)}
+  .section-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .items{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+  .item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:16px}
+  .item-rank{width:28px;height:28px;border-radius:50%;background:var(--orange-light);color:var(--orange);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .item-rank.top{background:var(--orange);color:var(--white)}
+  .item-info{flex:1;min-width:0}
+  .item-id{font-size:11px;color:var(--soft);font-weight:500;margin-bottom:3px}
+  .item-name{font-size:14px;font-weight:500;color:var(--dark);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .item-reward{background:var(--green-bg);color:var(--green);font-size:13px;font-weight:700;padding:5px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+  .how{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:28px}
+  .how h3{font-size:14px;font-weight:600;margin-bottom:14px}
+  .how ol{padding-left:18px}
+  .how ol li{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:8px}
+  .how ol li strong{color:var(--dark)}
+  .cta{display:inline-block;background:var(--orange);color:var(--white);font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none;width:100%;text-align:center}
+  footer{text-align:center;margin-top:40px;font-size:12px;color:var(--soft);line-height:1.6}
+  footer a{color:var(--orange);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="logo">shopee <span>Afiliados do Vendedor</span></div></header>
+<main>
+  <div class="greeting">
+    <div class="eyebrow">Iniciativa exclusiva</div>
+    <h1>Olá, <strong>Trop Tech</strong> 👋</h1>
+    <p>Selecionamos produtos da sua loja com alto potencial de vendas via afiliados. Adicione-os à sua campanha e ganhe créditos para usar em comissões.</p>
+  </div>
+  <div class="summary">
+    <div class="card"><div class="label">Produtos elegíveis</div><div class="value">5</div></div>
+    <div class="card highlight"><div class="label">Crédito total a receber</div><div class="value">R$ 1.500</div></div>
+  </div>
+  <div class="section-title">Seus produtos elegíveis</div>
+  <div class="items">
+    <div class="item">
+      <div class="item-rank top">1</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58251855904</div>
+        <div class="item-name">Controle Sem Fio Joystick Gamer para Switch E PC  Oled Lite Com Cabo Carregável</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">2</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22594558839</div>
+        <div class="item-name">Fone De Ouvido Sem Fio Bluetooth 5.3 OWS-15 Com Microfones Alta Fidelidade Som Estéreo Toque Inteligente Esportes</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">3</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18898118544</div>
+        <div class="item-name">Baba Eletrônica VB603 Com Monitor Visão Noturna, Câmera c/ Audio Sensor de Temperatura</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">4</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22194957816</div>
+        <div class="item-name">Fone de ouvido Sem fio Bluetooth  Ergonômico TWS Suporte Orelha Pendurada Anti-queda</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">5</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18799685706</div>
+        <div class="item-name">2025 NOVO Vídeo Game Stick M15 Pro 4k 64gb Hdmi Com 2 Controles Sem Fio +20mil Jogos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">6</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22293903527</div>
+        <div class="item-name">Fone De Ouvido Air Pro 4 TWS  Sem Fio  Bluetooth 5.3  Para iPhone e Android</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">7</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23594695103</div>
+        <div class="item-name">Interruptor Inteligente Touch Wi-Fi 1/2/3/4 Botão Smart Automação,Compatível Google  Alexa Smart Tuya</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">8</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23698375008</div>
+        <div class="item-name">HUB 7 em 1 Tipo C USB HDTV 4K 30Hz Vídeo USB 3.0 USB 2.0 SD TF Cartão Slot Leitor de Dados USB-C</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">9</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22994377088</div>
+        <div class="item-name">Ventilador Soprador De Ar Turbo Sem Fio Portátil 130000 RPM</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">10</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22098392982</div>
+        <div class="item-name">Caneta Touch Screen Universal Ponta Super Fina Touch Pen Celular Tablet</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">11</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22799402509</div>
+        <div class="item-name">HUB 4 Portas Em 1 USB USB3.0 OTG Tipo C Adaptador Para Mouse Teclado Lenovo Macbook PC Laptop</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">12</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18898280864</div>
+        <div class="item-name">Carregador de bateria automotivo inteligente 12 V Display Digital Automáticas Carregador De Bateria</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">13</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22293903499</div>
+        <div class="item-name">Niimbot D110 Impressora De Etiqueta Térmica Portátil Sem Fio Bluetooth + 1 Rolo Etiqueta</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">14</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22098393008</div>
+        <div class="item-name">Lixador de Pé Elétrico Esfoliador Tira Calos Pedicure Portátil</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">15</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22593902480</div>
+        <div class="item-name">Fone De Ouvido Sem Fio X22 Bluetooth 5.3 Sport Earcuffs Esportivo Headfone Headset</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">16</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58208749241</div>
+        <div class="item-name">Fone De Ouvido sem fio Bluetooh 5.2 Air Pods 3 gerações  Compativel  IOS e Android</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">17</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58255646925</div>
+        <div class="item-name">Lâmpada de LED Recarregável com Base Magnética, para Sobrepor, Sem Fio, Toque e Luz Ajustável</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">18</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22694232188</div>
+        <div class="item-name">Inalador Nebulizador Portátil Ultrassônico Atomizador De Baixo Nó Para Crianças E Adultos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">19</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22398929983</div>
+        <div class="item-name">Webcam Câmera Computador Full HD 1080x1920p 2MP USB Plug Play Microfone Embutido</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">20</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19499681440</div>
+        <div class="item-name">Carregador De iPhone Fonte com Cabo Carregamento Rápido 1m PD 25w</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">21</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23294680172</div>
+        <div class="item-name">Fio Dental Infantil em Formato de Arco Ultra Fino Kit 50PÇS para Limpeza Eficaz</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">22</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19799673276</div>
+        <div class="item-name">Fone De Ouvido Bluetooth Sem Fio 5.3 TWS M25 Resistente a água Stereo Sports Earbuds LED Microphone</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">23</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19798105441</div>
+        <div class="item-name">M28 Fone De Ouvido Bluetooth Sem Fio 5.1 Estéreo Com Controle De Toque Redução De Ruído À Prova D'água</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">24</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22698402267</div>
+        <div class="item-name">Mini Lanterna Com led Portátil/USB Recarregável 3 Modos De Luz Lanternas De Chaveiro E Abridor</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">25</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58255646819</div>
+        <div class="item-name">Alicate Multifuncional para Decapagem, Crimpagem ,Torção  e Separa de Fios</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">26</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22998382940</div>
+        <div class="item-name">Fone De Ouvido Sound Earcuffs Condução De Ossos Sem Fio Bluetooth Auriculares TWS Earbuds</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">27</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19798105987</div>
+        <div class="item-name">Fone de Ouvido Sem Fio i12 Tws Bluetooth 5.0 Com Touch</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">28</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22293903508</div>
+        <div class="item-name">Carregador Portátil Pineng Power Bank 10.000mah , 5000mah com adaptador iPhone e V8</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">29</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22498400242</div>
+        <div class="item-name">S20 TWS Fones De Ouvido Sem Fio Bluetooth 5.2  Com Binaural Touch HIFI Estéreo Esportivo De Áudio</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">30</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23098373996</div>
+        <div class="item-name">Fone De Ouvido Sem Fio E6s Tws  Bluetooth 5.0 Com Tela LED Digital</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">31</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22393899723</div>
+        <div class="item-name">Kit  Fotocélula Sensor De Presença Para Lâmpada Com Soquete E27</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">32</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58258746145</div>
+        <div class="item-name">Fone De Ouvido sem fio Bluetooh 5.2 2024 Novo Air Pods 3  Compativel  IOS e Android</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div></div>
+  <div class="section-title">Como funciona</div>
+  <div class="how">
+    <ol>
+      <li>Acesse <strong>Afiliados do Vendedor</strong> no Seller Centre e adicione os produtos acima em uma campanha com qualquer percentual de comissão.</li>
+      <li>Mantenha cada produto <strong>ativo por pelo menos 30 dias</strong>.</li>
+      <li>Receba <strong>R$ 300 de crédito por produto</strong> — os créditos são acumulativos.</li>
+      <li>Use o crédito para pagar qualquer comissão de afiliados da sua loja.</li>
+      <li>Pagamentos processados semanalmente, em até 10 dias após completar os 30 dias.</li>
+    </ol>
+  </div>
+  <a class="cta" href="https://seller.shopee.com.br/portal/web-seller-affiliate" target="_blank">Ir para Afiliados do Vendedor →</a>
+  <footer>
+    <p>Dúvidas? Fale com seu gerente ou chame <strong>daniel.nunes</strong> no SeaTalk.</p>
+    <p style="margin-top:6px;">Shopee Brasil · Afiliados do Vendedor · Iniciativa SKU Expansion</p>
+  </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiliados do Vendedor – Jorge.store</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--orange:#EE4D2D;--orange-light:#fff3f0;--dark:#1a1a1a;--mid:#555;--soft:#888;--line:#e8e8e8;--bg:#f7f7f7;--white:#ffffff;--green:#1a7a4a;--green-bg:#edf7f2}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);min-height:100vh}
+  header{background:var(--orange);padding:0 24px;display:flex;align-items:center;height:56px}
+  .logo{font-size:22px;font-weight:700;color:var(--white);letter-spacing:-0.5px}
+  .logo span{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;vertical-align:middle}
+  main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+  .greeting{margin-bottom:28px}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+  h1{font-size:26px;font-weight:700;line-height:1.25;color:var(--dark)}
+  h1 strong{color:var(--orange)}
+  .greeting p{margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6}
+  .summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:6px}
+  .card .value{font-size:28px;font-weight:700;color:var(--dark)}
+  .card.highlight{background:var(--green-bg);border-color:#b2dfc7}
+  .card.highlight .value{color:var(--green)}
+  .section-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .items{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+  .item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:16px}
+  .item-rank{width:28px;height:28px;border-radius:50%;background:var(--orange-light);color:var(--orange);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .item-rank.top{background:var(--orange);color:var(--white)}
+  .item-info{flex:1;min-width:0}
+  .item-id{font-size:11px;color:var(--soft);font-weight:500;margin-bottom:3px}
+  .item-name{font-size:14px;font-weight:500;color:var(--dark);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .item-reward{background:var(--green-bg);color:var(--green);font-size:13px;font-weight:700;padding:5px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+  .how{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:28px}
+  .how h3{font-size:14px;font-weight:600;margin-bottom:14px}
+  .how ol{padding-left:18px}
+  .how ol li{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:8px}
+  .how ol li strong{color:var(--dark)}
+  .cta{display:inline-block;background:var(--orange);color:var(--white);font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none;width:100%;text-align:center}
+  footer{text-align:center;margin-top:40px;font-size:12px;color:var(--soft);line-height:1.6}
+  footer a{color:var(--orange);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="logo">shopee <span>Afiliados do Vendedor</span></div></header>
+<main>
+  <div class="greeting">
+    <div class="eyebrow">Iniciativa exclusiva</div>
+    <h1>Olá, <strong>Jorge.store</strong> 👋</h1>
+    <p>Selecionamos produtos da sua loja com alto potencial de vendas via afiliados. Adicione-os à sua campanha e ganhe créditos para usar em comissões.</p>
+  </div>
+  <div class="summary">
+    <div class="card"><div class="label">Produtos elegíveis</div><div class="value">5</div></div>
+    <div class="card highlight"><div class="label">Crédito total a receber</div><div class="value">R$ 1.500</div></div>
+  </div>
+  <div class="section-title">Seus produtos elegíveis</div>
+  <div class="items">
+    <div class="item">
+      <div class="item-rank top">1</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23493883620</div>
+        <div class="item-name">Escova Eletrica de Limpeza 5 em 1 Sem Fio Limpador Multiuso Pratico Para Cozinha , Banheiro prático</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">2</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19598262403</div>
+        <div class="item-name">Power Bank 20000mAh Portátil Display Digital Carregamento Rápido 4 Saídas Universal</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">3</div>
+      <div class="item-info">
+        <div class="item-id">ID: 7183482061</div>
+        <div class="item-name">Mochila Maternidade Bolsa Mamãe Bebê Multifunção  JorgeStore</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">4</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23097303597</div>
+        <div class="item-name">Depilador Indolor Caneta Sobrancelha Removedor Instantâneo A Pilha Jorgestore</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">5</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22098347846</div>
+        <div class="item-name">kit 3 Faixas Elástica de Resistência para yoga Pilates Treino Academia</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">6</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23298882248</div>
+        <div class="item-name">Câmera de segurança externa de lente dupla com sirene de LED e sirene de polícia  ICSEE</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">7</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18897682986</div>
+        <div class="item-name">Mini Máquina De Costura Manual Portátil De Mão</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">8</div>
+      <div class="item-info">
+        <div class="item-id">ID: 10896404793</div>
+        <div class="item-name">Bolsa de viagem impermeavel de grande capacidade, bolsa de ombro de fitness esportiva JORGE</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">9</div>
+      <div class="item-info">
+        <div class="item-id">ID: 12168158564</div>
+        <div class="item-name">Bastão Pau de selfie Tripé Retrátil com Luz LED Controle Bluetooth Celular</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">10</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21897090602</div>
+        <div class="item-name">Seladora a vacuo de Alimentos Doméstica Bivolt Hermética JORGE</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">11</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18597242787</div>
+        <div class="item-name">Bateria Portátil Powerbank Indução Para iPhone JORGE</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">12</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22894157267</div>
+        <div class="item-name">Guarda Chuva Automático Abre E Fecha Reforçado Contra Vento Proteção Solar Blackout Jorge</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">13</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22192406729</div>
+        <div class="item-name">Bolsa Estilosa tamanho Grande 3 compartimentos de Grande capacidade. Jorge</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">14</div>
+      <div class="item-info">
+        <div class="item-id">ID: 10804196287</div>
+        <div class="item-name">Lâmpada Giratória Colorida Led Bola Maluca Rgb  Tomada para Festas Baladas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">15</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21578279862</div>
+        <div class="item-name">Microfone de Lapela Sem Fio  Vlog Tipo C</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">16</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23497845147</div>
+        <div class="item-name">168 Caneta Marcadora De Ponta Dupla Conjunto De Canetas De Aquarela Especial</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">17</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22596043699</div>
+        <div class="item-name">Carregador Portátil Power Bank 20.000mah 959 JorgeStore</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">18</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22693059353</div>
+        <div class="item-name">Mochila Feminina para Viagem Casual à Prova d'Água em Oxford, Se Torna Bolsa de Mão</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">19</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22398843688</div>
+        <div class="item-name">Máquina Nebulizadora Portátil Inalador Nebulizador Adulto Infantil Silencioso</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">20</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8172308633</div>
+        <div class="item-name">Controle De Xbox 360 Com Fio Para Video Game e PC/ Fat E Pc Joystick Jogo JorgeStore</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">21</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23492593445</div>
+        <div class="item-name">Câmera A9 Mini HD com Sensor de Presença Wi-Fi 110V e Suporte para Encaixe Jorge</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">22</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23893334028</div>
+        <div class="item-name">Kit 2 Tornozeleiras Ajustáveis ​​Compressão Elástica Esportiva Suporte Estabilizador Tornozelo Unissex</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">23</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19997113774</div>
+        <div class="item-name">Bolsa Mala Esportiva Mochila Costa Transversal Fitness Treino Futebol Academia Impermeável JORGE</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">24</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22594348061</div>
+        <div class="item-name">Câmera Segurança Externa 4K Wi-Fi 3 Lentes 180°, Zoom Ótico, IA Detecta Pessoa Animal , Visão Noturna, à Prova d'Água</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">25</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23393582989</div>
+        <div class="item-name">Papa Bolinhas Eletrico Tira Pelos de Roupas Removedor Aparador Sem Fio Recarregável JORGE</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">26</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23198017601</div>
+        <div class="item-name">Escova profissional para secador de cabelo com ar quente 5 em 1  110V</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">27</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22798920226</div>
+        <div class="item-name">Fones de ouvido Bluetooth sem fio TWS 9D com tela sensível ao toque digital e fones de ouvido esportivos jorge</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">28</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20797805663</div>
+        <div class="item-name">Fones de ouvido Bluetooth gatinho com LED colorido   JORGE</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">29</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58252993441</div>
+        <div class="item-name">Mochila Escolar Infantil Menino Menina - Animais  jorge</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">30</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23698007711</div>
+        <div class="item-name">Armadilha Mata Mosquito USB LED Sucção 360° Silenciosa Sem Produtos Químicos Portátil</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">31</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21697390981</div>
+        <div class="item-name">A6S TWS Fone De Ouvido Sem Fio Bluetooth 5.0 Estéreo Macaron Mini Fones Para Redmi Android Ios</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">32</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8332562632</div>
+        <div class="item-name">Mochila Bolsa Maternidade Living Original Moderna Reforçada JorgeStore</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">33</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8864685994</div>
+        <div class="item-name">Relógio Smartwatch D20 Atualizado versão 2023 JorgeStore</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">34</div>
+      <div class="item-info">
+        <div class="item-id">ID: 12315875021</div>
+        <div class="item-name">Bolsa Térmica Fitness Marmita importada JorgeStore</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">35</div>
+      <div class="item-info">
+        <div class="item-id">ID: 3039453754</div>
+        <div class="item-name">Mini Game Retrô Portatil Nintendo 400 Jogos Antigos Anos 80</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">36</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21297096554</div>
+        <div class="item-name">Mini carregadores portáteis com mosquetão embutido impermeável apto para acampamento ao ar livre</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">37</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20299250309</div>
+        <div class="item-name">Monitor digital de pressão arterial de braço totalmente automático  jorge</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">38</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23298643529</div>
+        <div class="item-name">Fones De Ouvido Sem Fio Bluetooth Fone Com Microfones Alta Fidelidade Som Estéreo Toque Inteligente Esportes jorge</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">39</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22893220107</div>
+        <div class="item-name">Nebulizador Inalador Portátil E Silencioso  Ajustável Adequado Para Crianças E Adultos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">40</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23692482134</div>
+        <div class="item-name">Tapete Retangular Multifuncional Para Banheiro Absorção Rápida, Antiderrapante Jorge</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">41</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22398039491</div>
+        <div class="item-name">Kit 2 Lâmpada Led Giratória Colorida Globo De Luz Festa   jorge</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">42</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23893066508</div>
+        <div class="item-name">Air Pro 6 TWS Fones de ouvido Bluetooth sem fio Fones de ouvido esportivos  jorge</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">43</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23493866394</div>
+        <div class="item-name">Termômetro Digital Flexível LCD Rápido e Preciso Adulto Infantil Medição Corporal Febre</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">44</div>
+      <div class="item-info">
+        <div class="item-id">ID: 6589035487</div>
+        <div class="item-name">Receptor Bluetooth P2 3.5mm para Carro e Som | Adaptador Áudio Wireless com Microfone Hands Free</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">45</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22597692543</div>
+        <div class="item-name">Mini Aquecedor  Pequeno Portátil De Parede</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">46</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23397616324</div>
+        <div class="item-name">Microcorrente Massajador Facial Mini Instrumento De Beleza Lifting</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">47</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22596914291</div>
+        <div class="item-name">Kit Profissional de Lixadeira de Unhas Elétrica com Broca e Motor Bivolt para Manicure e Pedicure jorge</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">48</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58255478319</div>
+        <div class="item-name">Massageador de Couro Cabeludo com Nebulização + Vibração 3 Níveis com Luz Vermelha e Azul  jorge</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">49</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23698047497</div>
+        <div class="item-name">Mini Processador De Alimentos Elétrico Picador De Alho Triturador De Pimenta 350ml  jorge</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">50</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23603394331</div>
+        <div class="item-name">Bolsa de ombro masculina anti-roubo de ombro com entrada para carregador usb mensageiro Jorge</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">51</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22595894408</div>
+        <div class="item-name">Par de Lâmpadas C6 Super Led 6000K H1 H3 H4 H7 H11 H13 H16 H27 HB3 HB4 12V a 24V Jorge</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">52</div>
+      <div class="item-info">
+        <div class="item-id">ID: 10488741211</div>
+        <div class="item-name">Bolsa de viagem à prova d'água com grande capacidade JORGE</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">53</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19899203584</div>
+        <div class="item-name">Chapinha Prancha Cabelo Profissional Nano Titanium 450F BIVOLT JorgeStore</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">54</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23893383792</div>
+        <div class="item-name">Compressor de Ar Portátil Digital Recarregável Inflador Pneu Carro Moto Bike USB LED</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">55</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20697995926</div>
+        <div class="item-name">Tablet 10.1” HD + Teclado Bluetooth Capa 2 em 1 WiFi Android Tela Grande Alta Performance</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">56</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22294001573</div>
+        <div class="item-name">Relógio Inteligente Esportivo Bluetooth Série GT 10</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">57</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19299724564</div>
+        <div class="item-name">360°Suporte dobrável para celular Suporte magnético de adsorção de carro a vácuo dupla face</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">58</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22194171382</div>
+        <div class="item-name">Mochila empresarial reforçada e à prova d'água para laptop (unissex) Jorge</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">59</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19698262403</div>
+        <div class="item-name">Mini Power Bank 10000mAh Portátil Compacto Display Digital Tipo C Lightning Carregamento</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">60</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18200089260</div>
+        <div class="item-name">Bolsa Térmica Feminina Grande para Marmita e Passeio JORGE</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">61</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22891027245</div>
+        <div class="item-name">Cabo macho de interface multimídia USB-C macho 3.1 para HD  Jorge</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">62</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23498217235</div>
+        <div class="item-name">Termômetro Digital Infravermelho Sem Contato – Medição Precisa para Bebês e Adultos LCD/ Pratico jorge</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">63</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21598279200</div>
+        <div class="item-name">Relógio Smartwatch Smartband Pressão Corrida Bicicleta Fitin</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">64</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22697143098</div>
+        <div class="item-name">80 peças Caneta Marcadora De Ponta Dupla Conjunto De Canetas De Aquarela Especial Para Crianças</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">65</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22693653179</div>
+        <div class="item-name">Luz de preenchimento e luz quente para fotografia LED RGB 2700k-6500k Luz fotográfica profissional portátil recarregável</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">66</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19297660338</div>
+        <div class="item-name">Garrafa Térmica 1 Litro Com Termômetro Led Para Chás / Café Design Moderno quente até 24h JORGE</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">67</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21199323744</div>
+        <div class="item-name">Bolsa isolada para lancheira média de fitness com alça de mão</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">68</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21097623633</div>
+        <div class="item-name">Projetor 4K HD 150 Polegadas Celular, Tv B0x, Xbox, PS, Pc, Wifi e Bluetooth HY300 Magcubic 110/220</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">69</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23098222964</div>
+        <div class="item-name">Bolsa Mala De Viagem Academia Multifuncional De Grande Capacidade  jorge</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">70</div>
+      <div class="item-info">
+        <div class="item-id">ID: 2959759511</div>
+        <div class="item-name">Relógio Inteligente Bluetooth M4 à Prova D'água / Smartwatch Esportivo - MI M4</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">71</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23192200041</div>
+        <div class="item-name">Mochila Feminino Resistente Reforçada com chaveiro Faculdade e Viagens JORGE</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">72</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20497968644</div>
+        <div class="item-name">Secador de Cabelo Iônico Secagem Rápida Ar Quente/Frio  JORGE</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">73</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22692675900</div>
+        <div class="item-name">Fone De Ouvido Sem Fio Bluetooth  P9 Top Headphone</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">74</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23994375958</div>
+        <div class="item-name">kit 30canetas, marcadores permanentes de 2 mm JORGE</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">75</div>
+      <div class="item-info">
+        <div class="item-id">ID: 5988562661</div>
+        <div class="item-name">Adaptador WiFi USB 2.4GHz 950Mbps Mini Dongle Antena PC Notebook Internet Sem Fio 802.11</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">76</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22598324950</div>
+        <div class="item-name">Depilador Elétrico Feminino Recarregável USB Sem Dor Portátil</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">77</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23197740371</div>
+        <div class="item-name">Bolsa Tiracolo Grande De Ombro Transversal De Tecido Para Viagem  jorge</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">78</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23798117682</div>
+        <div class="item-name">Tablet Infantil Kids 7 Polegada com wifi bluetooth Android Super Resistente Smart jorge</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">79</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22898235686</div>
+        <div class="item-name">Fones De Ouvido Bluetooth 5.2 TWS Sem Fio 9D HiFi Estéreo Para Redução De Ruído Esportivos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">80</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22093190189</div>
+        <div class="item-name">Selfie stick 1.7M de comprimento sem fio Bluetooth tripé portátil retrátil</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">81</div>
+      <div class="item-info">
+        <div class="item-id">ID: 4689038454</div>
+        <div class="item-name">Fone Intra-Auricular Sem Fio Bluetooth i12 Tws JorgeStore</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">82</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23398771494</div>
+        <div class="item-name">Cinto Unissex Preto , Duplo Ilhós , Punk Rock Metal</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">83</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23398979959</div>
+        <div class="item-name">kit 10  24 Cores Caneta Marcadora De Cabeça Dupla Oleosa Montagem Artística Para Estudantes Material Escolar jorge</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">84</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20399492206</div>
+        <div class="item-name">Kit 2 Mala de viagem dobrável portatíl e impermeável com grande capacidade  jorg</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">85</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22192931474</div>
+        <div class="item-name">Estojo Box Grande Case Com Alça e Divisória Organizador Com Zíper JORGE</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">86</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18499394430</div>
+        <div class="item-name">Kit 2 Receptor Bluetooth P2 para Áudio USB de Carro (3,5mm)</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div></div>
+  <div class="section-title">Como funciona</div>
+  <div class="how">
+    <ol>
+      <li>Acesse <strong>Afiliados do Vendedor</strong> no Seller Centre e adicione os produtos acima em uma campanha com qualquer percentual de comissão.</li>
+      <li>Mantenha cada produto <strong>ativo por pelo menos 30 dias</strong>.</li>
+      <li>Receba <strong>R$ 300 de crédito por produto</strong> — os créditos são acumulativos.</li>
+      <li>Use o crédito para pagar qualquer comissão de afiliados da sua loja.</li>
+      <li>Pagamentos processados semanalmente, em até 10 dias após completar os 30 dias.</li>
+    </ol>
+  </div>
+  <a class="cta" href="https://seller.shopee.com.br/portal/web-seller-affiliate" target="_blank">Ir para Afiliados do Vendedor →</a>
+  <footer>
+    <p>Dúvidas? Fale com seu gerente ou chame <strong>daniel.nunes</strong> no SeaTalk.</p>
+    <p style="margin-top:6px;">Shopee Brasil · Afiliados do Vendedor · Iniciativa SKU Expansion</p>
+  </footer>
+</main>
+</body>
+</html>

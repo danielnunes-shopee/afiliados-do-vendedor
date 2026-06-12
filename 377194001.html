@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiliados do Vendedor – Tem Tudo Import</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--orange:#EE4D2D;--orange-light:#fff3f0;--dark:#1a1a1a;--mid:#555;--soft:#888;--line:#e8e8e8;--bg:#f7f7f7;--white:#ffffff;--green:#1a7a4a;--green-bg:#edf7f2}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);min-height:100vh}
+  header{background:var(--orange);padding:0 24px;display:flex;align-items:center;height:56px}
+  .logo{font-size:22px;font-weight:700;color:var(--white);letter-spacing:-0.5px}
+  .logo span{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;vertical-align:middle}
+  main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+  .greeting{margin-bottom:28px}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+  h1{font-size:26px;font-weight:700;line-height:1.25;color:var(--dark)}
+  h1 strong{color:var(--orange)}
+  .greeting p{margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6}
+  .summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:6px}
+  .card .value{font-size:28px;font-weight:700;color:var(--dark)}
+  .card.highlight{background:var(--green-bg);border-color:#b2dfc7}
+  .card.highlight .value{color:var(--green)}
+  .section-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .items{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+  .item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:16px}
+  .item-rank{width:28px;height:28px;border-radius:50%;background:var(--orange-light);color:var(--orange);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .item-rank.top{background:var(--orange);color:var(--white)}
+  .item-info{flex:1;min-width:0}
+  .item-id{font-size:11px;color:var(--soft);font-weight:500;margin-bottom:3px}
+  .item-name{font-size:14px;font-weight:500;color:var(--dark);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .item-reward{background:var(--green-bg);color:var(--green);font-size:13px;font-weight:700;padding:5px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+  .how{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:28px}
+  .how h3{font-size:14px;font-weight:600;margin-bottom:14px}
+  .how ol{padding-left:18px}
+  .how ol li{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:8px}
+  .how ol li strong{color:var(--dark)}
+  .cta{display:inline-block;background:var(--orange);color:var(--white);font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none;width:100%;text-align:center}
+  footer{text-align:center;margin-top:40px;font-size:12px;color:var(--soft);line-height:1.6}
+  footer a{color:var(--orange);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="logo">shopee <span>Afiliados do Vendedor</span></div></header>
+<main>
+  <div class="greeting">
+    <div class="eyebrow">Iniciativa exclusiva</div>
+    <h1>Olá, <strong>Tem Tudo Import</strong> 👋</h1>
+    <p>Selecionamos produtos da sua loja com alto potencial de vendas via afiliados. Adicione-os à sua campanha e ganhe créditos para usar em comissões.</p>
+  </div>
+  <div class="summary">
+    <div class="card"><div class="label">Produtos elegíveis</div><div class="value">5</div></div>
+    <div class="card highlight"><div class="label">Crédito total a receber</div><div class="value">R$ 1.900</div></div>
+  </div>
+  <div class="section-title">Seus produtos elegíveis</div>
+  <div class="items">
+    <div class="item">
+      <div class="item-rank top">1</div>
+      <div class="item-info">
+        <div class="item-id">ID: 17262537890</div>
+        <div class="item-name">Kit Alongamento Poligel Polygel + Molde F1 + Lixa + Mini Cabine De Unha</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">2</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22492696579</div>
+        <div class="item-name">Kit Polygel Cabine Mini G 48W LED UV Unhas Poligel Lixadeira Elétrica Caneta 20.000RPM Manicure Profissional Completo</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">3</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22293727861</div>
+        <div class="item-name">Kit 3 Brocas Escalonada Titânio 3-12 4-12 -20mm Jogo Broca Hexagonais Cônicas Bits Métricos Cônicos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">4</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21542993025</div>
+        <div class="item-name">Cabine De Unha Gel Acrígel Led/uv Sun5 Branca/Rosa Digital 48w Bivolt</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">5</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23992977179</div>
+        <div class="item-name">Kit polygel Completo Alongamento Unhas Cabine Unha Gel Molde F1 Poligel</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">6</div>
+      <div class="item-info">
+        <div class="item-id">ID: 13091629583</div>
+        <div class="item-name">Cozedor de Ovos 110v/220v Elétrico Portátil Cozinha à Vapor, Presente dia das maes</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">7</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22598027466</div>
+        <div class="item-name">Kit Alongamento De Unha Polygel Cabine Estufa Sun Mini 6w + Top Coat + Primer + 100 Moldes F1Gel/Acrigel/Porcelana</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">8</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22596650060</div>
+        <div class="item-name">Kit Unha Gel Acrigel Fibra Para Iniciantes Completo Cabine estufa de Unhas e lixadeira elétrica Manicure Profissional</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">9</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58207703204</div>
+        <div class="item-name">Kit 12 Esmaltes em Gel LED UV COLEÇÕES para Unhas Manicure Zero HEMA TPO DMPT 12ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">10</div>
+      <div class="item-info">
+        <div class="item-id">ID: 17646657129</div>
+        <div class="item-name">Aquecedor Panela de Cera Quente Panela Elétrica para Depilação Termocera 110v ou 220v</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">11</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22598700116</div>
+        <div class="item-name">Kit com 12 Ventosas Terapêuticas Ventosaterapia Massagem acupuntura massoterapia chinesa Vácuo Sucção + Bomba</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">12</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58253134643</div>
+        <div class="item-name">Kit Levanta Cílios Lash Lift Dadiva Gold Para Lifting De Cílios Série Ouro</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">13</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18298549427</div>
+        <div class="item-name">Kit 2 ou 1 Tornozeleiras Ortopédica Compressão Estabilizadora Par Tornozeleira Ajustável Unissex</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">14</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19599848928</div>
+        <div class="item-name">Cabine Sun 1s One Led Uv 48w Unhas Acrigel 30 Leds Bivolt</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">15</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18899855371</div>
+        <div class="item-name">Kit 2 Gel 56g X&D Para Unhas Gel fibra XED XD Profissional Alongamento De Unha</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">16</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22997896997</div>
+        <div class="item-name">Cozedor de Ovos Elétrico Portátil Cozinha à Vapor 110v/220v Bivolt</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">17</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23299140143</div>
+        <div class="item-name">Kit Polygel + Lixadeira Caneta + Cabine Sun Mini + Polygel + Molde F1</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">18</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23694318183</div>
+        <div class="item-name">Kit Unha Gel Construtor Unhas Profissional – Molde F1 + Lixa + Mini Cabine UV/LED – Nail Completo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">19</div>
+      <div class="item-info">
+        <div class="item-id">ID: 13074305624</div>
+        <div class="item-name">Kit 5 Esmalte de Unha em Gel para Unhas Postiças e Naturais Manicure Profissional</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">20</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23539584002</div>
+        <div class="item-name">Kit Unhas de Gel Cabine Sun 5 LED UV 48w Digital Lixadeira Elétrica Caneta 20.000 RPM Prep Molde Lixa Broca Presilha</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">21</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22521617642</div>
+        <div class="item-name">Kit Unha Gel Completo Cabine Sun 5 48W Lixadeira Caneta Pedicure e Manicure Alongamento Extensão Unhas Porcelana Acrigel</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">22</div>
+      <div class="item-info">
+        <div class="item-id">ID: 14581335179</div>
+        <div class="item-name">Polygel XD LED UV Profissional 15g F1 Alongamento Unhas de Gel Poly Gel</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">23</div>
+      <div class="item-info">
+        <div class="item-id">ID: 16084384017</div>
+        <div class="item-name">Kit Manicure Iniciante de Unha Pedicure Cabine Estufa UV Sun Mini Lixa Lixadeira Caneta Elétrica</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">24</div>
+      <div class="item-info">
+        <div class="item-id">ID: 5491767408</div>
+        <div class="item-name">Esmaltes 24/10 Unidades De Unhas Em Gel Lirió, XD, DZ Profissional Shellac  Unha Acrigel Porcelana Manicure Pedicure</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">25</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22494258229</div>
+        <div class="item-name">Aquecedor De Cera Dobrável De Silicone Fácil De Limpar Portátil PANELA DE CERA Bivolt</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">26</div>
+      <div class="item-info">
+        <div class="item-id">ID: 13523209875</div>
+        <div class="item-name">Cinta Modeladora de Barriga/Abdominal E Redutora Exercícios para Academia  com Redução De Medidas para Cintura Fina</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">27</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8851132246</div>
+        <div class="item-name">Kit Lixadeira Elétrica Motor Caneta + Cabine Estufa de Unhas 48W Sun 5 UV LED Manicure Profissional</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">28</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18866000021</div>
+        <div class="item-name">kit Polygel alongamento de unhas Cabine Estufa De Unhas Molde F1 Poligel Unha De Gel</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">29</div>
+      <div class="item-info">
+        <div class="item-id">ID: 16120283242</div>
+        <div class="item-name">kit Joelheira Par Unidade Articulada Reforçada Ortopedica  Crossfit  Ajustável Preta Alivio de Dor</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">30</div>
+      <div class="item-info">
+        <div class="item-id">ID: 17075256891</div>
+        <div class="item-name">Kit 2 Joelheiras de Compressão Térmica Ortopédica para Alivio de Dor Par De Joelheira</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">31</div>
+      <div class="item-info">
+        <div class="item-id">ID: 10546395639</div>
+        <div class="item-name">Cinta modeladora De Barriga E Cintura Dupla Compressão Ajustável</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">32</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19297690426</div>
+        <div class="item-name">Kit De Brocas Tungstênio  e Diamantada Para Unhas Gel Acrigel Cutilagem Lixadeira De UNha</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">33</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19261029333</div>
+        <div class="item-name">Kit Unha Gel Completo Cabine Sun 5 48W Lixadeira Caneta Pedicure e Manicure Alongamento Extensão Unhas Porcelana Acrigel</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">34</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58258820775</div>
+        <div class="item-name">Cabine Sem Fio R10 120W 55 LEDs UV Bateria 5400mAh Fan Nails Profissional Sensor Automático Seca Rápido</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">35</div>
+      <div class="item-info">
+        <div class="item-id">ID: 10646054567</div>
+        <div class="item-name">Kit Manicure Cabine Sun 5 48w Lixa Lixadeira Elétrica de Unha Motor Mercedes para Unhas de Gel Acrigel Acrygel Porcelana</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">36</div>
+      <div class="item-info">
+        <div class="item-id">ID: 6579567062</div>
+        <div class="item-name">Lixadeira de Unha Elétrica Motor Mercedes 2000 Profissional para Unhas Gel Acrigel Porcelana</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">37</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8413693682</div>
+        <div class="item-name">Kit 50 Lixa De Unha Bloco Fecha Poros Polidora color Unhas gel polygel Acrilico</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">38</div>
+      <div class="item-info">
+        <div class="item-id">ID: 7485195602</div>
+        <div class="item-name">Kit Cabine Sun 5 Led Uv 48w Unha Gel Acrigel Porcelana + Motor Porquinho Lixa Lixadeira de Unhas Elétrica Manicure</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">39</div>
+      <div class="item-info">
+        <div class="item-id">ID: 7883514802</div>
+        <div class="item-name">Prep Antisséptico Para Higienização das Unhas + Algodão Prensado Para Unha</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">40</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22398409606</div>
+        <div class="item-name">Kit 3 Gel 30g Fan Nails Para Unhas Gel fibra Profissional Alongamento De Unha Led/Uv</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">41</div>
+      <div class="item-info">
+        <div class="item-id">ID: 9970730756</div>
+        <div class="item-name">Esterilizador elétrico de Pinças e Alicates Piercing Materiais de Manicure e Tatuadores</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">42</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23992977179</div>
+        <div class="item-name">kit polygel Completo Alongamento Unhas Cabine Unha Gel Molde F1 Poligel</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">43</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19197981540</div>
+        <div class="item-name">Kit Alongamento De Unha Gel Cabine Estufa Sun Mini 6w + Top Coat + Primer + 100 Unhas Tips/Acrigel/Porcelana</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">44</div>
+      <div class="item-info">
+        <div class="item-id">ID: 10981851356</div>
+        <div class="item-name">Kit Manicure Iniciante De Unha Pedicure Cabine Estufa Uv Sun Mini +Lixa  Lixadeira Caneta Para Unhas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">45</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22792930051</div>
+        <div class="item-name">KIT 3 Gel 15g Para Unhas Gel fibra Profissional Alongamento De Unha</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">46</div>
+      <div class="item-info">
+        <div class="item-id">ID: 2918547323</div>
+        <div class="item-name">Kit de Lixas 25/20/10 ou 05 Unha Bumerangue 100/180 Unhas Acrigel Gel Porcelana Boomerang</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">47</div>
+      <div class="item-info">
+        <div class="item-id">ID: 11154243555</div>
+        <div class="item-name">Kit 10 Esmalte De Unha Em gel Lirió Shellac Color Polish 10ml Esmaltes Unhas Acrigel Porcelana Profissional</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">48</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20298275482</div>
+        <div class="item-name">Unhas Soft Gel Postiça Quadrada 240 Unidades  Formas p/ Alongamento Profissional</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">49</div>
+      <div class="item-info">
+        <div class="item-id">ID: 7888129735</div>
+        <div class="item-name">Kit Manicure Monomer Acrylic liquid + Pó Acrílico  + 05 Pinceis + Copo Dappen</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">50</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22994544460</div>
+        <div class="item-name">kit 10 AGULHAS Dermapen 12, 24, 36, 42 e Nano: Canetas - ; MyM; N2C; M5; M7; A1; A; HT0005; Produto Original com ANVISA</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">51</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22593533475</div>
+        <div class="item-name">Polygel 5, 4, 3, 2 e 1 Lirio LED UV Profissional  15g F1 Alongamento Poligel Unhas de Gel</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">52</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22912657907</div>
+        <div class="item-name">Kit Unha Gel Acrigel Fibra Para Iniciantes Completo Cabine Sun 5 estufa Unhas lixadeira elétrica Manicure Profissional</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">53</div>
+      <div class="item-info">
+        <div class="item-id">ID: 10923867894</div>
+        <div class="item-name">Kit Manicure Alongamento de Unhas Cabine Sun 5 Lixa Lixadeira Elétrica de Unha Caneta Tips</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">54</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58200857790</div>
+        <div class="item-name">kit 48 ou 24 Canetas Óleo Hidratante de Cutículas Revitalizador de Unhas Gel Fragrância Flores e Frutas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">55</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8751887129</div>
+        <div class="item-name">Gel X&D 15g LED UV para Unhas Xd Profissional Acrigel Alongamento de Unha Xed White Branco Transparente Pink Rosa Nude</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">56</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23193421003</div>
+        <div class="item-name">Kit Unha De Gel Completo Acrigel Porcelana Fibra de Vidro Manicure Pedicure Kit Alongamento De unhas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div></div>
+  <div class="section-title">Como funciona</div>
+  <div class="how">
+    <ol>
+      <li>Acesse <strong>Afiliados do Vendedor</strong> no Seller Centre e adicione os produtos acima em uma campanha com qualquer percentual de comissão.</li>
+      <li>Mantenha cada produto <strong>ativo por pelo menos 30 dias</strong>.</li>
+      <li>Receba <strong>R$ 380 de crédito por produto</strong> — os créditos são acumulativos.</li>
+      <li>Use o crédito para pagar qualquer comissão de afiliados da sua loja.</li>
+      <li>Pagamentos processados semanalmente, em até 10 dias após completar os 30 dias.</li>
+    </ol>
+  </div>
+  <a class="cta" href="https://seller.shopee.com.br/portal/web-seller-affiliate" target="_blank">Ir para Afiliados do Vendedor →</a>
+  <footer>
+    <p>Dúvidas? Fale com seu gerente ou chame <strong>daniel.nunes</strong> no SeaTalk.</p>
+    <p style="margin-top:6px;">Shopee Brasil · Afiliados do Vendedor · Iniciativa SKU Expansion</p>
+  </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiliados do Vendedor – Carrefour</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--orange:#EE4D2D;--orange-light:#fff3f0;--dark:#1a1a1a;--mid:#555;--soft:#888;--line:#e8e8e8;--bg:#f7f7f7;--white:#ffffff;--green:#1a7a4a;--green-bg:#edf7f2}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);min-height:100vh}
+  header{background:var(--orange);padding:0 24px;display:flex;align-items:center;height:56px}
+  .logo{font-size:22px;font-weight:700;color:var(--white);letter-spacing:-0.5px}
+  .logo span{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;vertical-align:middle}
+  main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+  .greeting{margin-bottom:28px}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+  h1{font-size:26px;font-weight:700;line-height:1.25;color:var(--dark)}
+  h1 strong{color:var(--orange)}
+  .greeting p{margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6}
+  .summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:6px}
+  .card .value{font-size:28px;font-weight:700;color:var(--dark)}
+  .card.highlight{background:var(--green-bg);border-color:#b2dfc7}
+  .card.highlight .value{color:var(--green)}
+  .section-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .items{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+  .item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:16px}
+  .item-rank{width:28px;height:28px;border-radius:50%;background:var(--orange-light);color:var(--orange);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .item-rank.top{background:var(--orange);color:var(--white)}
+  .item-info{flex:1;min-width:0}
+  .item-id{font-size:11px;color:var(--soft);font-weight:500;margin-bottom:3px}
+  .item-name{font-size:14px;font-weight:500;color:var(--dark);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .item-reward{background:var(--green-bg);color:var(--green);font-size:13px;font-weight:700;padding:5px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+  .how{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:28px}
+  .how h3{font-size:14px;font-weight:600;margin-bottom:14px}
+  .how ol{padding-left:18px}
+  .how ol li{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:8px}
+  .how ol li strong{color:var(--dark)}
+  .cta{display:inline-block;background:var(--orange);color:var(--white);font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none;width:100%;text-align:center}
+  footer{text-align:center;margin-top:40px;font-size:12px;color:var(--soft);line-height:1.6}
+  footer a{color:var(--orange);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="logo">shopee <span>Afiliados do Vendedor</span></div></header>
+<main>
+  <div class="greeting">
+    <div class="eyebrow">Iniciativa exclusiva</div>
+    <h1>Olá, <strong>Carrefour</strong> 👋</h1>
+    <p>Selecionamos produtos da sua loja com alto potencial de vendas via afiliados. Adicione-os à sua campanha e ganhe créditos para usar em comissões.</p>
+  </div>
+  <div class="summary">
+    <div class="card"><div class="label">Produtos elegíveis</div><div class="value">5</div></div>
+    <div class="card highlight"><div class="label">Crédito total a receber</div><div class="value">R$ 2.300</div></div>
+  </div>
+  <div class="section-title">Seus produtos elegíveis</div>
+  <div class="items">
+    <div class="item">
+      <div class="item-rank top">1</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18698155876</div>
+        <div class="item-name">Micro-Ondas Mondial 1200W MO-01-21-E</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">2</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58260159760</div>
+        <div class="item-name">Creme de Avelã com Chocolate Carrefour Duo 350g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">3</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22197495072</div>
+        <div class="item-name">Lavadora Semi Automática LCS Colormaq 15Kg</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">4</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22297495301</div>
+        <div class="item-name">Fogão de Piso Itatiaia 4 Bocas Star New  BIV</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">5</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23598050471</div>
+        <div class="item-name">Fogão de Piso Itatiaia 5 Bocas Waves New</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">6</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23198378737</div>
+        <div class="item-name">Tanquinho Colormaq SemiAutomatica 10 kg</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">7</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23692988672</div>
+        <div class="item-name">Fogão de Piso Itatiaia 4 Bocas Star New  BIV</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">8</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23497485322</div>
+        <div class="item-name">Kit 4 Travesseiros Nasa 3D Viscoelástico com mais Suporte Duoflex</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">9</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18497732974</div>
+        <div class="item-name">Lavadora De Roupas Britânia Semi BLR03 10kg</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">10</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22893415745</div>
+        <div class="item-name">Purificador de Água Consul CPB34AF Natural e Gelada</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">11</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23998423319</div>
+        <div class="item-name">Impressora Epson EcoTank L1250 Tanque de Tinta Colorida Wi-Fi</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">12</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23797485321</div>
+        <div class="item-name">Micro-Ondas PMO42EB 42L Philco Espelhado 110V</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">13</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23793256052</div>
+        <div class="item-name">Kit 4 Pneu Westlake Aro 15 185/60R15 84H Z108 CR65764</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">14</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22692993372</div>
+        <div class="item-name">Micro-ondas Electrolux 31 Litros MI41S</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">15</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22792984190</div>
+        <div class="item-name">Micro-ondas PMO23EB 20L Com Função Tira Odor Philco</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">16</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22497741561</div>
+        <div class="item-name">Churrasqueira Elétrica Mondial Preto 1800W CH-05</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">17</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58260159664</div>
+        <div class="item-name">Creme de Avelã e Cacau 350g Carrefour</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">18</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20997806411</div>
+        <div class="item-name">Aquecedor de Ambientes a Ar Termoventilador Mondial A-08 1500W</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">19</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18497732969</div>
+        <div class="item-name">Lavadora De Roupas Britânia Semi BLR04 20kg B</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">20</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18597732961</div>
+        <div class="item-name">Fogão de Piso Itatiaia 4 Bocas Waves New</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">21</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23893769171</div>
+        <div class="item-name">Microondas 28L PMO30S Espelhado 1100w com Função Tira Odor e 6 Receitas Pré Programadas Philco</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">22</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23292983765</div>
+        <div class="item-name">Mesa para Tênis de Mesa Ping Pong com Kit Completo Carrefour</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">23</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21897751204</div>
+        <div class="item-name">Fogão de Piso Itatiaia 4 Bocas Itaglass Plus</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">24</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23198186548</div>
+        <div class="item-name">Climatizador Clin16-01 BR/CZ 16 Litros 130w Nac Ventisol</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">25</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22397713035</div>
+        <div class="item-name">Fogão de Piso Itatiaia 5 Bocas TC Itaglass Plus</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">26</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23297462551</div>
+        <div class="item-name">Micro-ondas Efficient ME23S 23L Eletrolux</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">27</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23798578987</div>
+        <div class="item-name">Kit Mesa Ping Pong com Rede Klopf</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">28</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22393557710</div>
+        <div class="item-name">Bloco de Montar LEGO 319 Peças Speed Champions Nissan Skyline Gt-R R34 de 2 Fast 2 Furious</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">29</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23193960930</div>
+        <div class="item-name">Micro-ondas PMO42EB 42L Espelhado Philco</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">30</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58210171390</div>
+        <div class="item-name">Forno Elétrico Mondial 42L FRN-42-B Family II 1600W</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">31</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23993401114</div>
+        <div class="item-name">Kit 2 Pneus Westlake 185 65R15 Z108 88H CR65772</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">32</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21399856167</div>
+        <div class="item-name">Fogão 5 Bocas Itatiaia Electra Glass Plus Mesa de Vidro</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">33</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21897683529</div>
+        <div class="item-name">Conjunto de Panelas Inox Electrolux</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">34</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18798275976</div>
+        <div class="item-name">Kit 2 Pneus Edge Touring 175 65R14 2 86H XL Goodyear</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">35</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23198378892</div>
+        <div class="item-name">Tanquinho Colormaq SemiAutomatica 10 kg 220V</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">36</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22797540218</div>
+        <div class="item-name">Conjunto de Bowls Inox Com Tampa Plástica Electrolux 3 Peças</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">37</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18997680932</div>
+        <div class="item-name">Travesseiro Nasa 3D em Poliuretano 37x57cm Duoflex 802DT3240 1 Peça</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">38</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22592966095</div>
+        <div class="item-name">Sanduicheira Fast Grill e Sandwich Mondial S-12 750W</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">39</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21697921556</div>
+        <div class="item-name">Microondas ST66N 34 Litros Panasonic</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">40</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22593881488</div>
+        <div class="item-name">Lavadora Semi-Automática LCS 20kg Colormaq</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">41</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23792956243</div>
+        <div class="item-name">Fritadeira Air Fryer Forno Oven 12L Mondial AFON-12L-BI 2000W</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">42</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18198172324</div>
+        <div class="item-name">Escova Rotativa Britânia BER20PD 3 Temperaturas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">43</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23598779368</div>
+        <div class="item-name">Banheira de Bebê Plástica Dobrável KOA Cinza 40Kg Galzerano</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">44</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18897995094</div>
+        <div class="item-name">Fogão de Piso 5 Bocas Itatiaia New Dream Reflecta</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">45</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22598878976</div>
+        <div class="item-name">Liquidificador Philco PLQ1350 Copo de Vidro, 12 Velocidades + Pulsar, 1200W</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">46</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23193960805</div>
+        <div class="item-name">Micro-ondas Philco PMO38B 33L</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">47</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20299716181</div>
+        <div class="item-name">Micro-Ondas Mondial 1200W MO-01-21-W</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">48</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21799324648</div>
+        <div class="item-name">Micro-ondas Mondial Mo-02-34-e 34 Litros 1.400W</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">49</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22398463353</div>
+        <div class="item-name">Micro-ondas Philco PMO38E 33L</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">50</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19397984385</div>
+        <div class="item-name">Mesa de Pebolim com Bonecos em Polipropileno Klopf</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">51</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22897479693</div>
+        <div class="item-name">Purificador De Água Pure4x Electrolux</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">52</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21899252621</div>
+        <div class="item-name">Kit 2 Travesseiros Nasa 3D Viscoelástico com mais Suporte Duoflex</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">53</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18197683909</div>
+        <div class="item-name">Forno Elétrico Britânia BFE55P  Dupla resistência 52L</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">54</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22792964914</div>
+        <div class="item-name">Aspirador Pó Power Clean 2L Philco PAS4000 VM</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">55</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22194983338</div>
+        <div class="item-name">Panela de Pressão Rochedo Inox 6L Fechamento Externo Secure Trendy</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">56</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23897460491</div>
+        <div class="item-name">Multiprocessador PMP1600P 1400 W 2 Velocidades Philco</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">57</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22094396075</div>
+        <div class="item-name">Air Fryer PAF16A 16L 4 em 1 Painel Digital Philco</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">58</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20997666504</div>
+        <div class="item-name">Liquidificador Blq1380p 1200w 12 Velocidades Britânia</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">59</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22392993545</div>
+        <div class="item-name">Panela de Pressão Elétrica Digital 5L PE-38 Mondial</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">60</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19799379890</div>
+        <div class="item-name">Panela Elétrica de Arroz 10 Copos Prime PA10 Britânia</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">61</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58200966115</div>
+        <div class="item-name">Lavadora de Roupas Panasonic 15Kg com 8 Programas de Lavagem e Smart Sense NA-F150B1T</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">62</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22197922582</div>
+        <div class="item-name">Purificador de Água IBBL Vivax</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">63</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23593556808</div>
+        <div class="item-name">Purificador Electrolux PE15P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">64</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21999322353</div>
+        <div class="item-name">Micro-ondas Electrolux 34 Litros MEO44</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">65</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22498788469</div>
+        <div class="item-name">Banheira de Bebê Plástica Classic Rosa Galzerano</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div></div>
+  <div class="section-title">Como funciona</div>
+  <div class="how">
+    <ol>
+      <li>Acesse <strong>Afiliados do Vendedor</strong> no Seller Centre e adicione os produtos acima em uma campanha com qualquer percentual de comissão.</li>
+      <li>Mantenha cada produto <strong>ativo por pelo menos 30 dias</strong>.</li>
+      <li>Receba <strong>R$ 460 de crédito por produto</strong> — os créditos são acumulativos.</li>
+      <li>Use o crédito para pagar qualquer comissão de afiliados da sua loja.</li>
+      <li>Pagamentos processados semanalmente, em até 10 dias após completar os 30 dias.</li>
+    </ol>
+  </div>
+  <a class="cta" href="https://seller.shopee.com.br/portal/web-seller-affiliate" target="_blank">Ir para Afiliados do Vendedor →</a>
+  <footer>
+    <p>Dúvidas? Fale com seu gerente ou chame <strong>daniel.nunes</strong> no SeaTalk.</p>
+    <p style="margin-top:6px;">Shopee Brasil · Afiliados do Vendedor · Iniciativa SKU Expansion</p>
+  </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiliados do Vendedor – P&P FIT</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--orange:#EE4D2D;--orange-light:#fff3f0;--dark:#1a1a1a;--mid:#555;--soft:#888;--line:#e8e8e8;--bg:#f7f7f7;--white:#ffffff;--green:#1a7a4a;--green-bg:#edf7f2}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);min-height:100vh}
+  header{background:var(--orange);padding:0 24px;display:flex;align-items:center;height:56px}
+  .logo{font-size:22px;font-weight:700;color:var(--white);letter-spacing:-0.5px}
+  .logo span{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;vertical-align:middle}
+  main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+  .greeting{margin-bottom:28px}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+  h1{font-size:26px;font-weight:700;line-height:1.25;color:var(--dark)}
+  h1 strong{color:var(--orange)}
+  .greeting p{margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6}
+  .summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:6px}
+  .card .value{font-size:28px;font-weight:700;color:var(--dark)}
+  .card.highlight{background:var(--green-bg);border-color:#b2dfc7}
+  .card.highlight .value{color:var(--green)}
+  .section-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .items{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+  .item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:16px}
+  .item-rank{width:28px;height:28px;border-radius:50%;background:var(--orange-light);color:var(--orange);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .item-rank.top{background:var(--orange);color:var(--white)}
+  .item-info{flex:1;min-width:0}
+  .item-id{font-size:11px;color:var(--soft);font-weight:500;margin-bottom:3px}
+  .item-name{font-size:14px;font-weight:500;color:var(--dark);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .item-reward{background:var(--green-bg);color:var(--green);font-size:13px;font-weight:700;padding:5px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+  .how{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:28px}
+  .how h3{font-size:14px;font-weight:600;margin-bottom:14px}
+  .how ol{padding-left:18px}
+  .how ol li{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:8px}
+  .how ol li strong{color:var(--dark)}
+  .cta{display:inline-block;background:var(--orange);color:var(--white);font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none;width:100%;text-align:center}
+  footer{text-align:center;margin-top:40px;font-size:12px;color:var(--soft);line-height:1.6}
+  footer a{color:var(--orange);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="logo">shopee <span>Afiliados do Vendedor</span></div></header>
+<main>
+  <div class="greeting">
+    <div class="eyebrow">Iniciativa exclusiva</div>
+    <h1>Olá, <strong>P&P FIT</strong> 👋</h1>
+    <p>Selecionamos produtos da sua loja com alto potencial de vendas via afiliados. Adicione-os à sua campanha e ganhe créditos para usar em comissões.</p>
+  </div>
+  <div class="summary">
+    <div class="card"><div class="label">Produtos elegíveis</div><div class="value">5</div></div>
+    <div class="card highlight"><div class="label">Crédito total a receber</div><div class="value">R$ 1.500</div></div>
+  </div>
+  <div class="section-title">Seus produtos elegíveis</div>
+  <div class="items">
+    <div class="item">
+      <div class="item-rank top">1</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21897733919</div>
+        <div class="item-name">Creatina 250g 100% Pura Monohidratada - P&P FIT</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">2</div>
+      <div class="item-info">
+        <div class="item-id">ID: 41628363733</div>
+        <div class="item-name">Morango Chips Liofilizado Crocante - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">3</div>
+      <div class="item-info">
+        <div class="item-id">ID: 53151414681</div>
+        <div class="item-name">Tâmara DEGLET NOUR Importada 200g - Bandeja</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">4</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18971193709</div>
+        <div class="item-name">Mix Castanha Tropical Nuts Saudável Nozes, Amêndoas, Castanha Para/Caju Uva Passa Amendoim Gojiberry</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">5</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21065270721</div>
+        <div class="item-name">Mix Tropical Nuts 1Kg Castanha de Caju do Pará Amendoa Nozes Uva Passa Amendoim Gojiberry P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">6</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23895716611</div>
+        <div class="item-name">Castanha de Caju 1Kg (Com ou sem Sal) - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">7</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20755960836</div>
+        <div class="item-name">Semente de Chia 500g 100% Natural Sem Glúten e Vegano - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">8</div>
+      <div class="item-info">
+        <div class="item-id">ID: 56603967743</div>
+        <div class="item-name">Alho Frito Premium 1Kg - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">9</div>
+      <div class="item-info">
+        <div class="item-id">ID: 11169305979</div>
+        <div class="item-name">Aveia P&P - Flocos Finos, Grossos, Médio, Farelo ou Farinha</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">10</div>
+      <div class="item-info">
+        <div class="item-id">ID: 16088918870</div>
+        <div class="item-name">Cacau em Pó 100% Alcalino Puro Sem Glúten, Sem Açúcar e Vegano  - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">11</div>
+      <div class="item-info">
+        <div class="item-id">ID: 57556347279</div>
+        <div class="item-name">Coco Ralado Adoçado 100g - Élicê</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">12</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19377757579</div>
+        <div class="item-name">Temperos Condimentos Sal de Parrilha e Pimenta 100g 50 Opções - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">13</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23897883141</div>
+        <div class="item-name">Sal Marinho Integral Mossoró Moído 1kg Natural - Sosal</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">14</div>
+      <div class="item-info">
+        <div class="item-id">ID: 47154465625</div>
+        <div class="item-name">Kit Chá Detox Hibisco Chá Verde Cavalinha e Sene em folhas 400g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">15</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20759658637</div>
+        <div class="item-name">Psyllium Natural 100% Puro Rico Em Fibras Alta Qualidade</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">16</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22492652644</div>
+        <div class="item-name">Granola Gourmet P&P - Premium Chocolate Zero Açúcar Low Carb Frutas Vermelhas Salgada</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">17</div>
+      <div class="item-info">
+        <div class="item-id">ID: 43326401549</div>
+        <div class="item-name">Kit Mix de Sementes Chia + Linhaça + Psyllium Fibras Low Carb Total 750g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">18</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22493625945</div>
+        <div class="item-name">Pasta de Amendoim Gourmet Chocotela 650G - P&P FIT</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">19</div>
+      <div class="item-info">
+        <div class="item-id">ID: 51059316695</div>
+        <div class="item-name">Banana Chips P&P - Sal Rosa 200g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">20</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18997923487</div>
+        <div class="item-name">Paçoca 100 unidades caixa</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">21</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22893737856</div>
+        <div class="item-name">Mix P&P Vegetais e Legumes Desidratados Crocantes</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">22</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23996361296</div>
+        <div class="item-name">Farelo de Aveia 1Kg - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">23</div>
+      <div class="item-info">
+        <div class="item-id">ID: 57654789552</div>
+        <div class="item-name">KIT Caixa Paçoca Rolha 3/2 ou 1 Caixa Embrulhada com 100un</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">24</div>
+      <div class="item-info">
+        <div class="item-id">ID: 4188650218</div>
+        <div class="item-name">Castanha de Caju em Pedaço/Bandas 500g Torrada (Com ou Sem Sal) - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">25</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21797516695</div>
+        <div class="item-name">Granola Premium Low Carb Zero Açúcar Sem Glúten 1Kg - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">26</div>
+      <div class="item-info">
+        <div class="item-id">ID: 3693192622</div>
+        <div class="item-name">AMENDOIM TORRADO COM ou SEM SAL - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">27</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22697366763</div>
+        <div class="item-name">3Kg Castanha de Caju Torrada com ou sem Sal - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">28</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18905106504</div>
+        <div class="item-name">Castanha Do Pará Inteira - Crocante Nova P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">29</div>
+      <div class="item-info">
+        <div class="item-id">ID: 29444125802</div>
+        <div class="item-name">Morango Chips Liofilizado Crocante - P&P FIT</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">30</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18459382407</div>
+        <div class="item-name">Tamara Jumbo Fresca 1kg/500g/250g Carnuda Original Medjool Selecionada</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">31</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8438521038</div>
+        <div class="item-name">Mix Premium P&P - Castanhas, Nozes, Amêndoas, Goji berry, Raspas de coco, Uvas passas e Amendoim 250g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">32</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19352222564</div>
+        <div class="item-name">ChocoNuts P&P - Chocolate Premium com Castanhas e Frutas Secas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">33</div>
+      <div class="item-info">
+        <div class="item-id">ID: 47359336711</div>
+        <div class="item-name">Batata Doce Chips P&P  - Sal Rosa 150g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">34</div>
+      <div class="item-info">
+        <div class="item-id">ID: 17970554112</div>
+        <div class="item-name">Uva Passa Preta Sem Semente</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">35</div>
+      <div class="item-info">
+        <div class="item-id">ID: 46651262917</div>
+        <div class="item-name">Pasta de Amendoim Integral Crocante 1,005KG - Absolut</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">36</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22593935075</div>
+        <div class="item-name">Bananada Zero Açúcar NaturaFruti 250g | 100% Fruta | Tradicional, Uva Passa ou Ameixa Doce Bananinha</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">37</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19265264488</div>
+        <div class="item-name">Mix de Sementes Chia Girassol Abobora Linhaça Marrom e Dourada Quinoa Branca P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">38</div>
+      <div class="item-info">
+        <div class="item-id">ID: 7586915121</div>
+        <div class="item-name">Tâmara Premium Seca e sem caroço -P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">39</div>
+      <div class="item-info">
+        <div class="item-id">ID: 42565207226</div>
+        <div class="item-name">Mix P&P Frutas Tropicais Chips Desidratadas Liofilizadas 100g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">40</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21459656451</div>
+        <div class="item-name">Psyllium Natural 100% Puro Rico Em Fibras Alta Qualidade</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">41</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22894356696</div>
+        <div class="item-name">Mix Tropical Nuts P&P - Castanha de Caju/Pará/Amendoim/Amêndoas/Uva Passa/Nozes</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">42</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22197516586</div>
+        <div class="item-name">Combo Semente Chia Girassol Linhaça Abobora e Gergelim - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">43</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22891548549</div>
+        <div class="item-name">Grão de Bico 1Kg - P&P FIT</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">44</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22497923218</div>
+        <div class="item-name">Barra Proteina Sense Whey Bar UN – Barrinha de proteína Vários Sabores</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">45</div>
+      <div class="item-info">
+        <div class="item-id">ID: 10274067890</div>
+        <div class="item-name">Semente de Abóbora Crua Sem Casca - 500g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">46</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22427790769</div>
+        <div class="item-name">Castanha do Pará/Brasil Inteira 1Kg - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">47</div>
+      <div class="item-info">
+        <div class="item-id">ID: 43403473639</div>
+        <div class="item-name">Tapioca 1Kg Pronta - Pantanal</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">48</div>
+      <div class="item-info">
+        <div class="item-id">ID: 9750854481</div>
+        <div class="item-name">Cranberry Desidratado - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">49</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22991239932</div>
+        <div class="item-name">Cubinhos P&P Doces Fit Sem Açúcar/ Sem Lactose  (Tâmara, Castanha, Cacau, Coco, Amora, Cranberry)</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">50</div>
+      <div class="item-info">
+        <div class="item-id">ID: 41662013032</div>
+        <div class="item-name">Amendoim Torrado Sem Sal 1Kg - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">51</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20699560724</div>
+        <div class="item-name">Biscoito Amenteigado Caseiro de Minas Vários Sabores - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">52</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20698760869</div>
+        <div class="item-name">Gotas de Chocolate 70% Zero Açúcar - 100g - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">53</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21797101314</div>
+        <div class="item-name">Mix Tropical Nuts Dieta Saudável Castanha, Nozes, Amêndoa, Amendoim, Uva Passa, Gojiberry - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">54</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8546831699</div>
+        <div class="item-name">Damasco Turco Premium - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">55</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19697922434</div>
+        <div class="item-name">Granola P&P Protein Vegana Proteica Proteina 1Kg</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">56</div>
+      <div class="item-info">
+        <div class="item-id">ID: 47256344613</div>
+        <div class="item-name">NAC N Acetil Cisteina N-Acetilcisteína 1000mg glicina + glutamina - 60 Capsulas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">57</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20609359452</div>
+        <div class="item-name">Leite de Coco em Pó - Delicioso e Saudável</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">58</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23094625671</div>
+        <div class="item-name">Ameixa Seca Sem Caroço 2Kg - P&P FIT</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">59</div>
+      <div class="item-info">
+        <div class="item-id">ID: 15205300455</div>
+        <div class="item-name">Semente de Girassol Sem Casca Crua - 500g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">60</div>
+      <div class="item-info">
+        <div class="item-id">ID: 49606358741</div>
+        <div class="item-name">Coco Flocado Adoçado 100g - Élicê</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">61</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19697180090</div>
+        <div class="item-name">Eritritol Cristal 1Kg Adoçante 100% Puro Natural - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">62</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19599564797</div>
+        <div class="item-name">Kit Farinha Funcional para Mulheres com Psyllium</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">63</div>
+      <div class="item-info">
+        <div class="item-id">ID: 42615198981</div>
+        <div class="item-name">Mix P&P Frutas Tropicais Chips Desidratadas Liofilizadas 500g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">64</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19000529650</div>
+        <div class="item-name">Ameixa Seca Sem Caroço - Embalado a Vácuo - P&P FIT</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">65</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20798756052</div>
+        <div class="item-name">Açúcar Mascavo 1Kg - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">66</div>
+      <div class="item-info">
+        <div class="item-id">ID: 57455367693</div>
+        <div class="item-name">Gelatina em Pó Pura sem sabor e Incolor 1Kg Colágeno  - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">67</div>
+      <div class="item-info">
+        <div class="item-id">ID: 54051205471</div>
+        <div class="item-name">Mix P&P Frutas Secas Tropical Desidratado Damasco 250g Maçã Coco Chips Figo Banana Tâmara Uva</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">68</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22191404655</div>
+        <div class="item-name">Lemon Pepper Tempero 1Kg - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">69</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23795905506</div>
+        <div class="item-name">Páprica Defumada Tempero - 1Kg - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">70</div>
+      <div class="item-info">
+        <div class="item-id">ID: 9479890499</div>
+        <div class="item-name">Choconuts P&P Castanha do Pará Chocolate Blend Drageado</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">71</div>
+      <div class="item-info">
+        <div class="item-id">ID: 49605526218</div>
+        <div class="item-name">Batata da VÓ Mexicana P&P - 200g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">72</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20999681685</div>
+        <div class="item-name">Óleo de Coco Virgem - 200ml - Élicê Coco</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">73</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18499004170</div>
+        <div class="item-name">Castanha de Caju Torrada com ou sem Sal 2Kg</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">74</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22691008371</div>
+        <div class="item-name">Mix Castanhas Nobre Sem Amendoim e Sem Uva Passas Macadâmia Castanha de Caju/Pará Amêndoa Nozes 1kg</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">75</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20609359452</div>
+        <div class="item-name">Leite de Coco em Pó 500g - Delicioso e Saudável</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">76</div>
+      <div class="item-info">
+        <div class="item-id">ID: 13345729057</div>
+        <div class="item-name">Psyllium Original 500g – Qualidade Premium</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">77</div>
+      <div class="item-info">
+        <div class="item-id">ID: 42376402000</div>
+        <div class="item-name">Kit Mix Fibras e Sementes Low Carb – Semente de Chia + Linhaça + Psyllium 750g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">78</div>
+      <div class="item-info">
+        <div class="item-id">ID: 10569310442</div>
+        <div class="item-name">1Kg Sal Rosa do Himalaia Fino Original – P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">79</div>
+      <div class="item-info">
+        <div class="item-id">ID: 50151200877</div>
+        <div class="item-name">Amendoim Cru Runner 1Kg - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">80</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22595505085</div>
+        <div class="item-name">Mix Castanhas Nobre Sem Amendoim e Sem Uva Passas Macadâmia Castanha de Caju/Pará Amêndoa Nozes 250g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">81</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22697902731</div>
+        <div class="item-name">Flor de Sal Marinho Cimsal Lata 350g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">82</div>
+      <div class="item-info">
+        <div class="item-id">ID: 13845712939</div>
+        <div class="item-name">Choconuts P&P Banana Passa Chocolate 70% Drageado</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">83</div>
+      <div class="item-info">
+        <div class="item-id">ID: 17071884712</div>
+        <div class="item-name">Mix Castanhas Dieta Saudável - Mix de Nuts Castanhas, Amendoim, Castanha de Caju, Uva Passa Nozes, Amêndoa</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">84</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22896044285</div>
+        <div class="item-name">Castanha de Caju 1Kg Torrada Triturada Xerém - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">85</div>
+      <div class="item-info">
+        <div class="item-id">ID: 7394980374</div>
+        <div class="item-name">Choconuts P&P Castanha de Caju com Chocolate 70% Cacau</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">86</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21574701042</div>
+        <div class="item-name">Milho Torrado Mostarda e Mel 250g - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">87</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23391842930</div>
+        <div class="item-name">Canela em Pó Pura 1Kg - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">88</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19875027212</div>
+        <div class="item-name">Nozes 1Kg Chilena Premium Quartz Pedaço Extra Light - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">89</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19298577597</div>
+        <div class="item-name">Tempero Chimichurri Sem Pimenta 1Kg - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">90</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23720163293</div>
+        <div class="item-name">Castanha do Pará Inteira Premium 2Kg - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">91</div>
+      <div class="item-info">
+        <div class="item-id">ID: 53054399477</div>
+        <div class="item-name">Glucomanam Fibra Puro 100% Natural 50g - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">92</div>
+      <div class="item-info">
+        <div class="item-id">ID: 54403967724</div>
+        <div class="item-name">Farinha Beterraba em Pó 100% Natural 1Kg</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">93</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23295624366</div>
+        <div class="item-name">Detox em Pó , Espirulina E Clorella, Cromo, Cha Verde- 200g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">94</div>
+      <div class="item-info">
+        <div class="item-id">ID: 55401191072</div>
+        <div class="item-name">Paçoca Com Whey Protein Zero Açúcar Unidade</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">95</div>
+      <div class="item-info">
+        <div class="item-id">ID: 43404460274</div>
+        <div class="item-name">Mel Puro 300g Bisnaga – Mel Santa Bárbara | Florada Silvestre  | Tampa Corta-Gotas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">96</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21097925659</div>
+        <div class="item-name">Granola Crocante Sabor Banana 1Kg</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">97</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23499312302</div>
+        <div class="item-name">Kit 3un Detox em Pó , Espirulina E Clorella, Cromo, Cha Verde- 200g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">98</div>
+      <div class="item-info">
+        <div class="item-id">ID: 55701232907</div>
+        <div class="item-name">Sache Pasta de Amendoim Gourmet Sabor Pistache 14g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">99</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23093905811</div>
+        <div class="item-name">Sal de Parrilla ORIGINAL 1kg –  Vários Sabores Sal Marinho Premium para Churrasco Defumado Pimenta</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">100</div>
+      <div class="item-info">
+        <div class="item-id">ID: 25045923332</div>
+        <div class="item-name">Mix P&P Sementes Premium Chia Girassol Abobora Linhaça 250g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">101</div>
+      <div class="item-info">
+        <div class="item-id">ID: 3680273650</div>
+        <div class="item-name">Castanha do Pará Nova Inteira - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">102</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22491876690</div>
+        <div class="item-name">Curcuma em Pó (Açafrão) - 500g - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">103</div>
+      <div class="item-info">
+        <div class="item-id">ID: 51200936156</div>
+        <div class="item-name">Proteína de Soja Míuda Natural 1Kg - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">104</div>
+      <div class="item-info">
+        <div class="item-id">ID: 50250940980</div>
+        <div class="item-name">Kit Whey Protein Blend 900g + Creatina 100% Pura MonoHidratada 250g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">105</div>
+      <div class="item-info">
+        <div class="item-id">ID: 56500931179</div>
+        <div class="item-name">Extrato de Soja Natural em Pó 1Kg Não Transgênico - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">106</div>
+      <div class="item-info">
+        <div class="item-id">ID: 12798427073</div>
+        <div class="item-name">Ameixa Seca sem Caroço 250g - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">107</div>
+      <div class="item-info">
+        <div class="item-id">ID: 27588596712</div>
+        <div class="item-name">Mel Silvestre Puro 200g Santa Bárbara | Bisnaga Prática com Tampa Anti-Gotas | Florada Silvestre</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">108</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23095934785</div>
+        <div class="item-name">Quinoa Branca em Grãos 1Kg - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">109</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58255375864</div>
+        <div class="item-name">Kit Uva Passa 4kg ou 3Kg Preta Sem Semente - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">110</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22591405466</div>
+        <div class="item-name">Psyllium Original Rico em Fibras 250g - P&P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">111</div>
+      <div class="item-info">
+        <div class="item-id">ID: 42315221613</div>
+        <div class="item-name">Kit Mix P&P Vegetais Desidratados e Frutas Tropicais Desidratada Liofilizadas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">112</div>
+      <div class="item-info">
+        <div class="item-id">ID: 16276532321</div>
+        <div class="item-name">Choconuts P&P Amêndoa Chocolate Branco Drageado</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">113</div>
+      <div class="item-info">
+        <div class="item-id">ID: 42614219972</div>
+        <div class="item-name">Bold Whey Protein Sachê 30g Cookies and Cream – Suplemento Proteico Original</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">114</div>
+      <div class="item-info">
+        <div class="item-id">ID: 42608320003</div>
+        <div class="item-name">Mel Bisnaga 300g FLORADA DE UVA JAPÃO – Mel Puro e Natural | Tampa Corta-Gotas | Sabor Suave</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div></div>
+  <div class="section-title">Como funciona</div>
+  <div class="how">
+    <ol>
+      <li>Acesse <strong>Afiliados do Vendedor</strong> no Seller Centre e adicione os produtos acima em uma campanha com qualquer percentual de comissão.</li>
+      <li>Mantenha cada produto <strong>ativo por pelo menos 30 dias</strong>.</li>
+      <li>Receba <strong>R$ 300 de crédito por produto</strong> — os créditos são acumulativos.</li>
+      <li>Use o crédito para pagar qualquer comissão de afiliados da sua loja.</li>
+      <li>Pagamentos processados semanalmente, em até 10 dias após completar os 30 dias.</li>
+    </ol>
+  </div>
+  <a class="cta" href="https://seller.shopee.com.br/portal/web-seller-affiliate" target="_blank">Ir para Afiliados do Vendedor →</a>
+  <footer>
+    <p>Dúvidas? Fale com seu gerente ou chame <strong>daniel.nunes</strong> no SeaTalk.</p>
+    <p style="margin-top:6px;">Shopee Brasil · Afiliados do Vendedor · Iniciativa SKU Expansion</p>
+  </footer>
+</main>
+</body>
+</html>

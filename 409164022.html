@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiliados do Vendedor – Neverdie Store</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--orange:#EE4D2D;--orange-light:#fff3f0;--dark:#1a1a1a;--mid:#555;--soft:#888;--line:#e8e8e8;--bg:#f7f7f7;--white:#ffffff;--green:#1a7a4a;--green-bg:#edf7f2}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);min-height:100vh}
+  header{background:var(--orange);padding:0 24px;display:flex;align-items:center;height:56px}
+  .logo{font-size:22px;font-weight:700;color:var(--white);letter-spacing:-0.5px}
+  .logo span{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;vertical-align:middle}
+  main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+  .greeting{margin-bottom:28px}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+  h1{font-size:26px;font-weight:700;line-height:1.25;color:var(--dark)}
+  h1 strong{color:var(--orange)}
+  .greeting p{margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6}
+  .summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:6px}
+  .card .value{font-size:28px;font-weight:700;color:var(--dark)}
+  .card.highlight{background:var(--green-bg);border-color:#b2dfc7}
+  .card.highlight .value{color:var(--green)}
+  .section-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .items{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+  .item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:16px}
+  .item-rank{width:28px;height:28px;border-radius:50%;background:var(--orange-light);color:var(--orange);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .item-rank.top{background:var(--orange);color:var(--white)}
+  .item-info{flex:1;min-width:0}
+  .item-id{font-size:11px;color:var(--soft);font-weight:500;margin-bottom:3px}
+  .item-name{font-size:14px;font-weight:500;color:var(--dark);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .item-reward{background:var(--green-bg);color:var(--green);font-size:13px;font-weight:700;padding:5px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+  .how{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:28px}
+  .how h3{font-size:14px;font-weight:600;margin-bottom:14px}
+  .how ol{padding-left:18px}
+  .how ol li{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:8px}
+  .how ol li strong{color:var(--dark)}
+  .cta{display:inline-block;background:var(--orange);color:var(--white);font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none;width:100%;text-align:center}
+  footer{text-align:center;margin-top:40px;font-size:12px;color:var(--soft);line-height:1.6}
+  footer a{color:var(--orange);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="logo">shopee <span>Afiliados do Vendedor</span></div></header>
+<main>
+  <div class="greeting">
+    <div class="eyebrow">Iniciativa exclusiva</div>
+    <h1>Olá, <strong>Neverdie Store</strong> 👋</h1>
+    <p>Selecionamos produtos da sua loja com alto potencial de vendas via afiliados. Adicione-os à sua campanha e ganhe créditos para usar em comissões.</p>
+  </div>
+  <div class="summary">
+    <div class="card"><div class="label">Produtos elegíveis</div><div class="value">5</div></div>
+    <div class="card highlight"><div class="label">Crédito total a receber</div><div class="value">R$ 1.900</div></div>
+  </div>
+  <div class="section-title">Seus produtos elegíveis</div>
+  <div class="items">
+    <div class="item">
+      <div class="item-rank top">1</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20497989875</div>
+        <div class="item-name">Papel De Parede Alumínio Adesivo Impermeável Protetor Fogão 2M/5M Fosco</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">2</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22693832771</div>
+        <div class="item-name">Kit Jogo De Ferramentas Com Maleta 12 Peças Titanium</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">3</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22694850121</div>
+        <div class="item-name">Caneta Gel Colorgel Canetinhas Coloridas Perfumadas Glitter Kit 24 Cores</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">4</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21598000261</div>
+        <div class="item-name">Lâmpada Led H4 Moto Led Projetor Farol Alto Baixo Super Branca e Amarelo 6500k 12v</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">5</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21897981655</div>
+        <div class="item-name">Led Neon Rgb Luz Interno C/controle Acessórios Carro Tuning</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">6</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22193847720</div>
+        <div class="item-name">Chave Hidráulica Ferramenta Profissional Para apertar cano Instalar Torneira 8 em 1 Chave de Encanamento</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">7</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18425841127</div>
+        <div class="item-name">Lâmpada De Farol Moto De Led H4 8000k 12V acessório moto</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">8</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23298200088</div>
+        <div class="item-name">Tomada Carregador Usb Veicular Carro 2 Saídas 1.0a E 2.1a</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">9</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8232478910</div>
+        <div class="item-name">Par Lâmpadas H4 Super Led Top 6000K C6</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">10</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23494814284</div>
+        <div class="item-name">Removedor De Filme De Óleo De Vidro Do Carro Poderoso Limpador Esponja Escova De Limpeza Pára-Brisa Janela Clara Mancha</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">11</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58250449250</div>
+        <div class="item-name">Saboneteira 1/2 Camada Caixa De Sabão Para Banheiro Com Suporte Favourite</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">12</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8490684267</div>
+        <div class="item-name">Babá Eletrônica Câmera Wiffi Visão Noturna Infravermelho</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">13</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58203694378</div>
+        <div class="item-name">2.8m Espanador de Pó Para Limpeza em Microfibra Com Cabo Extensor e Retrátil Lavável Escova De Limpeza De Poeira</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">14</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23098787700</div>
+        <div class="item-name">Kit De Costura E Linhas Com 27/97 Pecas Completo Com Estojo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">15</div>
+      <div class="item-info">
+        <div class="item-id">ID: 5783191645</div>
+        <div class="item-name">Fone de ouvido colorido para com fio</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">16</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58256824390</div>
+        <div class="item-name">Limpador de Ouvido Otoscópio NE3 com Câmera Removedor de Cera Limpeza Wireless</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">17</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23591204476</div>
+        <div class="item-name">Aparelho De Fisioterapia Portátil Choque Elétrico Acupuntura</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">18</div>
+      <div class="item-info">
+        <div class="item-id">ID: 7892755686</div>
+        <div class="item-name">Fone De Ouvido Macaron com fio e microfone</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">19</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23998115427</div>
+        <div class="item-name">KIT led para carro farol MILHA LED auxiliar 99w redondo led 110mm ip67 PAR 2 corujinha para caminhao</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">20</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19099563837</div>
+        <div class="item-name">Organizador Mesa Coelho Porta Treco Caneta Gaveta/Maquiagem Escritório Multiuso</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">21</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22498135646</div>
+        <div class="item-name">Luz Freio Universal Strobo Flash Anti Colisão</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">22</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22694715780</div>
+        <div class="item-name">Mini Fotografia Luz RGB /Branco De Preenchimento Panel led / Móvel Câmera /Vídeo /Tiro Ao Ar Livre /Suave Luz /Portátil</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">23</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20098183696</div>
+        <div class="item-name">2pcs Lâmpada De Sinalização De Volta Freio LED 144 Chip 1156 Para Carros</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">24</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22998677458</div>
+        <div class="item-name">Kit 60/80/100/120 Cores Caneta 2 em 1 Brush Lettering e Ponta Fina Dual Pen Canetinha Colorir Desenho</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">25</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19697991443</div>
+        <div class="item-name">Papel de parede 3D alumínio adesivo impermeável anti óleo para armário Cozinha e protetor de fogão Brilhante</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">26</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58251776591</div>
+        <div class="item-name">Pasta Prancheta Com Capa A4 Material De Escritorio Pasta Catálogo Prancheta Com Capa A4</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">27</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23394411862</div>
+        <div class="item-name">Conjunto De Cortadores De Unhas 8 Peças</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">28</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58204469623</div>
+        <div class="item-name">Bolsa para Lavar Sapato Tênis na Máquina de Lavar Prático</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">29</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19198186340</div>
+        <div class="item-name">Kit 1/2/3 Adaptador de Carregamento Rápido 60W Tipo-C para Micro USB</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">30</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18497732574</div>
+        <div class="item-name">Kit Carregador De Pilhas E Pilhas Recarregáveis AA AAA</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">31</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22794670031</div>
+        <div class="item-name">Kit 50/100/150 Velas Parafina Rechaud Com Suporte Alumínio Decorativas Dia dos Namorados Flutuante Casamento</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">32</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22494540054</div>
+        <div class="item-name">Kit 12/24/36 Tabletes Pastilhas Limpar Máquinas Lavar Roupa Limpeza</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">33</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23094082790</div>
+        <div class="item-name">Pasta com 12 Divisórias Organizadora de Documentos Sanfonada Multiuso</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">34</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23594664485</div>
+        <div class="item-name">Kit Conjunto 10/20/30 Pratos Com Base Plásticos Duros Reutilizaveis</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">35</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22498966594</div>
+        <div class="item-name">Faqueiro enlatado Talheres 24 Peças com Lâminas em Aço Inox e Cabos de Polipropileno</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">36</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20098000492</div>
+        <div class="item-name">Par Farol Milha Moto Branco/amarelo Led Auxiliar 60w</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">37</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58259845662</div>
+        <div class="item-name">Kit 1/2/3/4 Filtro Universal Booster Torneira Rotativa Remover Cloro Purificador De Água De Cozinha</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">38</div>
+      <div class="item-info">
+        <div class="item-id">ID: 10134204555</div>
+        <div class="item-name">Lanterna Led Potente Luz Ultravioleta Negra Uv T6 Escorpião</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">39</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22798682344</div>
+        <div class="item-name">Kit 12/24/36/48 Cores Caneta 2 em 1 Brush Lettering e Ponta Fina Dual Pen Canetinha Colorir Desenho</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">40</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23498831355</div>
+        <div class="item-name">A4 Multi-Camada Acordeão Saco Pasta Bonito Sorriso Arquivo De Armazenamento Novo Simples</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">41</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58201771814</div>
+        <div class="item-name">Bomba De Ar Para Encher Pneu De Bicicleta Bike Mtb Speed E Bola Com 3 Bicos E Adaptador</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">42</div>
+      <div class="item-info">
+        <div class="item-id">ID: 15580271533</div>
+        <div class="item-name">kit 5 Fone de ouvido colorido para com fio</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">43</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23193129992</div>
+        <div class="item-name">Luminária Projetor Abajur Infantil Estrelado lua Estrela 360º Galaxy Star Master Projetor De Estrela</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">44</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23498243513</div>
+        <div class="item-name">Porta Caneta Aramado Metal Redondo e Quadrado</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">45</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18498990755</div>
+        <div class="item-name">Bico Alta Pressao Para Mangueiras Com Tres Tipos De Jato</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">46</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58255903187</div>
+        <div class="item-name">Sapateira Multiuso Para Calçados 7 Andares Organizador Desmontável</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">47</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23617481550</div>
+        <div class="item-name">Lanterna de Cabeça Led COB Caminhada Pesca Ciclismo High Power</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">48</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23298146578</div>
+        <div class="item-name">Caneta Chave Teste Eletricista Detector De Tensão 90-1000v com Alerta sonoro</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">49</div>
+      <div class="item-info">
+        <div class="item-id">ID: 9767792657</div>
+        <div class="item-name">Par Lâmpadas H11 Super Led Top 6000K 7200 Lumens C6</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">50</div>
+      <div class="item-info">
+        <div class="item-id">ID: 9232476584</div>
+        <div class="item-name">Par Lâmpadas H7 Super Led Top 6000K 7200 Lumens C6</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">51</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58255904310</div>
+        <div class="item-name">Sapateira 9 Andares Suporta 9 Sapatos Tenis Chinelos Organizador Armario Prateleira Com capa poeira</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">52</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58253679212</div>
+        <div class="item-name">Porta Lápis Ursinho Fofinho Caneta Organizador de Mesa Decoração Caixinha Multiuso</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">53</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22334492257</div>
+        <div class="item-name">Dispensador Detergente Pressão 2 em 1 com Bucha inclusa Soap / Economize Detergente com Muita praticidade!</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">54</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22698477972</div>
+        <div class="item-name">Luz De Gesto Iluminada LED Mão e Dedo Para Carros Com Contole Remoto Sinais De Gesture</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">55</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22198060618</div>
+        <div class="item-name">18w 6 LED Luz de Trabalho Alto Brilho para Carro DRL Caminhão SUV Off-Road</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">56</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19858580902</div>
+        <div class="item-name">Mini Chapinha Prancha De Cabelo Portátil Com Case Transporte Bivolt Estojo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">57</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58256342957</div>
+        <div class="item-name">Lixeira Automática 12 Litros Com Sensor Infravermelho Tampa Para Cozinha Banheiro Escritório Quarto</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">58</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22899028005</div>
+        <div class="item-name">Cortadore de unhas, alicates e limas para cães e gatos com luz LED  3 em 1</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">59</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58259847022</div>
+        <div class="item-name">Organizador de Panelas Armário Suporte Ajustável</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">60</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22896340341</div>
+        <div class="item-name">Mini Balança Alta Precisão Portátil 0,1g A 500g Digital</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">61</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58257148224</div>
+        <div class="item-name">Kit Fixadora Finca Pino Pistola Profissional Ação Com 20 Pinos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">62</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58210681692</div>
+        <div class="item-name">Rodo Multiuso Mágico MOP Extensível Esponja 2 Em 1 Limpa Espelho Vidro Azulejo E Janelas Carro</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">63</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21299555082</div>
+        <div class="item-name">Farol Milha 14 Leds 42w 12v/24v Redondo Off-road 6000-6500k</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">64</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18599769610</div>
+        <div class="item-name">Sapateira Vertical Luxo Inox 27 pares 9 Prateleiras</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">65</div>
+      <div class="item-info">
+        <div class="item-id">ID: 16192030005</div>
+        <div class="item-name">Lanterna De Cabeça com 3 Leds Profissional Led Ultra Potente</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">66</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8431821823</div>
+        <div class="item-name">Lâmpada Bulbo Led C/sensor De Presença 9w Branco Frio Bivolt</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">67</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23598324248</div>
+        <div class="item-name">Lanterna De Freio E Pisca Fita 48 Led Moto Custom</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">68</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20599758073</div>
+        <div class="item-name">Varal Calcinha Meia Cueca Peça Intima com 32 Prendedores Reforçado Envio Imediato</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">69</div>
+      <div class="item-info">
+        <div class="item-id">ID: 12774334580</div>
+        <div class="item-name">Fonte Estabilizada Bivolt Para Cftv Ou Receptorv De Tv  ou fita led 12v 2a</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">70</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22799452696</div>
+        <div class="item-name">KIT 1/2 Tapete De Silicone E Fibra De Vidro Culinário 42x30cm poder usar no forno casa</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">71</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58253687119</div>
+        <div class="item-name">Kit Jogo De Ferramentas 27 Peças Com Maleta Chaves Allen Alicate Martelo Completos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div></div>
+  <div class="section-title">Como funciona</div>
+  <div class="how">
+    <ol>
+      <li>Acesse <strong>Afiliados do Vendedor</strong> no Seller Centre e adicione os produtos acima em uma campanha com qualquer percentual de comissão.</li>
+      <li>Mantenha cada produto <strong>ativo por pelo menos 30 dias</strong>.</li>
+      <li>Receba <strong>R$ 380 de crédito por produto</strong> — os créditos são acumulativos.</li>
+      <li>Use o crédito para pagar qualquer comissão de afiliados da sua loja.</li>
+      <li>Pagamentos processados semanalmente, em até 10 dias após completar os 30 dias.</li>
+    </ol>
+  </div>
+  <a class="cta" href="https://seller.shopee.com.br/portal/web-seller-affiliate" target="_blank">Ir para Afiliados do Vendedor →</a>
+  <footer>
+    <p>Dúvidas? Fale com seu gerente ou chame <strong>daniel.nunes</strong> no SeaTalk.</p>
+    <p style="margin-top:6px;">Shopee Brasil · Afiliados do Vendedor · Iniciativa SKU Expansion</p>
+  </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiliados do Vendedor – Multineos Comercio</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--orange:#EE4D2D;--orange-light:#fff3f0;--dark:#1a1a1a;--mid:#555;--soft:#888;--line:#e8e8e8;--bg:#f7f7f7;--white:#ffffff;--green:#1a7a4a;--green-bg:#edf7f2}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);min-height:100vh}
+  header{background:var(--orange);padding:0 24px;display:flex;align-items:center;height:56px}
+  .logo{font-size:22px;font-weight:700;color:var(--white);letter-spacing:-0.5px}
+  .logo span{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;vertical-align:middle}
+  main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+  .greeting{margin-bottom:28px}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+  h1{font-size:26px;font-weight:700;line-height:1.25;color:var(--dark)}
+  h1 strong{color:var(--orange)}
+  .greeting p{margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6}
+  .summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:6px}
+  .card .value{font-size:28px;font-weight:700;color:var(--dark)}
+  .card.highlight{background:var(--green-bg);border-color:#b2dfc7}
+  .card.highlight .value{color:var(--green)}
+  .section-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .items{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+  .item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:16px}
+  .item-rank{width:28px;height:28px;border-radius:50%;background:var(--orange-light);color:var(--orange);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .item-rank.top{background:var(--orange);color:var(--white)}
+  .item-info{flex:1;min-width:0}
+  .item-id{font-size:11px;color:var(--soft);font-weight:500;margin-bottom:3px}
+  .item-name{font-size:14px;font-weight:500;color:var(--dark);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .item-reward{background:var(--green-bg);color:var(--green);font-size:13px;font-weight:700;padding:5px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+  .how{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:28px}
+  .how h3{font-size:14px;font-weight:600;margin-bottom:14px}
+  .how ol{padding-left:18px}
+  .how ol li{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:8px}
+  .how ol li strong{color:var(--dark)}
+  .cta{display:inline-block;background:var(--orange);color:var(--white);font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none;width:100%;text-align:center}
+  footer{text-align:center;margin-top:40px;font-size:12px;color:var(--soft);line-height:1.6}
+  footer a{color:var(--orange);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="logo">shopee <span>Afiliados do Vendedor</span></div></header>
+<main>
+  <div class="greeting">
+    <div class="eyebrow">Iniciativa exclusiva</div>
+    <h1>Olá, <strong>Multineos Comercio</strong> 👋</h1>
+    <p>Selecionamos produtos da sua loja com alto potencial de vendas via afiliados. Adicione-os à sua campanha e ganhe créditos para usar em comissões.</p>
+  </div>
+  <div class="summary">
+    <div class="card"><div class="label">Produtos elegíveis</div><div class="value">5</div></div>
+    <div class="card highlight"><div class="label">Crédito total a receber</div><div class="value">R$ 1.500</div></div>
+  </div>
+  <div class="section-title">Seus produtos elegíveis</div>
+  <div class="items">
+    <div class="item">
+      <div class="item-rank top">1</div>
+      <div class="item-info">
+        <div class="item-id">ID: 6988129742</div>
+        <div class="item-name">Bolsa Bag Transversal Shoulder Impermeável Unissex</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">2</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8117412187</div>
+        <div class="item-name">Kit 6/12/20 pares/Meias De Lã Coral /Crianças/Menina/Menino Meia De Chão/Outono/Inverno/Estilo Reforçado/Quente</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">3</div>
+      <div class="item-info">
+        <div class="item-id">ID: 2927494510</div>
+        <div class="item-name">Kit 24 peças/Necessaire Organizadora Para Facilitar Seu Dia a Dia Com Diversas Estampas Diferentes.</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">4</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19599597653</div>
+        <div class="item-name">Bolsa Festa Transversal Feminina Com Detalhe De Glitter Forro Impermeável</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">5</div>
+      <div class="item-info">
+        <div class="item-id">ID: 3034163187</div>
+        <div class="item-name">Kit 3 Mochila Feminina Para Escolar Viajar Estilo Casual Kpop Modelo Novo Jovem Multiuso Com Grande Capacidade</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">6</div>
+      <div class="item-info">
+        <div class="item-id">ID: 2927897652</div>
+        <div class="item-name">36 peças/Necessaire Estojo Organizador Transparente Para Viagem</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">7</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22697639087</div>
+        <div class="item-name">Bolsa De Mochila Feminina Com Estojo De Costas Em Couro Sintético</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">8</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22298818238</div>
+        <div class="item-name">Bolsa Simples Para Computador iPad Adequada Tablet De 32 Cm/44 Laptop Mensageiro Leve À Prova D'água</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">9</div>
+      <div class="item-info">
+        <div class="item-id">ID: 9367418085</div>
+        <div class="item-name">Kit 48/60 peças/12cm UrsoDe Pelúcia Boneco Pingente Chaveiro Presente Aniversário Dia Dos Namorados brinquedo pelúcia</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">10</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23997635646</div>
+        <div class="item-name">Bolsa De Mochila Feminina Com Estojo De Costas Em Couro Sintético</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">11</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22296809525</div>
+        <div class="item-name">Maleta De Computador À Prova De Choque Ph 13 14 15 Polegadas De Grande Capacidade / Capa Para Notebook</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">12</div>
+      <div class="item-info">
+        <div class="item-id">ID: 6982317827</div>
+        <div class="item-name">Meia-Calça Clássica Fina Fio 15 Loba Lupo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">13</div>
+      <div class="item-info">
+        <div class="item-id">ID: 10811636314</div>
+        <div class="item-name">Maleta De Computador À Prova De Choque Ph 13 14 15 Polegadas De Grande Capacidade / Capa Para Notebook</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">14</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23198717708</div>
+        <div class="item-name">Cinto Feminino Metal Elástico Modelo Fivela Moda Blogueira</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">15</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23997331393</div>
+        <div class="item-name">Bolsa Térmica De Mão Para Marmita Lancheira Para Trabalho Em Tecido Oxford Impermeavel</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">16</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8451835835</div>
+        <div class="item-name">Mochila Escolar Com Estojo De Grande Capacidade Para Estudante Feminina Masculino Nylon Impermeavel Marca Multineos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">17</div>
+      <div class="item-info">
+        <div class="item-id">ID: 7395485888</div>
+        <div class="item-name">Bolsa Sacola Feminina Grande De Ombro Tecido Nylon Reforçado Lançamento Acompanha 2 Alças Fashion</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">18</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22298240193</div>
+        <div class="item-name">Bolsa De Couro De Ombro De Mão Grande Feminino Trabalho Dia Dia PU Vintage</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">19</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19998273639</div>
+        <div class="item-name">Cinto De Couro Feminino Coreano – Fino Preto Com Fivela De Pino De Liga Para Uso Diário</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">20</div>
+      <div class="item-info">
+        <div class="item-id">ID: 6789865975</div>
+        <div class="item-name">Kit 3/5/10 peças/Touca Gorro Infantil Menina Menino Juvenil 05 á 10 Anos Para Crianças Com Pom Pom E Forro Interno</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">21</div>
+      <div class="item-info">
+        <div class="item-id">ID: 10812479295</div>
+        <div class="item-name">Kit 60 peças/Frasco Conta Gotas de Vidro 5ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">22</div>
+      <div class="item-info">
+        <div class="item-id">ID: 9826312542</div>
+        <div class="item-name">Kit24 peças/100ML Bolsa Para Viagem Com flip Transparente</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">23</div>
+      <div class="item-info">
+        <div class="item-id">ID: 2921020794</div>
+        <div class="item-name">Mochila Feminina Masculino Universitário Mochila Com Pelúcia  Para Colégio Textura Bordada Delicada Grande Capacidade</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">24</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18599560692</div>
+        <div class="item-name">Bolsa de palha de grande capacidade para férias casuais praia portátil nova moda bolsa de ombro tecida</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">25</div>
+      <div class="item-info">
+        <div class="item-id">ID: 4985667704</div>
+        <div class="item-name">Bolsa Sacola Feminina Masculino Grande Com Bolsinha De Ombro Tecido Nylon Reforçado Lançamento Acompanha 2 Alças Fashion</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">26</div>
+      <div class="item-info">
+        <div class="item-id">ID: 4180095289</div>
+        <div class="item-name">Mochila Maternidade Bolsa Mamãe Bebê Multifunção à prova d'água dobrável Multineos Pronto Entrega</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">27</div>
+      <div class="item-info">
+        <div class="item-id">ID: 4181138002</div>
+        <div class="item-name">Kit 20 peças/Maquiagem Espelho Portátil Padrão De Dupla Face Desenho Pequeno Mini Enviar Cor Aleatório</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">28</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19897517698</div>
+        <div class="item-name">Kit 2 Mochila Bolsa Feminina Masculina Para Escolar Viajar Estilo Multineos Comercio</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">29</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8172989186</div>
+        <div class="item-name">Meia-Calça Clássica Fina Fio 15 Loba Lupo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">30</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22893668913</div>
+        <div class="item-name">Bolsa de palha de grande capacidade para férias casuais praia portátil nova moda bolsa de ombro tecida</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">31</div>
+      <div class="item-info">
+        <div class="item-id">ID: 3982681009</div>
+        <div class="item-name">Bolsa Grande Reforçar Espaço de Couro PU Com Alça Transversal Feminina / Bolsa de Ombro</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">32</div>
+      <div class="item-info">
+        <div class="item-id">ID: 10701156289</div>
+        <div class="item-name">Mochila Feminina Masculino Escolar Passeio Coreano Grande Capacidade Impermeável</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">33</div>
+      <div class="item-info">
+        <div class="item-id">ID: 9854333924</div>
+        <div class="item-name">Nécessaire Feminina Para Maquiagem e Produtos Diversos de Beleza</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">34</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19398028564</div>
+        <div class="item-name">Bolsa Grande Sacola Feminina Masculino Grande De Ombro Tecido Nylon Reforçado Lançamento Acompanha 2 Alças Fashion</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">35</div>
+      <div class="item-info">
+        <div class="item-id">ID: 6388464646</div>
+        <div class="item-name">Bolsa Mala Masculino  Feminina Bebê Mamãe Faculdade Multiuso Sintético Bolsas Femininas de Moda</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">36</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23694152904</div>
+        <div class="item-name">Kit 1/3/5 peças/Cortador De Comprimidos Plástico</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">37</div>
+      <div class="item-info">
+        <div class="item-id">ID: 9618689430</div>
+        <div class="item-name">Kit 4 Fantasia De Fada Borboleta Asa Com Varinha,Tiara,Vestido ,Cosplay/Festa/Carnaval/Helloween/Aniversário/Casamento</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">38</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18599852915</div>
+        <div class="item-name">Cinto De Couro Feminino Coreano – Fino Preto Com Fivela De Pino De Liga Para Uso Diário</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">39</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23997331834</div>
+        <div class="item-name">Bolsa Viagem Grande Transparente Feminina Masculino Presidio Praia Industria P</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">40</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23197719934</div>
+        <div class="item-name">Kit 10 peças/Luva Térmica Touch Screen Feminina Masculina ar livre</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">41</div>
+      <div class="item-info">
+        <div class="item-id">ID: 10554329539</div>
+        <div class="item-name">Kit 36 peças/Pasta A4 De Plástico Multiuso Com Zíper - Cores Sortidas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">42</div>
+      <div class="item-info">
+        <div class="item-id">ID: 3380127047</div>
+        <div class="item-name">Bolsa Térmica De Mão Quadrado Com Alça Ajustavel Para Marmita Lancheira Para Trabalho Em Tecido Oxford Impermeavel</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">43</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21497998735</div>
+        <div class="item-name">Bolsa de Ombro Com Bolsinha Marca T60 Original De Lona Grande para Lazer Mochila Bolsas Feminina Masculino</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">44</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8821181743</div>
+        <div class="item-name">Bolsa Mala Grande Feminina De Viagem Sport Com Bolso Impermeável Alça Lateral 25L Capacidade</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">45</div>
+      <div class="item-info">
+        <div class="item-id">ID: 9026390023</div>
+        <div class="item-name">Kit 3 Fantasia Infantil Unicórnio Asa+Saia+Tiara Cosplay/Festa/Carnaval/Helloween/Aniversário/Casamento</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">46</div>
+      <div class="item-info">
+        <div class="item-id">ID: 9315114534</div>
+        <div class="item-name">Bolsa Estojo Cosmética Com Design De Gato Fofo Com Pompom</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">47</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18299600499</div>
+        <div class="item-name">Bolsa de palha de grande capacidade para férias casuais praia portátil nova moda bolsa de ombro tecida</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">48</div>
+      <div class="item-info">
+        <div class="item-id">ID: 7087249012</div>
+        <div class="item-name">Mala Grande para Viagens Espaçosa Bolsa Viagem Bordo Estampada Em Diversas Cores</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">49</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23098091385</div>
+        <div class="item-name">Bolsa De Couro De Ombro Com Pompom Feminino PU Vintage</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">50</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23292640574</div>
+        <div class="item-name">Bolsa Feminina Pink Transversal Com Alça Removível Multineos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">51</div>
+      <div class="item-info">
+        <div class="item-id">ID: 9618334006</div>
+        <div class="item-name">Kit 12/24/36 peças/Pasta Envelope Com Botão A4 Serena Tom Pastel</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">52</div>
+      <div class="item-info">
+        <div class="item-id">ID: 7280094007</div>
+        <div class="item-name">Kit 24 peças/Casual Elástico de Cabelo Feminino Simples com Laço Multineos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">53</div>
+      <div class="item-info">
+        <div class="item-id">ID: 9915298184</div>
+        <div class="item-name">Bolsa Térmica / Lancheira Para Alimentos,marmitas e Líquidos Multiuso Unissex Amplo Espaço</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">54</div>
+      <div class="item-info">
+        <div class="item-id">ID: 4080164366</div>
+        <div class="item-name">Bolsa Mochila Saco T60 saquinho academia impermeável resistente</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">55</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19198270210</div>
+        <div class="item-name">Cinto De Couro Feminino Coreano – Fino Preto Com Fivela De Pino De Liga Para Uso Diário</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">56</div>
+      <div class="item-info">
+        <div class="item-id">ID: 5991989842</div>
+        <div class="item-name">Mochila Feminina Masculina Para Escolar Grande Delicada Costurada Reforçada Nylon Resistente Multineos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">57</div>
+      <div class="item-info">
+        <div class="item-id">ID: 4391907135</div>
+        <div class="item-name">Bolsa de Ombro de Lona Grande para Lazer Mochila Bolsas Feminina Masculino</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">58</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8215108170</div>
+        <div class="item-name">Nécessaire Frasqueira Transparente WashBag</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">59</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22593613980</div>
+        <div class="item-name">Bolsa De Couro De Ombro Com Pompom Feminino PU Vintage</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">60</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22794225725</div>
+        <div class="item-name">Cinto De Couro Feminino Coreano – Fino Preto Com Fivela De Pino De Liga Para Uso Diário</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">61</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22494254435</div>
+        <div class="item-name">Bolsa de Ombro com Decoração de Corrente Cor Sólida Feminina Minimalista Leve de Grande Capacidade</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">62</div>
+      <div class="item-info">
+        <div class="item-id">ID: 9016790733</div>
+        <div class="item-name">Kit 10 pares/Meia Cano Curto De Soft De Loga Lã estatica Quentinha Conforto Pantufa Feminina Masculina</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">63</div>
+      <div class="item-info">
+        <div class="item-id">ID: 5682022717</div>
+        <div class="item-name">Mala Bolsa Couro Grande Para Viagem Super Estilosa</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">64</div>
+      <div class="item-info">
+        <div class="item-id">ID: 7587251092</div>
+        <div class="item-name">Bolsa Estojo Cosmética Com Design De Gato Fofo Com Pompom</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">65</div>
+      <div class="item-info">
+        <div class="item-id">ID: 4580306763</div>
+        <div class="item-name">Óculos de Natação Com Protetor De Nariz Com Protetor De Ouvidos Para Crianças/ Adultos Tampa Nariz Material Emborrachado</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">66</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22294239970</div>
+        <div class="item-name">Cinto Feminino Metal Elástico Modelo Fivela Moda Blogueira</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">67</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8418370234</div>
+        <div class="item-name">Bolsa Mochila Feminina Com Alça Lateral Transversal De Ombro De Couro PU Multiuso</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">68</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22297169078</div>
+        <div class="item-name">Mochila Transparente Feminina Multifuncional Para Viajar Estilo Casual Com Grande Capacidade</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">69</div>
+      <div class="item-info">
+        <div class="item-id">ID: 4686244922</div>
+        <div class="item-name">Kit 20 peças/Mini Espelho 2 Lados De Maquiagem Pequeno Dobrável Portátil Leva Na Bolsa De Barbie Enviar cor Aleatório</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">70</div>
+      <div class="item-info">
+        <div class="item-id">ID: 3979719833</div>
+        <div class="item-name">Fantasia De Abelha Kit Abelhinha Asa Varinha Tiara Saia Cosplay Carnaval</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">71</div>
+      <div class="item-info">
+        <div class="item-id">ID: 9121126806</div>
+        <div class="item-name">Mochila Feminina Com Estojo Grande Nylon Impermeável Escolar Faculdade</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">72</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8341541178</div>
+        <div class="item-name">Estojo Com Divisoria Escolar Juvenil Resistente Agua Volta as Aulas Estojo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">73</div>
+      <div class="item-info">
+        <div class="item-id">ID: 6982317827</div>
+        <div class="item-name">Kit 1/3/5 peças/Meia-Calça Clássica Fina Fio 15 Loba Lupo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div></div>
+  <div class="section-title">Como funciona</div>
+  <div class="how">
+    <ol>
+      <li>Acesse <strong>Afiliados do Vendedor</strong> no Seller Centre e adicione os produtos acima em uma campanha com qualquer percentual de comissão.</li>
+      <li>Mantenha cada produto <strong>ativo por pelo menos 30 dias</strong>.</li>
+      <li>Receba <strong>R$ 300 de crédito por produto</strong> — os créditos são acumulativos.</li>
+      <li>Use o crédito para pagar qualquer comissão de afiliados da sua loja.</li>
+      <li>Pagamentos processados semanalmente, em até 10 dias após completar os 30 dias.</li>
+    </ol>
+  </div>
+  <a class="cta" href="https://seller.shopee.com.br/portal/web-seller-affiliate" target="_blank">Ir para Afiliados do Vendedor →</a>
+  <footer>
+    <p>Dúvidas? Fale com seu gerente ou chame <strong>daniel.nunes</strong> no SeaTalk.</p>
+    <p style="margin-top:6px;">Shopee Brasil · Afiliados do Vendedor · Iniciativa SKU Expansion</p>
+  </footer>
+</main>
+</body>
+</html>

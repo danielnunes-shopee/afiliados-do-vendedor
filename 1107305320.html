@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiliados do Vendedor – Pink Corazon</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--orange:#EE4D2D;--orange-light:#fff3f0;--dark:#1a1a1a;--mid:#555;--soft:#888;--line:#e8e8e8;--bg:#f7f7f7;--white:#ffffff;--green:#1a7a4a;--green-bg:#edf7f2}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);min-height:100vh}
+  header{background:var(--orange);padding:0 24px;display:flex;align-items:center;height:56px}
+  .logo{font-size:22px;font-weight:700;color:var(--white);letter-spacing:-0.5px}
+  .logo span{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;vertical-align:middle}
+  main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+  .greeting{margin-bottom:28px}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+  h1{font-size:26px;font-weight:700;line-height:1.25;color:var(--dark)}
+  h1 strong{color:var(--orange)}
+  .greeting p{margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6}
+  .summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:6px}
+  .card .value{font-size:28px;font-weight:700;color:var(--dark)}
+  .card.highlight{background:var(--green-bg);border-color:#b2dfc7}
+  .card.highlight .value{color:var(--green)}
+  .section-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .items{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+  .item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:16px}
+  .item-rank{width:28px;height:28px;border-radius:50%;background:var(--orange-light);color:var(--orange);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .item-rank.top{background:var(--orange);color:var(--white)}
+  .item-info{flex:1;min-width:0}
+  .item-id{font-size:11px;color:var(--soft);font-weight:500;margin-bottom:3px}
+  .item-name{font-size:14px;font-weight:500;color:var(--dark);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .item-reward{background:var(--green-bg);color:var(--green);font-size:13px;font-weight:700;padding:5px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+  .how{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:28px}
+  .how h3{font-size:14px;font-weight:600;margin-bottom:14px}
+  .how ol{padding-left:18px}
+  .how ol li{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:8px}
+  .how ol li strong{color:var(--dark)}
+  .cta{display:inline-block;background:var(--orange);color:var(--white);font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none;width:100%;text-align:center}
+  footer{text-align:center;margin-top:40px;font-size:12px;color:var(--soft);line-height:1.6}
+  footer a{color:var(--orange);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="logo">shopee <span>Afiliados do Vendedor</span></div></header>
+<main>
+  <div class="greeting">
+    <div class="eyebrow">Iniciativa exclusiva</div>
+    <h1>Olá, <strong>Pink Corazon</strong> 👋</h1>
+    <p>Selecionamos produtos da sua loja com alto potencial de vendas via afiliados. Adicione-os à sua campanha e ganhe créditos para usar em comissões.</p>
+  </div>
+  <div class="summary">
+    <div class="card"><div class="label">Produtos elegíveis</div><div class="value">5</div></div>
+    <div class="card highlight"><div class="label">Crédito total a receber</div><div class="value">R$ 1.500</div></div>
+  </div>
+  <div class="section-title">Seus produtos elegíveis</div>
+  <div class="items">
+    <div class="item">
+      <div class="item-rank top">1</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22194727052</div>
+        <div class="item-name">Tesoura Multifuncional Para Corte Alimentos Legumes Peixes Frangos Verdura Aço Inoxidável Utensílios</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">2</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23094434282</div>
+        <div class="item-name">Pipoqueira Grande Para Micro-ondas Sem Óleo Balde Pipoca Silicone Redonda Com Tampa Livre BPA</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">3</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22098744049</div>
+        <div class="item-name">Torneira De Aço Inoxidavel Alto Qualidade Para Lavatorio De Banheiro</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">4</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58255904012</div>
+        <div class="item-name">Escova Escovinha Pente Madeira Barba Cabelo Bigode Disfarce</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">5</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58202252339</div>
+        <div class="item-name">Torneira Cozinha Parede Gourmet Tubo Flexível Luxo 1/4 Preta</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">6</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23994640866</div>
+        <div class="item-name">Torneira De Cozinha Gourmet Bancata Tubo Flexivel Preto</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">7</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22492641779</div>
+        <div class="item-name">Mangueira Mágica 15M 30M 60M Flexível 7 funções Jato Irrigação para Jardim Lavagem de Carro</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">8</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23198930423</div>
+        <div class="item-name">Kit Tesoura De Titânio Profissional 3 Unidades</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">9</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23098682273</div>
+        <div class="item-name">Banco Selim Super Confortável Vazado com Sinalizador Traseiro Largo Bicicleta Bike</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">10</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23997979019</div>
+        <div class="item-name">Capa Chuva Capuz Infantil Resistente Impermeável Desenho Tamanho Único</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">11</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23893627637</div>
+        <div class="item-name">Gancho De Ventosa De Aço Inoxidável Cabide De Armazenamento Rolamento De Carga Forte E Sem Perfurações À Prova D'água</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">12</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22694883298</div>
+        <div class="item-name">Par Joelheira Vôlei Futsal Dança Handebol Original Adulto E infantil Feminina E Masculino</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">13</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22694454364</div>
+        <div class="item-name">Capa Para Banco Selim Bike Gel Silicone Ajustável Almofada Forro P/ Bicicleta Ciclismo Confortável</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">14</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21097513349</div>
+        <div class="item-name">Gancho Para Esponja Aço inoxidável Suporte Porta Bucha De Pia Prateleira</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">15</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58255671774</div>
+        <div class="item-name">Pegador de Gelo Pinças Multifuncionais para Bar Frios Drinks Petiscos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">16</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23398881991</div>
+        <div class="item-name">Kit Porta Comprimido Multiuso Com Cortador E Amassador Armazenamento Duplo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">17</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58200888247</div>
+        <div class="item-name">Forma Para Brownie Bolo Quadrada 24cm Em Silicone Antiaderente</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">18</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19399584406</div>
+        <div class="item-name">Fita Dupla Face Mágica Fixa Resistente Extra Forte Lavável Transparente 20 Metros</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">19</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22594202829</div>
+        <div class="item-name">Torneira Cozinha Gourmet Bancada Flexível 1/4 Volta Cromo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">20</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23294138680</div>
+        <div class="item-name">Descanso De Panela Suporte Tampas De Panelas Talheres E Acessórios Organizador Porta Tempero Cozinha</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">21</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58256166901</div>
+        <div class="item-name">Organizador De Cosméticos Multiuso Porta Algodão Cotonete Com Tampa Dourada Acrílico Resistente</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">22</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22097917972</div>
+        <div class="item-name">Tesoura Uso Profissional Dourada Para Costureira Tapeceiro Forjada Alfaiate Crina</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">23</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18099663602</div>
+        <div class="item-name">Jogo Talher Colher 3pc Inox Estojo Garfo Faca Colher Marmita Viagem</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">24</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23192914557</div>
+        <div class="item-name">Varal Portátil Para Apartamento Secador De Roupas Prático e Retrátil Para Janela e Parede</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">25</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18899068140</div>
+        <div class="item-name">Molde de Silicone Arte Porta Retrato Resina Artesanato DIY Decoração</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">26</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20999563439</div>
+        <div class="item-name">Torneira De Cozinha Cascata 360 Rotação 4 Funções Bocal De Alta Pressão Misturadora De Pia Para Cozinha Na Parede</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">27</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22093145338</div>
+        <div class="item-name">Bandeja Aco Inoxidavel Luxo Decorativa para Jóias Alimentos Dourado</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">28</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21899647085</div>
+        <div class="item-name">Caixa Em Acrílico Organizador Tem 3 Divisórias</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">29</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22193230187</div>
+        <div class="item-name">Bola de Pilates Suíça 65cm Treino Funcional Yoga Fisioterapia com Bomba</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">30</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23198677413</div>
+        <div class="item-name">Estilete Profissional Com Trava Aço Inox Maciço</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">31</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22492641798</div>
+        <div class="item-name">Rolo Bobina Embalagem A Vácuo com Ranhuras para Seladora a Vácuo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">32</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23898723263</div>
+        <div class="item-name">Isca De Camarão Macia 4,5cm Iscas Simuladas Para Pesca De Tucunaré Equipamento De Anzol</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">33</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20699075902</div>
+        <div class="item-name">Kit Engate Rabicho Flexível Mangueira Aço Inox 60cm 1/2 Polegada Fêmea x Fêmea Banheiro Torneira Pia</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">34</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23292617501</div>
+        <div class="item-name">Kit 2 Ganchos Autocolante Transparentes Com 6 Ganchos Multifuncional Cozinha Banheiro</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">35</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23594184455</div>
+        <div class="item-name">Luminária Decorativa Globo LED Lua Galáxia Sistema Solar Astronauta Bola De Cristal</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">36</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23594381761</div>
+        <div class="item-name">Cesto Infantil Organizador Multiuso Tecido Dobrável Roupa Brinquedos Dinossauros Leão</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">37</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22193880416</div>
+        <div class="item-name">Talheres De Aço Inox Dourado Garfo De Colher De Macarrão Para Salada Na Cozinha Talheres De Bom Gosto</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">38</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18099360086</div>
+        <div class="item-name">Kit Espátula Chapeiro Profissional de Inox 2 Peças Reta Curva Cozinha Burger Churrasco</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">39</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22192647039</div>
+        <div class="item-name">Jogo de 2 Xicaras de Coração 200 ml Parede Dupla Café Chá</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">40</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58257175534</div>
+        <div class="item-name">Kit 2 Frascos de Spray Dispensador De Loção Base Sabonete Liquido Hidratante 60/100ml Recarregavél Portátil Para Viagens</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">41</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22099207908</div>
+        <div class="item-name">Tapete Escorredor De Pia Torneira Escorredor De Silicone Cozinha Sabão Tapete De Pia</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">42</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22698056434</div>
+        <div class="item-name">Válvula Pia Cozinha 4 1/2 Inox 304 Com Cesto Removível Ralo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">43</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22998342513</div>
+        <div class="item-name">360° Rotação 4 Em 1 Adaptador Multifuncional Para Torneira Bocal De Alta Pressão Para Pia Somente o Chuveiro</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">44</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20097982973</div>
+        <div class="item-name">Registro Ducha Higiênica Alavanca 1/4 De Volta Metal Parede</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">45</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22898684345</div>
+        <div class="item-name">Torneira Cozinha Bancada Flexível Cone 1/4 de Volta Preta</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">46</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58256716582</div>
+        <div class="item-name">Kit 50 Pcs Luzes De Balão Individual LED Bateria Minúscula Para Lado Ou Escrivaninha Natal</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">47</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22598105823</div>
+        <div class="item-name">Porta Rolo de Papel Higiênico em Aço Inoxidável</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">48</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23497113946</div>
+        <div class="item-name">Kit 3 Organizadores De Gaveta Dobrável Sutiã Cuecas Calcinhas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">49</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58206894705</div>
+        <div class="item-name">Tesoura Cabeleireiro Profissional 16cm Aço Inoxidável Barbearia E Salão Fio Navalha</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">50</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23398932876</div>
+        <div class="item-name">Par Pedal Alumínio Plataforma GTA Bike Rosca Grossa 9/16 Esfera</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">51</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23498286227</div>
+        <div class="item-name">Organizador De Banheiro 2 Camadas Prateleira De Maquiagem Acrílica Grande Capacidade Suporte De Cosmético Liptick</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">52</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18097501329</div>
+        <div class="item-name">Torneira Cozinha Gourmet Bancada Parede Flexível 1/4 Volta Cromo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">53</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23394393456</div>
+        <div class="item-name">Colorido Macio Plástico Lidar Com Alumina Crochê Ganchos Agulhas De Tricô Conjunto Para Tecer Costura Tool 9 PCS</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">54</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19897785505</div>
+        <div class="item-name">Descanso Lateral com Regulagem Bicicleta 24 até 29</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">55</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22198149197</div>
+        <div class="item-name">Ducha Higiênica Banheiro 100% Aço Inoxidável 1,50m Chuveirinho Privada Preta</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">56</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23599349814</div>
+        <div class="item-name">Gancho Inox Auto-Adesivo Parede Pendurar Toalhas Multiuso</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">57</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58250444042</div>
+        <div class="item-name">Pasta com 24 Divisórias Coloridas Organizadora de Documentos Sanfonada Multiuso</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">58</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22797617128</div>
+        <div class="item-name">Registro Torneira Válvula Dupla Saída 1/2 para Banheiro Cozinha Área de Serviço Lavabo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">59</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22494284778</div>
+        <div class="item-name">Lanterna Cabeça Premium Recarregavel Sensor Prova D'água</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">60</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22093233710</div>
+        <div class="item-name">Kit Capa de Chuva Grossa e Longa com Capuz Transparente Reforçada Reutilizável Qualidade Premium</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">61</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23998766577</div>
+        <div class="item-name">Escova Pente Plastico Ferro Para Pentear Cachorros E Gatos Pet Tirar Os Pelos Botão Removedor De Pelos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">62</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58209156269</div>
+        <div class="item-name">Kit 10 Cabides Tintureiro Metal Aço Cromado Adulto Cava Resistente Cabide</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">63</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23399127822</div>
+        <div class="item-name">Fita Impermeável Forte Ultra Alta Viscosidade Reparação De Vazamento De Água 150cm x 10cm</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">64</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23798639333</div>
+        <div class="item-name">Peça Prancheta Com Armazenamento Pasta De Prancheta De Abertura</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">65</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23993101731</div>
+        <div class="item-name">Kit com 100 Pulseiras Neon Alto Brilho Fluorescente Tubo Diversas Cores Brilha no Escuro</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">66</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22898981238</div>
+        <div class="item-name">Kit 3 Tesouras Fio Navalha Desfiadeira Profissionais Para Cabeleireiro/Barbeiro</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">67</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19699609164</div>
+        <div class="item-name">Amassador De Latinhas Latas Com Abridor De Garrafa</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">68</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22893566657</div>
+        <div class="item-name">Torneira de Inox Escovado Metal Cozinha Bancada Mesa Gourmet Luxo 1/4 Volta</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">69</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22494710196</div>
+        <div class="item-name">Adesivo De Parede Girafa Macaco Menina Menino Com Medida De Altura Digital Arte Decoração DIY</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">70</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19799324620</div>
+        <div class="item-name">Kit 10 Colheres Coração Fofa para Cozinha Mesa Posta Douradas Café Sobremesa Chá Aço Inoxidável</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">71</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23493622609</div>
+        <div class="item-name">Ducha Higiênica Banheiro 100% Aço Inoxidável 1,50m Chuveirinho Privada Prata</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">72</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23398932876</div>
+        <div class="item-name">Par Pedal Plataforma GTA Bike Rosca Grossa 9/16 Esfera</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">73</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23993104649</div>
+        <div class="item-name">Par de Corretor Protetor de Joanete Terapia Magnética Alívio de Dores nos Pés e Dedão</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div></div>
+  <div class="section-title">Como funciona</div>
+  <div class="how">
+    <ol>
+      <li>Acesse <strong>Afiliados do Vendedor</strong> no Seller Centre e adicione os produtos acima em uma campanha com qualquer percentual de comissão.</li>
+      <li>Mantenha cada produto <strong>ativo por pelo menos 30 dias</strong>.</li>
+      <li>Receba <strong>R$ 300 de crédito por produto</strong> — os créditos são acumulativos.</li>
+      <li>Use o crédito para pagar qualquer comissão de afiliados da sua loja.</li>
+      <li>Pagamentos processados semanalmente, em até 10 dias após completar os 30 dias.</li>
+    </ol>
+  </div>
+  <a class="cta" href="https://seller.shopee.com.br/portal/web-seller-affiliate" target="_blank">Ir para Afiliados do Vendedor →</a>
+  <footer>
+    <p>Dúvidas? Fale com seu gerente ou chame <strong>daniel.nunes</strong> no SeaTalk.</p>
+    <p style="margin-top:6px;">Shopee Brasil · Afiliados do Vendedor · Iniciativa SKU Expansion</p>
+  </footer>
+</main>
+</body>
+</html>

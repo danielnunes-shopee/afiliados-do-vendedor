@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiliados do Vendedor – CP-story</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--orange:#EE4D2D;--orange-light:#fff3f0;--dark:#1a1a1a;--mid:#555;--soft:#888;--line:#e8e8e8;--bg:#f7f7f7;--white:#ffffff;--green:#1a7a4a;--green-bg:#edf7f2}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);min-height:100vh}
+  header{background:var(--orange);padding:0 24px;display:flex;align-items:center;height:56px}
+  .logo{font-size:22px;font-weight:700;color:var(--white);letter-spacing:-0.5px}
+  .logo span{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;vertical-align:middle}
+  main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+  .greeting{margin-bottom:28px}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+  h1{font-size:26px;font-weight:700;line-height:1.25;color:var(--dark)}
+  h1 strong{color:var(--orange)}
+  .greeting p{margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6}
+  .summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:6px}
+  .card .value{font-size:28px;font-weight:700;color:var(--dark)}
+  .card.highlight{background:var(--green-bg);border-color:#b2dfc7}
+  .card.highlight .value{color:var(--green)}
+  .section-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .items{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+  .item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:16px}
+  .item-rank{width:28px;height:28px;border-radius:50%;background:var(--orange-light);color:var(--orange);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .item-rank.top{background:var(--orange);color:var(--white)}
+  .item-info{flex:1;min-width:0}
+  .item-id{font-size:11px;color:var(--soft);font-weight:500;margin-bottom:3px}
+  .item-name{font-size:14px;font-weight:500;color:var(--dark);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .item-reward{background:var(--green-bg);color:var(--green);font-size:13px;font-weight:700;padding:5px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+  .how{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:28px}
+  .how h3{font-size:14px;font-weight:600;margin-bottom:14px}
+  .how ol{padding-left:18px}
+  .how ol li{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:8px}
+  .how ol li strong{color:var(--dark)}
+  .cta{display:inline-block;background:var(--orange);color:var(--white);font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none;width:100%;text-align:center}
+  footer{text-align:center;margin-top:40px;font-size:12px;color:var(--soft);line-height:1.6}
+  footer a{color:var(--orange);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="logo">shopee <span>Afiliados do Vendedor</span></div></header>
+<main>
+  <div class="greeting">
+    <div class="eyebrow">Iniciativa exclusiva</div>
+    <h1>Olá, <strong>CP-story</strong> 👋</h1>
+    <p>Selecionamos produtos da sua loja com alto potencial de vendas via afiliados. Adicione-os à sua campanha e ganhe créditos para usar em comissões.</p>
+  </div>
+  <div class="summary">
+    <div class="card"><div class="label">Produtos elegíveis</div><div class="value">5</div></div>
+    <div class="card highlight"><div class="label">Crédito total a receber</div><div class="value">R$ 1.500</div></div>
+  </div>
+  <div class="section-title">Seus produtos elegíveis</div>
+  <div class="items">
+    <div class="item">
+      <div class="item-rank top">1</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20599596759</div>
+        <div class="item-name">Cabo de iPhone 60W PD USB C cabo tipo c original para iPhone 15 16</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">2</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19297457106</div>
+        <div class="item-name">Suporte de Celular GPS Carro Resistente Ajuste Rotação 360 Base</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">3</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23997680349</div>
+        <div class="item-name">Cabo de iPhone Turbo 30W PD USB C Para Lightning Qc 4.0 original A'GOLD Carregamento Super Rápido</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">4</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22097015797</div>
+        <div class="item-name">Carregador Magnético Sem Fio iPhone Magsafe 15W Carregamento Rápido</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">5</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22792475903</div>
+        <div class="item-name">Película Cerâmica 9D 3D Samsung Gel Hidrogel Flexível S23 S23PLUS S23FE S24 S24PLUS S24fe S25 S25Plus S25Ultra</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">6</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21499002105</div>
+        <div class="item-name">Capa Acrílico Capinha transparente Case Space original Para iPhone 7 8plus Xs XR 11 12 13 14 15 16</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">7</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19499778387</div>
+        <div class="item-name">Película Cerâmica 9D 3D Samsung Gel Hidrogel Flexíve A06 A16 A26 A36 A56</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">8</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22498148869</div>
+        <div class="item-name">Carregador Turbo 35W iPhone USB C Original Fonte PD Carregador iPhone 15 iPhone 16</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">9</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18499853583</div>
+        <div class="item-name">Smart Tag Rastreador  GPS Localizador Air Tag Inteligente (Apple Find My) original A'GOLD</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">10</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21099243775</div>
+        <div class="item-name">Esfregão Mop Triangulo Ajustável Giratório 360° Multiuso 2 Refil Rodo de Limpeza</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">11</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18097771275</div>
+        <div class="item-name">Cabo Tipo c Turbo 60W USB-C Para Tipo C 2 Pontas 1 e 2 Metros original A'GOLD Carregamento Rápido</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">12</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20807292675</div>
+        <div class="item-name">Película Cerâmica 9D 3D iPhone Gel Hidrogel Flexível iPhone 17 16 15 14 13 12 11 Pro max Xs XR 6plus 7plus</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">13</div>
+      <div class="item-info">
+        <div class="item-id">ID: 16959909694</div>
+        <div class="item-name">Película De Vidro 3D Samsung Galaxy A03 A03s A03Core A04 A04E A04s A04CORE</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">14</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22798921010</div>
+        <div class="item-name">Microfone de Lapela sem fio duplo redondo magnético 2 em 1 iphone tipo c discreto entrevista podcast video A’Gold</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">15</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23697444161</div>
+        <div class="item-name">Tripé Universal Com Nível Câmeras Celulares 1,02m Entrega rápida</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">16</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20699663624</div>
+        <div class="item-name">Película de Vidro 3D Moto G15 G35 G55 G56 G75</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">17</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23494166155</div>
+        <div class="item-name">Carregador Turbo 40W com cabo Tipo C para Tipo C Fonte 2 Entrada USB e USB C carregamento rápido</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">18</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23594284758</div>
+        <div class="item-name">Iluminação Fotográfica Noturna de Preenchimento Lâmpada Portátil Fotografia Mini LED Luz de Vídeo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">19</div>
+      <div class="item-info">
+        <div class="item-id">ID: 15786225400</div>
+        <div class="item-name">Película Cerâmica 9D 3D XIAOMI REDMI Gel Hidrogel POCO X3 X3PRO X4 X4PRO X5 X5PRO X6 X6PRO X7 X7PRO</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">20</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22891316271</div>
+        <div class="item-name">Película Privacidade 3D Anti Spy Samsung M13 M14 M22 M23 M32 M33 M34 M52 M53 M54 M62</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">21</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23298682210</div>
+        <div class="item-name">Película Privacidade 3D Anti Spy Samsung A05 A05S A15 A25</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">22</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23193633753</div>
+        <div class="item-name">Cabo Adaptador Tipo C Usb-c Para Fone Ouvido P2 P3 3.5mm compativel com Samsung Xiaomi</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">23</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23498566525</div>
+        <div class="item-name">Cabo Tipo c Turbo 240W PD cabo USB c -Tipo c Para Macbook iPhone iPad original carregamento super rápido A`GOLD CB-53</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">24</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21097493748</div>
+        <div class="item-name">Ralador de Queijo Fatiador Legumes Cortador Vegetais Manual 3em1 Multiuso Cozinha Giratorio Manivela</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">25</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22092568251</div>
+        <div class="item-name">Cabo V8 Turbo 3.1A Carregamento Rápido  Preto – Micro USB V8. – 1 e 2 M HRebos original  HS-25 HS-99 026V</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">26</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23694057287</div>
+        <div class="item-name">Película Cerâmica 9D 3D Motorola Gel Hidrogel Flexível G05 G15 G35 G55 G75</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">27</div>
+      <div class="item-info">
+        <div class="item-id">ID: 16559911149</div>
+        <div class="item-name">Película De Gel 3D-/9D Relógio Apple Watch 38mm 40mm 41mm 42mm 44mm 45MM 49mm F8 F9 X6 X7 IWO</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">28</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21497412817</div>
+        <div class="item-name">Película Cerâmica 9D 3D XIAOMI Gel Hidrogel Redmi A1 A2Plus A3 A4 NOTE12 12PRO NOTE 13 13PRO NOTE 14 14Pro</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">29</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23496972119</div>
+        <div class="item-name">Película Cerâmica 9D 3D Motorola Gel Hidrogel Flexível G04 G13 G14 G23 G24 G34 G53 G54 G72 G73 G84</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">30</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18298530132</div>
+        <div class="item-name">PELÍCULA DE VIDRO 3D Xiaomi Redmi 10 Redmi 10c Redmi 12C Redmi 13C NOTE 12 NOTE 12PRO</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">31</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19898292150</div>
+        <div class="item-name">Película Cerâmica 9D 3D XIAOMI Gel Hidrogel Redmi 9 9A 9C Redmi 10 10A 10C Redmi 12C 13C Redmi 14C</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">32</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58208125768</div>
+        <div class="item-name">Rastreador Inteligente Smart Tag Compatível com Find Hub Google Android para Chaves Pets Malas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">33</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22194234910</div>
+        <div class="item-name">Iluminador Rgb Luz de Preenchimento Portátil Fotos E Lives Estrutura Preto 110v/220v Original A`GOLD</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">34</div>
+      <div class="item-info">
+        <div class="item-id">ID: 15686225318</div>
+        <div class="item-name">PELÍCULA DE VIDRO 3D SAMSUNG GALAXY A23</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">35</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23398878634</div>
+        <div class="item-name">Película Privativa Fosca Anti-Spy Matte Cerâmica Hidrogel Realme C51 C53 C55 C61 C63 C65 C67</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">36</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23498809356</div>
+        <div class="item-name">Fone de Ouvido Sem Fio Bluetooth 5.3 TWS In-ear Portátil Com Microfone Original A’ Gold</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">37</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22997061734</div>
+        <div class="item-name">Cabo Type-C Turbo 3.1A Tradicional Carregamento Rápido original Hrebos Hs-78 028C</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">38</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22898336325</div>
+        <div class="item-name">Fone De Ouvido Sport Orelhas Penduradas fone Esportes Bluetooth 5.3 IPX5 original A’GOLD FN-B21B</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">39</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22895816700</div>
+        <div class="item-name">Película Privacidade 3D Anti Spy  MOTO G13 G14 G23 G53 G54 G72 G73 G84</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">40</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23092565281</div>
+        <div class="item-name">Cabo Lightning Turbo 3.1A iPhone Tradicional Carregamento Rápido original Hrebos Hs-79 028I</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">41</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23594146962</div>
+        <div class="item-name">Película De Vidro 3D Moto G04 G13 G14 G23 G24 G34 G53 G54 G72 G73 G84</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">42</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23498120274</div>
+        <div class="item-name">Cabo Adaptador Fone Ouvido Lightning P2 P3 Compatível Com iPhone</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">43</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23794187308</div>
+        <div class="item-name">Pelicula de vidro 3D Samsung A05 A05S A15 A25</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">44</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23592891660</div>
+        <div class="item-name">Kit Teclado + Mouse Bluetooth sem fio Compativel com Mac ios Android Windows HREBOS HS-750K</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">45</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23997010703</div>
+        <div class="item-name">Cabo de iPhone Lightning 20W Usb-C Tipo C  1M/2M USB de Carregamento Rápido/Dados</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">46</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23094185870</div>
+        <div class="item-name">Película Cerâmica 9D 3D Samsung Gel Hidrogel Flexíve A05 A05S A15 A25 A35 A55</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">47</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22694193424</div>
+        <div class="item-name">PELÍCULA DE VIDRO 3D Samsung S20FE S21 S21FE S21PLUS S10LITE NOTE 10LITE</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">48</div>
+      <div class="item-info">
+        <div class="item-id">ID: 16159899385</div>
+        <div class="item-name">Caixinha Carregador Turbo 20W - Fonte Tomada Tipo C Turbo X Cabo Lightning para iPhones</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">49</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20797748861</div>
+        <div class="item-name">Carregador portátil 10000 mAh Power Bank bateria externa Universal origina Agold com visor e lanterna BTE-18A</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">50</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18707292634</div>
+        <div class="item-name">Película Cerâmica 9D 3D Samsung Gel Hidrogel Flexível S10 LITE S20FE S21 S21FE S21PLUS S21ULTRA S22 S22PLUS S22ULTR</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">51</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19407292286</div>
+        <div class="item-name">Película Cerâmica 9D 3D Samsung Gel Hidrogel Flexível A02 A02S A03 A03S A03CORE A12 A22 A32 A33 A53</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">52</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23098682335</div>
+        <div class="item-name">Película Privacidade 3D Anti Spy Samsung A06 A16 A26 A36 A55 A56</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">53</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18398318141</div>
+        <div class="item-name">Película Cerâmica 9D 3D Realme Gel Hidrogel Flexíve Realme C51 C53 C55 C61 C63 C65 C67 C75</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">54</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21999029590</div>
+        <div class="item-name">Kit Película Cerâmica 9D 3D iPhone Gel Hidrogel Flexível 6plus 7 8 PLUS ,XR 11 12 13 14 PRO MAX 15,16 17 17air</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">55</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21399032150</div>
+        <div class="item-name">Cabo Lightning 1.2m Turbo Carregamento Rápido iPhone HRebos original HS-125 057I</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">56</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22497424498</div>
+        <div class="item-name">Fone De Ouvido Sem Fio Bluetooth Gaming G9S Com Cancelamento De Ruído À prova d'água Som estéreo HiFi Com microfone - TX</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">57</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21707292629</div>
+        <div class="item-name">Película Cerâmica 9D 3D XIAOMI REDMI Gel Hidrogel Flexível NOTE 8 NOTE9 NOTE 10 NOTE 11 NOTE 11PRO</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">58</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23392664746</div>
+        <div class="item-name">Carregador Relógio Magnético Indução USB  Apple Watch Original Series 3 4 5 6 7</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">59</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23994218015</div>
+        <div class="item-name">Cabo Tipo C- Tipo C Turbo 60W Carregamento super rápido original A’Gold Cabo PD Tipo c</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">60</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21297749051</div>
+        <div class="item-name">Carregador Portátil 50000 mAh Power Bank Grande Turbo 22.5W PD Rápido Com Lanterna Led Agold BTE-61</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">61</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20099027263</div>
+        <div class="item-name">Cabo Turbo V8 Carregamento Rápido 1,2M Micro USB / V8 HRebos original HS-123 057V</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">62</div>
+      <div class="item-info">
+        <div class="item-id">ID: 17059898372</div>
+        <div class="item-name">Pelicula de vidro 3D Para iPhone 6/6s/7/8PLUS XS XR XSMAX 11 12 13 14 PROMAX iphone 15 promax</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">63</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23795821944</div>
+        <div class="item-name">Película Fosca Cerâmica Flexível 9D Hidrogel Todos os modelos iPhone 6 7 8 X XR 11 12 13 14 PROMAX 15 16 16PRO 16PROMAX</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">64</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20807292118</div>
+        <div class="item-name">Película Cerâmica 9d 3D Motorola Gel Hidrogel Flexível G22 G32 G42 G52 G62 G82</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">65</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19707292288</div>
+        <div class="item-name">Película Cerâmica 9D 3D Samsung Gel Hidrogel Flexível M13 M14 M23 M21S M32 M33 M34 M52 M53 M54 M62</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">66</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22298585995</div>
+        <div class="item-name">Cabo Tipo-C para Tipo-C 60W Turbo PD 1M A'Gold original  180° Com LED Revestimento Trançado Carregamento rápido</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">67</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21397474003</div>
+        <div class="item-name">Película AG Fosca de Vidro Á prova da Água iPhone X/ XS/ XS Max/ XR/ 11 Pro/ 11 Pro Max/ 12/12 Pro/ 12 Pro Max/ 13/ 13 Pro/ 14 15 Max Plus Pro Pro Max</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">68</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23893575347</div>
+        <div class="item-name">Película De Vidro 3D Para Moto E13 E20 E22 E30 E40 E32</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div></div>
+  <div class="section-title">Como funciona</div>
+  <div class="how">
+    <ol>
+      <li>Acesse <strong>Afiliados do Vendedor</strong> no Seller Centre e adicione os produtos acima em uma campanha com qualquer percentual de comissão.</li>
+      <li>Mantenha cada produto <strong>ativo por pelo menos 30 dias</strong>.</li>
+      <li>Receba <strong>R$ 300 de crédito por produto</strong> — os créditos são acumulativos.</li>
+      <li>Use o crédito para pagar qualquer comissão de afiliados da sua loja.</li>
+      <li>Pagamentos processados semanalmente, em até 10 dias após completar os 30 dias.</li>
+    </ol>
+  </div>
+  <a class="cta" href="https://seller.shopee.com.br/portal/web-seller-affiliate" target="_blank">Ir para Afiliados do Vendedor →</a>
+  <footer>
+    <p>Dúvidas? Fale com seu gerente ou chame <strong>daniel.nunes</strong> no SeaTalk.</p>
+    <p style="margin-top:6px;">Shopee Brasil · Afiliados do Vendedor · Iniciativa SKU Expansion</p>
+  </footer>
+</main>
+</body>
+</html>

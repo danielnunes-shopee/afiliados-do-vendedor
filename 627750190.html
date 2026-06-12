@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiliados do Vendedor – Pichau</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--orange:#EE4D2D;--orange-light:#fff3f0;--dark:#1a1a1a;--mid:#555;--soft:#888;--line:#e8e8e8;--bg:#f7f7f7;--white:#ffffff;--green:#1a7a4a;--green-bg:#edf7f2}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);min-height:100vh}
+  header{background:var(--orange);padding:0 24px;display:flex;align-items:center;height:56px}
+  .logo{font-size:22px;font-weight:700;color:var(--white);letter-spacing:-0.5px}
+  .logo span{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;vertical-align:middle}
+  main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+  .greeting{margin-bottom:28px}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+  h1{font-size:26px;font-weight:700;line-height:1.25;color:var(--dark)}
+  h1 strong{color:var(--orange)}
+  .greeting p{margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6}
+  .summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:6px}
+  .card .value{font-size:28px;font-weight:700;color:var(--dark)}
+  .card.highlight{background:var(--green-bg);border-color:#b2dfc7}
+  .card.highlight .value{color:var(--green)}
+  .section-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .items{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+  .item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:16px}
+  .item-rank{width:28px;height:28px;border-radius:50%;background:var(--orange-light);color:var(--orange);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .item-rank.top{background:var(--orange);color:var(--white)}
+  .item-info{flex:1;min-width:0}
+  .item-id{font-size:11px;color:var(--soft);font-weight:500;margin-bottom:3px}
+  .item-name{font-size:14px;font-weight:500;color:var(--dark);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .item-reward{background:var(--green-bg);color:var(--green);font-size:13px;font-weight:700;padding:5px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+  .how{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:28px}
+  .how h3{font-size:14px;font-weight:600;margin-bottom:14px}
+  .how ol{padding-left:18px}
+  .how ol li{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:8px}
+  .how ol li strong{color:var(--dark)}
+  .cta{display:inline-block;background:var(--orange);color:var(--white);font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none;width:100%;text-align:center}
+  footer{text-align:center;margin-top:40px;font-size:12px;color:var(--soft);line-height:1.6}
+  footer a{color:var(--orange);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="logo">shopee <span>Afiliados do Vendedor</span></div></header>
+<main>
+  <div class="greeting">
+    <div class="eyebrow">Iniciativa exclusiva</div>
+    <h1>Olá, <strong>Pichau</strong> 👋</h1>
+    <p>Selecionamos produtos da sua loja com alto potencial de vendas via afiliados. Adicione-os à sua campanha e ganhe créditos para usar em comissões.</p>
+  </div>
+  <div class="summary">
+    <div class="card"><div class="label">Produtos elegíveis</div><div class="value">5</div></div>
+    <div class="card highlight"><div class="label">Crédito total a receber</div><div class="value">R$ 3.300</div></div>
+  </div>
+  <div class="section-title">Seus produtos elegíveis</div>
+  <div class="items">
+    <div class="item">
+      <div class="item-rank top">1</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18999727561</div>
+        <div class="item-name">Suporte Articulado Para Monitor e TV Zinnia Nimbo 110, 13 Pol. a 32 Pol., Preto, ZNO-ZNNBO110-BK01</div>
+      </div>
+      <div class="item-reward">+ R$ 1.000</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">2</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20198149247</div>
+        <div class="item-name">Suporte Articulado Para Monitor e TV Zinnia Nimbo 110, 13 Pol. a 32 Pol., Branco, ZNO-ZNNBO110-WH01</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">3</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58210624579</div>
+        <div class="item-name">Cadeira Gamer TGT Heron TW1, Preto, TGT-HRTW1-PRT</div>
+      </div>
+      <div class="item-reward">+ R$ 1.000</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">4</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22299280606</div>
+        <div class="item-name">Kit Ventoinhas Acegeek RW12 5x1, Rainbow, 5x120mm, Preto, AG-RW12-5X1-BK</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">5</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19998132816</div>
+        <div class="item-name">Suporte Articulado Pistão a Gás p/ 2 Monitores Zinnia Nimbo 210, 13” a 32”, Preto, ZNO-ZNNBO210-BK01</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">6</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22498083194</div>
+        <div class="item-name">Gabinete Gamer Aquário Mancer CV500L, Mid Tower, Lateral De Vidro, Preto, MCR-CV500L-BK</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">7</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58258581552</div>
+        <div class="item-name">Gabinete Gamer Aquário Acegeek Ori Rainbow Mini-Tower Lateral e Vidro Com 3 Fans Preto, AG-ORI-BK-3F</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">8</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58200362396</div>
+        <div class="item-name">Teclado Mecanico TGT Sherman Compacto V2, Rainbow, ABNT2,Switch Huano Azul, Branco, TGT-SHCPTW-RBW02</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">9</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23893666096</div>
+        <div class="item-name">Gabinete Gamer Aquário Mancer CV700M, Mini-Tower Lateral de Vidro Com 2 Fans  Preto MCR-CV700M-BK-2F</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">10</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19399868063</div>
+        <div class="item-name">Cadeira Gamer TGT Heron M, Preto e Vermelho, TGT-HRM-RD02</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">11</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23897586408</div>
+        <div class="item-name">Gabinete Gamer TGT Legion, Mini-Tower, Lateral de Vidro, Branco, TGT-LGN-WH</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">12</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21298279540</div>
+        <div class="item-name">Cadeira Gamer TGT Heron M, Preto, TGT-HRM-BK02</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">13</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23897962057</div>
+        <div class="item-name">Fonte TGT Enfield, 500W, ATX Bivolt, Preto, TGT-EFD-BK01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">14</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23793089658</div>
+        <div class="item-name">Gabinete Gamer TGT Legion, Mini-Tower, Lateral de Vidro, Preto, TGT-LGN-BK</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">15</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22493586937</div>
+        <div class="item-name">Gabinete Gamer Aquário Mancer CV500L, Mid Tower, Lateral De Vidro, Branco, MCR-CV500L-WH</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">16</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22793051636</div>
+        <div class="item-name">Fonte Mancer Thunder 500W Bronze 80 Plus, MCR-THR500-BL01</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">17</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58257448861</div>
+        <div class="item-name">Monitor Gamer Mancer Valak Z180, 23.8 Pol, IPS, FHD, 1ms, 180Hz, HDMI/DP, MCR-VKZ180-BL01</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">18</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22194276880</div>
+        <div class="item-name">Kit Ventoinhas Pichau Ventus NX Reverse, ARGB, 3x120mm, Preto, PCH-VTNXR3-BK01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">19</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22298745618</div>
+        <div class="item-name">Water Cooler TGT Spartel V2, Rainbow, 240mm, Preto, TGT-SPLV240-BK01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">20</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58252315232</div>
+        <div class="item-name">Monitor Gamer Mancer Horizon Z3B, 23.8 Pol, VA, FHD, 1ms, 100Hz, HDMI/VGA, MCR-HZ3BN24-BL2</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">21</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22194360521</div>
+        <div class="item-name">Teclado Mecanico TGT Sherman V3 C1, Rainbow, ABNT2, Switch Vermelho, Preto, TGT-SHRC-RD01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">22</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22194243040</div>
+        <div class="item-name">Gabinete Gamer Aquário Pichau Atom, Mini-Tower, Lateral de Vidro, Com 1 Fan, Preto, PG-ATOM-BK</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">23</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58250111393</div>
+        <div class="item-name">Gabinete Gamer Aquário Aigo Apollo A275, Mini-Tower, Lateral de Vidro, Preto, AC-A275-B-HQ1</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">24</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23198149184</div>
+        <div class="item-name">Cadeira Gamer TGT Heron, Preta, TGT-HR-BL01</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">25</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22198481911</div>
+        <div class="item-name">Suporte Articulado Para Dois Monitores Zinnia Nimbo 210, 13 Pol. a 32 Pol. Branco, ZNO-ZNNBO210-WH01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">26</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22794512725</div>
+        <div class="item-name">Controladora Pichau Feather X6, ARGB, 10 Portas, PG-FTX6-BK01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">27</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22997611303</div>
+        <div class="item-name">Teclado Mecanico Gamer TGT Sherman Compacto, Rainbow, ABNT2, Switch Azul, Preto, TGT-SHTKL-RBW01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">28</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22294898548</div>
+        <div class="item-name">Monitor Gamer Pichau Athen V3 Neo, 23.8 Pol, IPS, FHD, 1ms, 144Hz, HDMI/VGA, PG-ATH24V3NEO-BL01</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">29</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58200940619</div>
+        <div class="item-name">Headset Gamer Mancer Twilight, Rainbow, Drivers 50mm, Branco, MCR-TLT-WH01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">30</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23394342239</div>
+        <div class="item-name">Teclado Mecanico TGT Sherman V3 C1, Rainbow, ABNT2, Switch Marrom, Preto, TGT-SHRC-BR01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">31</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22897502871</div>
+        <div class="item-name">Mousepad Gamer TGT K50M, Grande, 500x500x3mm, Preto, TGT-K50M-GRB01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">32</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23598383807</div>
+        <div class="item-name">Teclado Mecanico Mancer Shade MK3, Rainbow, Switch Huano Vermelho, Preto, MCR-SHM3-RBW01RD</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">33</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23794223771</div>
+        <div class="item-name">Headset Gamer Pichau Vega, Drivers 50mm, Preto, PCH-VGA-BL01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">34</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23294248058</div>
+        <div class="item-name">Kit Ventoinhas Pichau Ventus NX, ARGB, 5x120mm, Preto, PCH-VTNX5-BK01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">35</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58201653185</div>
+        <div class="item-name">Monitor Gamer Mancer Horizon Z3B, 21.5 Pol, VA, FHD, 1ms, 100Hz, HDMI/VGA, MCR-HZ3BN21-BL2</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">36</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22598781244</div>
+        <div class="item-name">Gabinete Gamer Acegeek Stratus Mesh, Mid-Tower, Lateral de Vidro, Preto, AG-STRATUS-MESH-BK</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">37</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22394212708</div>
+        <div class="item-name">Kit Ventoinhas TGT Striker, Rainbow, 5x120mm, TGT-STK5-BLRBW</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">38</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18999586293</div>
+        <div class="item-name">Placa Mae TGT H61-T, DDR3, LGA 1155, M-ATX, CHipset Intel H61, TGT-H61-T</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">39</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22298724131</div>
+        <div class="item-name">Kit Ventoinhas TGT Striker, Rainbow, 3x120mm, TGT-STK3-BLRBW</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">40</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23994628057</div>
+        <div class="item-name">Gabinete Gamer Aquário Aigo Luna A275 Rainbow Mini-Tower Lateral/Vidro C/3 Fans Preto AC-A275-B-BR1</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">41</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22598781189</div>
+        <div class="item-name">Gabinete Gamer Acegeek Stratus Mesh, Rainbow, Mid-Tower, Com 3 Fans, Preto, AG-STRATUS-MESH-BK-I3F</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">42</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22198773365</div>
+        <div class="item-name">Kit Ventoinhas Pichau Ventus NX, ARGB, 3x120mm, Preto, PCH-VTNX3-BK01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">43</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21399251262</div>
+        <div class="item-name">Gabinete Gamer Aquário Mancer CV100 Purple Edition,Mid-Tower,Lat/Vidro C/3 Fans,Preto,MCR-CV100-PEB</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">44</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22394248723</div>
+        <div class="item-name">Water Cooler TGT Spartel V3, Rainbow, 120mm, Preto, TGT-SPLV120-BK01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">45</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22494257060</div>
+        <div class="item-name">Teclado Mecanico Mancer Tharix, Rainbow, ABNT2, Switch Vermelho, Preto, MCR-THX-RBW01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">46</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22494238179</div>
+        <div class="item-name">Headset Gamer Mancer Twilight S, Rainbow, Drivers 40mm, Preto, MCR-TLTS-RGB01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">47</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22094073480</div>
+        <div class="item-name">Gabinete Gamer Mancer CV700L, Mid Tower, Lateral De Vidro, 3 Fans ARGB, Preto, MCR-CV700L-BK3F</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">48</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21697796683</div>
+        <div class="item-name">Headset Gamer Mancer Twilight, RGB, Drivers 50mm, Preto, MCR-TLT-RGB02</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">49</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58204379736</div>
+        <div class="item-name">Controle Gamer Pichau Glower Hall, Nintendo Switch, PC, PS3, Android, PCH-GLWH-W01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">50</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58202721805</div>
+        <div class="item-name">Cadeira Gamer TGT Heron TC2, Preto e Vermelho, TGT-HRTC-BR03</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">51</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23297547871</div>
+        <div class="item-name">Fonte Pichau Nidus 650L, 650W, 80 Plus Bronze, Preto, PG-NDL650-01BR</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">52</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22198773473</div>
+        <div class="item-name">Ventoinha Pichau Ventus NX Reverse, ARGB, 120mm, Preto, PCH-VTNR-BK01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">53</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58206666858</div>
+        <div class="item-name">Gabinete Gamer Mancer CV710L, Mini-Tower, Lateral de Vidro, Preto, MCR-CV710L-BK</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">54</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23498005822</div>
+        <div class="item-name">Monitor Gamer Mancer Horizon Z2, 27 Pol, VA, FHD, 100Hz, 1ms, HDMI/VGA, MCR-HZN27-BL2</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">55</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23693485502</div>
+        <div class="item-name">Gabinete Gamer Aquário Mancer CV100, Mid-Tower, Lateral De Vidro, Preto, MCR-CV100-BK</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">56</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58205888515</div>
+        <div class="item-name">Teclado Gamer Mancer Veyra, Rainbow, ABNT2, Preto, MCR-VYRA-RBW01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">57</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22294271839</div>
+        <div class="item-name">Ventoinha Pichau Ventus NX, ARGB, 120mm, Preto, PCH-VTN-BK01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">58</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58255955094</div>
+        <div class="item-name">Teclado Magnetico Mancer Onyx, RGB, Preto, MCR-ONYP-BL01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">59</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23393044193</div>
+        <div class="item-name">Gabinete Gamer Mancer CV100 Purple Edition, Mid-Tower, Com 3 Fans, Branco, MCR-CV100-PEW</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">60</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58209684558</div>
+        <div class="item-name">Monitor Gamer TGT Altay TS6, 23.8 Pol, IPS, FHD, 1ms, 165Hz, HDMI/VGA, TGT-ATTS6-BL01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">61</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22094277270</div>
+        <div class="item-name">Water Cooler Pichau Aqua 360X, ARGB, 360mm, Preto, PCH-AQA360X-BK01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">62</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23994849374</div>
+        <div class="item-name">Teclado Magnetico Pichau Virgo Pro, ARGB, Switch Vermelho, Branco, PG-VRGP-WH01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">63</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22997547876</div>
+        <div class="item-name">Fonte Mancer Thunder 400W Bronze 80 Plus, MCR-THR400-BL01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">64</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22094994367</div>
+        <div class="item-name">Monitor Gamer Pichau Athen V4 Pro, 23.8 Pol, IPS, FHD, 1ms, 144Hz, HDMI/DP, PG-ATH24V4P-BL01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">65</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58258570630</div>
+        <div class="item-name">Monitor Gamer Pichau Athen V3S, 27 Pol, IPS, QHD, 1ms, 165Hz, FreeSync, HDMI/DP, PG-ATH27V3S-BL01</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">66</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18499319393</div>
+        <div class="item-name">Headset Gamer Mancer Aura, RGB, Drivers 50mm, Preto, MCR-AUR-RGB01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">67</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58254380929</div>
+        <div class="item-name">Controle Gamer Pichau Glower Hall Pro, Nintendo Switch, PC, PS3, Android, PCH-GLWH-PR01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">68</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23197563333</div>
+        <div class="item-name">Suporte Para Notebook e Monitor Zinnia SNT10, ZNO-ZSNT10-BL01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">69</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23994172919</div>
+        <div class="item-name">Kit Ventoinhas TGT Humber, ARGB, 5x120mm, Branco, TGT-HR5-WH01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">70</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58205922102</div>
+        <div class="item-name">Teclado Magnetico Pichau Virgo Pro, ARGB, Switch Vermelho, Preto, PG-VRGP-BL01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">71</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18798325463</div>
+        <div class="item-name">Monitor Gamer Pichau Nexus 34 GO, 34 Pol,VA, Ultrawide, Curvo WQHD, 1ms, 165Hz, HDMI/DP, PG-NXS34GO-BL01</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">72</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22698003782</div>
+        <div class="item-name">Suporte Para Monitor Zinnia TMS 90, 17 Pol. a 32 Pol., Preto, ZNO-TMS90-BL01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">73</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22599451975</div>
+        <div class="item-name">Monitor Gamer Mancer Horizon Z4 Pro, 27 Pol, VA, FHD, 1ms, 200Hz, HDMI/DP, MCR-HZ4PRO27-BL2</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">74</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23994408151</div>
+        <div class="item-name">Mouse Gamer TGT GM50, Rainbow, 3600DPI, 6 Botoes, Preto, TGT-GM50-BL01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">75</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18299730064</div>
+        <div class="item-name">Teclado Mecanico Mancer Ghoul MK3, RGB, ABNT2, Switch Huano Vermelho, Preto, MCR-GHM3-RGB01RD</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">76</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20999306665</div>
+        <div class="item-name">Placa de Video Mancer Radeon RX 550, 4GB, GDDR5, 128-bit, MCR-RX550-4GBV3</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">77</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23797986145</div>
+        <div class="item-name">Suporte Para TV Zinnia STV550, 32 a 55 Pol, Preto, ZNO-STV550-BL01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">78</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23798870213</div>
+        <div class="item-name">Cadeira de Escritorio Zinnia Hera L, Assento Estofado, Base Giratória,  Preto, ZNO-HRAL-BK02</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">79</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22899189724</div>
+        <div class="item-name">Kit Ventoinhas Acegeek Chroma, ARGB, 3x120mm, Preto, AG-CHROMA3X1-BK</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">80</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22693159774</div>
+        <div class="item-name">Gabinete Gamer Aquário Acegeek Mercury R425, Mid-Tower, Lateral de Vidro, Preto, AG-MERCURY-R425-BK</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">81</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23899379219</div>
+        <div class="item-name">Carrinho Organizador Multiuso Zinnia Allure ZO1, Preto, ZNC-ALLR-BK01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">82</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23794131738</div>
+        <div class="item-name">Fonte Aigo Darkflash AT550, 550W, 80 Plus Bronze, Preto, AG-AT550-BK</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">83</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23798776921</div>
+        <div class="item-name">Cadeira de Escritório Zinnia Valencia SL, Preto, ZNO-VLCL-BL02</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">84</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23794668692</div>
+        <div class="item-name">Headset Gamer Mancer Aura, Rainbow, Drivers 50mm, Branco, MCR-AUR-WH01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">85</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58204124709</div>
+        <div class="item-name">Mousepad Gamer TGT M92 V2, Extendido, 900x300x3mm, Preto, TGT-M92-ESB02</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">86</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22594417873</div>
+        <div class="item-name">Controle Pichau Glower X1, PC/Switch/PS3/ Android, Transparente, PG-GLWX-BL01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">87</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23693485494</div>
+        <div class="item-name">Gabinete Gamer Aquário  Mancer CV100, Mid-Tower, Lateral De Vidro, Branco, MCR-CV100-WH</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">88</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58205459937</div>
+        <div class="item-name">Monitor Gamer Mancer Horizon Z2S, 27 Pol, IPS, FHD, 1ms, 100Hz, HDMI/VGA, MCR-HZN27S-BL2</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">89</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58209907080</div>
+        <div class="item-name">Gabinete Gamer Aigo DarkFlash C280, Mid-Tower, Lateral de Vidro, Com 7 fans, ARGB, Preto</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">90</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23097771262</div>
+        <div class="item-name">Teclado Gamer TGT M16L, Rainbow, ABNT2, Preto, TGT-M16L-RBW01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">91</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22497720518</div>
+        <div class="item-name">Placa Mae TGT H61, DDR3, LGA 1155, M-ATX, Chipset Intel H61, TGT-H61M2-V2</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">92</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23494284112</div>
+        <div class="item-name">Gabinete Gamer Acegeek Stratus Glass, Mid-Tower, Lateral de Vidro, Preto, AG-STRATUS-GLASS-BK</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">93</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23594014880</div>
+        <div class="item-name">Cooler Para Processador Pichau Sage V3, ARGB, 120mm, Preto, PG-SGEBK-V03</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">94</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23497542941</div>
+        <div class="item-name">Fonte Mancer Thunder 600W 80 Plus Bronze, MCR-THR600-BL01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">95</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22798875631</div>
+        <div class="item-name">Headset Gamer Pichau Azuris, Drivers 50mm, Preto, PCH-AZRS-BL01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">96</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22594291978</div>
+        <div class="item-name">Gabinete Gamer Mancer Ward V3, Mini-Tower, Lateral de Vidro, Com 3 Fans, Preto, MCR-WD3-BK-3F</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">97</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20999297131</div>
+        <div class="item-name">PC CPU Mancer, Intel Core I5, 8GB de memória ram, SSD 120GB</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">98</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22597616586</div>
+        <div class="item-name">Kit Teclado e Mouse Office ,Com fio, TGT GR100 V3, ABNT2, 1000DPI, Preto, TGT-GR100-BK03</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">99</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21799261072</div>
+        <div class="item-name">Mouse Gamer Mancer Lead 2, RGB, 12400DPI, 7 Botoes, Preto, MCR-LEAM2-RGB01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">100</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58205909299</div>
+        <div class="item-name">Mouse Gamer TGT Bizon X, Rainbow, 7200DPI, 6 Botoes, Preto, TGT-BIZ-X-BL01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">101</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23593150087</div>
+        <div class="item-name">Controladora Aigo APC1, 6 Portas ARGB, , 6 Portas PWM, APC1-PWM</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">102</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58208571178</div>
+        <div class="item-name">Monitor Gamer Mancer Valak Z185S, 23.8 Pol, VA, Curvo, FHD, 1ms, 180Hz, HDMI/DP, MCR-VKZ185S-BL01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">103</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58250286463</div>
+        <div class="item-name">Placa Mae Pichau Chronos B550M-CR, DDR4, Socket AMD AM4, M-ATX, Chipset AMD B550, PCH-B550M-CR</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">104</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58205902761</div>
+        <div class="item-name">Mouse Gamer Pichau Starwave, RGB, 12400DPI, 6 Botoes, Branco, PG-STW-WH01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">105</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20397723810</div>
+        <div class="item-name">PC CPU Mancer, Intel Core I3, 8GB DE RAM, SSD 120GB</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">106</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22798914047</div>
+        <div class="item-name">Mouse Gamer TGT GM75, Rainbow, 3600DPI, 6 Botoes, Preto, TGT-GM75-BL01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">107</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22494940120</div>
+        <div class="item-name">Kit Upgrade Gamer AMD Ryzen 5 5500 +  B450M</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">108</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20799841386</div>
+        <div class="item-name">Gabinete Gamer Aquário  Pichau Atom X, Mini-Tower, Lateral de Vidro, Com 2 Fans, Preto, PG-ATOMX-BK</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">109</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23597906266</div>
+        <div class="item-name">Suporte Para Monitor e TV Zinnia, 14 Pol. a 27 Pol., Preto, ZNO-SMT50-BL01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">110</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23997992541</div>
+        <div class="item-name">Suporte Articulado Para 2 Monitores Zinnia TMS 180, 13 Pol. a 32 Pol., Preto, ZNO-TMS180-BL01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">111</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21798265174</div>
+        <div class="item-name">Cooler Para Processador Pichau Falcon, ARGB, 120mm, Preto, PG-FLCARGB-BK01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">112</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58252769971</div>
+        <div class="item-name">PC Home Essential S, Intel Core i3, 8GB DE RAM, SSD 120GB</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">113</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23199234804</div>
+        <div class="item-name">Caixa de Som TGT Voltrix Lite, Rainbow, 2x3W RMS, USB, Preto, TGT-VTX-RB01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">114</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23098740862</div>
+        <div class="item-name">Cooler Para Processador Pichau Falcon, ARGB, 120mm, Branco, PG-FLCARGB-WH01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">115</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58205965615</div>
+        <div class="item-name">Teclado Magnetico Mancer Amethyst, RGB, Preto e Roxo, MCR-AMTY-BL01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">116</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23798776965</div>
+        <div class="item-name">Cadeira de Escritório Zinnia Venecia SL, Preto, ZNO-VNAL-BL02</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">117</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58254935731</div>
+        <div class="item-name">Water Cooler Acegeek CryoScreen 360, ARGB, 2.8 inch LCD, 360mm, Branco, AG-CRYOSCREEN360-WH</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">118</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22098805469</div>
+        <div class="item-name">Cadeira de Escritório  Zinnia Montreal SL, Cinza, Tecido Respirável, ZNO-MNTSL-BL03</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">119</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58257124914</div>
+        <div class="item-name">Water Cooler Pichau Aqua 360X, ARGB, 360mm, Branco, PCH-AQA360X-WH01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">120</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23999185405</div>
+        <div class="item-name">Computador Home Essential S, Intel Core I5, 8GB DE RAM, SSD 120GB</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">121</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22393661739</div>
+        <div class="item-name">Cadeira Gamer TGT Heron TC2 , Fácil Limpeza, Reclinável 120 kg, Preto, TGT-HRTC-BL03</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">122</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22593092429</div>
+        <div class="item-name">Headset Gamer TGT Diver, Rainbow, Drivers 40mm, Preto, TGT-DVR-RGB01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">123</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22098805469</div>
+        <div class="item-name">Cadeira de Escritório  Zinnia Montreal SL, Cinza, Tecido Respirável Mesh, ZNO-MNTSL-BL03</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">124</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23398911767</div>
+        <div class="item-name">Suporte Articulado Para Monitor Zinnia Nimbo110 Soft Pink Edition, 13~32 Pol, Branco, ZNO-SPINK110-WL01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">125</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23194651700</div>
+        <div class="item-name">Teclado Mecanico Mancer Shade MK3, Rainbow, Switch Huano Vermelho, Branco, MCR-SHM3-WH01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">126</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58201505671</div>
+        <div class="item-name">PC Gamer Forge, AMD Ryzen 5 5600GT, 16GB DDR4, SSD 240GB, Fonte 400W 80 Plus</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">127</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58259401760</div>
+        <div class="item-name">Placa de Video Mancer Radeon RX 580 X, 8GB, GDDR5, 256-bit, MCR-RX580-X</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">128</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21998265075</div>
+        <div class="item-name">Water Cooler Pichau Aqua 240X, ARGB, 240mm, Preto, PCH-AQA240X-BK01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">129</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22197622632</div>
+        <div class="item-name">HEADSET GAMER MARVO HG9086W 70W, RGB, WIRELESS, DRIVERS 40MM, BRANCO, HG9086W-WH</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">130</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22894233873</div>
+        <div class="item-name">Headset Gamer Pichau Vega Pro 7.1, Drivers 50mm, Preto, PCH-VGAP-BL01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">131</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23493061749</div>
+        <div class="item-name">Gabinete Gamer Mancer Hexer, Rainbow, Mid-Tower, Lateral de Vidro, Com 3 Fans, Preto, MCR-HEX-RB01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">132</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23094170351</div>
+        <div class="item-name">Fonte TGT Enfield, 600W, ATX Bivolt, Preto, TGT-EFD6-BK01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">133</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23097754611</div>
+        <div class="item-name">Combo Gamer TGT Ariete 4x1 Rainbow. Teclado, Mouse 1600DPI, Mousepad  e Headset 40mm, TGT-ART-RBW01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">134</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19699564471</div>
+        <div class="item-name">Filtro de Linha DPS Clamper iClamper Energia 5 Tomadas LCF, 1m, Transparente, 023460</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">135</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58259679974</div>
+        <div class="item-name">Monitor Gamer Mancer Valak VX240S 27 Pol, IPS, Curvo FHD 1ms 240Hz FreeSync HDMI/DP, MCR-VX240S-BL01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">136</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22893871404</div>
+        <div class="item-name">Gabinete Gamer Mancer Narok V2, Rainbow, Mid-Tower, Lateral de Vidro, Com 3 Fans, Preto, MCR-NRK-V2</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">137</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18999727561</div>
+        <div class="item-name">Suporte Articulado Para Monitor 13 a 32 Pistão a Gás Ajustável Zinnia Nimbo 110 Preto</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">138</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22094032383</div>
+        <div class="item-name">Kit Ventoinhas Acegeek Neon, ARGB, 3x120mm, Branco, AG-NEON3X1-WH</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">139</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19597881042</div>
+        <div class="item-name">Cooler Para Processador Mancer Vortex Rainbow RGB, MCR-VOR-01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">140</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58257451877</div>
+        <div class="item-name">Monitor Gamer Pichau Athen V3 Pro, 27 Pol, IPS, FHD, 1ms, 200Hz, HDMI/DP, PG-ATH27V3P-BL02</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">141</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23794408451</div>
+        <div class="item-name">Mouse Gamer TGT GM95 LED, 1600DPI, 4 Botoes, Preto, TGT-GM95-BL01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">142</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22894156488</div>
+        <div class="item-name">Combo Gamer Mancer ORC V2,MRC-ORC2-RBW01</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">143</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22998933706</div>
+        <div class="item-name">Gabinete Gamer Acegeek Neptune, Mid-Tower, Lateral de Vidro, Branco, AG-NEPTUNE-WH</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div></div>
+  <div class="section-title">Como funciona</div>
+  <div class="how">
+    <ol>
+      <li>Acesse <strong>Afiliados do Vendedor</strong> no Seller Centre e adicione os produtos acima em uma campanha com qualquer percentual de comissão.</li>
+      <li>Mantenha cada produto <strong>ativo por pelo menos 30 dias</strong>.</li>
+      <li>Receba <strong>R$ 660 de crédito por produto</strong> — os créditos são acumulativos.</li>
+      <li>Use o crédito para pagar qualquer comissão de afiliados da sua loja.</li>
+      <li>Pagamentos processados semanalmente, em até 10 dias após completar os 30 dias.</li>
+    </ol>
+  </div>
+  <a class="cta" href="https://seller.shopee.com.br/portal/web-seller-affiliate" target="_blank">Ir para Afiliados do Vendedor →</a>
+  <footer>
+    <p>Dúvidas? Fale com seu gerente ou chame <strong>daniel.nunes</strong> no SeaTalk.</p>
+    <p style="margin-top:6px;">Shopee Brasil · Afiliados do Vendedor · Iniciativa SKU Expansion</p>
+  </footer>
+</main>
+</body>
+</html>

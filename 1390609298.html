@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiliados do Vendedor – inova_beauty</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--orange:#EE4D2D;--orange-light:#fff3f0;--dark:#1a1a1a;--mid:#555;--soft:#888;--line:#e8e8e8;--bg:#f7f7f7;--white:#ffffff;--green:#1a7a4a;--green-bg:#edf7f2}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);min-height:100vh}
+  header{background:var(--orange);padding:0 24px;display:flex;align-items:center;height:56px}
+  .logo{font-size:22px;font-weight:700;color:var(--white);letter-spacing:-0.5px}
+  .logo span{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;vertical-align:middle}
+  main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+  .greeting{margin-bottom:28px}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+  h1{font-size:26px;font-weight:700;line-height:1.25;color:var(--dark)}
+  h1 strong{color:var(--orange)}
+  .greeting p{margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6}
+  .summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:6px}
+  .card .value{font-size:28px;font-weight:700;color:var(--dark)}
+  .card.highlight{background:var(--green-bg);border-color:#b2dfc7}
+  .card.highlight .value{color:var(--green)}
+  .section-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .items{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+  .item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:16px}
+  .item-rank{width:28px;height:28px;border-radius:50%;background:var(--orange-light);color:var(--orange);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .item-rank.top{background:var(--orange);color:var(--white)}
+  .item-info{flex:1;min-width:0}
+  .item-id{font-size:11px;color:var(--soft);font-weight:500;margin-bottom:3px}
+  .item-name{font-size:14px;font-weight:500;color:var(--dark);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .item-reward{background:var(--green-bg);color:var(--green);font-size:13px;font-weight:700;padding:5px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+  .how{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:28px}
+  .how h3{font-size:14px;font-weight:600;margin-bottom:14px}
+  .how ol{padding-left:18px}
+  .how ol li{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:8px}
+  .how ol li strong{color:var(--dark)}
+  .cta{display:inline-block;background:var(--orange);color:var(--white);font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none;width:100%;text-align:center}
+  footer{text-align:center;margin-top:40px;font-size:12px;color:var(--soft);line-height:1.6}
+  footer a{color:var(--orange);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="logo">shopee <span>Afiliados do Vendedor</span></div></header>
+<main>
+  <div class="greeting">
+    <div class="eyebrow">Iniciativa exclusiva</div>
+    <h1>Olá, <strong>inova_beauty</strong> 👋</h1>
+    <p>Selecionamos produtos da sua loja com alto potencial de vendas via afiliados. Adicione-os à sua campanha e ganhe créditos para usar em comissões.</p>
+  </div>
+  <div class="summary">
+    <div class="card"><div class="label">Produtos elegíveis</div><div class="value">5</div></div>
+    <div class="card highlight"><div class="label">Crédito total a receber</div><div class="value">R$ 1.500</div></div>
+  </div>
+  <div class="section-title">Seus produtos elegíveis</div>
+  <div class="items">
+    <div class="item">
+      <div class="item-rank top">1</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23394393204</div>
+        <div class="item-name">Hidratante Facial Antimanchas Garnier Vitamina C Toque Seco 85g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">2</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20297971150</div>
+        <div class="item-name">Óleo Extraordinário Tratamento Reconstrutor L'Oréal Paris Elseve 100ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">3</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23693892163</div>
+        <div class="item-name">Kit Promoção Tio Nacho Engrossador Shampoo 415ml+ Condicionador 200ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">4</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19099832629</div>
+        <div class="item-name">Óleo de Banho Dove Sabonete Líquido 240mL</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">5</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22394833735</div>
+        <div class="item-name">Kit Elseve Collagen Lifter Shampoo + Condicionador 200ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">6</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22498004874</div>
+        <div class="item-name">Seda Boom Definição 1KG Creme para Pentear Super Hidratação</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">7</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23593711568</div>
+        <div class="item-name">Bepantol Baby Creme 120G - Pomada De Assadura Original</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">8</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23098000171</div>
+        <div class="item-name">Óleo E Sérum Bifásico Dove Bond Intense Repair Spray 110ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">9</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22999354275</div>
+        <div class="item-name">Bio Lent Teuto 360ml + 120ml Limpeza Completa P/ Lentes</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">10</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22998056353</div>
+        <div class="item-name">PROTETOR SOLAR OAZ FPS 70 200- CORPO E ROSTO COM TOQUE SECO CORPO E ROSTO 200 ML 1UND</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">11</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23198675929</div>
+        <div class="item-name">ÓLEO MILAGROSO PANTENE 95ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">12</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22998006523</div>
+        <div class="item-name">Rexona Clinical Creme Antitranspirante Classic 58g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">13</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58209762716</div>
+        <div class="item-name">Pantene Bambu Sérum Leave-in Força, Nutrição e Controle de Frizz por Até 72 horas 95 ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">14</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23098006364</div>
+        <div class="item-name">Kit C/2 Rexona Clinical Creme Antitranspirante Classic 58g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">15</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20097984872</div>
+        <div class="item-name">CREME DE PENTEAR BELEZA NATURAL 1KG EXPLOSAO DE OLEOS AFRICANOS</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">16</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22693557027</div>
+        <div class="item-name">CETAPHIL CREME HIDRATANTE CORPORAL 453 GR 1UND</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">17</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22193896610</div>
+        <div class="item-name">KIT ELSEVE LISO DOS SONHOS C/1 SHAMPOO 200ML + 1 CONDICIONADOR 200ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">18</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23193568311</div>
+        <div class="item-name">KIT C/3 DESODORANTE CREME REXONA CLINICAL MEN CLEAN 58G 3UND</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">19</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23498948187</div>
+        <div class="item-name">Kit Elseve Óleo Extraordinário Tratamento Reconstrutor 100ml + Sérum Leave-In Liso dos Sonhos 100ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">20</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23698208217</div>
+        <div class="item-name">KIT C/3 Bepantol Baby Creme 120G - Pomada De Assadura Original</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">21</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22799168468</div>
+        <div class="item-name">Óleo e Sérum Bifásico Dove UV Repair & Glow Ferúlico Frasco 110ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">22</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23299290963</div>
+        <div class="item-name">Kit Elseve C/4 Itens [Sh 400mL + Cond 400mL + Leave-In 100mL + Máscara 300g] Collagen Lifter</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">23</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23193568311</div>
+        <div class="item-name">KIT 3 DESODORANTE CREME REXONA CLINICAL MEN CLEAN 58G 3UND</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">24</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22694303878</div>
+        <div class="item-name">Tônico Capilar Pantene Antiqueda Biotinamina B3 52ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">25</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58203949879</div>
+        <div class="item-name">Leave In Elseve Collagen Lifter 100ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">26</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22598087431</div>
+        <div class="item-name">KIT REXONA CLINICAL C/2 DESODORANTE ANTITRANSPARENTE 1MEN 1CLASSIC 2UND TOTAL</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">27</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23493556777</div>
+        <div class="item-name">CETAPHIL LOCAO HIDRATANTE 473 ML 1UND</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">28</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21399563610</div>
+        <div class="item-name">Giovanna Baby Body Splash Blue 260ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">29</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58203846708</div>
+        <div class="item-name">Kit Elseve C/3 Itens [Shampoo 200mL + Condicionador 200mL + Leave-In 100mL] Collagen Lifter</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">30</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22194213158</div>
+        <div class="item-name">Kit Pantene Biotinamina B3 Antiqueda & Nutrição Shampoo 300ml + Condicionador 150ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">31</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22498399049</div>
+        <div class="item-name">Creme Facial Cicatricure Antissinais Bioregenext 50g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">32</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58203955506</div>
+        <div class="item-name">Máscara de Tratamento Elseve Collagen Lifter 300g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">33</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20398004647</div>
+        <div class="item-name">Desodorante Antitranspirante Dove Creme Sérum Previne Escurecimento Niacinamida 50g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">34</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19999567013</div>
+        <div class="item-name">DESODORANTE CREME REXONA CLINICAL FEM EXTRA DRY 58G 1UND</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">35</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20697993714</div>
+        <div class="item-name">KIT C/2 DESODORANTE CREME REXONA CLINICAL FEM EXTRA DRY 58G 2UND</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">36</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23394815816</div>
+        <div class="item-name">Creme de Pentear Elseve Collagen Lifter Volume Sem Frizz 250ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">37</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21699832667</div>
+        <div class="item-name">Kit C/2 Óleo de Banho Dove Sabonete Líquido 240mL</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">38</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58255865431</div>
+        <div class="item-name">Creme Facial Neutrogena Face Care Intensive Hidratante Matte 3 em 1 com 100g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">39</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21699597306</div>
+        <div class="item-name">Kit C/02 Desodorante Antitranspirante em Creme Rexona Clinical Masculino 96h</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">40</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23094045181</div>
+        <div class="item-name">Kit Giovanna Baby Classic [Loção Hidratante Desodorante 200mL + Colonia 20mL + Sabonete Vegetal 90g]</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">41</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58252888703</div>
+        <div class="item-name">Kit Promoção Tio Nacho Efeito Antigrisalho Shampoo 415ml + 1 Condicionador Efeito Antigrisalho 200ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">42</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22898898954</div>
+        <div class="item-name">Hidratante em Gel Facial Garnier Colágeno Toque Seco Antissinais 85g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">43</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23398016871</div>
+        <div class="item-name">Kit c/3 unid Seda Boom Definição 1KG Creme para Pentear Super Hidratação</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">44</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22594424177</div>
+        <div class="item-name">Shampoo + Condicionador Pantene Biotinamina B3 Antiqueda+ & Nutrição 510mL</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">45</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21699597306</div>
+        <div class="item-name">Kit 2 Desodorante Antitranspirante em Creme Rexona Clinical Masculino 96h</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">46</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23198695624</div>
+        <div class="item-name">Finalizador Coat Spray Tresemmé Blindagem Antiumidade 180ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">47</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22098715694</div>
+        <div class="item-name">Máscara Capilar de Tratamento Dove 10 em 1 Bond Repair + Peptídeo 250g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">48</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23693669724</div>
+        <div class="item-name">Desodorante Antitranspirante em Creme Rexona Clinical Masculino 96h.</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">49</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23793708231</div>
+        <div class="item-name">KIT EUDORA SIAGE HAIR-PLASTIA SHAMPOO + CONDICIONADOR</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">50</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58203857664</div>
+        <div class="item-name">Kit Elseve Collagen Lifter Shampoo + Condicionador 400ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">51</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18398028336</div>
+        <div class="item-name">Giovanna Baby Body Splash Classic 260mL</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">52</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22798862594</div>
+        <div class="item-name">Colônia Huggies Extra Suave Infantil com 100ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">53</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58201142513</div>
+        <div class="item-name">Sabonete Líquido Protex Balance Saudável 250mL</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">54</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22193534063</div>
+        <div class="item-name">Água Micelar L'Oreal Paris 200mL Solução de Limpeza 5 em 1</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">55</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22098071340</div>
+        <div class="item-name">Kit C/2 Protetor Solar OAZ FPS 70 200ml - Corpo e Rosto Toque Seco</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">56</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19599553538</div>
+        <div class="item-name">Kit Pantene Bambu Shampoo 400ml + Condicionador 175ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">57</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58202107160</div>
+        <div class="item-name">Loção Hidratante Alektos Derm Peles Seca e Extrasseca 450mL</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">58</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58204297684</div>
+        <div class="item-name">Creme Facial Anti-Idade L'Oréal Paris Revitalift Hialurônico Noturno 49g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">59</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58204149284</div>
+        <div class="item-name">Kit 560 Toalhas Umedecidas Bebê Limpinho 4 pacotes 140un cada Cimed</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">60</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21298254474</div>
+        <div class="item-name">Gel Para Cicatrizes e Estrias 30g Cicatricure</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">61</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23393892128</div>
+        <div class="item-name">Creme Corporal Antiestrias Cicatricure 250g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">62</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23998072808</div>
+        <div class="item-name">Kit Dove [Óleo e Sérum Dove Bifásico 110mL+ Leave-in Dove Intense Repair 50mL]</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">63</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22898017225</div>
+        <div class="item-name">Kit 2 Seda Boom Definição 1KG</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">64</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22898017225</div>
+        <div class="item-name">Kit C/2 Seda Boom Definição 1KG</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">65</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22994203857</div>
+        <div class="item-name">Máscara Capilar TRESemmé Blindagem Antiumidade 400g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">66</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23893090859</div>
+        <div class="item-name">KIT PANTENE SH 300ML+COND 150ML COLAGENO</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">67</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18599696229</div>
+        <div class="item-name">Kit Promoção Tio Nacho Reconstrutor Total com Aloe Vera para Reparação total Shampoo 415mL + Cond 200mL</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">68</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22193896451</div>
+        <div class="item-name">KIT ELSEVE LISO DOS SONHOS C/1 SHAMPOO 400ML + 1 CONDICIONADOR 400ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">69</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21097970864</div>
+        <div class="item-name">KIT C/6 Latas Aptanutri Premium N°3 800gr 1-3 Anos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">70</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58256311306</div>
+        <div class="item-name">Neutrogena Body Care Intensive Hidrata e Repara 200ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">71</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22299208077</div>
+        <div class="item-name">Kit Sérum Bifásico Dove UV Repair & Glow Ferúlico 110ml + Óleo Dove Bond Intense Repair 110ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">72</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23098079779</div>
+        <div class="item-name">Máscara de Tratamento Dove Reconstrução + Aminoácido 270g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">73</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58252098351</div>
+        <div class="item-name">Shampoo e Condicionador Pro-V Pantene Bambu Nutre & Cresce 510mL</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">74</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22398065010</div>
+        <div class="item-name">KIT C/3 DESODORANTE CREME REXONA CLINICAL FEM EXTRA DRY 58G 3UND</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">75</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58201903666</div>
+        <div class="item-name">Kit C/4 Composto Lácteo Ninho Forti+ Zero Lactose Nestlé a partir de 1 ano 380g Cada</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">76</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23394795636</div>
+        <div class="item-name">Spray Nasal Snif Jet Infantil 0,9% 100ml Solução Nasal</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">77</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22894941346</div>
+        <div class="item-name">Kit Bio Soak Cuidado Completo para Lentes de Contato</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">78</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20299896080</div>
+        <div class="item-name">Kit C/3 Refil Sabonete Líquido Granado Bebê Glicerina Tradicional 250ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">79</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58259983432</div>
+        <div class="item-name">Sérum Hidratante Corporal Dove Niacinamida + Uniformizador 180ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">80</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23799238509</div>
+        <div class="item-name">KIT C/2 Composto Lácteo Ninho Forti+ Zero Lactose Nestlé a partir de 1 ano 380g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">81</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22994047448</div>
+        <div class="item-name">Kit Giovanna Baby Blue [Loção Hidratante Desodorante 200mL + Colonia 20mL + Sabonete Vegetal 90g]</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">82</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23299354266</div>
+        <div class="item-name">Koleston - Óleo Poderoso 9 em 1 100ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">83</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23898106655</div>
+        <div class="item-name">Kit C/2 Desodorante Antitranspirante Dove Creme Sérum Previne Escurecimento Niacinamida 50g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">84</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20598077828</div>
+        <div class="item-name">KIT C/2 FORMULA INFANTIL APTAMIL PROFUTURA GOLD 1 800G</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">85</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18897980452</div>
+        <div class="item-name">VITAMINA D3 1000UI C/30 CAPS GEL LABORATORIO EUROFARMA 1UND</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">86</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58206350864</div>
+        <div class="item-name">Kit Protetor Solar Facial NeoStrata Minesol Oil Control FPS 70 C/2 unidades de 40g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">87</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23098021205</div>
+        <div class="item-name">KIT C/12 latas Aptanutri PREMIUM 3 800 gr</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">88</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58206222808</div>
+        <div class="item-name">Protetor diário Carefree Sem Fragrância 80un</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">89</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58206220555</div>
+        <div class="item-name">Protetor Diário Carefree com fragrância 80un</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">90</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22493715684</div>
+        <div class="item-name">LEAVE-IN ELSEVE CICATRI RENOV 100ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">91</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58259961231</div>
+        <div class="item-name">La Roche Posay Cicaplast B5+ Baume Creme Multirreparador Calmante 20ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">92</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22594174229</div>
+        <div class="item-name">Body Splash Giovanna Baby Blanc Vanilla 260ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">93</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21798106348</div>
+        <div class="item-name">KIT C/2 Creme Corporal Antiestrias Cicatricure 250g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">94</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22399191359</div>
+        <div class="item-name">Escova Ricca Flex Premium</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">95</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23098015560</div>
+        <div class="item-name">KIT C/2 latas   Aptanutri PREMIUM 3 800 gr</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">96</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22098044971</div>
+        <div class="item-name">KIT PANTENE SHAMPOO 350ML+ CONDICIONADOR 175ML LISO EXTREMO</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">97</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22394856950</div>
+        <div class="item-name">Creme Facial Anti-Idade L'Oréal Paris Revitalift Hialurônico Diurno FPS20 49g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">98</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23194339660</div>
+        <div class="item-name">Kit Pantene Shampoo + Cond 510ml cada Colágeno</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">99</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23798209172</div>
+        <div class="item-name">KIT EUDORA SIAGE LISO INTENSO SHAMPOO + CONDICIONADOR</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">100</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22793493853</div>
+        <div class="item-name">Kit com 12 pacotes de Lenço Toalhinhas Umedecidas Tripla Proteção Huggies 88 unidades cada</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">101</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58210538312</div>
+        <div class="item-name">Seda Boom Creme Denso Para Pentear Definição Intensa 1Kg</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">102</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58210685588</div>
+        <div class="item-name">Nivea Facial 7 Em 1 Creme Nutritivo Ultra Leve 100g</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">103</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58205804943</div>
+        <div class="item-name">Shampoo Efeito Antigrisalho 415ml - Tio Nacho</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">104</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22193532591</div>
+        <div class="item-name">KIT ELSEVE 1 SHAMPOO GLYCOLIC 375ML + 1 CONDICIONADOR 170ML</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">105</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58207674435</div>
+        <div class="item-name">Kit Elseve Collagen Lifter Shampoo 385ml + Cond 170ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">106</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23698013821</div>
+        <div class="item-name">KIT ELSEVE Leave-in CICATRI RENOV 50 ml + Oleo extraordinario 100 ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">107</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21099557208</div>
+        <div class="item-name">KIT REPELENTE C/2 XO CIMED INSETO LOCAO 200 ML 2 UND</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">108</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58251140089</div>
+        <div class="item-name">Sabonete Líquido Protex Limpeza Profunda Original 250ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div></div>
+  <div class="section-title">Como funciona</div>
+  <div class="how">
+    <ol>
+      <li>Acesse <strong>Afiliados do Vendedor</strong> no Seller Centre e adicione os produtos acima em uma campanha com qualquer percentual de comissão.</li>
+      <li>Mantenha cada produto <strong>ativo por pelo menos 30 dias</strong>.</li>
+      <li>Receba <strong>R$ 300 de crédito por produto</strong> — os créditos são acumulativos.</li>
+      <li>Use o crédito para pagar qualquer comissão de afiliados da sua loja.</li>
+      <li>Pagamentos processados semanalmente, em até 10 dias após completar os 30 dias.</li>
+    </ol>
+  </div>
+  <a class="cta" href="https://seller.shopee.com.br/portal/web-seller-affiliate" target="_blank">Ir para Afiliados do Vendedor →</a>
+  <footer>
+    <p>Dúvidas? Fale com seu gerente ou chame <strong>daniel.nunes</strong> no SeaTalk.</p>
+    <p style="margin-top:6px;">Shopee Brasil · Afiliados do Vendedor · Iniciativa SKU Expansion</p>
+  </footer>
+</main>
+</body>
+</html>

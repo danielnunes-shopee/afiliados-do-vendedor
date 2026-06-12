@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiliados do Vendedor – SUPER CHETO</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--orange:#EE4D2D;--orange-light:#fff3f0;--dark:#1a1a1a;--mid:#555;--soft:#888;--line:#e8e8e8;--bg:#f7f7f7;--white:#ffffff;--green:#1a7a4a;--green-bg:#edf7f2}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);min-height:100vh}
+  header{background:var(--orange);padding:0 24px;display:flex;align-items:center;height:56px}
+  .logo{font-size:22px;font-weight:700;color:var(--white);letter-spacing:-0.5px}
+  .logo span{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;vertical-align:middle}
+  main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+  .greeting{margin-bottom:28px}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+  h1{font-size:26px;font-weight:700;line-height:1.25;color:var(--dark)}
+  h1 strong{color:var(--orange)}
+  .greeting p{margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6}
+  .summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:6px}
+  .card .value{font-size:28px;font-weight:700;color:var(--dark)}
+  .card.highlight{background:var(--green-bg);border-color:#b2dfc7}
+  .card.highlight .value{color:var(--green)}
+  .section-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .items{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+  .item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:16px}
+  .item-rank{width:28px;height:28px;border-radius:50%;background:var(--orange-light);color:var(--orange);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .item-rank.top{background:var(--orange);color:var(--white)}
+  .item-info{flex:1;min-width:0}
+  .item-id{font-size:11px;color:var(--soft);font-weight:500;margin-bottom:3px}
+  .item-name{font-size:14px;font-weight:500;color:var(--dark);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .item-reward{background:var(--green-bg);color:var(--green);font-size:13px;font-weight:700;padding:5px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+  .how{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:28px}
+  .how h3{font-size:14px;font-weight:600;margin-bottom:14px}
+  .how ol{padding-left:18px}
+  .how ol li{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:8px}
+  .how ol li strong{color:var(--dark)}
+  .cta{display:inline-block;background:var(--orange);color:var(--white);font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none;width:100%;text-align:center}
+  footer{text-align:center;margin-top:40px;font-size:12px;color:var(--soft);line-height:1.6}
+  footer a{color:var(--orange);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="logo">shopee <span>Afiliados do Vendedor</span></div></header>
+<main>
+  <div class="greeting">
+    <div class="eyebrow">Iniciativa exclusiva</div>
+    <h1>Olá, <strong>SUPER CHETO</strong> 👋</h1>
+    <p>Selecionamos produtos da sua loja com alto potencial de vendas via afiliados. Adicione-os à sua campanha e ganhe créditos para usar em comissões.</p>
+  </div>
+  <div class="summary">
+    <div class="card"><div class="label">Produtos elegíveis</div><div class="value">5</div></div>
+    <div class="card highlight"><div class="label">Crédito total a receber</div><div class="value">R$ 1.900</div></div>
+  </div>
+  <div class="section-title">Seus produtos elegíveis</div>
+  <div class="items">
+    <div class="item">
+      <div class="item-rank top">1</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23511983921</div>
+        <div class="item-name">Massageador Elétrico Alta Frequência Profissional Muscular Massagem</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">2</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21753318097</div>
+        <div class="item-name">PROMOÇÃO！Atualizar！Suporte Para Celular e Tablet Dobrável Portátil Ajustável Apoio Mesa</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">3</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22697281112</div>
+        <div class="item-name">Projetor HY300 Original Portátil Smart Android 11 4K Ultra HD HDMI Wifi Bluetooth Alto Falante Embutido</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">4</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23798228601</div>
+        <div class="item-name">AIQUE Nebulizador Portátil Mini Inalador Silencioso Ultra-sônico Automático para Adultos e Crianças</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">5</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21169786825</div>
+        <div class="item-name">Fone De Ouvido Sem Fio E6s Bluetooth 5.0 Tws Com Tela LED Digital</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">6</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22892292953</div>
+        <div class="item-name">I12s tws/ I13/ PRO 4 Fone de ouvido Sem Fio Portátil 5.0 FoneBbluetooth</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">7</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20899575244</div>
+        <div class="item-name">2025 NOVO Vídeo Game Stick M15 Pro 4k 64gb Hdmi Com 2 Controles Se Fio +20mil Jogos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">8</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23015815090</div>
+        <div class="item-name">Carregador Portátil Pineng Power Bank 10.000mah,5000mah com adaptador iPhone,V8</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">9</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22598189688</div>
+        <div class="item-name">NIIMBOT D110 Impressora de Etiquetas Inteligente Térmica Bluetooth Impressora sem Tinta para iOS Android</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">10</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22398136507</div>
+        <div class="item-name">Parafusadeira Furadeira 48V 2 Baterias Com Maleta e Acessórios Completo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">11</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22698205513</div>
+        <div class="item-name">Monitor digital de pressão arterial de braço totalmente automático</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">12</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22498068852</div>
+        <div class="item-name">Console Portátil R36S + de 15.000 Jogos Vídeo Game 64g Linux Tela IPS 3.5 Polegadas a Pronta Entrega</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">13</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18797674026</div>
+        <div class="item-name">PN-959/PN956 Carregador Portátil Bateria Power Bank 20000mah/10000mah</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">14</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19797749864</div>
+        <div class="item-name">Cinto de segurança pet universal compatível com todos os modelos de veículos para cães e gatos viagem</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">15</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21697098856</div>
+        <div class="item-name">Air Pro 4 Tws Fone De Ouvido Sem Fio Bluetooth 5.1Mini Fones Esportivos Para Android / Ios iphone</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">16</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23693855421</div>
+        <div class="item-name">Carregador Portátil 20000mah grande capacidade power bank usb c 22.5w rápido portátil bateria para iphone samsung xiaomi</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">17</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23797127405</div>
+        <div class="item-name">Mini Compressor de Ar Portatil Recarregavél Digital USB Calibrador Pneu Envio Imediato</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">18</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20697926092</div>
+        <div class="item-name">Tripé Estabilizador de Mão kit 5 em 1 gimbal Microfone Celular Gravação De Vídeo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">19</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23292570854</div>
+        <div class="item-name">KIT 1/2/3/4 Sensor De Presença Com Fotocélula Para Lâmpada Soquete</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">20</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22693600493</div>
+        <div class="item-name">Luva Musculação Academia Antiderrapante Feminina E Masculina Ginástica</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">21</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22993111889</div>
+        <div class="item-name">Lanterna Holofote De Cabeça 5 LED Super Brilhante À Prova D 'Água USB Recarregável 4 modos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">22</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21099196299</div>
+        <div class="item-name">Abacate De Brinquedo Para Gatos Com Catnip Erva Gato Natural</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">23</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22093121498</div>
+        <div class="item-name">Bolsa Pochete Unissex Esportiva Sem Volume Compacta Leve impermeável porta celular porta garrafa</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">24</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23494294408</div>
+        <div class="item-name">Atualizado Projetor Smart HY320 Android Full HD 1920x1080 Bluetooth Wi-fi</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">25</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22198037509</div>
+        <div class="item-name">Carregador Power Bank Portátil 20000mah Universal Saida 4 Cabos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">26</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22598044482</div>
+        <div class="item-name">Chapinha 2 Em 1 Modelador De Cachos De Barril 30mm Ferro Profissional</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">27</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21398993626</div>
+        <div class="item-name">Aparador Removedor de Pelos Elétrico/Portátil para Nariz/Orelha/Rosto / Depilador Facial</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">28</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22793920194</div>
+        <div class="item-name">130000RPM Mini Turbo Jet Fan Poderosa Velocidade Do Vento 35 M/s Ventilador De Jato De Alta Potência</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">29</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22598044221</div>
+        <div class="item-name">Kit De Costura 97pcs Kits DIY Caixa Multi-Funções Linha</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">30</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19698291850</div>
+        <div class="item-name">AIQUE Nebulizador Portátil Mini Inalador Silencioso Ultra-sônico Automático para Adultos e Crianças super</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">31</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23096108796</div>
+        <div class="item-name">Fone De Ouvido Ambie Sound Earcuffs Condução De Ossos Sem Fio Bluetooth Auriculares TWS Earbuds</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">32</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21799713468</div>
+        <div class="item-name">Cortador de Cabelo Profissional Sem Fio com Display LCD Inteligente e Barbeador Transparente para Homens</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">33</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18198086338</div>
+        <div class="item-name">NIIMBOT B1 Impressora de Etiquetas Portátil Bluetooth 2 Polegadas Fácil de Usar Escritório Casa Negócios</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">34</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58205612422</div>
+        <div class="item-name">NOVO Vídeo Game Stick M15 Pro 4k 64gb Hdmi Com 2 Controles Se Fio +20mil Jogos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">35</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23292574060</div>
+        <div class="item-name">Bolsa Pochete Colorida Unissex Esportiva Sem Volume Compacta Leve impermeável porta celular porta garrafa</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">36</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18772612290</div>
+        <div class="item-name">Câmera wifi ip sem fio giratória 360 com encaixe lampada bocal rosca ptz full HD visão noturna segurança</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">37</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23493567126</div>
+        <div class="item-name">Kit Maleta Maquiagem completo Profissional Com Espelho e Luz Led e paleta de maquiagem</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">38</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22698450362</div>
+        <div class="item-name">Câmera de Segurança A28B WiFi Dual 1080P 3MP Dupla WiFi para Alarme De Detecção De Segurança</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">39</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23493130517</div>
+        <div class="item-name">Escova De Limpeza Ajustável Janela Banheiro e Cozinha Ferramenta 7 em 1/ 9 em 1 Recarregável</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">40</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21398006963</div>
+        <div class="item-name">Brinquedo Card Infantil Cartão Fala Inglês Português Dino Apraxia Autismo Alfabetização</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">41</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22993101679</div>
+        <div class="item-name">NOVO Mini Máquina De Costura Multifuncional Doméstica Composta de 12 Pontos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">42</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22997706860</div>
+        <div class="item-name">Extensão Filtro De Linha Segurança 5 Tomadas 4 Usb E Usb C Envio Imediato</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">43</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22593935027</div>
+        <div class="item-name">Monitor De Pressão Arterial De Pulso Recarregável Alta BP Esfigmomanômetro super</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">44</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22997504453</div>
+        <div class="item-name">KIT 1/2/3/4 Sensores de Presença Com Fotocélula Para Lâmpada Soquete</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">45</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22092490233</div>
+        <div class="item-name">Escova para Gatos Removedor De Pelos Para Cães Escova Gatos Pet Aparador</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">46</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21199848485</div>
+        <div class="item-name">Fone de Ouvido Sem Fio Airpods PRO3 5 6 Estéreo Com Cancelamento De Ruído Bluetooth Pop-Up para iOS E Android</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">47</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20099181341</div>
+        <div class="item-name">K12 Caixa de som sem fio com microfone Karaokê, Mini Alto-falante Bluetooth portátil de Karaoke com 1/2 Microfone</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">48</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23594402422</div>
+        <div class="item-name">Carregador Portátil portátil grande 50000mah Turbo 22,5W PD carregamento ultrarrápido</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">49</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19399869076</div>
+        <div class="item-name">Monitor De Pressão Arterial De Pulso Recarregável Alta BP Esfigmomanômetro preto rapido</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">50</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23693707889</div>
+        <div class="item-name">Termômetro Infravermelho Para Bebê Adulto Termômetro Digital Display Lcd</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">51</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22193500887</div>
+        <div class="item-name">Joelheira Compressão Flexivel 3D Ortopedica Esportiva Anel e Haste Flexivel Treino Alívio Dor Joelho -super</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">52</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19497619638</div>
+        <div class="item-name">KIT Joelheiras De Compressão Tensor Alívio De Dor No Joelho</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">53</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22094968770</div>
+        <div class="item-name">NIIMBOT Papel Etiqueta Niimbot D110 D101 D11 15x30mm Super</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">54</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22296434089</div>
+        <div class="item-name">Fone de Ouvido Sem Fio i12 Tws Bluetooth Com Touch Bluetooth 5.0</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">55</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18499609118</div>
+        <div class="item-name">Kit 12/24/36/48 Cores Caneta 2 em 1 Brush Lettering e Ponta Fina Dual Pen Canetinha Colorir Desenho</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">56</div>
+      <div class="item-info">
+        <div class="item-id">ID: 13597775494</div>
+        <div class="item-name">Carregador Portátil Indução para iPhone/Android Magsafe Apple Sem fio Bateria Carga 3000mAh/5000mAh</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">57</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18199642733</div>
+        <div class="item-name">Estojo Maleta Pintura Infantil 68/86/150/168 Peças Paleta Canetinha Giz Lápis Cores Variadas Desenhos Caneta Marcadora</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">58</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58252014252</div>
+        <div class="item-name">Tábua de Corte Cortar Carne Placa Dupla Face Higiênica em Aço Inox e PP com Afiador e Alça</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">59</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19799381053</div>
+        <div class="item-name">Softbox Luz contínua 50x70cm Soquete e27 - Kit com Tripé</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">60</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20398028607</div>
+        <div class="item-name">Power Bank Carregador Portátil 20.000mAh Digital compatível com iPhone e Samsung</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">61</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22292782565</div>
+        <div class="item-name">Carregador Portátil Power Bank 10000mah com 3 Saídas v8 iphone e type-c KD-956</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">62</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22292843521</div>
+        <div class="item-name">Barraca Camping Iglu 2/4 Pessoas - Barraca De Acampamento A Prova D'Água - Barraca Camping Praia</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">63</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20152812091</div>
+        <div class="item-name">Carregador Adaptador de Energia 20w USB-C Rápido Original Para Iphone 11 12 13 14 Mini Pro Max -Entrega Rápida</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">64</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23093102713</div>
+        <div class="item-name">Brinquedo Mordedor Para Cachorro Saúde Dental Modelo de Osso</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">65</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18999307478</div>
+        <div class="item-name">Bastão Pau de selfie Tripé Retrátil Com Luz LED Controle Bluetooth Celular</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">66</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23699040307</div>
+        <div class="item-name">ORIGINAL-Caixa de Som Bluetooth 5W com LED Colorido Portátil Compatível com Alexa Rádio FM e USB</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">67</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22997909304</div>
+        <div class="item-name">24/36/48/60/80/100/120 peças Caneta Marcadora De Cabeça Dupla Conjunto De Canetas De Aquarela Especial Para Crianças</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div></div>
+  <div class="section-title">Como funciona</div>
+  <div class="how">
+    <ol>
+      <li>Acesse <strong>Afiliados do Vendedor</strong> no Seller Centre e adicione os produtos acima em uma campanha com qualquer percentual de comissão.</li>
+      <li>Mantenha cada produto <strong>ativo por pelo menos 30 dias</strong>.</li>
+      <li>Receba <strong>R$ 380 de crédito por produto</strong> — os créditos são acumulativos.</li>
+      <li>Use o crédito para pagar qualquer comissão de afiliados da sua loja.</li>
+      <li>Pagamentos processados semanalmente, em até 10 dias após completar os 30 dias.</li>
+    </ol>
+  </div>
+  <a class="cta" href="https://seller.shopee.com.br/portal/web-seller-affiliate" target="_blank">Ir para Afiliados do Vendedor →</a>
+  <footer>
+    <p>Dúvidas? Fale com seu gerente ou chame <strong>daniel.nunes</strong> no SeaTalk.</p>
+    <p style="margin-top:6px;">Shopee Brasil · Afiliados do Vendedor · Iniciativa SKU Expansion</p>
+  </footer>
+</main>
+</body>
+</html>

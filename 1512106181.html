@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiliados do Vendedor – Shop.EV</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--orange:#EE4D2D;--orange-light:#fff3f0;--dark:#1a1a1a;--mid:#555;--soft:#888;--line:#e8e8e8;--bg:#f7f7f7;--white:#ffffff;--green:#1a7a4a;--green-bg:#edf7f2}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);min-height:100vh}
+  header{background:var(--orange);padding:0 24px;display:flex;align-items:center;height:56px}
+  .logo{font-size:22px;font-weight:700;color:var(--white);letter-spacing:-0.5px}
+  .logo span{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;vertical-align:middle}
+  main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+  .greeting{margin-bottom:28px}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+  h1{font-size:26px;font-weight:700;line-height:1.25;color:var(--dark)}
+  h1 strong{color:var(--orange)}
+  .greeting p{margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6}
+  .summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:6px}
+  .card .value{font-size:28px;font-weight:700;color:var(--dark)}
+  .card.highlight{background:var(--green-bg);border-color:#b2dfc7}
+  .card.highlight .value{color:var(--green)}
+  .section-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .items{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+  .item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:16px}
+  .item-rank{width:28px;height:28px;border-radius:50%;background:var(--orange-light);color:var(--orange);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .item-rank.top{background:var(--orange);color:var(--white)}
+  .item-info{flex:1;min-width:0}
+  .item-id{font-size:11px;color:var(--soft);font-weight:500;margin-bottom:3px}
+  .item-name{font-size:14px;font-weight:500;color:var(--dark);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .item-reward{background:var(--green-bg);color:var(--green);font-size:13px;font-weight:700;padding:5px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+  .how{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:28px}
+  .how h3{font-size:14px;font-weight:600;margin-bottom:14px}
+  .how ol{padding-left:18px}
+  .how ol li{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:8px}
+  .how ol li strong{color:var(--dark)}
+  .cta{display:inline-block;background:var(--orange);color:var(--white);font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none;width:100%;text-align:center}
+  footer{text-align:center;margin-top:40px;font-size:12px;color:var(--soft);line-height:1.6}
+  footer a{color:var(--orange);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="logo">shopee <span>Afiliados do Vendedor</span></div></header>
+<main>
+  <div class="greeting">
+    <div class="eyebrow">Iniciativa exclusiva</div>
+    <h1>Olá, <strong>Shop.EV</strong> 👋</h1>
+    <p>Selecionamos produtos da sua loja com alto potencial de vendas via afiliados. Adicione-os à sua campanha e ganhe créditos para usar em comissões.</p>
+  </div>
+  <div class="summary">
+    <div class="card"><div class="label">Produtos elegíveis</div><div class="value">5</div></div>
+    <div class="card highlight"><div class="label">Crédito total a receber</div><div class="value">R$ 1.900</div></div>
+  </div>
+  <div class="section-title">Seus produtos elegíveis</div>
+  <div class="items">
+    <div class="item">
+      <div class="item-rank top">1</div>
+      <div class="item-info">
+        <div class="item-id">ID: 54505363986</div>
+        <div class="item-name">Grill Sanduicheira Cadence SAN400 Elétrica Chapa Misteira Tostex Tostequeira Hambúrguer Click 127v</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">2</div>
+      <div class="item-info">
+        <div class="item-id">ID: 43526160097</div>
+        <div class="item-name">Air fryer Itatiaia AFITA de 3.5L preto 110V</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">3</div>
+      <div class="item-info">
+        <div class="item-id">ID: 29991082078</div>
+        <div class="item-name">Sanduicheira Mickey Mallory 110V | Compacta, Prática e Divertida para Café da Manhã</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">4</div>
+      <div class="item-info">
+        <div class="item-id">ID: 45706900243</div>
+        <div class="item-name">Smart TV 43” Philco P43KRA Roku TV HDR10 Wi-Fi HDMI USB Controle com Apps Netflix YouTube Globoplay Full HD Design Slim</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">5</div>
+      <div class="item-info">
+        <div class="item-id">ID: 48608078794</div>
+        <div class="item-name">Mixer Oster OMIX570 750W 127V Inox – Velocidades Ajustáveis + Função Turbo + Copo 750ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">6</div>
+      <div class="item-info">
+        <div class="item-id">ID: 44903152222</div>
+        <div class="item-name">Fritadeira Itatiaia Afita1035a 3,5l - Preto 220V</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">7</div>
+      <div class="item-info">
+        <div class="item-id">ID: 44130025080</div>
+        <div class="item-name">Smart TV 43” Philco P43CRA Full HD Wi-Fi HDMI USB Conversor Digital</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">8</div>
+      <div class="item-info">
+        <div class="item-id">ID: 42578837832</div>
+        <div class="item-name">Samsung Galaxy A06 5g Dual Sim 128gb preto</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">9</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22598698463</div>
+        <div class="item-name">Monitor Viewpro 19'' Led Com Hdmi Vga Vesa 60Hz 100v/240v Cor Preto 127/220v 1440x900px</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">10</div>
+      <div class="item-info">
+        <div class="item-id">ID: 40925184209</div>
+        <div class="item-name">Mixer Lenoxx Vermelho 200W Facile PMX409 - 2 Velocidades - 110V</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">11</div>
+      <div class="item-info">
+        <div class="item-id">ID: 48756453609</div>
+        <div class="item-name">Cooktop Itatiaia Essencial ESS 5Q Preto Bivolt 127V/220V 5 Bocas Vidro Temperado</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">12</div>
+      <div class="item-info">
+        <div class="item-id">ID: 47158319281</div>
+        <div class="item-name">Mixer 3 em 1 750W Inox OMIX570 220V Oster | Potente | Original | Alta Performance</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">13</div>
+      <div class="item-info">
+        <div class="item-id">ID: 44606891787</div>
+        <div class="item-name">Panela Arroz Eletrica Fmaxx 10 Xicaras 1.8l 700w Prateado 127v 60hz</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">14</div>
+      <div class="item-info">
+        <div class="item-id">ID: 51005370037</div>
+        <div class="item-name">Grill Sanduicheira Cadence SAN400 Elétrica Chapa Misteira Tostex Tostequeira Hambúrguer Click 220v</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">15</div>
+      <div class="item-info">
+        <div class="item-id">ID: 44123965528</div>
+        <div class="item-name">Fritadeira Air Fryer 5,5l Widemax Com Interior De Alumínio 1900w Midea -110V</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">16</div>
+      <div class="item-info">
+        <div class="item-id">ID: 52306505589</div>
+        <div class="item-name">Panela De Pressão Elétrica Fmaxx Kitchen Chef 4 Litros 800w Prateado 127v 60hz</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">17</div>
+      <div class="item-info">
+        <div class="item-id">ID: 46458775272</div>
+        <div class="item-name">Smart TV 43” Britânia B43CRA Full HD Wi-Fi HDMI USB Conversor Digital</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">18</div>
+      <div class="item-info">
+        <div class="item-id">ID: 57860185743</div>
+        <div class="item-name">Sanduicheira e Grill Elétrico Kian 750 W – Preto | 2 em 1 | Chapas Antiaderentes | 127 V</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">19</div>
+      <div class="item-info">
+        <div class="item-id">ID: 49902103257</div>
+        <div class="item-name">Pipoqueira Elétrica Mallory Stitch Sem Óleo | Pipoca Sequinhas 220V</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">20</div>
+      <div class="item-info">
+        <div class="item-id">ID: 42274144870</div>
+        <div class="item-name">Fritadeira Air Fryer 5,5l Widemax Com Interior De Alumínio 1900w Midea - 220V</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">21</div>
+      <div class="item-info">
+        <div class="item-id">ID: 53502091744</div>
+        <div class="item-name">Panela de Arroz Elétrica 10 Xícaras 1,8L 220V Prata | Cozimento Rápido • Antiaderente • Tampa com Válvula</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">22</div>
+      <div class="item-info">
+        <div class="item-id">ID: 42628925807</div>
+        <div class="item-name">Mini Processador Itatiaia 127V Elétrico Compacto | Lâminas Inox | Ideal para Temperos, Alimentos e Uso Diário</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">23</div>
+      <div class="item-info">
+        <div class="item-id">ID: 41978675852</div>
+        <div class="item-name">Smart TV 43" Britânia HDR10 Dolby Áudio Roku TV B43KRA</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">24</div>
+      <div class="item-info">
+        <div class="item-id">ID: 29594282517</div>
+        <div class="item-name">Panela De Pressão Elétrica Fmaxx Chef 4 Litros 800w 220v Prateado 220v 60hz</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">25</div>
+      <div class="item-info">
+        <div class="item-id">ID: 29994322475</div>
+        <div class="item-name">Churrasqueira Elétrica Cadence Grill Menu 127V Portátil Grelha Antiaderente</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">26</div>
+      <div class="item-info">
+        <div class="item-id">ID: 53256697167</div>
+        <div class="item-name">Mixer Itatiaia 127V Potente, Compacto, Ideal Para Sucos, Molhos e Vitaminas – Uso Doméstico</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">27</div>
+      <div class="item-info">
+        <div class="item-id">ID: 55660185671</div>
+        <div class="item-name">Sanduicheira e Grill Elétrico Kian 750 W – Preto | 2 em 1 | Placas Antiaderentes | 220 V | Cozinha Prática</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">28</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23998683766</div>
+        <div class="item-name">Monitor Viewpro Mwv21 21''5 Led Com Hdmi Vga Vesa Cor Preto 127/220v</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">29</div>
+      <div class="item-info">
+        <div class="item-id">ID: 28942872439</div>
+        <div class="item-name">Tv - monitor Fmaxx Ft24 Led Fullhd Cor Preto</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">30</div>
+      <div class="item-info">
+        <div class="item-id">ID: 24147819456</div>
+        <div class="item-name">PURIFICADOR AGUA MIDEA SLIM BRANCO 127V/220V</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">31</div>
+      <div class="item-info">
+        <div class="item-id">ID: 56410173677</div>
+        <div class="item-name">Cafeteira Elétrica Kian CF-100 – 20 Xícaras | 127 V | 600 W | Preto | Jarra de Vidro | Sistema Corta-Pingos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">32</div>
+      <div class="item-info">
+        <div class="item-id">ID: 48557778473</div>
+        <div class="item-name">Ferro de Passar a Vapor Itatiaia Azul 220V | Spray, Base Antiaderente e Aquecimento Rápido</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">33</div>
+      <div class="item-info">
+        <div class="item-id">ID: 49056891881</div>
+        <div class="item-name">Panela Arroz Eletrica Fmaxx 10 Xicaras 1.8l 700w Inox 220v 60hz</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">34</div>
+      <div class="item-info">
+        <div class="item-id">ID: 47406521660</div>
+        <div class="item-name">Mixer 3 em 1 Preto Brilhante Itatiaia 200W 127V – Mixer, Mini Processador e Fouet | 2 Velocidades | Copo 700 ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">35</div>
+      <div class="item-info">
+        <div class="item-id">ID: 29294457645</div>
+        <div class="item-name">Cafeteira Elétrica Oster Inox OCAF300 19 Xícaras 127V Preta | Filtro Permanente | Jarra de Vidro</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">36</div>
+      <div class="item-info">
+        <div class="item-id">ID: 41028879087</div>
+        <div class="item-name">Purificador de Água SlimPure Midea Cinza Bivolt 127V/220V – Natural, Fria e Gelada Compacto</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">37</div>
+      <div class="item-info">
+        <div class="item-id">ID: 27894489611</div>
+        <div class="item-name">Sanduicheira Elétrica Cadence Toast & Grill 750W – Compacta, Antiaderente, Duplo Aquecimento | Lanches Rápidos e Saudáve</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">38</div>
+      <div class="item-info">
+        <div class="item-id">ID: 46657496254</div>
+        <div class="item-name">Secador de Cabelo Philco PSC3500 127V Profissional Potente Leve Uso Diário</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">39</div>
+      <div class="item-info">
+        <div class="item-id">ID: 56459581896</div>
+        <div class="item-name">Smart TV LG UHD AI 4K 43" – 43UA7500PSA | 4K HDR10 Pro, webOS 25, AI α7 Gen8, Wi-Fi/Bluetooth</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">40</div>
+      <div class="item-info">
+        <div class="item-id">ID: 45357778458</div>
+        <div class="item-name">Ferro de Passar a Vapor Itatiaia Azul 127V | Spray, Base Antiaderente e Aquecimento Rápido</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">41</div>
+      <div class="item-info">
+        <div class="item-id">ID: 54556542900</div>
+        <div class="item-name">Panela Elétrica de Arroz Electrolux RCB50 Easyline 1,3L Branca – Antiaderente, Tampa de Vidro, 127V</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">42</div>
+      <div class="item-info">
+        <div class="item-id">ID: 53808760135</div>
+        <div class="item-name">Smart TV 40” Britânia B40CRA Full HD Wi-Fi HDMI USB Conversor Digital</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">43</div>
+      <div class="item-info">
+        <div class="item-id">ID: 27894489611</div>
+        <div class="item-name">Sanduicheira Elétrica Cadence Toast & Grill - 127V - 750W – Compacta, Antiaderente e Duplo Aquecimento</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">44</div>
+      <div class="item-info">
+        <div class="item-id">ID: 40977632622</div>
+        <div class="item-name">CAIXA ACUSTICA PHILCO PCX6700</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">45</div>
+      <div class="item-info">
+        <div class="item-id">ID: 55353164653</div>
+        <div class="item-name">FILTRO DE AGUA MIDEA CLASSE C REFIL</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">46</div>
+      <div class="item-info">
+        <div class="item-id">ID: 53157758661</div>
+        <div class="item-name">Grill Itatiaia Essencial 1000W Inox 127V | Antiaderente, Compacto e Aquecimento Rápido</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">47</div>
+      <div class="item-info">
+        <div class="item-id">ID: 52455035164</div>
+        <div class="item-name">Forno Micro-ondas Midea 20 Litros 700W Prata MRAE21 127V</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">48</div>
+      <div class="item-info">
+        <div class="item-id">ID: 47808034661</div>
+        <div class="item-name">Blender Oster OBLD700 700W 127V Preto | Liquidificador Compacto Potente com Lâminas em Aço Inox</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div></div>
+  <div class="section-title">Como funciona</div>
+  <div class="how">
+    <ol>
+      <li>Acesse <strong>Afiliados do Vendedor</strong> no Seller Centre e adicione os produtos acima em uma campanha com qualquer percentual de comissão.</li>
+      <li>Mantenha cada produto <strong>ativo por pelo menos 30 dias</strong>.</li>
+      <li>Receba <strong>R$ 380 de crédito por produto</strong> — os créditos são acumulativos.</li>
+      <li>Use o crédito para pagar qualquer comissão de afiliados da sua loja.</li>
+      <li>Pagamentos processados semanalmente, em até 10 dias após completar os 30 dias.</li>
+    </ol>
+  </div>
+  <a class="cta" href="https://seller.shopee.com.br/portal/web-seller-affiliate" target="_blank">Ir para Afiliados do Vendedor →</a>
+  <footer>
+    <p>Dúvidas? Fale com seu gerente ou chame <strong>daniel.nunes</strong> no SeaTalk.</p>
+    <p style="margin-top:6px;">Shopee Brasil · Afiliados do Vendedor · Iniciativa SKU Expansion</p>
+  </footer>
+</main>
+</body>
+</html>

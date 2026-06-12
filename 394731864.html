@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiliados do Vendedor – EvaMia</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--orange:#EE4D2D;--orange-light:#fff3f0;--dark:#1a1a1a;--mid:#555;--soft:#888;--line:#e8e8e8;--bg:#f7f7f7;--white:#ffffff;--green:#1a7a4a;--green-bg:#edf7f2}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);min-height:100vh}
+  header{background:var(--orange);padding:0 24px;display:flex;align-items:center;height:56px}
+  .logo{font-size:22px;font-weight:700;color:var(--white);letter-spacing:-0.5px}
+  .logo span{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;vertical-align:middle}
+  main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+  .greeting{margin-bottom:28px}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+  h1{font-size:26px;font-weight:700;line-height:1.25;color:var(--dark)}
+  h1 strong{color:var(--orange)}
+  .greeting p{margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6}
+  .summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:6px}
+  .card .value{font-size:28px;font-weight:700;color:var(--dark)}
+  .card.highlight{background:var(--green-bg);border-color:#b2dfc7}
+  .card.highlight .value{color:var(--green)}
+  .section-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .items{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+  .item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:16px}
+  .item-rank{width:28px;height:28px;border-radius:50%;background:var(--orange-light);color:var(--orange);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .item-rank.top{background:var(--orange);color:var(--white)}
+  .item-info{flex:1;min-width:0}
+  .item-id{font-size:11px;color:var(--soft);font-weight:500;margin-bottom:3px}
+  .item-name{font-size:14px;font-weight:500;color:var(--dark);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .item-reward{background:var(--green-bg);color:var(--green);font-size:13px;font-weight:700;padding:5px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+  .how{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:28px}
+  .how h3{font-size:14px;font-weight:600;margin-bottom:14px}
+  .how ol{padding-left:18px}
+  .how ol li{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:8px}
+  .how ol li strong{color:var(--dark)}
+  .cta{display:inline-block;background:var(--orange);color:var(--white);font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none;width:100%;text-align:center}
+  footer{text-align:center;margin-top:40px;font-size:12px;color:var(--soft);line-height:1.6}
+  footer a{color:var(--orange);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="logo">shopee <span>Afiliados do Vendedor</span></div></header>
+<main>
+  <div class="greeting">
+    <div class="eyebrow">Iniciativa exclusiva</div>
+    <h1>Olá, <strong>EvaMia</strong> 👋</h1>
+    <p>Selecionamos produtos da sua loja com alto potencial de vendas via afiliados. Adicione-os à sua campanha e ganhe créditos para usar em comissões.</p>
+  </div>
+  <div class="summary">
+    <div class="card"><div class="label">Produtos elegíveis</div><div class="value">5</div></div>
+    <div class="card highlight"><div class="label">Crédito total a receber</div><div class="value">R$ 1.500</div></div>
+  </div>
+  <div class="section-title">Seus produtos elegíveis</div>
+  <div class="items">
+    <div class="item">
+      <div class="item-rank top">1</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22594750874</div>
+        <div class="item-name">1/2/3 Pçs Caneta De Moagem De Quartzo Portátil Tesoura De Cutícula Unhas Removedor De Pele Morta Vara Arquivos De Unhas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">2</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20199199070</div>
+        <div class="item-name">10/20/30 Peças/5/10/15 Pares Gancho Adesivo Macho Fêmea Dupla Face Transparente Sem Furos Pregos Para Banheiro E Cozinha</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">3</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22691669911</div>
+        <div class="item-name">Conjunto Capa De Chuva Roupa Para Motoqueiros Ciclistas Impermeável Calça Jaqueta C/ Capuz</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">4</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58202703947</div>
+        <div class="item-name">5/10/20 Pcs Panos De Limpeza De Arame De Aço Metálico Cozinha Panela Toalhas De Prato Mágica Unica Camada Reforçada</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">5</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23398831215</div>
+        <div class="item-name">1 Escova De Ondulação Cerdas De Javali Pontas P/ Reduzir Puxar E Separar Cachos Perfeitos Onduladas Liso Cacheada Cabelo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">6</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23593521980</div>
+        <div class="item-name">Pá Higiênica De Areia para Gatos Peneira Coletora Aço Inox</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">7</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19198685140</div>
+        <div class="item-name">1/2/3 Esponja De Silicone Para Banho Com Dispenser Shampoo Sabonete Escova Pet Criança Adulto Cor Aleatória</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">8</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58251537209</div>
+        <div class="item-name">Rolo de Pano de Microfibra Miltiuso Alta Super Absorção 20 Unidades de Toalhas 20x20cm Limpeza Geral</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">9</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22294339229</div>
+        <div class="item-name">5/10 Metros Tira De Vedação De Borracha Da Porta Do Carro Auto Dupla Camada Adesivos Para Tronco Isolamento Acústico</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">10</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20798271970</div>
+        <div class="item-name">3 Pares Meia Infantil Soquete Antiderrapante Menina Menino Criança Presente</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">11</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23498404117</div>
+        <div class="item-name">Porta Papel Higiênico Suporte Auto Adesivo Aço Inox Cromado Para Parede Banheiro LR-0046/a</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">12</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18698292597</div>
+        <div class="item-name">Fatiador De Queijo Com Espessura Ajustáve Ajuste manual De Barbearsl – Prático, Durável e Portátil</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">13</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58252371005</div>
+        <div class="item-name">1pc Profissional De Aço Inoxidável Arquivo Pé Removedor Calos Raspador Ferramentas Pedicure Pele Morta Remover Para Salt</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">14</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23999188618</div>
+        <div class="item-name">Escova De Cabelo De Bambu Natureza Antiestática De Madeira Couro Cabeludo Massagem Pente Almofada De Ar Ferramentas De E</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">15</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58250669353</div>
+        <div class="item-name">10/50/100/150 Unidades De Fivela Cabo Universal De Nylon Reforçado Laços Zip De Travamento Presilha Automotiva</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">16</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58252313013</div>
+        <div class="item-name">Kit Crochê Completo 53 Peças Para Fazer Amigurumi Agulhas Cabo Soft Tesoura Acessórios Lar das Fitas Marcadores Estojo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">17</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21349742209</div>
+        <div class="item-name">Kit Extrator De Cravo Espinha Profissional Inox Limpeza de Pele Conjunto de 4 ou 8 Pecas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">18</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58202143862</div>
+        <div class="item-name">Kit De Primeiros Socorros Japoneses Premium-Organizador Médico Compacto Para Viagens E Emergências</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">19</div>
+      <div class="item-info">
+        <div class="item-id">ID: 15973018517</div>
+        <div class="item-name">Kit 5/10/20 Máscara Labial DADIVA De Mel de colágeno com cristal hidratante para lábios</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">20</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22399251740</div>
+        <div class="item-name">Filtros P/ Fonte de Água Gato Carvão Ativado Substituição Bebedouro Pet Filtro Água Limpa Potável Dispensador Saúde Fel</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">21</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23493711266</div>
+        <div class="item-name">Kit com 2 ou 5 Dispositivos Anti Ronco - Clips Dilatadores Nasais Magnéticos para Melhorar o Sono e a Respiração</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">22</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23898543777</div>
+        <div class="item-name">Conjunto De Escova De Cabelo 3/10 Peças Com Pente De Cauda De Mouse-Adição Perfeita À Rotina De Cuidados O</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">23</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19198037037</div>
+        <div class="item-name">Conjunto De Sopro De Pó De 14 Unidades Macio E Adequado Para A Pele , Pode Ser Usado Molhado Ou Seco Criar Maquiagem De</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">24</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58250519512</div>
+        <div class="item-name">Esfoliante Esponja Macia Purificador Corporal De Banho Ideal Para Bebês E Adultos Remover Pele Morta</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">25</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58253127309</div>
+        <div class="item-name">Kit 7 Bicos Confeiteiro Saia Plissada Aço Inox 304 Para Decorar Bolos e Cupcakes Profissional Decoração</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">26</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58259351940</div>
+        <div class="item-name">1 ou 3 Nova Escova De Lã Natural Para Pentear A Cabeça Do Massageador De Cabelo Infantil</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">27</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23198547631</div>
+        <div class="item-name">Kit 30/60/90/120 Máscara Desidratada Comprimido Compactada</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">28</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21299236366</div>
+        <div class="item-name">Espelho com Led De Mesa Com Aumento 10x Led luz Dobravel Para Maquiagem Pronta Entrega</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">29</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23899143806</div>
+        <div class="item-name">Kit 10/50 lixas mini buffer quadrado polidora coloridas - lixa para polir unhas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">30</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58254982929</div>
+        <div class="item-name">Aparador De Pêlos Do Nariz 360 ° Dupla Face Indolor E Segura  Com Lâminas Giratórias Manuais Para Preparação De Precisão</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">31</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58200669089</div>
+        <div class="item-name">Medidor De Temperatura Da Água Torneira Do Chuveiro Com Display LED Para Crianças E Adultos , Ferramentas De Banho Acess</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">32</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58208294714</div>
+        <div class="item-name">1/2/3 Ralo De Pia Da Cozinha Filtro Cabelo Esgoto/Banheiro Banheira Chuveiro Piso De Drenagem Pad/Odor Limpeza Em Casa</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">33</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22094963405</div>
+        <div class="item-name">Luvas De Motocicleta Antiderrapantes Geladas : Universais De Proteção Solar Para Andar E Pescar , Design Unissex</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">34</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58201727304</div>
+        <div class="item-name">Ventosa Gato Teaser Brinquedo Com Penas Varinha Interativa Engraçado De Cabo Longo Para Gatos Preto</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">35</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22598028291</div>
+        <div class="item-name">Ferramentas De Limpeza Para Animais De Estimação Pá De Aço Inoxidável Rede Areia Répteis Lagarto</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">36</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22291603905</div>
+        <div class="item-name">Imã Magnético para unhas Esmalte Cat Eyes Olho de Gato</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">37</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22097182544</div>
+        <div class="item-name">Multifuncional Broca de Tungstênio para unhas de segurança Cortador de fresagem com brocas de corte Metal duro manicure</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">38</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58207072857</div>
+        <div class="item-name">Meias Profissionais Ioga Mulheres Iniciantes Pilates Antiderrapantes Especiais Esportes Primavera Outono fitness Dança</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">39</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58257127169</div>
+        <div class="item-name">Correção Térmica De Papel Faca Abridora De Caixa Parcelas Líquidas Expressa Identidade Apagador Protetor De Privacidade</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">40</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22398306197</div>
+        <div class="item-name">Faixa Facial Efeito Lift Reduz Papada Ruga Cinta de Queixo Duplo Ajustavel Emagrece Rosto Afina Contorno Levantamento V</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">41</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23193474298</div>
+        <div class="item-name">Kit 2/5 Pares Dedeiras de Silicone Protetor Calo Unha Encravada Para Dedo Dos Pés</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">42</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22798066736</div>
+        <div class="item-name">32pcs Decoração de Bico de Aço Inoxidável para Bolo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">43</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22693010923</div>
+        <div class="item-name">Meia-Calça Térmica Forrada Peluciada Translúcida de Lã Feminina Super Elástica Slim N35 Tamanho Único</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">44</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22092681012</div>
+        <div class="item-name">2 Protetor Dedo Silicone Anel Calo Joanete Pés Lesão Dor Promoção</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">45</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23191120643</div>
+        <div class="item-name">Máscara de Pé Meia Esfoliante Remove Pele Morta Evamia - PAR</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">46</div>
+      <div class="item-info">
+        <div class="item-id">ID: 10051966824</div>
+        <div class="item-name">Refil Lixas Para Brocas De Lixadeiras Elétricas 100/200/300 Unidade Acrigel Gramatura 120</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">47</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8394308155</div>
+        <div class="item-name">Kit 30 Brocas Diamantadas Lixadeira Unha Drill Fresa Gel Oferta</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">48</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22893594645</div>
+        <div class="item-name">Saco De Confeitar Medio 100 Unidades Confeitaria Bolo Doce Cupcake Confeiteiro Decorar</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">49</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22897615545</div>
+        <div class="item-name">Garrafa Com Canudo Térmica Infantil Estampas Animais Aço Inox 350ml</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">50</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22997562840</div>
+        <div class="item-name">Dispenser 4 em 1 Cortador Papel Filme Aluminio Porta Papel Toalha Tempero Organizador de Cozinha</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">51</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22593615156</div>
+        <div class="item-name">Máquina de Tosa para Pata Olhos Orelha Pet Cão Gato Animais De Estimação Profissional Aparador De Pelos Cortador</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">52</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58257164104</div>
+        <div class="item-name">Rolo De Salada Em Aço Inoxidável , Cenoura , Pepino , Faca De Escultura , Espiral , Fatiador haping</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">53</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19097137870</div>
+        <div class="item-name">Kit 10/20 Mascara Facial de Tecido de Algodão Hidrata Firmeza Atenua Linhas Finas de Expressão Skincare Coreano</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">54</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21599902470</div>
+        <div class="item-name">100 Folhas De Papel Dourado Feitas À Mão Para Projetos De Diy E Decoração De Casa Em Pintura</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">55</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23694913045</div>
+        <div class="item-name">Pente De Massagem Multiuso , Ferramenta Meridiana Portátil Para Relaxamento Do Couro Cabeludo , Ombros E Corpo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">56</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23301374852</div>
+        <div class="item-name">Garrafa Térmica de Bichinho em Inox 350ml Adulto e Infantil Trabalho Escola Academia</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">57</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20098019640</div>
+        <div class="item-name">Estojo/Bolsa Organizador de Lápis/maquiagem em Forma de Travesseiro para Meninas com Grande Capacidade de Cosmética</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">58</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58259873116</div>
+        <div class="item-name">Alfabeto Impressão Do Número Molde De Biscoitos Cookie Press Cortador De Carimbos DIY Letra Bolos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">59</div>
+      <div class="item-info">
+        <div class="item-id">ID: 12759407153</div>
+        <div class="item-name">Luminária Garra Presilha Bivolt Decoração Flexível Tubo 13 Leds Com Clipe Prendedor Abajur Mesa Garra</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">60</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19745005602</div>
+        <div class="item-name">Par Palmilha e Meia Gel Silicone Esporão Macio</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">61</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23598207951</div>
+        <div class="item-name">Caneta Rejunte Reparadora Permanente Pinta Rejunte Anti-Mofo Branca A Prova Agua/Preenchedores Impermeáveis Banheiro</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">62</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22697433910</div>
+        <div class="item-name">1/2/3 Esponja de Silicone P/Banho em Pets Massageador Dispenser Shampoo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">63</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21934502056</div>
+        <div class="item-name">Kit 10 Mini Escovinha Pequena Chifrinho de Boi Manicure</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">64</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21745004722</div>
+        <div class="item-name">Meia Silicone Hidratante Pé Calcanhar Antiderrapante Aumento pes Protetor Silicone Pe Sapato Par de Meia Palmilha</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">65</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23494876477</div>
+        <div class="item-name">Combo 04 Canudos Inox Com Escova Ecológico Reutilizáveis Sustentáveis</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">66</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20497513702</div>
+        <div class="item-name">Esponja Para Banho de Silicone com Dispenser Massageador Escova Shampoo Sabonete Liquido Infantil Pet Crianças</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">67</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18766483460</div>
+        <div class="item-name">Protetor De Joanete Corretor Ortopédico de Silicone Gel Par Pés Hallux Valgus Ortopedico Dedo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">68</div>
+      <div class="item-info">
+        <div class="item-id">ID: 11058843081</div>
+        <div class="item-name">Fibra De Vidro Seda Tree Unha Alongamento</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">69</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23399242324</div>
+        <div class="item-name">Saboneteira Prato Silicone Bandeja De Drenagem Auto Drenante Porta Rack De Banheiro Esponja Armazenamento Acessórios</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">70</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22899445157</div>
+        <div class="item-name">Chupeta prática Animal Silicone resistente à mordida cão Molar gato mordida brinquedo 5UCQ</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">71</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58251204895</div>
+        <div class="item-name">Bomba de Aquário USB Portátil para Oxigenação Eficiente e Econômica em Tanques de Peixes de Água Doce e Salgada</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">72</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22293244716</div>
+        <div class="item-name">6/12/24/36/48/60 Cores Caneta Marcadora Com Ponta Dupla/Pintura De Arte/Aquarela/Material Escolar/Escritório</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">73</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18097928630</div>
+        <div class="item-name">Capa De Cobrir Moto Sol  Chuva Poeira Impermeável Proteção 100%</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">74</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20298990672</div>
+        <div class="item-name">Meia de Hidratação Silicone Esfoliante Gel Spa Dos Pés</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">75</div>
+      <div class="item-info">
+        <div class="item-id">ID: 13215995254</div>
+        <div class="item-name">Kit 12 Presilhas + 1 Pinça Unha Especial Para Curvatura C</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">76</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58202037758</div>
+        <div class="item-name">Conjunto 5 Suportes de Exibição em Acrílico Transparente Tipo U para Figuras, Perfumes, Joias, Doces e Cupcake</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">77</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58259351940</div>
+        <div class="item-name">Kit 1 ou 3 Nova Escova De Lã Natural Para Pentear A Cabeça Do Massageador De Cabelo Infantil</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">78</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23498807324</div>
+        <div class="item-name">Canetas De Destaque Brancas 0.8mm Criativas De Desenho E Marcação Para Arte Resistente Duradoura Ponta Fina</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">79</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58202013609</div>
+        <div class="item-name">10/20/30 unidades de ganchos de pressão adesivos transparentes para pendurar utensílios na cozinha e banheiro</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">80</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23799037318</div>
+        <div class="item-name">Luvas De Meio Dedo Para Academia Fitness Antiderrapante Mulheres Homens Ciclimo Luva</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">81</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22493531737</div>
+        <div class="item-name">Prática Pá De Aço Inoxidável Para Animais De Estimação Confortável Scooper De Ninhada De Gato De Superfície Aumentada</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">82</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22699379082</div>
+        <div class="item-name">Tapete de Corte A3 45x30cm Base Dupla Face para Patchwork e Artesanato Base de Corte</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">83</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23397569132</div>
+        <div class="item-name">KIT 2 Porta Joia De Bolsa Para Viagem Portátil/ caixa de armazenamento/bolsa/anel/colar COR BABY ROSA</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">84</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22394323473</div>
+        <div class="item-name">1/3/5pcs Canetas De Destaque Brancas 0.8mm , Criativas De Desenho E Marcação Para Arte , Escola , Trabalho De Design</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">85</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21397417195</div>
+        <div class="item-name">Kit 4 Em 1 Ralador Fatiador Bacia Inox Tigela Saladeira</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">86</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22394896203</div>
+        <div class="item-name">Kit 10/30  Peças Grampos De Cabelo Estrela Dopamina Cor Doce Para Mulheres Franja Lateral</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">87</div>
+      <div class="item-info">
+        <div class="item-id">ID: 13126601798</div>
+        <div class="item-name">Cronômetro Progressivo De Mão Digital Alarme Hora C/ Corda</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">88</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23998404387</div>
+        <div class="item-name">60/40/20Pcs Saco De Jóias Transparente Anti Oxidação Brincos Anel Colar Manual Saco Armazenamento Portátil Protege Biju</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">89</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22997082306</div>
+        <div class="item-name">10 Unidade Broca Diamantada 718 Cutilagem Acabamento Unha Gel Acrigel</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">90</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21598990503</div>
+        <div class="item-name">100 Pçs Adesivo de Estrela Colorida que Brilha No Escuro / Adesivo Plástico Luminoso para Decoração de Casa</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">91</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58209893929</div>
+        <div class="item-name">4/8/16 Mini Rodinhas Autoadesivas Rodízios de Moveis Giratório 360° Para Móveis Deslizantes Base Giratória Multiuso</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">92</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58255508441</div>
+        <div class="item-name">Punk Três Fileiras Picos Rebite Parafuso Prisioneiro Punho Largo Couro Gótico Rock Unissex Pulseira Preta</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">93</div>
+      <div class="item-info">
+        <div class="item-id">ID: 10197971649</div>
+        <div class="item-name">Passagem Porta Pet Portinha Para Gato Ou Cão Com 4 Em 1</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">94</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21797760911</div>
+        <div class="item-name">Limpador Pincel Esponja Maquiagem Elétrico USB Automático Recarregável Lava Seca Armazena Bivolt</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">95</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22998665189</div>
+        <div class="item-name">Porta Toalha Rosto Toalheiro De Porta Gancho Para Utensilios Varão Para Pano De Prato Evamia</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">96</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21597809466</div>
+        <div class="item-name">Carteira Feminina De Couro Mini Cor Simples Com Múltiplos Espaços PU</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">97</div>
+      <div class="item-info">
+        <div class="item-id">ID: 13331327581</div>
+        <div class="item-name">Pinça Para Curvatura C De Unhas De Fibra Gel Acrigel</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div></div>
+  <div class="section-title">Como funciona</div>
+  <div class="how">
+    <ol>
+      <li>Acesse <strong>Afiliados do Vendedor</strong> no Seller Centre e adicione os produtos acima em uma campanha com qualquer percentual de comissão.</li>
+      <li>Mantenha cada produto <strong>ativo por pelo menos 30 dias</strong>.</li>
+      <li>Receba <strong>R$ 300 de crédito por produto</strong> — os créditos são acumulativos.</li>
+      <li>Use o crédito para pagar qualquer comissão de afiliados da sua loja.</li>
+      <li>Pagamentos processados semanalmente, em até 10 dias após completar os 30 dias.</li>
+    </ol>
+  </div>
+  <a class="cta" href="https://seller.shopee.com.br/portal/web-seller-affiliate" target="_blank">Ir para Afiliados do Vendedor →</a>
+  <footer>
+    <p>Dúvidas? Fale com seu gerente ou chame <strong>daniel.nunes</strong> no SeaTalk.</p>
+    <p style="margin-top:6px;">Shopee Brasil · Afiliados do Vendedor · Iniciativa SKU Expansion</p>
+  </footer>
+</main>
+</body>
+</html>

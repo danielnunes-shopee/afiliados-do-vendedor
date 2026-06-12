@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiliados do Vendedor – LEVE HOME</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--orange:#EE4D2D;--orange-light:#fff3f0;--dark:#1a1a1a;--mid:#555;--soft:#888;--line:#e8e8e8;--bg:#f7f7f7;--white:#ffffff;--green:#1a7a4a;--green-bg:#edf7f2}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);min-height:100vh}
+  header{background:var(--orange);padding:0 24px;display:flex;align-items:center;height:56px}
+  .logo{font-size:22px;font-weight:700;color:var(--white);letter-spacing:-0.5px}
+  .logo span{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;vertical-align:middle}
+  main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+  .greeting{margin-bottom:28px}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+  h1{font-size:26px;font-weight:700;line-height:1.25;color:var(--dark)}
+  h1 strong{color:var(--orange)}
+  .greeting p{margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6}
+  .summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:6px}
+  .card .value{font-size:28px;font-weight:700;color:var(--dark)}
+  .card.highlight{background:var(--green-bg);border-color:#b2dfc7}
+  .card.highlight .value{color:var(--green)}
+  .section-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .items{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+  .item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:16px}
+  .item-rank{width:28px;height:28px;border-radius:50%;background:var(--orange-light);color:var(--orange);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .item-rank.top{background:var(--orange);color:var(--white)}
+  .item-info{flex:1;min-width:0}
+  .item-id{font-size:11px;color:var(--soft);font-weight:500;margin-bottom:3px}
+  .item-name{font-size:14px;font-weight:500;color:var(--dark);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .item-reward{background:var(--green-bg);color:var(--green);font-size:13px;font-weight:700;padding:5px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+  .how{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:28px}
+  .how h3{font-size:14px;font-weight:600;margin-bottom:14px}
+  .how ol{padding-left:18px}
+  .how ol li{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:8px}
+  .how ol li strong{color:var(--dark)}
+  .cta{display:inline-block;background:var(--orange);color:var(--white);font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none;width:100%;text-align:center}
+  footer{text-align:center;margin-top:40px;font-size:12px;color:var(--soft);line-height:1.6}
+  footer a{color:var(--orange);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="logo">shopee <span>Afiliados do Vendedor</span></div></header>
+<main>
+  <div class="greeting">
+    <div class="eyebrow">Iniciativa exclusiva</div>
+    <h1>Olá, <strong>LEVE HOME</strong> 👋</h1>
+    <p>Selecionamos produtos da sua loja com alto potencial de vendas via afiliados. Adicione-os à sua campanha e ganhe créditos para usar em comissões.</p>
+  </div>
+  <div class="summary">
+    <div class="card"><div class="label">Produtos elegíveis</div><div class="value">5</div></div>
+    <div class="card highlight"><div class="label">Crédito total a receber</div><div class="value">R$ 1.700</div></div>
+  </div>
+  <div class="section-title">Seus produtos elegíveis</div>
+  <div class="items">
+    <div class="item">
+      <div class="item-rank top">1</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23598418843</div>
+        <div class="item-name">Kit 6/4/2 Capas Elásticas Protetor Para Cadeiras Tecido de Luxo Macio Cobertura Lavável Removível Protetor</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">2</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23192491119</div>
+        <div class="item-name">Rede Porta Treco Organizador Universal Bancos Carro De 3 Camadas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">3</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22893211492</div>
+        <div class="item-name">Balança Corporal Bioimpedância Profissional Bluetooth até 180kg</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">4</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22095746302</div>
+        <div class="item-name">Coleira Peitoral Cachorro e Gato, conjunto de guia + coleira tipo colete para pet pequenos e médios Várias Cores</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">5</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23697184339</div>
+        <div class="item-name">Kit 3 Peças Passadeira Belga Para Cozinha Antiderrapante Fácil de Limpar Macia LeveHome</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">6</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23093594578</div>
+        <div class="item-name">Kit 3 Formas com Fundo Removível Antiaderente com Fundo Removível para torta Bolo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">7</div>
+      <div class="item-info">
+        <div class="item-id">ID: 9983751769</div>
+        <div class="item-name">Capa para Banco Selim Bike em Gel Silicone Ajustável Banco Almofada Forro Para Ciclismo Bicicleta Super Confortável</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">8</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23493671452</div>
+        <div class="item-name">Canguru Bebê Passeio 3 Em 1 Conforto Ergonômico 3 Posições</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">9</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8481428826</div>
+        <div class="item-name">Processador de alimentos Três Lâminas Mixer e Trava de Segurança Manual 1.5L</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">10</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21999716931</div>
+        <div class="item-name">Luminária De Mesa Recarregáveis Led Com Proteção Os Olhos Usb Iluminaria Abajur Lâmpada De Mesa Para Quarto Dormitório</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">11</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23999143741</div>
+        <div class="item-name">Rede De Descanso Rede de Dormir Balanço Colorida Individual</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">12</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23593153905</div>
+        <div class="item-name">Rede de Proteção Infantil Bebê para Banheira Rosa Azul</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">13</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20299834208</div>
+        <div class="item-name">Toalha Banho Bebê Capuz Roupão Infantil Recém Nascido Criança</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">14</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18897148478</div>
+        <div class="item-name">Luminária de Mesa de LED 3D Criativa Luz Noturna Decorativa</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">15</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58200976628</div>
+        <div class="item-name">Espanador 280  Centímetros Ajustável Telescópica Dobra Duster Escova De Limpeza De Poeira</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">16</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20397418193</div>
+        <div class="item-name">Almofada Travesseiro Pescoço Descanso Viagem Confortável Espuma viscoelástica tipo Nasa</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">17</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22692664132</div>
+        <div class="item-name">Caixa De Pizza Expansível Openwaterf Sanduíche Armazenagem Ajustável Recipiente De Fatias levehome</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">18</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21938573886</div>
+        <div class="item-name">Banco Selim Super Confortável Vazado com Sinalizador Traseiro Largo Bicicleta Bike</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">19</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21097097672</div>
+        <div class="item-name">Patinho quebra vento  Decoração de bicicleta motocicleta carro com capacete e pisca</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">20</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23798473060</div>
+        <div class="item-name">Lâmpada LED Movida A Energia Solar LOMBARD , Lanterna De Iluminação Portátil De 4 Modos , Conveniente À Prova D'água Rec</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">21</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23497480895</div>
+        <div class="item-name">Iluminação Fotográfica Noturna De Preenchimento LED Luz De Vídeo De Lâmpada Portátil De Fotografia Com Clip Com pilha</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">22</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19998719545</div>
+        <div class="item-name">Luminária 3D de Escrever tipo Lousa  Acrílico + Caneta</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">23</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20098016605</div>
+        <div class="item-name">Luminária De Mesa LED Retrô Por Sensor De Toque Recarregável Decoração Charmosa Ideal Para Cabeceiras e Pontos de Luz</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">24</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22792659853</div>
+        <div class="item-name">Cozedor de Ovos 110v Elétrico Portátil Cozinha à Vapor</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">25</div>
+      <div class="item-info">
+        <div class="item-id">ID: 11226674269</div>
+        <div class="item-name">Lampião Luminária Carregador Solar Camping Usb Led Lanterna</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">26</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58255241157</div>
+        <div class="item-name">Kit Decoração Prata Happy Birthday Balões Metalizados Festa Aniversário 25 peças/conjunto</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">27</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21198585247</div>
+        <div class="item-name">Tapete Antiderrapante de Banheiro Super Absorvente Secagem Rápida Chuveiro 38*58*4 CM</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">28</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22996588116</div>
+        <div class="item-name">Máscara para Dormir / Tapa Olhos / Tampã de Descanso/CETIM</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">29</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21099571842</div>
+        <div class="item-name">Luminária LED Escrever Abajur 3D 30x20 quadro de notas tela pra escrever decoração quarto sala casa em acrílico</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">30</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23793195445</div>
+        <div class="item-name">Lancheira Térmica com Colher 600ml Pote Infantil de 304 Aço inox</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">31</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23898186768</div>
+        <div class="item-name">Mini Mixer Portátil  2 em 1 - 3 Velocidades Misturador de Bebidas Batedor Espumador de Leite USB Recarregável Cozinha</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">32</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58202790304</div>
+        <div class="item-name">50/20Pcs Saco De Jóias Rosa  Anti Oxidação Brincos Colar Manual Saco De Armazenamento Portátil</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">33</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22093522432</div>
+        <div class="item-name">Cesto Organizador de Brinquedos e Roupas 60L Cesto de Brinquedos infantis Cesto de Roupas Sujas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">34</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21599830643</div>
+        <div class="item-name">Kit Fixadora Finca Pino Pistola Profissional Ação + 200 pinos grátis 27mm</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">35</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58250335122</div>
+        <div class="item-name">Avental De Princesa Em Renda Floral Com Um Bolso Para Toalhas De Mão À Prova D'água E Resistente Ao Oleo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">36</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21497505330</div>
+        <div class="item-name">Prolongador de Espiga Mesa Guidão de Bike Bicicleta- Resistente</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">37</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22593011265</div>
+        <div class="item-name">Escorredor De Louça Cozinha Pratos e Talheres Plastico top casa leve home</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">38</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21899758412</div>
+        <div class="item-name">Luminária Led Recarregável Moderna De Mesa Lâmpada Decoração De Quarto Sala Escritório Touch</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">39</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22392668977</div>
+        <div class="item-name">Pet Colete com Guia- Não machuca- Diversos Tamanhos e Cores</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">40</div>
+      <div class="item-info">
+        <div class="item-id">ID: 7673826463</div>
+        <div class="item-name">Kit 11 Power Tube Elástico Musculação Crossfit pilates yoga fitness Corda Funcional</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">41</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22697160837</div>
+        <div class="item-name">kit 2 de Tigela Ração Retrátil para Animais- Indicado para Viagens/ Passeios ao Ar Livre</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">42</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19936457563</div>
+        <div class="item-name">Chuveirinho Bico Arejador para Torneira lavatório cozinha Utensílios de Cozinha</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">43</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22392865220</div>
+        <div class="item-name">Umidificador portátil Mini- Difusor de óleo essencial- Carregamento USB</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">44</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23897692084</div>
+        <div class="item-name">Kit Completo Jogo Utensílios de Cozinha 19 Peças Com Tábua em Silicone</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">45</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22192836724</div>
+        <div class="item-name">JOGO BINGO 90 PEÇAS NUMERADAS DE MADEIRA + 48 CARTELAS NUMERADAS (138 PEÇAS)</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">46</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58204379068</div>
+        <div class="item-name">Banqueta Banquinho Dobrável Alumínio Camping C/ Bolsa Ziper</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">47</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22998682159</div>
+        <div class="item-name">Trocador Portátil de Bebê Bolsa Impermeável Dobrável Acolchoada Leve Com Bolso para Fraldas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">48</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23493732432</div>
+        <div class="item-name">Mini Lâmpada Secadora de Unhas Portátil com LED UV Quick para Manicure Tools</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">49</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22992354903</div>
+        <div class="item-name">Hd Vision  Quebra Sol Dia E Noite Para O Seu Carro</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">50</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22498107175</div>
+        <div class="item-name">4800X Microscópio E Telefone Celular Link Câmera Kid Microscopic Observação Mundial Brinquedo Educacional</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">51</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58250398689</div>
+        <div class="item-name">Gel De Limpeza Floral Para Banheiro Sanitária Fragrância</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">52</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19998988632</div>
+        <div class="item-name">Porta Joia Acrílico Luxo Com 3 Camadas Brinco Anel Compartimento</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">53</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21297999863</div>
+        <div class="item-name">10 Pcs/Newborn Set Kit De Cuidados Com A Saúde Do Bebê Acessórios Cortador De Unhas Escova De Tesoura</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">54</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23499366420</div>
+        <div class="item-name">0-6 Meses Saco De Dormir Charutinho Bebê Recem Nascido</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">55</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58201615352</div>
+        <div class="item-name">Almofada De Assento De EVA Grossa Para Proteção Solar À Prova D'água De Motocicleta</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">56</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20671412881</div>
+        <div class="item-name">Kit de Facas Colorido Inox com 6 Peças</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">57</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23493648217</div>
+        <div class="item-name">Jogo De (900200) Bingo 90 Pedras De Madeira E 48 Cartelas Numeradas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">58</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22095924123</div>
+        <div class="item-name">Capa de Assento Confortável para Carro com bolsa organiza</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">59</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20697520254</div>
+        <div class="item-name">Novo Suporte Para Retrovisor de Motocicleta- Adaptador de Telefone Celular/Buzina/Lanterna</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">60</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21199094890</div>
+        <div class="item-name">Corda Faixa Elástica com Ganchos para Amarração de Bagagem Própria para Carro Bike Moto Caminhão Barco Lonas Barracas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">61</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22592871241</div>
+        <div class="item-name">Pet Brinquedo para Gato - Túnel Engraçado/ Vara de Pelúcia/ Rato/ Combinação de Brinquedos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">62</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23792671113</div>
+        <div class="item-name">Organizador De Cosmético Maquiagem Acrílico Giratório 360º
+
+Acrílico Giratório 360º Torre</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div></div>
+  <div class="section-title">Como funciona</div>
+  <div class="how">
+    <ol>
+      <li>Acesse <strong>Afiliados do Vendedor</strong> no Seller Centre e adicione os produtos acima em uma campanha com qualquer percentual de comissão.</li>
+      <li>Mantenha cada produto <strong>ativo por pelo menos 30 dias</strong>.</li>
+      <li>Receba <strong>R$ 340 de crédito por produto</strong> — os créditos são acumulativos.</li>
+      <li>Use o crédito para pagar qualquer comissão de afiliados da sua loja.</li>
+      <li>Pagamentos processados semanalmente, em até 10 dias após completar os 30 dias.</li>
+    </ol>
+  </div>
+  <a class="cta" href="https://seller.shopee.com.br/portal/web-seller-affiliate" target="_blank">Ir para Afiliados do Vendedor →</a>
+  <footer>
+    <p>Dúvidas? Fale com seu gerente ou chame <strong>daniel.nunes</strong> no SeaTalk.</p>
+    <p style="margin-top:6px;">Shopee Brasil · Afiliados do Vendedor · Iniciativa SKU Expansion</p>
+  </footer>
+</main>
+</body>
+</html>

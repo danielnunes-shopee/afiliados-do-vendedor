@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiliados do Vendedor – Ming.store</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--orange:#EE4D2D;--orange-light:#fff3f0;--dark:#1a1a1a;--mid:#555;--soft:#888;--line:#e8e8e8;--bg:#f7f7f7;--white:#ffffff;--green:#1a7a4a;--green-bg:#edf7f2}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);min-height:100vh}
+  header{background:var(--orange);padding:0 24px;display:flex;align-items:center;height:56px}
+  .logo{font-size:22px;font-weight:700;color:var(--white);letter-spacing:-0.5px}
+  .logo span{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;vertical-align:middle}
+  main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+  .greeting{margin-bottom:28px}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+  h1{font-size:26px;font-weight:700;line-height:1.25;color:var(--dark)}
+  h1 strong{color:var(--orange)}
+  .greeting p{margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6}
+  .summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:6px}
+  .card .value{font-size:28px;font-weight:700;color:var(--dark)}
+  .card.highlight{background:var(--green-bg);border-color:#b2dfc7}
+  .card.highlight .value{color:var(--green)}
+  .section-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .items{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+  .item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:16px}
+  .item-rank{width:28px;height:28px;border-radius:50%;background:var(--orange-light);color:var(--orange);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .item-rank.top{background:var(--orange);color:var(--white)}
+  .item-info{flex:1;min-width:0}
+  .item-id{font-size:11px;color:var(--soft);font-weight:500;margin-bottom:3px}
+  .item-name{font-size:14px;font-weight:500;color:var(--dark);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .item-reward{background:var(--green-bg);color:var(--green);font-size:13px;font-weight:700;padding:5px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+  .how{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:28px}
+  .how h3{font-size:14px;font-weight:600;margin-bottom:14px}
+  .how ol{padding-left:18px}
+  .how ol li{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:8px}
+  .how ol li strong{color:var(--dark)}
+  .cta{display:inline-block;background:var(--orange);color:var(--white);font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none;width:100%;text-align:center}
+  footer{text-align:center;margin-top:40px;font-size:12px;color:var(--soft);line-height:1.6}
+  footer a{color:var(--orange);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="logo">shopee <span>Afiliados do Vendedor</span></div></header>
+<main>
+  <div class="greeting">
+    <div class="eyebrow">Iniciativa exclusiva</div>
+    <h1>Olá, <strong>Ming.store</strong> 👋</h1>
+    <p>Selecionamos produtos da sua loja com alto potencial de vendas via afiliados. Adicione-os à sua campanha e ganhe créditos para usar em comissões.</p>
+  </div>
+  <div class="summary">
+    <div class="card"><div class="label">Produtos elegíveis</div><div class="value">5</div></div>
+    <div class="card highlight"><div class="label">Crédito total a receber</div><div class="value">R$ 1.500</div></div>
+  </div>
+  <div class="section-title">Seus produtos elegíveis</div>
+  <div class="items">
+    <div class="item">
+      <div class="item-rank top">1</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23192302810</div>
+        <div class="item-name">Pistola de massagem elétrica, massageador de tecidos  MING</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">2</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20197677108</div>
+        <div class="item-name">Monitor digital de pressão arterial de braço totalmente automático</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">3</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23498232824</div>
+        <div class="item-name">Fio Dental com Cabo de Polímero 50 pçs Bastão de Limpeza de Dentes Anti-quebra Professional Care</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">4</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19896885709</div>
+        <div class="item-name">13 TWS Sem Fio Bluetooth 5.0 Air Pro 3 Fone De Ouvido Esportivo Com Microfone MING</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">5</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19197735814</div>
+        <div class="item-name">Kit 46 Chave Catraca Jogo De Soquetes Allen Torx Ferramentas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">6</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23198191742</div>
+        <div class="item-name">Bastão de selfie telescópico Bluetooth com controle remoto para celular com suporte de tripé com luz para selfie</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">7</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19897991191</div>
+        <div class="item-name">Tablet 10.1” HD + Teclado Bluetooth Capa 2 em 1 WiFi Android Tela Grande Alta Performance</div>
+      </div>
+      <div class="item-reward">+ R$ 1.000</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">8</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21099557497</div>
+        <div class="item-name">Smartwatch 7 Em 1 Alças 49mm Full Touch Screen Sport</div>
+      </div>
+      <div class="item-reward">+ R$ 500</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">9</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22898235718</div>
+        <div class="item-name">Fones De Ouvido Bluetooth 5.2 TWS Sem Fio 9D HiFi Estéreo Para Redução De Ruído Esportivos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">10</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23294146964</div>
+        <div class="item-name">OWS-15 Fones De Ouvido Sem Fio Bluetooth Fone Com Microfones Alta Fidelidade Som Estéreo Toque Inteligente Esportes ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">11</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22093190175</div>
+        <div class="item-name">Selfie stick 1.7M de comprimento sem fio Bluetooth tripé portátil retrátil</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">12</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22994428557</div>
+        <div class="item-name">Bolinha Eletrônica Para Cachorro Brincar Movimento Automatico Recarregavel USB ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">13</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22598547640</div>
+        <div class="item-name">Espelho Adesivo Plástico Decorativo Flexível Adesivo Espelhado Retangular ou Oval 25x40 Ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">14</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21698200840</div>
+        <div class="item-name">Depilador Eletrico Feminino Recarregável Removedor De Pelos Navalha Dupla</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">15</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20098732779</div>
+        <div class="item-name">Umidificador Aromatizador Difusor Ultrassônico Luzes Ar130ml Ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">16</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21399317407</div>
+        <div class="item-name">Prancha Cerâmica Profissional Alisa e Protege Seus Cabelos Alisamento e Cachos Perfeitos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">17</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23093065290</div>
+        <div class="item-name">Modelador de cachos elétrico, aquecimento rápido, adequado para cachos grandes e pequenos</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">18</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22093240548</div>
+        <div class="item-name">Fones De Ouvido bluetooth Colorido i12 Tws Sem Fio Com Controle De Toque   ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">19</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22392997709</div>
+        <div class="item-name">Mini Máquina De Costura Manual Portátil De Mão</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">20</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22093567305</div>
+        <div class="item-name">Mini Compressor de Ar Portatil Recarregavél Digital USB Calibrador Pneu Envio Imediato</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">21</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20799378948</div>
+        <div class="item-name">Fones de ouvido Bluetooth gatinho com LED colorido   MING</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">22</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23896014555</div>
+        <div class="item-name">Mini Aspirador De pó Portátil Automotivo e Casa Potente Recarregável Ming Store</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">23</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19497428326</div>
+        <div class="item-name">Fones de ouvido estéreo portáteis esportivos sem fio Pro 4 Ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">24</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23193587795</div>
+        <div class="item-name">Papa Bolinhas Eletrico Tira Pelos de Roupas Removedor Aparador Sem Fio Recarregável MING</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">25</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19596893954</div>
+        <div class="item-name">Carregador Carro Transmissor Fm Bluetooth Veicular Mp3 Rádio  ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">26</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18499310730</div>
+        <div class="item-name">Mini Aquecedor  Pequeno Portátil De Parede</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">27</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19197735814</div>
+        <div class="item-name">Kit 46 Peças Chave Catraca Jogo Soquetes Allen Torx Ferramentas Profissional Completo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">28</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20697869732</div>
+        <div class="item-name">Fone Bluetooth Sem Fio com Power Bank Display Digital Touch TWS Caixa Carregadora Alta Bateria</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">29</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23997614955</div>
+        <div class="item-name">Aparelho de Peeling Esfoliante Ultrassônico Limpeza Facial Profunda Remoção de Cravos Antirrugas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">30</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22692666777</div>
+        <div class="item-name">Mochila feminina Oxford com 4 compartimentos impermeável MING</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">31</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22698024939</div>
+        <div class="item-name">Fone De Ouvido Sem Fio Bluetooth 5.3 Hifi Stereo M90 Pro Gamer Esportivo Touch Case  ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">32</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23398771482</div>
+        <div class="item-name">Cinto Unissex Preto , Duplo Ilhós , Punk Rock Metal</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">33</div>
+      <div class="item-info">
+        <div class="item-id">ID: 13706955700</div>
+        <div class="item-name">Receptor Bluetooth P2 3.5mm para Carro e Som | Adaptador Áudio Wireless com Microfone Hands Free</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">34</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23392828518</div>
+        <div class="item-name">Escova Rotativa Elétrica Secador de cabelo Professinal 2 em 1 MING</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">35</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23793972371</div>
+        <div class="item-name">Caderno A6 Orçamento Financeiro com Zíper | Planner Dinheiro Envelope + 12 Bolsas Organizadoras</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">36</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23394167852</div>
+        <div class="item-name">KIT cuidados masculinos - Barbeador e aparador de pelos Maquina cortar cabelo dragão Ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">37</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22098424052</div>
+        <div class="item-name">Compressor de Ar Portátil Digital Recarregável Inflador Pneu Carro Moto Bike USB LED</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">38</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22998005756</div>
+        <div class="item-name">Coleira Peitoral Cachorro E Gato, Conjunto De Guia + Coleira Tipo Colete Para Pet Pequenos E Médios</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">39</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22091402948</div>
+        <div class="item-name">Par de Lâmpadas C6 Super Led 6000K H1 H3 H4 H7 H11 H13 H16 H27 HB3 HB4 12V a 24V Ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">40</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19997049622</div>
+        <div class="item-name">Bolsa de viagem à prova d'água com grande capacidade ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">41</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23297286832</div>
+        <div class="item-name">Alto-Falante bluetooth Karaoke Microfone Duplo Sem Fio</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">42</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23696994976</div>
+        <div class="item-name">Fonte Chaveada 50A 12V 600W Bivolt Som Câmeras Cftv Chave Seletora MING</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">43</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23997615047</div>
+        <div class="item-name">Removedor de Cravos Elétrico Facial USB Recarregável 3 Níveis Sucção Limpeza Profunda Poros Acne Espinhas Portátil</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">44</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23892384304</div>
+        <div class="item-name">Microfone de Lapela Sem Fio Vlog Tipo C MING</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">45</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20098653060</div>
+        <div class="item-name">Mini Game Retrô Portatil Nintendo 400 Jogos Antigos Anos 80 Ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">46</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19697231969</div>
+        <div class="item-name">Laptop Stand - Suporte para Notebook Dobrável de Ferro MING</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">47</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18798961479</div>
+        <div class="item-name">Prancha de Cabelo e Chapinha Super Nano Titanium Optima 3000 BIVOLT Profissional 465° F Ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">48</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23694320919</div>
+        <div class="item-name">Nova bolsa de ombro casual retrô, tendência da moda, bolsa de axila ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">49</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19799592777</div>
+        <div class="item-name">262 conjunto de canetas aquarela marcador de duas cabeças cor à base de óleo de secagem rápida  MING</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">50</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22197644395</div>
+        <div class="item-name">Trava Cadeado De Freio Disco Com Alarme Sonoro Para Moto</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">51</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23792979868</div>
+        <div class="item-name">Câmera de Vigilância e Segurança Wi-Fi  Com Microfone e Alto-falante Visão Noturna, 360°via  yosse</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">52</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23798096983</div>
+        <div class="item-name">Fone De Ouvido NOVO Ruído Cancelando Earbuds Bluetooth Sem Fio HiFi Stereo Com Carregamento De Visor Digital</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">53</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21597977312</div>
+        <div class="item-name">Bolsa De Viagem Sport Com Bolso Impermeável Alça Lateral 30L Capacidade MING</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">54</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22593058472</div>
+        <div class="item-name">Bolsa de Ombro Pequena com Corrente para Mulheres</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">55</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23998547059</div>
+        <div class="item-name">Luminária LED Escrever Abajur 3D 15X15 quadro de notas tela pra escrever decoração quarto sala casa em acrílico</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">56</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21896887163</div>
+        <div class="item-name">Bolsa Mala Esportiva Mochila Costa Transversal Fitness Treino Futebol Academia impermeável Ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">57</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22593892923</div>
+        <div class="item-name">Alisador de cabelo sem fio Escova de ar quente Secador de cabelo elétrico recarregável por USB</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">58</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19199202838</div>
+        <div class="item-name">Projetor 4K HD 150 polegadas para celular, TV Box, Xbox, PS, PC, Wi-Fi e Bluetooth HY300 110/220</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">59</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18099880189</div>
+        <div class="item-name">Termômetro Infravermelho Digital Sem Contato com Visor LED | Medição Rápida 1s, Alta Precisão ±0,2°C e Modo Silencioso</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">60</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22394359762</div>
+        <div class="item-name">Filtro De Café Inox Reutilizável Nº Individual Dupla Camada Portátil ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">61</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21697578426</div>
+        <div class="item-name">Necessaire Organizadora Bolsa De Viagem Para Objetos de Higiene Pessoal Com Divisória Cabide GANCHO</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">62</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23297275469</div>
+        <div class="item-name">Jogo kit 7 peças facas Tabua Descascador Tesoura Profissional Cozinha Gourmet Faca de Churrasco</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">63</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20898034103</div>
+        <div class="item-name">Suporte Universal Veicular Retrovisor Celular Smartphone ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">64</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22293843300</div>
+        <div class="item-name">kit 2 Fashion E6s Fone Sem Fio TWS Bluetooth 5.0</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">65</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18797205843</div>
+        <div class="item-name">Bico Adaptador De Torneira Com 3 Jatos Reguláveis, Bico Torneira Giratória 360°Cozinha Ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">66</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23497599203</div>
+        <div class="item-name">13 TWS Sem Fio Bluetooth 5.0 Air Pro 3 Fone De Ouvido Esportivo Com Microfone</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">67</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22394166412</div>
+        <div class="item-name">Mochila feminina de grande capacidade com textura de bordado requintada</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">68</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23997830149</div>
+        <div class="item-name">168 Caneta Marcadora De Ponta Dupla Conjunto De Canetas Aquarela Especial ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">69</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22493249299</div>
+        <div class="item-name">Carregador Portátil Bateria Power Bank 20000mah MING</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">70</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22793987707</div>
+        <div class="item-name">Relógio masculino novo de 2,01 polegadas com bluetooth e funções completas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">71</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20397918962</div>
+        <div class="item-name">Kit 2 Mala de viagem dobrável portatíl e impermeável com grande capacidade  ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">72</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19098964494</div>
+        <div class="item-name">13 TWS Sem Fio Bluetooth 5.0 Air Pro 3 Fone De Ouvido Esportivo Com Microfone</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">73</div>
+      <div class="item-info">
+        <div class="item-id">ID: 16662159285</div>
+        <div class="item-name">Ring Light Iluminador 8 Polegadas Com Tripé De 2.10 Metro ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">74</div>
+      <div class="item-info">
+        <div class="item-id">ID: 17562162923</div>
+        <div class="item-name">Kit Completo Anel Luz12  30cm Com Tripé 2.1M Dimmer  suporte celular ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">75</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22696080964</div>
+        <div class="item-name">Fone P47 Headphone Sem Fio Estéreo Redução de Ruídos Bluetooth 5.0 Universal Ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">76</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23396476789</div>
+        <div class="item-name">Microfone de Lapela Sem Fio Vlog Compatível iPhone Ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">77</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23792788682</div>
+        <div class="item-name">Kit Teclado E Mouse Bluetooth 5.2 Compatível Pc iPhone Android</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">78</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19199553508</div>
+        <div class="item-name">X15 Fone De Ouvido para Jogos Bluetooth 5.Tws Stereo Ultra Baixa Latency Gaming Headset</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">79</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23392286749</div>
+        <div class="item-name">mochila masculina impermeável bolsa de ombro pequena MING</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">80</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23596906521</div>
+        <div class="item-name">Fone De Ouvido Sem Fio E6s Bluetooth 5.0 Tws Com Tela LED Digital MING</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">81</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20098686951</div>
+        <div class="item-name">Bolsa Feminina Esportiva e Viagem Grande com Alça de Ombro  Ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">82</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20897374444</div>
+        <div class="item-name">Conjunto de 2 microfones de lapela de transmissão Microfone sem fio TIPO C Apenas MING</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">83</div>
+      <div class="item-info">
+        <div class="item-id">ID: 58250140227</div>
+        <div class="item-name">Bolsa Tiracolo Corduroy Vintage com Porta-Moedas – Estilo Coreano ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">84</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22693239667</div>
+        <div class="item-name">Kit 2 Umidificador Atomizador de Ar Portátil para Casa Umidificador 200ml    ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">85</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23297566444</div>
+        <div class="item-name">Mochila Feminina para Viagem Casual à Prova d'Água em Oxford, Se Torna Bolsa de Mão Alex</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">86</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23497616380</div>
+        <div class="item-name">Massageador elétrico portátil pequeno de cabeça, ombro e pescoço</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">87</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23098937253</div>
+        <div class="item-name">kit 2 Fones de ouvido estéreo portáteis esportivos sem fio Pro 4 ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">88</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22892234560</div>
+        <div class="item-name">Jogo Completo de Utensílios de Cozinha de Silicone  Itens Essenciais para sua Casa KITC/12 Ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">89</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18399199863</div>
+        <div class="item-name">Antena Sinal Digital Interna Amplificada HD Portátil Cabo 5 Metros MingStore</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">90</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23197496749</div>
+        <div class="item-name">Bolsa escolar infantil impressa em 3D, bolsa escolar para meninas pequenas</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">91</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22092601864</div>
+        <div class="item-name">Câmera de Segurança WiFi 360° Full HD 1080p com Áudio, Visão Noturna e Rastreamento Automático | Monitoramento celular</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">92</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23697840481</div>
+        <div class="item-name">Kit 2 Joelheiras Esportivas com Compressão Ajustável Suporte para Joelho Academia Corrida</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">93</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22991957130</div>
+        <div class="item-name">Levante Bumbum Empina Bumbum Estimulador Eletrico De GlúTeos Cresce GlúTEOS</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">94</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19298854022</div>
+        <div class="item-name">Mochila Feminina para Viagem Casual à Prova d'Água em Oxford, Se Torna Bolsa de Mão Ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">95</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22698786651</div>
+        <div class="item-name">Mochila de ginástica bolsa de viagem com alça transversal bagagem de viagem ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">96</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23097755845</div>
+        <div class="item-name">Baba Eletrônica Com Monitor Visão Noturna, Câmera c/ Audio Sensor de Temperatura MING</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">97</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23736702934</div>
+        <div class="item-name">Escova Secadora Alisador Elétrica Quente Cabelo Com 3 Em1 Hair Styler ming APENAS 110V</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">98</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20497249773</div>
+        <div class="item-name">Fonte AAA006 20V/3.25A/65W Compativel com Lenovo Ideapad 310 - 320 - S145 - yoga 520 MING</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">99</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23692168184</div>
+        <div class="item-name">Mochila Escolar Grande Unissex acompanhado de um estojo MING</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">100</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18397296840</div>
+        <div class="item-name">Lixador De Pé Eletrico Removedor De Calos Portátil Ped Tec Versão Recarregável Ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">101</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20197746866</div>
+        <div class="item-name">Campainha Residencial Sem Fio Wireless 100m</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">102</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22793175004</div>
+        <div class="item-name">Novo estilo coreano moda criativa pequena bolsa quadrada de lã de fibra para mulheres</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">103</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19098022680</div>
+        <div class="item-name">Adaptador USB Tipo C Para 3.0 OTG Compatível Com MacBook Pro Samsung Galaxy Type-Smartphones , Tablets E Laptops Ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">104</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23094740531</div>
+        <div class="item-name">Rastreador inteligente de etiquetas de airbag, Bluetooth, localizador de objetos, Android</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">105</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19899301219</div>
+        <div class="item-name">Banco De Cintura Para Bebê Canguru Bebe Passeio Varias Cores Mochila Infantil Hipseat Carrier</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">106</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18497195040</div>
+        <div class="item-name">Mala de viagem dobrável portatíl e impermeável com grande capacidade Ming</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">107</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22692675905</div>
+        <div class="item-name">Fone De Ouvido Sem Fio Bluetooth  P9 Top Headphone</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div></div>
+  <div class="section-title">Como funciona</div>
+  <div class="how">
+    <ol>
+      <li>Acesse <strong>Afiliados do Vendedor</strong> no Seller Centre e adicione os produtos acima em uma campanha com qualquer percentual de comissão.</li>
+      <li>Mantenha cada produto <strong>ativo por pelo menos 30 dias</strong>.</li>
+      <li>Receba <strong>R$ 300 de crédito por produto</strong> — os créditos são acumulativos.</li>
+      <li>Use o crédito para pagar qualquer comissão de afiliados da sua loja.</li>
+      <li>Pagamentos processados semanalmente, em até 10 dias após completar os 30 dias.</li>
+    </ol>
+  </div>
+  <a class="cta" href="https://seller.shopee.com.br/portal/web-seller-affiliate" target="_blank">Ir para Afiliados do Vendedor →</a>
+  <footer>
+    <p>Dúvidas? Fale com seu gerente ou chame <strong>daniel.nunes</strong> no SeaTalk.</p>
+    <p style="margin-top:6px;">Shopee Brasil · Afiliados do Vendedor · Iniciativa SKU Expansion</p>
+  </footer>
+</main>
+</body>
+</html>

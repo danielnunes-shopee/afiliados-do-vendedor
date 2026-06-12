@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiliados do Vendedor – EVTec Store</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--orange:#EE4D2D;--orange-light:#fff3f0;--dark:#1a1a1a;--mid:#555;--soft:#888;--line:#e8e8e8;--bg:#f7f7f7;--white:#ffffff;--green:#1a7a4a;--green-bg:#edf7f2}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);min-height:100vh}
+  header{background:var(--orange);padding:0 24px;display:flex;align-items:center;height:56px}
+  .logo{font-size:22px;font-weight:700;color:var(--white);letter-spacing:-0.5px}
+  .logo span{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;vertical-align:middle}
+  main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+  .greeting{margin-bottom:28px}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+  h1{font-size:26px;font-weight:700;line-height:1.25;color:var(--dark)}
+  h1 strong{color:var(--orange)}
+  .greeting p{margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6}
+  .summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:6px}
+  .card .value{font-size:28px;font-weight:700;color:var(--dark)}
+  .card.highlight{background:var(--green-bg);border-color:#b2dfc7}
+  .card.highlight .value{color:var(--green)}
+  .section-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--soft);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .items{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+  .item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:16px}
+  .item-rank{width:28px;height:28px;border-radius:50%;background:var(--orange-light);color:var(--orange);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .item-rank.top{background:var(--orange);color:var(--white)}
+  .item-info{flex:1;min-width:0}
+  .item-id{font-size:11px;color:var(--soft);font-weight:500;margin-bottom:3px}
+  .item-name{font-size:14px;font-weight:500;color:var(--dark);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .item-reward{background:var(--green-bg);color:var(--green);font-size:13px;font-weight:700;padding:5px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+  .how{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:28px}
+  .how h3{font-size:14px;font-weight:600;margin-bottom:14px}
+  .how ol{padding-left:18px}
+  .how ol li{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:8px}
+  .how ol li strong{color:var(--dark)}
+  .cta{display:inline-block;background:var(--orange);color:var(--white);font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none;width:100%;text-align:center}
+  footer{text-align:center;margin-top:40px;font-size:12px;color:var(--soft);line-height:1.6}
+  footer a{color:var(--orange);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="logo">shopee <span>Afiliados do Vendedor</span></div></header>
+<main>
+  <div class="greeting">
+    <div class="eyebrow">Iniciativa exclusiva</div>
+    <h1>Olá, <strong>EVTec Store</strong> 👋</h1>
+    <p>Selecionamos produtos da sua loja com alto potencial de vendas via afiliados. Adicione-os à sua campanha e ganhe créditos para usar em comissões.</p>
+  </div>
+  <div class="summary">
+    <div class="card"><div class="label">Produtos elegíveis</div><div class="value">5</div></div>
+    <div class="card highlight"><div class="label">Crédito total a receber</div><div class="value">R$ 1.500</div></div>
+  </div>
+  <div class="section-title">Seus produtos elegíveis</div>
+  <div class="items">
+    <div class="item">
+      <div class="item-rank top">1</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20599240912</div>
+        <div class="item-name">Fita de Led Mangueira Neon 5 Metros Alto Brilho Flexivel Siliconada IP65 Com ou Sem Fonte</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">2</div>
+      <div class="item-info">
+        <div class="item-id">ID: 3780610664</div>
+        <div class="item-name">Kit 2 Refletor Led 100w Holofote Bivolt Prova D'água Branco Frio Luz Intensa Forte Quintal</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">3</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19132745811</div>
+        <div class="item-name">Fita Neon Led 5m 12v Corte 2,5cm Flexivel Alto Brilho</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">4</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19363916401</div>
+        <div class="item-name">Fita Led 2835 Rolo 5 Metros Luz 12v 300leds Ip65 Dupla Face + Fonte Bivolt</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">5</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23097458343</div>
+        <div class="item-name">Kit Trilho Spot LED Eletrificado Preta Branca 10w Luz Frio Neutro Quente Interno Econômico Bivolt</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">6</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20097808360</div>
+        <div class="item-name">Ventilador de Teto Lâmpada Soquete E27 Com Luz Led Ajustável Bivolt VT02 Verão</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">7</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23898231835</div>
+        <div class="item-name">Luminária Solar Arandela Retrô com Sensor de Presença Parede Sl02 Unitário|kit2|kit4</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">8</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22193093018</div>
+        <div class="item-name">Kit 10 Metros Perfil Alumínio Embutir Slim Para Fita Led Preto Branco Cinza Dourado</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">9</div>
+      <div class="item-info">
+        <div class="item-id">ID: 15846301144</div>
+        <div class="item-name">Refletor Holofote Led 400w Ip66 Prova D'água Bivolt Forte Luz Branco Frio 6000K</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">10</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22291973052</div>
+        <div class="item-name">Kit 10 Lâmpada Bolinha Led 3w G45 Soquete E27 Bulbo Lustre Espelho Luz Decorativa</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">11</div>
+      <div class="item-info">
+        <div class="item-id">ID: 17623178484</div>
+        <div class="item-name">Refletor Led Holofote 200w Ip66 Bivolt Forte Luz Verde</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">12</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19433595261</div>
+        <div class="item-name">Kit 10 Luminária Espeto Jardim Luz Led 7w Prova D'água IP65 Externo Iluminação Focal</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">13</div>
+      <div class="item-info">
+        <div class="item-id">ID: 7681111711</div>
+        <div class="item-name">Painel Plafon 25w Led Redondo Teto Sobrepor Borda Fina Luz Fria | Morna | Quente</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">14</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23809849691</div>
+        <div class="item-name">Fita Led 2835 5m Ip65 RGB Silicone + Controladora e Fonte</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">15</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21099251721</div>
+        <div class="item-name">Fita Led 120led/m Ip20 12v 3528 Para Perfil 5 Metros Dupla Face Auto Colante Luz Forte</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">16</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18558166696</div>
+        <div class="item-name">Fita Led 2835 Rolo 5 Metros 300leds Ip20 Dupla Face + Fonte</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">17</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18254575677</div>
+        <div class="item-name">Kit 2 Refletor Led Holofote 200w Ip66 Bivolt Branco Frio</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">18</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8820059943</div>
+        <div class="item-name">Kit 2 Refletor Led 50w Holofote Bivolt Prova D'água Luz Frio</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">19</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22192991099</div>
+        <div class="item-name">Fita Neon 12v Flexível 5m RGB Siliconada Ip65 Com Controle + Fonte Decoração Natal Bivolt 110v/220v</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">20</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8198290262</div>
+        <div class="item-name">Refletor Holofote Led 300w Ip66 Bivolt Prova D'água Forte Luz Branco Frio</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">21</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21607937079</div>
+        <div class="item-name">Refletor Solar Led Holofote 60w Placa Bateria Prova D'água Frio</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">22</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22092991017</div>
+        <div class="item-name">Fita Led Cob Super 5 Metros 12v 320leds Por Metro Ip20 Alto Brilho Com Fonte | Sem Fonte</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">23</div>
+      <div class="item-info">
+        <div class="item-id">ID: 3480610725</div>
+        <div class="item-name">Kit 4 Refletor Led 100w Luz Holofote Bivolt Prova D'água Frio 110v/220v Externo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">24</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19951859637</div>
+        <div class="item-name">Painel Plafon Led Com Sensor Presença 18w Sobrepor Quadrado Luz Frio</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">25</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19333570896</div>
+        <div class="item-name">Fita Neon Led 5m 12v Flexível Alto Brilho Rgb Com Controle Decoração Luz Natal</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">26</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8920064828</div>
+        <div class="item-name">Refletor Led 50w Holofote Externo Bivolt Prova D'água Ip66 Luz Branco Frio</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">27</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8621744973</div>
+        <div class="item-name">Refletor Led Holofote 200w Ip66 Bivolt Forte Luz Branco Frio Prova D'água</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">28</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20497667784</div>
+        <div class="item-name">Kits 1, 2, 3, 4, 5 Perfil Alumínio Sobrepor Slim Para Fita Led Metro Teto Sanca Interno</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">29</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22098474919</div>
+        <div class="item-name">Refletor Led Holofote  Rgb Colorido 50w/100w/200w/300w/400w  Bivolt C/ Controle</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">30</div>
+      <div class="item-info">
+        <div class="item-id">ID: 14680259099</div>
+        <div class="item-name">Refletor Led Holofote 200w Rgb Colorido Bivolt C/ Controle</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">31</div>
+      <div class="item-info">
+        <div class="item-id">ID: 13068640628</div>
+        <div class="item-name">Kit 10 Fonte 3a 12v Estabilizada Chaveada Bivolt Cftv Fita Led</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">32</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22393224171</div>
+        <div class="item-name">Kit 2 Painel Plafon De Led 12w Teto Sobrepor Redondo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">33</div>
+      <div class="item-info">
+        <div class="item-id">ID: 15317707832</div>
+        <div class="item-name">Kit 2 Lustre Pendente Cristal Com Bolhas Led 3 Cores PD03</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">34</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22398076785</div>
+        <div class="item-name">Lâmpada Led Bulbo 80w, 100w,150w e 200w Alta Potência Soquete E27 E40 Branco Frio Bivolt 110v|220v</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">35</div>
+      <div class="item-info">
+        <div class="item-id">ID: 20097216069</div>
+        <div class="item-name">Kit 5 Lâmpada Bolinha Led 3w G45 E27 Bulbo Lustre Espelho</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">36</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8823172057</div>
+        <div class="item-name">Kit 5 Refletor Led 50w Holofote Bivolt Prova D'água Luz Branco Frio 110v/220v</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">37</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23992836189</div>
+        <div class="item-name">Kit 5 Luminária Tubular Linear Sobrepor Led 40w 100cm Luz Branco Frio / Branco Quente</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">38</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22092988367</div>
+        <div class="item-name">Luminária Pendente Lustre Teto Corda Sisal Rústico LPCR Soquete E27</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">39</div>
+      <div class="item-info">
+        <div class="item-id">ID: 19354575252</div>
+        <div class="item-name">Kit 4 Refletor Led Holofote 200w Ip66 Bivolt Branco Frio 110v/220v Externo Luz Forte</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">40</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21272640735</div>
+        <div class="item-name">Refletor Led 1000w Holofote Bivolt Prova D'água Branco Frio Forte 110v/220v</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">41</div>
+      <div class="item-info">
+        <div class="item-id">ID: 21835507979</div>
+        <div class="item-name">Kit 2 Luz Led Piscina Colorida RGB Com Controle Remoto Pilha Ventosa Jardim Iluminação</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">42</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18097646795</div>
+        <div class="item-name">Kit 2 Refletor Led 100w Holofote Bivolt Prova D'água Luz Branco Quente</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">43</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23492847462</div>
+        <div class="item-name">Kit 6 Lâmpadas Led G9 Halopim 7w Bivolt Luz Branco Quente</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">44</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22197190931</div>
+        <div class="item-name">Mini Ar Condicionado Umidificador Climatizador Ventilador</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">45</div>
+      <div class="item-info">
+        <div class="item-id">ID: 9064598486</div>
+        <div class="item-name">Kit 2 Lâmpada Filamento Led G45 Vintage Retrô Carbono Ambar</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">46</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22293141201</div>
+        <div class="item-name">Kit 2 Sensor Presença Com Fotocélula Para Lâmpada Soquete E27</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">47</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22698056443</div>
+        <div class="item-name">Luminária Pendente Teto Lustre Luminar Led Preto Bivolt Pd50</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">48</div>
+      <div class="item-info">
+        <div class="item-id">ID: 15846652016</div>
+        <div class="item-name">Fonte 2a 12v De Alimentação Estabilizada Bivolt Cftv Fita Led</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">49</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8723095329</div>
+        <div class="item-name">Kit 2 Painel Led Plafon Sobrepor 25w Quadrado Teto Luz Branco Frio Ip20</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">50</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23793497904</div>
+        <div class="item-name">Kit Luminária Espeto Jardim IP65 Super Led Energia Solar 12w Spot Es02 Cor de Luz Quente | Verde</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">51</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22420308462</div>
+        <div class="item-name">Fita Led Neon 5m Alto Brilho Corte 2,5cm Flexivel Siliconada</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">52</div>
+      <div class="item-info">
+        <div class="item-id">ID: 8123114700</div>
+        <div class="item-name">Kit 5 Painel Plafon Led 25w Sobrepor 6000k Quadrado Frio Teto Completo</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">53</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23191955079</div>
+        <div class="item-name">Perfil Flexível 5 Metros Embutir 10x10mm Flexível Silicone Para Fita Led Casa Decoração</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">54</div>
+      <div class="item-info">
+        <div class="item-id">ID: 9942710092</div>
+        <div class="item-name">Kit 3 Refletor Led 50w Holofote Bivolt Prova D'água Branco Frio</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">55</div>
+      <div class="item-info">
+        <div class="item-id">ID: 23493861508</div>
+        <div class="item-name">Kit Trilho Spot Led Eletrificado Preto Branco 20w Luz Branco Frio, Neutro ou Quente Interno Bivolt</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">56</div>
+      <div class="item-info">
+        <div class="item-id">ID: 22795970574</div>
+        <div class="item-name">Luminária Pendente Disco Cristal C/ Bolhas Dourado Led PD02</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">57</div>
+      <div class="item-info">
+        <div class="item-id">ID: 18939985262</div>
+        <div class="item-name">Kit 5 Painel Plafon Led 12w Sobrepor Quadrado Branco Frio</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div>
+    <div class="item">
+      <div class="item-rank">58</div>
+      <div class="item-info">
+        <div class="item-id">ID: 7291397736</div>
+        <div class="item-name">Kit 5 Refletor Led Smd 100w Holofote Bivolt Ip66 Frio Iluminação Fachada Quintal</div>
+      </div>
+      <div class="item-reward">+ R$ 300</div>
+    </div></div>
+  <div class="section-title">Como funciona</div>
+  <div class="how">
+    <ol>
+      <li>Acesse <strong>Afiliados do Vendedor</strong> no Seller Centre e adicione os produtos acima em uma campanha com qualquer percentual de comissão.</li>
+      <li>Mantenha cada produto <strong>ativo por pelo menos 30 dias</strong>.</li>
+      <li>Receba <strong>R$ 300 de crédito por produto</strong> — os créditos são acumulativos.</li>
+      <li>Use o crédito para pagar qualquer comissão de afiliados da sua loja.</li>
+      <li>Pagamentos processados semanalmente, em até 10 dias após completar os 30 dias.</li>
+    </ol>
+  </div>
+  <a class="cta" href="https://seller.shopee.com.br/portal/web-seller-affiliate" target="_blank">Ir para Afiliados do Vendedor →</a>
+  <footer>
+    <p>Dúvidas? Fale com seu gerente ou chame <strong>daniel.nunes</strong> no SeaTalk.</p>
+    <p style="margin-top:6px;">Shopee Brasil · Afiliados do Vendedor · Iniciativa SKU Expansion</p>
+  </footer>
+</main>
+</body>
+</html>
